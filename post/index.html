@@ -226,6 +226,115 @@
 <div class="article-list-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
   
   
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/" itemprop="url">如何计算效应值（例如育种值）的准确性（accuracy）？</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-12-31 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Dec 31, 2017
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lena Smith">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    <p><strong>准确性</strong>指的是_预测效应值与真值之间的相关系数_。有时还会遇见一个概念——<strong>可靠性</strong>（reliability）。可靠性是准确性的平方，也就是说这二者度量的是一个事情。<strong>reliability其实就是遗传力，这句很重要！！！</strong>。遗传力主要用来计算选择响应（response to selection）。advisor说我的文章<strong>短</strong>句子太多，不连贯，确实是这样LOL。
+准确性的计算公式为：
+<img src="http://upload-images.jianshu.io/upload_images/3289684-df01d4346d0a920c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式1-accuracy.png" />
+*PEV*是prediction error variances的缩写，意思是预测误差方差，预测误差是预测值与真值间的差，即：
+<img src="http://upload-images.jianshu.io/upload_images/3289684-71c421143dcb27a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式2-pev.png" />
+<code>简书不支持公式真是淡疼！</code>
+*\sigma a^2*是加性方差。</p>
+
+<p>预测差值的标准误（*SED*）是可以从<code>Asreml</code>中直接得到的，与*PEV*的关系是：
+<img src="http://upload-images.jianshu.io/upload_images/3289684-203b10837faa6399.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式3-sed.png" />
+<code>我不知道上面这个公式怎么推导的。</code>
+所以有
+<img src="http://upload-images.jianshu.io/upload_images/3289684-1d6b8186eae7255a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式4-pev2.png" /></p>
+
+<hr />
+
+<p>在很长时间里我不知道（或者说模糊地知道）accuracy是怎么实现的。我知道公式，但在软件里分别和公式组分对应的部分是什么却不是很清楚，当然写这篇文字的时候是确定的。具体实现的途径有2：
+- 一是利用Asreml中的<code>prediction</code>直接得到*SED*后，再根据公式4得出PEV</p>
+
+<pre><code>fm_pred &lt;- predict(fm_asr, classify = &quot;Fam&quot;) #fm_asr是asreml()输出的对象， Fam是随机效应变量
+SED &lt;- fm_pred$predictions$avsed
+</code></pre>
+
+<ul>
+<li>二是逐步得到*PEV*，每个预测值都有一个*PEV*，是预测值*SE*平方的均值，所以从预测函数得到的对象中提取出*SE*平方后再平均即可
+<code>
+fm_pred &lt;- predict(fm_asr, classify = &quot;Fam&quot;, present = &quot;Plot&quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot）
+SE &lt;- fm_pred$predictions$pvals$standard.error
+PEV &lt;-  SE^2 %&gt;% mean
+</code>
+这里的*PEV*是一个向量，对应到每个水平上。
+所以，总体上，*PEV*、*SED*和*SE*的关系是
+<img src="http://upload-images.jianshu.io/upload_images/3289684-085e91a277591ca0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式5-pev4.png" /></li>
+</ul>
+
+<p>另外，在林元震老师的著作<strong>R与ASReml-R统计学</strong>中（P474）也涉及到accuracy的代码</p>
+
+<pre><code>SE &lt;- fm_asr$vcoeff$random * fm_asr$sigma2 #效应值se乘以sigma
+</code></pre>
+
+<p>结果是一样的，但不知道是否合理。</p>
+
+<hr />
+
+<p>如果没有Asreml可能需要更底层的计算（比如手动），这时*PEV*的计算更直观些：<img src="http://upload-images.jianshu.io/upload_images/3289684-6aed173dad4f5946.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式6-pev3.png" />
+于是有<img src="http://upload-images.jianshu.io/upload_images/3289684-c9c67b6d1bffe6a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="公式7-reliability.png" />
+*C^{22}*是方程组关联矩阵的逆矩阵的右下角块，*d_i*是块中的对角线元素。具体可查看<a href="https://pan.baidu.com/s/1hrDRLeG" target="_blank">Pro. Isik编写的教材P84</a>和<a href="https://pan.baidu.com/s/1nvmT47n" target="_blank">Mrode, 2014的书P44</a>。</p>
+
+<p>从*PEV*就可以得到我们需要的准确性和可靠性值了。</p>
+
+<hr />
+
+<p>这个问题在群中还被讨论过
+<img src="http://upload-images.jianshu.io/upload_images/3289684-9908dc53ac300bbc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="accuracy_chat.jpg" /></p>
+
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+  
+    
+    
+
+<div class="article-list-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+  
   <a href="/post/getting-started/">
     <img src="/img/headers/getting-started.png" class="article-banner" itemprop="image">
   </a>
@@ -783,11 +892,9 @@ $(document).ready(function () {
 </div>
 <div id="emphasis" class="section level2">
 <h2>Emphasis</h2>
-<pre><code>Italics with *asterisks* or _underscores_.
-
-Bold with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
+<p>Italics with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Bold with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<pre><code>Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough with ~~two tildes~~.</code></pre>
 </div>
