@@ -65,7 +65,7 @@
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</guid>
-      <description>&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，$λ=r(k-1)/(v-1)$，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34; target=&#34;_blank&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
+      <description>&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，$\lambda=r(k-1)/(v-1)$，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34; target=&#34;_blank&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;incomplete.block.design &amp;lt;- function(number.alternatives, number.blocks, alternatives.per.block, n.repeats = 1000){
     # Check that the parameters are appropriate
