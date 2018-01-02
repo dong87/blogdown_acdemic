@@ -104,15 +104,16 @@ SED &amp;lt;- fm_pred$predictions$avsed
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;二是逐步得到 &lt;em&gt;PEV&lt;/em&gt; ，每个预测值都有一个 &lt;em&gt;PEV&lt;/em&gt; ，是预测值 &lt;em&gt;SE&lt;/em&gt; 平方的均值，所以从预测函数得到的对象中提取出 &lt;em&gt;SE&lt;/em&gt; 平方后再平均即可
-&lt;code&gt;
-fm_pred &amp;lt;- predict(fm_asr, classify = &amp;quot;Fam&amp;quot;, present = &amp;quot;Plot&amp;quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot）
+&lt;li&gt;二是逐步得到 &lt;em&gt;PEV&lt;/em&gt; ，每个预测值都有一个 &lt;em&gt;PEV&lt;/em&gt; ，是预测值 &lt;em&gt;SE&lt;/em&gt; 平方的均值，所以从预测函数得到的对象中提取出 &lt;em&gt;SE&lt;/em&gt; 平方后再平均即可&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;fm_pred &amp;lt;- predict(fm_asr, classify = &amp;quot;Fam&amp;quot;, present = &amp;quot;Plot&amp;quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot）
 SE &amp;lt;- fm_pred$predictions$pvals$standard.error
 PEV &amp;lt;-  SE^2 %&amp;gt;% mean
-&lt;/code&gt;
-这里的 &lt;em&gt;PEV&lt;/em&gt; 是一个向量，对应到每个水平上。
-所以，总体上， &lt;em&gt;PEV&lt;/em&gt; 、 &lt;em&gt;SED&lt;/em&gt; 和 &lt;em&gt;SE&lt;/em&gt; 的关系是&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里的 &lt;em&gt;PEV&lt;/em&gt; 是一个向量，对应到每个水平上。
+所以，总体上， &lt;em&gt;PEV&lt;/em&gt; 、 &lt;em&gt;SED&lt;/em&gt; 和 &lt;em&gt;SE&lt;/em&gt; 的关系是&lt;/p&gt;
 
 &lt;p&gt;$$PEV=(SED)^{2}/2=ave(SE_i^2)$$&lt;/p&gt;
 

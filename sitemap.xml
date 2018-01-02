@@ -291,7 +291,7 @@
     
     <url>
     
-      <loc>/categories/notes/</loc>
+      <loc>/tags/notes/</loc>
       <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -301,7 +301,7 @@
     
     <url>
     
-      <loc>/tags/notes/</loc>
+      <loc>/categories/notes/</loc>
       <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

@@ -337,15 +337,16 @@ SED &lt;- fm_pred$predictions$avsed
 </code></pre>
 
 <ul>
-<li>二是逐步得到 <em>PEV</em> ，每个预测值都有一个 <em>PEV</em> ，是预测值 <em>SE</em> 平方的均值，所以从预测函数得到的对象中提取出 <em>SE</em> 平方后再平均即可
-<code>
-fm_pred &lt;- predict(fm_asr, classify = &quot;Fam&quot;, present = &quot;Plot&quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot）
+<li>二是逐步得到 <em>PEV</em> ，每个预测值都有一个 <em>PEV</em> ，是预测值 <em>SE</em> 平方的均值，所以从预测函数得到的对象中提取出 <em>SE</em> 平方后再平均即可</li>
+</ul>
+
+<pre><code>fm_pred &lt;- predict(fm_asr, classify = &quot;Fam&quot;, present = &quot;Plot&quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot）
 SE &lt;- fm_pred$predictions$pvals$standard.error
 PEV &lt;-  SE^2 %&gt;% mean
-</code>
-这里的 <em>PEV</em> 是一个向量，对应到每个水平上。
-所以，总体上， <em>PEV</em> 、 <em>SED</em> 和 <em>SE</em> 的关系是</li>
-</ul>
+</code></pre>
+
+<p>这里的 <em>PEV</em> 是一个向量，对应到每个水平上。
+所以，总体上， <em>PEV</em> 、 <em>SED</em> 和 <em>SE</em> 的关系是</p>
 
 <p>$$PEV=(SED)^{2}/2=ave(SE_i^2)$$</p>
 
