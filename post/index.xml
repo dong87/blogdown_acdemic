@@ -16,7 +16,7 @@
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;准确性&lt;/strong&gt;指的是_预测效应值与真值之间的相关系数_。有时还会遇见一个概念——&lt;strong&gt;可靠性&lt;/strong&gt;（reliability）。可靠性是准确性的平方，也就是说这二者度量的是一个事情。&lt;strong&gt;reliability其实就是遗传力，这句很重要！！！&lt;/strong&gt;。遗传力主要用来计算选择响应（response to selection）。advisor说我的文章&lt;strong&gt;短&lt;/strong&gt;句子太多，不连贯，确实是这样LOL。
+      <description>&lt;p&gt;&lt;strong&gt;准确性&lt;/strong&gt;指的是*预测效应值与真值之间的相关系数*。有时还会遇见一个概念——&lt;strong&gt;可靠性&lt;/strong&gt;（reliability）。可靠性是准确性的平方，也就是说这二者度量的是一个事情。&lt;strong&gt;reliability其实就是遗传力，这句很重要！！！&lt;/strong&gt;。遗传力主要用来计算选择响应（response to selection）。advisor说我的文章&lt;strong&gt;短&lt;/strong&gt;句子太多，不连贯，确实是这样LOL。
 准确性的计算公式为：
 &lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-df01d4346d0a920c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;公式1-accuracy.png&#34; /&gt;
 *PEV*是prediction error variances的缩写，意思是预测误差方差，预测误差是预测值与真值间的差，即：
