@@ -41,6 +41,15 @@
     
     <url>
     
+      <loc>/project/stats_r/</loc>
+      <lastmod>2018-01-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/breeding/</loc>
       <lastmod>2018-01-02T00:00:00+00:00</lastmod>
     </url>
@@ -313,6 +322,16 @@
     
       <loc>/publication_types/</loc>
       <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/stats/</loc>
+      <lastmod>2018-01-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
