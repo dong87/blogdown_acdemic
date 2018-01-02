@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/feynman-s-words/</loc>
+      <lastmod>2018-01-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</loc>
       <lastmod>2018-01-02T00:00:00+00:00</lastmod>
     </url>
@@ -25,6 +34,33 @@
     
       <loc>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</loc>
       <lastmod>2017-12-31T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/english/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/netlify%E6%90%AD%E5%BB%BAblog%E7%AC%94%E8%AE%B0/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/feynman-words/</loc>
+      <lastmod>2017-10-31T00:00:00+08:00</lastmod>
     </url>
     
   
@@ -158,15 +194,6 @@
     
     <url>
     
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/post/migrate-from-jekyll/</loc>
       <lastmod>2014-03-10T00:00:00+08:00</lastmod>
     </url>
@@ -178,14 +205,6 @@
     
       <loc>/publication/clothing-search/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/2017-12-31-%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</loc>
     </url>
     
   
@@ -280,8 +299,18 @@
     
     <url>
     
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/notes/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/notes/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -302,36 +331,6 @@
     
       <loc>/publication_types/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
