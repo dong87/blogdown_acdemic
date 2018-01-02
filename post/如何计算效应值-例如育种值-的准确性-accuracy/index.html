@@ -320,12 +320,12 @@
 
 <p>预测差值的标准误（ <em>SED</em> ）是可以从<code>Asreml</code>中直接得到的，与 <em>PEV</em> 的关系是：</p>
 
-<p>$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y<em>i-\hat Y</em>{i^\prime})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$</p>
+<p>$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y<em>i-\hat Y</em>{i^{\prime}})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$</p>
 
 <p><code>我不知道上面这个公式怎么推导的。</code>
 所以有</p>
 
-<p>$$PEV=(SED)^<sup>2</sup>&frasl;<sub>2</sub>=\hat Var(BLUP.differences)/2$$</p>
+<p>$$PEV=(SED)^{2}/2=\hat Var(BLUP.differences)/2$$</p>
 
 <hr />
 
@@ -347,7 +347,7 @@ PEV &lt;-  SE^2 %&gt;% mean
 所以，总体上， <em>PEV</em> 、 <em>SED</em> 和 <em>SE</em> 的关系是</li>
 </ul>
 
-<p>$$PEV=(SED)^<sup>2</sup>&frasl;<sub>2</sub>=ave(SE_i^2)$$</p>
+<p>$$PEV=(SED)^{2}/2=ave(SE_i^2)$$</p>
 
 <p>另外，在林元震老师的著作<strong>R与ASReml-R统计学</strong>中（P474）也涉及到accuracy的代码</p>
 

@@ -87,12 +87,12 @@
 
 &lt;p&gt;预测差值的标准误（ &lt;em&gt;SED&lt;/em&gt; ）是可以从&lt;code&gt;Asreml&lt;/code&gt;中直接得到的，与 &lt;em&gt;PEV&lt;/em&gt; 的关系是：&lt;/p&gt;
 
-&lt;p&gt;$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y&lt;em&gt;i-\hat Y&lt;/em&gt;{i^\prime})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$&lt;/p&gt;
+&lt;p&gt;$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y&lt;em&gt;i-\hat Y&lt;/em&gt;{i^{\prime}})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;我不知道上面这个公式怎么推导的。&lt;/code&gt;
 所以有&lt;/p&gt;
 
-&lt;p&gt;$$PEV=(SED)^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;=\hat Var(BLUP.differences)/2$$&lt;/p&gt;
+&lt;p&gt;$$PEV=(SED)^{2}/2=\hat Var(BLUP.differences)/2$$&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -114,7 +114,7 @@ PEV &amp;lt;-  SE^2 %&amp;gt;% mean
 所以，总体上， &lt;em&gt;PEV&lt;/em&gt; 、 &lt;em&gt;SED&lt;/em&gt; 和 &lt;em&gt;SE&lt;/em&gt; 的关系是&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;$$PEV=(SED)^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;=ave(SE_i^2)$$&lt;/p&gt;
+&lt;p&gt;$$PEV=(SED)^{2}/2=ave(SE_i^2)$$&lt;/p&gt;
 
 &lt;p&gt;另外，在林元震老师的著作&lt;strong&gt;R与ASReml-R统计学&lt;/strong&gt;中（P474）也涉及到accuracy的代码&lt;/p&gt;
 
