@@ -60,6 +60,81 @@
     </item>
     
     <item>
+      <title>正则表达式学习笔记</title>
+      <link>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;如果需要从文本文件中识别具有一定模式的字符串时，学一点正则表达式比一个个查找-复制粘贴效率要高得多。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我常用的能够通过正则表达式进行检索的软件有：Notepad++和Filelocator。用Notepad的机会更多一些。转入正题：
+比如我有一串字符：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Aoli|XP_011119616.1,Aoli|XP_011122673.1,Aoli|XP_011128430.1,Bbas|XP_008594286.1,Bbas|XP_008594329.1,Bbas|XP_008595160.1,
+Bbas|XP_008596935.1,Bbas|XP_008597129.1,Bbas|XP_008597693.1,Bbas|XP_008598495.1,Bbas|XP_008600657.1,Bbas|XP_008600739.1,
+Bbas|XP_008601538.1,Bbas|XP_008603064.1,Bbas|XP_008603175.1,Bbas|XP_008603621.1,Chig|XP_018154735.1,Chig|XP_018155044.1,
+Chig|XP_018155047.1,Chig|XP_018153301.1,Chig|XP_018151759.1,Chig|XP_018164608.1,Chig|XP_018152642.1,Chig|XP_018152650.1,
+Chig|XP_018150745.1,Chig|XP_018151082.1,Chig|XP_018151207.1,Chig|XP_018151210.1,Chig|XP_018151211.1,Chig|XP_018151295.1,
+Chig|XP_018151323.1,Chig|XP_018151575.1,Chig|XP_018151609.1,Chig|XP_018151641.1,Chig|XP_018163482.1,Chig|XP_018150468.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我需要把&lt;code&gt;|&lt;/code&gt;连同之前的字符都去掉，如果手动删除或是用空值一组一组地替换是非常繁琐的，数据量非常大时成本很高。而如果采用正则表达式则是几秒钟的事：查找&lt;code&gt;\w*\|&lt;/code&gt;，然后替换框里空着，全部替换就可以了（Fig 1），Amazing！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-e3b38112a6024a88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;Fig 1&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;匹配字符&#34;&gt;匹配字符&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;，句点代表除换行符外的所有字符。比如&lt;code&gt;a..b&lt;/code&gt;能匹配类似&lt;code&gt;a alb&lt;/code&gt;，&lt;code&gt;A18|B&lt;/code&gt;，&lt;code&gt;ATP-b&lt;/code&gt;。不区分大小写，当然也可以区分，下同。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[...]&lt;/code&gt;，代表字符集。&lt;code&gt;a[rl_]b&lt;/code&gt;匹配&lt;code&gt;arb&lt;/code&gt;，&lt;code&gt;AlB&lt;/code&gt;，&lt;code&gt;A_b&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\d&lt;/code&gt;， 代表数字。&lt;code&gt;XP_\d&lt;/code&gt;匹配&lt;code&gt;XP_0&lt;/code&gt;，&lt;code&gt;XP_0&lt;/code&gt;，&amp;hellip;，&lt;code&gt;XP_9&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\D&lt;/code&gt;， 代表非数字。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\s&lt;/code&gt;， 代表空白字符。&lt;code&gt;a\sb&lt;/code&gt;匹配&lt;code&gt;a b&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\S&lt;/code&gt;， 代表非空白字符。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\w&lt;/code&gt;， 代表字母和数字。[a-z0-9]。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\w&lt;/code&gt;， 代表非字母和数字。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\b&lt;/code&gt;， 代表边界，如&lt;code&gt;\b love&lt;/code&gt;，不会匹配&lt;code&gt;alove&lt;/code&gt;之类的单词。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\r\n&lt;/code&gt;，这是Notepad里替换换换行符的字符串，有时会用到，非常方便！比如&lt;code&gt;(\r\n){2}&lt;/code&gt;能替换空行，类似Word里的&lt;code&gt;^p^p&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;匹配字符的次数&#34;&gt;匹配字符的次数&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt;，≥0次。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt;，≥1次。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;?&lt;/code&gt;，匹配问号前一个字符前面的全部字符含有或不含问号前这个字符，比较难理解，试一下就知道了。&lt;code&gt;kdheo?&lt;/code&gt;，问号前一个字符是&lt;code&gt;o&lt;/code&gt;，&lt;code&gt;o&lt;/code&gt;前面的全部字符是&lt;code&gt;kdhe&lt;/code&gt;，&lt;code&gt;kdheo?&lt;/code&gt;匹配&lt;code&gt;kdheo（含o）&lt;/code&gt;或&lt;code&gt;kdhe（不含o）&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{}&lt;/code&gt;，花括号里是匹配前一个字符的次数1-9，也可以是个范围{1,5}。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;逻辑匹配&#34;&gt;逻辑匹配&lt;/h2&gt;
+
+&lt;p&gt;想要同时匹配多个字符串时用逻辑字符&lt;code&gt;|&lt;/code&gt;，如&lt;code&gt;blue|Blue&lt;/code&gt;，能忽略blue首字母的大小写。
+以含有多个字符的字符串为单位进行处理时要用圆括号&lt;code&gt;()&lt;/code&gt;括起来。&lt;/p&gt;
+
+&lt;h2 id=&#34;一个例子&#34;&gt;一个例子&lt;/h2&gt;
+
+&lt;p&gt;有这样一串字符：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[1] &amp;quot;db&amp;quot;               &amp;quot;G.clavigera&amp;quot;      &amp;quot;F.graminearum&amp;quot;    &amp;quot;M.oryzae&amp;quot;         &amp;quot;Z.tritici&amp;quot;        &amp;quot;C.higginsianum&amp;quot;  
+ [7] &amp;quot;V.dahliae&amp;quot;        &amp;quot;C.militaris&amp;quot;      &amp;quot;B.bassiana&amp;quot;       &amp;quot;M.anisopliae&amp;quot;     &amp;quot;M.robertsii&amp;quot;      &amp;quot;M.libera&amp;quot;        
+[13] &amp;quot;S.insectorum&amp;quot;     &amp;quot;A.oligospora&amp;quot;     &amp;quot;D.haptotyla&amp;quot;      &amp;quot;E.vermicola&amp;quot;      &amp;quot;H.minnesotensis&amp;quot;  &amp;quot;D.coniospora&amp;quot;    
+[19] &amp;quot;P.chlamydosporia&amp;quot; &amp;quot;O.piceae&amp;quot;         &amp;quot;S.schenckii&amp;quot;      &amp;quot;S.brasiliensis&amp;quot; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;特点是有&lt;code&gt;方括号&lt;/code&gt;， 方括号括起来的&lt;code&gt;数字&lt;/code&gt;且位数不等，有&lt;code&gt;空格&lt;/code&gt;且空格的个数不等，还有&lt;code&gt;换行符&lt;/code&gt;。
+我想要的是保留引号中的内容（连同引号），之间用逗点隔开，放到一行中。
+具体步骤：
+1. 去掉方括号及其中的数字，表达式为&lt;code&gt;\[[0-9]+\]&lt;/code&gt;；
+1. 去掉换行符，表达式为&lt;code&gt;\r\n&lt;/code&gt;；
+1. 去掉空格，表达式为&lt;code&gt;\s+&lt;/code&gt;，替换为&lt;code&gt;,&lt;/code&gt;，然后去掉两头多于的逗点即可。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>如何计算效应值（例如育种值）的准确性（accuracy）？</title>
       <link>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</link>
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
@@ -966,6 +1041,22 @@ setwd(&amp;quot;D:/blogdown_default&amp;quot;)
 blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)
 &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>到底是固定还是随机？</title>
+      <link>/post/%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%AD%E9%80%9A%E5%B8%B8%E8%A6%81%E6%8C%87%E5%AE%9A%E5%93%AA%E4%BA%9B%E6%98%AF%E9%9A%8F%E6%9C%BA%E6%95%88%E5%BA%94%E5%93%AA%E4%BA%9B%E6%98%AF%E5%9B%BA%E5%AE%9A%E6%95%88%E5%BA%94%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B%E4%B8%AD%E9%80%9A%E5%B8%B8%E8%A6%81%E6%8C%87%E5%AE%9A%E5%93%AA%E4%BA%9B%E6%98%AF%E9%9A%8F%E6%9C%BA%E6%95%88%E5%BA%94%E5%93%AA%E4%BA%9B%E6%98%AF%E5%9B%BA%E5%AE%9A%E6%95%88%E5%BA%94%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/</guid>
+      <description>&lt;p&gt;一个效应到底应该当做固定还是随机通常令人困惑。如果已有惯例，例如父本、家系效应一般当做随机，而重复、性别当做固定，照搬就是。相反，对另外一些效应的处理如果没有多少文献支撑，就有点让人模棱两可。总不能没有规则地按照自己的喜好吧？Smith（2001）给了一个明确的信息，即在需要&lt;strong&gt;预测一个效应的未来表现&lt;/strong&gt;时要随机，否则要固定，并举例说要预测品种（variety）的未来表现，而不希望预测环境效应。这样这个问题就很明确了。原文如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Smith A, Cullis B, Gilmour A. 2001. The Analysis of Crop Variety Evaluation Data in Australia. Australian &amp;amp; New Zealand Journal of Statistics, 43(2): 129–145.&lt;/p&gt;
+
+&lt;p&gt;One possibly contentious issue is the choice between fixed and random effects in the analysis. The standard text-book notion of effects being random if they have been sampled from a population and fixed if attention is confined only to those effects in the model (see Searle, 1971, for example) is unhelpful and can lead to a circular argument. In our opinion the choice depends on the aim of the analysis. In terms of variety effects our aim is to &lt;strong&gt;predict&lt;/strong&gt; future performance. This is best achieved by assuming the effects to be random. We do not wish to predict environment effects. The effects could be assumed random in order to recover information on varieties, but the variance component for environments is usually so large that very little information is recovered. The magnitude of the component also means there is very little shrinkage of environment effects, with the result that BLUPs and BLUEs are almost identical. We therefore assume that environment effects are fixed.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
