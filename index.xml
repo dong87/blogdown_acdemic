@@ -87,15 +87,6 @@
     </item>
     
     <item>
-      <title>常规育种</title>
-      <link>/project/traditional_breeding/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/project/traditional_breeding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>正则表达式学习笔记</title>
       <link>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
@@ -168,6 +159,15 @@ Chig|XP_018151323.1,Chig|XP_018151575.1,Chig|XP_018151609.1,Chig|XP_018151641.1,
 1. 去掉换行符，表达式为&lt;code&gt;\r\n&lt;/code&gt;；
 1. 去掉空格，表达式为&lt;code&gt;\s+&lt;/code&gt;，替换为&lt;code&gt;,&lt;/code&gt;，然后去掉两头多于的逗点即可。&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>育种笔记</title>
+      <link>/project/traditional_breeding/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/traditional_breeding/</guid>
+      <description></description>
     </item>
     
     <item>
