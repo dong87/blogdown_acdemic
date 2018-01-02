@@ -78,7 +78,7 @@
 
 &lt;p&gt;预测差值的标准误（ &lt;em&gt;SED&lt;/em&gt; ）是可以从&lt;code&gt;Asreml&lt;/code&gt;中直接得到的，与 &lt;em&gt;PEV&lt;/em&gt; 的关系是：&lt;/p&gt;
 
-&lt;p&gt;$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y&lt;em&gt;i-\hat Y&lt;/em&gt;{i^{2}})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$&lt;/p&gt;
+&lt;p&gt;$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y&lt;em&gt;i-\hat Y&lt;/em&gt;{i^\prime})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;我不知道上面这个公式怎么推导的。&lt;/code&gt;
 所以有&lt;/p&gt;
