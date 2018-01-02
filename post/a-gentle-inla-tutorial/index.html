@@ -322,13 +322,13 @@
 <div class="section level1">
 <h1>2.潜在的高斯模型</h1>
 <p>LGM的一般形式是：</p>
-<p>$  | ,  _i  p(y_i | _i, ) $ ``Likelihood’’</p>
-<p><span class="math inline">\(\mathbf{x} | \mathbf{\theta_1} \sim p(\mathbf{x}|\mathbf{\theta_1}) = \mathcal{N}(0,\mathbf{\Sigma})\)</span> ``Latent field’’</p>
-<p>$  = [,]^T p() $ ``Hyperpriors’’</p>
+<p>$  | ,  _i  p(y_i | _i, ) $ “Likelihood”</p>
+<p><span class="math inline">\(\mathbf{x} | \mathbf{\theta_1} \sim p(\mathbf{x}|\mathbf{\theta_1}) = \mathcal{N}(0,\mathbf{\Sigma})\)</span> “Latent field”</p>
+<p>$  = [,]^T p() $ “Hyperpriors”</p>
 <p>哪里<span class="math inline">\(\mathbf{y}\)</span>是一个观察数据集， <span class="math inline">\(\mathbf{x}\)</span> 不是协变量，而是线性预测变量（包括它本身）中所有参数的联合分布，<span class="math inline">\(\mathbf{\theta}\)</span>是潜在域的超参数，不是高斯。</p>
 <p>我们熟悉的模型，比如前面提到的GLM（M）如何适合这个框架？那么，考虑一个广义（线性/加法）（混合）模型的一般形式：</p>
 <p><span class="math display">\[ \mathbf{y} \sim \prod_i^N p(y_i | \mu_i)\]</span> <span class="math display">\[ g(\mu_i) = \eta_i = \alpha + \sum_{k=1}^{n_\beta} \beta_k z_{ki}  + \sum_{j=1}^{n_f} f^{(j)}(w_{ji}) + \varepsilon_i \]</span></p>
-<p><span class="math inline">\(g(\cdot)\)</span>是链接函数， <span class="math inline">\(\alpha\)</span>是截距， <span class="math inline">\(\mathbf{\beta}\)</span>是（线性的）协变量的熟悉的回归参数<span class="math inline">\(\mathbf{z}\)</span>，$ = f_1(), f_2(), …, f_{n_}() $是一些协变量 <span class="math inline">\(\mathbf{w}\)</span>的一组函数，协变量可能是非线性的，比如随机（<span class="math inline">\(iid\)</span>）效应，空间或时间相关效应，平滑样条等。</p>
+<p><span class="math inline">\(g(\cdot)\)</span>是链接函数， <span class="math inline">\(\alpha\)</span>是截距， <span class="math inline">\(\mathbf{\beta}\)</span>是（线性的）协变量的熟悉的回归参数<span class="math inline">\(\mathbf{z}\)</span>，<span class="math inline">\(\mathbf{f} = f_1(\cdot), f_2(\cdot), ..., f_{n_\beta}(\cdot)\)</span>是一些协变量 <span class="math inline">\(\mathbf{w}\)</span>的一组函数，协变量可能是非线性的，比如随机（<span class="math inline">\(iid\)</span>）效应，空间或时间相关效应，平滑样条等。</p>
 <p>线性回归是一个特殊情况，其结果是高斯，链接函数是identity， <span class="math inline">\({\mathbf{f}}(.)\)</span> = 0。在传统的BYM空间模型中， <span class="math inline">\(f_1(\cdot) \sim CAR\)</span>和<span class="math inline">\(f_2(\cdot) \sim N(0, \sigma^2_{f_2})\)</span>，及链接函数通常是 <em>logit</em> 或 <em>log</em> ，因为你经常有一个二项或泊松结果变量。许多熟悉的模型是这种最一般形式的特例（比其他更明显）。</p>
 <p>这个模型是一个LGM <span class="math inline">\(iff\)</span>我们假设这些参数具有联合的高斯分布。这可以通过在每个参数上设置普通的先验来实现）：</p>
 <p><span class="math display">\[\mathbf{x} = [\mathbf{\eta}, \alpha, \mathbf{\beta}, \mathbf{f}(\cdot)] \sim \mathcal{N}(0, \mathbf{\Sigma}) \]</span></p>
@@ -336,7 +336,7 @@
 </div>
 <div class="section level1">
 <h1>3.高斯马尔可夫随机场</h1>
-<p>GMRF是一个随机向量，遵循具有马尔可夫性质的多元正态分布：例如<span class="math inline">\(i\neq j\)</span>, <span class="math inline">\(x_i \perp x_j | \mathbf{x}_{-ij}\)</span>。``<span class="math inline">\(-ij\)</span>’’是指“除了”<span class="math inline">\(i\)</span>和<span class="math inline">\(j\)</span>之外的所有元素。考虑（空间或时间）自回归过程作为这个马尔可夫性质的一个自然的例子。</p>
+<p>GMRF是一个随机向量，遵循具有马尔可夫性质的多元正态分布：例如<span class="math inline">\(i\neq j\)</span>, <span class="math inline">\(x_i \perp x_j | \mathbf{x}_{-ij}\)</span>。“<span class="math inline">\(-ij\)</span>”是指“除了”<span class="math inline">\(i\)</span>和<span class="math inline">\(j\)</span>之外的所有元素。考虑（空间或时间）自回归过程作为这个马尔可夫性质的一个自然的例子。</p>
 <p>回想一下，<strong>精度是方差的逆</strong>。同样，精度矩阵（<span class="math inline">\(\mathbf{Q}\)</span>）是其对应的协方差矩阵的逆（<span class="math inline">\(\mathbf{\Sigma}\)</span>），例如， <span class="math inline">\(\mathbf{x} \sim \mathcal{N}(0,\mathbf{\Sigma}), \mathbf{Q} = \mathbf{\Sigma}^{-1}\)</span>。还记得在重要情况下，对矩阵求逆是一个复杂且计算密集的操作，<span class="math inline">\(\mathcal{O}(n^3)\)</span>。</p>
 <p>稀疏矩阵（有很多零）更容易求逆。例如，一个对角矩阵是稀疏的，很容易求逆（实际上是元素的逆），单位矩阵是它自己的逆矩阵：<span class="math inline">\(I^{-1} = I\)</span>。但是，即使一些非对角元素是非零的，零也会大大提升计算。</p>
 <p>我们已经知道以下结果：</p>
@@ -354,7 +354,7 @@
 \]</span></p>
 <p>因此：</p>
 <p><span class="math display">\[f(x) = x^2 = 2^2 + 2(2)(x-2) + \frac{2}{2}(x-2)^2 \]</span></p>
-<p>{{&lt; figure src=“/img/taylor.png” title=“” &gt;}}</p>
+<p>{{&lt; figure src=“/img/taylor.png” title=“taylor” &gt;}}</p>
 <p>拉普拉斯近似用于估计具有正态分布的任何分布（PDF）。它使用前三项（二次函数）泰勒级数展开模式(<span class="math inline">\(\hat{x}\)</span>)的函数来近似<span class="math inline">\(\log g(x)\)</span>（log简化了微分）：</p>
 <p><span class="math display">\[\log g(x) \approx \log g(\hat{x}) + \frac{\partial \log g(\hat{x})} {\partial x} (x-\hat{x}) +  \frac{\partial^2 \log g(\hat{x})} {2 \partial x^2} (x-\hat{x})^2\]</span></p>
 <p>模式中的一阶导数为零，所以上面的表达式简化了，如果我们说估计的方差（基于曲率）是 $^2 = -1 /  $，那么我们可以重写这些表达式为：</p>
@@ -371,7 +371,7 @@ f(x;\,k) &amp;=
 \therefore \chi^2_k    &amp;\overset{LA}{\sim}  N(\hat{x} = k-2, \hat{\sigma}^2 = 2(k-2))
 \end{align*} 
 \]</span></p>
-<p>{{&lt; figure src=“/img/approximation.png” title=“” &gt;}}</p>
+<p>{{&lt; figure src=“/img/approximation.png” title=“approximation” &gt;}}</p>
 <p>当自由度更高时（当分布更接近正常时），逼近显然更好。这是一个非常简单的单变量的例子，但重要的是要说服你，当事情大致正常时，这往往运作良好。它可以延伸到多元的情况，就像你所期望的一样，使用Hessian曲率，大量的数学运算发生。</p>
 </div>
 <div class="section level1">
@@ -449,7 +449,7 @@ jags(data=data,param=params,n.chains=3,n.iter=50000, n.burnin=5000, model.file=m
 <p><strong>INLA代码</strong></p>
 <pre><code>inla(y~x, family = c(&quot;gaussian&quot;), data = data, control.predictor=list(link=1)) </code></pre>
 <p>INLA生成一个后验密度，而不是像MCMC这样的模拟经验分布。您可以在下边的图中看到这三个参数与JAGS（直方图）和INLA（密度曲线）的分布有多相似。</p>
-<p>{{&lt; figure src=“/img/inla-posteriors.png” title=“” &gt;}}</p>
+<p>{{&lt; figure src=“/img/inla-posteriors.png” title=“inla-posteriors” &gt;}}</p>
 <p>在这里很容易，但有时很难知道默认的INLA先验，他们可以发挥很大的作用，特别是当数据集很小时。如果您在比较MCMC和INLA之前，在假设INLA近似值失败之前，我强烈建议您确认使用的先验值是否相同。有时，INLA定义了逻辑尺度上的先验（例如）。</p>
 <p>即使是这样一个简单的例子，随着样本量的增加，R-INLA和JAGS的节省时间显着。</p>
 </div>
@@ -513,9 +513,9 @@ inla(y ~ x + f(nu,model=&quot;iid&quot;), family = c(&quot;poisson&quot;),
   <h3>Related</h3>
   <ul>
     
-    <li><a href="../../post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/">到底是固定还是随机？</a></li>
-    
     <li><a href="../../project/stats_r/">统计&amp;编程</a></li>
+    
+    <li><a href="../../post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/">到底是固定还是随机？</a></li>
     
   </ul>
 </div>
