@@ -23,6 +23,15 @@
     
     <url>
     
+      <loc>/post/a-gentle-inla-tutorial/</loc>
+      <lastmod>2018-01-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</loc>
       <lastmod>2018-01-02T00:00:00+00:00</lastmod>
     </url>
@@ -297,14 +306,6 @@
     
     <url>
     
-      <loc>/post/a-gentle-inla-tutorial/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/tags/jekyll/</loc>
       <lastmod>2014-03-10T00:00:00+08:00</lastmod>
       <priority>0</priority>
@@ -315,7 +316,7 @@
     
     <url>
     
-      <loc>/categories/notes/</loc>
+      <loc>/tags/notes/</loc>
       <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -325,7 +326,7 @@
     
     <url>
     
-      <loc>/tags/notes/</loc>
+      <loc>/categories/notes/</loc>
       <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
