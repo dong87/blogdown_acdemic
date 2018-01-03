@@ -320,7 +320,7 @@
     combinations.of.alternatives &lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
     list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
 }</code></pre>
-<p>套入White<span class="citation">(<span class="citeproc-not-found" data-reference-id="White2007"><strong>???</strong></span>)</span>384页的例子 <img src="http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<p>套入White<span class="citation">(2007)</span>384页的例子 <img src="http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
 <pre><code>incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)</code></pre>
 <p>重复设定为100次后得到结果</p>
 <div class="figure">
@@ -331,6 +331,11 @@
 <blockquote>
 <p><strong>林木周期长，测定很关键，设计要专业</strong></p>
 </blockquote>
+<div id="refs" class="references">
+<div id="ref-White2007">
+<p>White, Timothy L, W Thomas Adams, and David B Neale. 2007. <em>Forest Genetics</em>. 1st ed. Vol. 167. 4254. Cambridge (MA): CABI.</p>
+</div>
+</div>
 
       </div>
 

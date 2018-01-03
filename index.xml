@@ -300,7 +300,7 @@ inla(y ~ x + f(nu,model=&amp;quot;iid&amp;quot;), family = c(&amp;quot;poisson&a
     combinations.of.alternatives &amp;lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
     list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;套入White&lt;span class=&#34;citation&#34;&gt;(&lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;White2007&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt;384页的例子 &lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;套入White&lt;span class=&#34;citation&#34;&gt;(2007)&lt;/span&gt;384页的例子 &lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;重复设定为100次后得到结果&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
@@ -311,6 +311,11 @@ inla(y ~ x + f(nu,model=&amp;quot;iid&amp;quot;), family = c(&amp;quot;poisson&a
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;林木周期长，测定很关键，设计要专业&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-White2007&#34;&gt;
+&lt;p&gt;White, Timothy L, W Thomas Adams, and David B Neale. 2007. &lt;em&gt;Forest Genetics&lt;/em&gt;. 1st ed. Vol. 167. 4254. Cambridge (MA): CABI.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -1421,7 +1426,7 @@ blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;意思是&lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(e\)&lt;/span&gt;这2个向量的参数（均值和方差），均值都是0，方差分别是&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;，协方差是0（彼此独立，没有线性关系）。&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;具体又是什么？&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(var(a)=A_{q\times q}\sigma_a^2=G\)&lt;/span&gt;， &lt;span class=&#34;math inline&#34;&gt;\(var(e)=I{n\times n}\sigma_e^2=R\)&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;是随机效应中&lt;em&gt;q&lt;/em&gt;个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵&lt;span class=&#34;math inline&#34;&gt;\(I\)&lt;/span&gt;。这里只假设&lt;em&gt;a&lt;/em&gt;是1个效应，&lt;em&gt;a&lt;/em&gt;也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是&lt;span class=&#34;math display&#34;&gt;\[E(y)=Xb\]&lt;/span&gt;，方差（marginal）&lt;span class=&#34;math display&#34;&gt;\[var(y)=V=ZGZ^T+R\]&lt;/span&gt;。期望比较容易理解，方差为何是这个形式？&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;左右为何乘以&lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;？很多材料没有给详细的推导式子。Mrode&lt;span class=&#34;citation&#34;&gt;(&lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;Mrode2014&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt; p35中：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;是随机效应中&lt;em&gt;q&lt;/em&gt;个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵&lt;span class=&#34;math inline&#34;&gt;\(I\)&lt;/span&gt;。这里只假设&lt;em&gt;a&lt;/em&gt;是1个效应，&lt;em&gt;a&lt;/em&gt;也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是&lt;span class=&#34;math display&#34;&gt;\[E(y)=Xb\]&lt;/span&gt;，方差（marginal）&lt;span class=&#34;math display&#34;&gt;\[var(y)=V=ZGZ^T+R\]&lt;/span&gt;。期望比较容易理解，方差为何是这个形式？&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;左右为何乘以&lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;？很多材料没有给详细的推导式子。Mrode&lt;span class=&#34;citation&#34;&gt;(2014)&lt;/span&gt; p35中：&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 \begin{eqnarray}
 var(y)&amp;amp;=&amp;amp;V=ZGZ^T+R\\
@@ -1432,8 +1437,13 @@ var(y)&amp;amp;=&amp;amp;V=ZGZ^T+R\\
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;总之，一个普通LMM中的元素就这么多，了解了这些内容，才有可能看懂后续的似然函数以及参数具体的ML或REML过程。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;reml&#34; class=&#34;section level3&#34;&gt;
+&lt;div id=&#34;reml&#34; class=&#34;section level3 unnumbered&#34;&gt;
 &lt;h3&gt;2. REML过程（待更）&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Mrode2014&#34;&gt;
+&lt;p&gt;Mrode, Raphael A. 2014. &lt;em&gt;Linear models for the prediction of animal breeding values&lt;/em&gt;. CABI. &lt;a href=&#34;http://gen.lib.rus.ec/book/index.php?md5=91332c5800b1c42453479daad03c23b3&#34; class=&#34;uri&#34;&gt;http://gen.lib.rus.ec/book/index.php?md5=91332c5800b1c42453479daad03c23b3&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>

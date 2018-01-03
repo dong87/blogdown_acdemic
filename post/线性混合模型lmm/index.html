@@ -356,7 +356,7 @@
 \]</span></p>
 <p>意思是<span class="math inline">\(a\)</span>和<span class="math inline">\(e\)</span>这2个向量的参数（均值和方差），均值都是0，方差分别是<span class="math inline">\(G\)</span>和<span class="math inline">\(R\)</span>，协方差是0（彼此独立，没有线性关系）。<span class="math inline">\(G\)</span>和<span class="math inline">\(R\)</span>具体又是什么？</p>
 <p><span class="math inline">\(var(a)=A_{q\times q}\sigma_a^2=G\)</span>， <span class="math inline">\(var(e)=I{n\times n}\sigma_e^2=R\)</span>。</p>
-<p><span class="math inline">\(A\)</span>是随机效应中<em>q</em>个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵<span class="math inline">\(I\)</span>。这里只假设<em>a</em>是1个效应，<em>a</em>也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是<span class="math display">\[E(y)=Xb\]</span>，方差（marginal）<span class="math display">\[var(y)=V=ZGZ^T+R\]</span>。期望比较容易理解，方差为何是这个形式？<span class="math inline">\(G\)</span>左右为何乘以<span class="math inline">\(Z\)</span>？很多材料没有给详细的推导式子。Mrode<span class="citation">(<span class="citeproc-not-found" data-reference-id="Mrode2014"><strong>???</strong></span>)</span> p35中：</p>
+<p><span class="math inline">\(A\)</span>是随机效应中<em>q</em>个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵<span class="math inline">\(I\)</span>。这里只假设<em>a</em>是1个效应，<em>a</em>也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是<span class="math display">\[E(y)=Xb\]</span>，方差（marginal）<span class="math display">\[var(y)=V=ZGZ^T+R\]</span>。期望比较容易理解，方差为何是这个形式？<span class="math inline">\(G\)</span>左右为何乘以<span class="math inline">\(Z\)</span>？很多材料没有给详细的推导式子。Mrode<span class="citation">(2014)</span> p35中：</p>
 <p><span class="math display">\[
 \begin{eqnarray}
 var(y)&amp;=&amp;V=ZGZ^T+R\\
@@ -367,8 +367,13 @@ var(y)&amp;=&amp;V=ZGZ^T+R\\
 \]</span></p>
 <p>总之，一个普通LMM中的元素就这么多，了解了这些内容，才有可能看懂后续的似然函数以及参数具体的ML或REML过程。</p>
 </div>
-<div id="reml" class="section level3">
+<div id="reml" class="section level3 unnumbered">
 <h3>2. REML过程（待更）</h3>
+<div id="refs" class="references">
+<div id="ref-Mrode2014">
+<p>Mrode, Raphael A. 2014. <em>Linear models for the prediction of animal breeding values</em>. CABI. <a href="http://gen.lib.rus.ec/book/index.php?md5=91332c5800b1c42453479daad03c23b3" class="uri">http://gen.lib.rus.ec/book/index.php?md5=91332c5800b1c42453479daad03c23b3</a>.</p>
+</div>
+</div>
 </div>
 </div>
 
