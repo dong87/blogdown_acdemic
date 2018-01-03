@@ -300,8 +300,9 @@
 
 <h3 id="1-lmm的形式">1. LMM的形式</h3>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/3289684-137c6954d8975b8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
-这是基本形式，更复杂的都是在其基础上演变出来的。</p>
+<p>$$y=X\beta+Za+e$$</p>
+
+<p>这是基本形式，更复杂的都是在其基础上演变出来的。</p>
 
 <p>式子里一共有6个字母，4个小写，2个大写。小写是向量（1维矩阵），大写是矩阵。这几个字母的意思分别是：</p>
 
@@ -322,7 +323,7 @@
 </tr>
 
 <tr>
-<td align="left">b</td>
+<td align="left">$\beta$</td>
 <td>固定效应（p个水平）</td>
 <td>p×1</td>
 </tr>
@@ -355,11 +356,24 @@
 
 <p>有几个假设</p>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/3289684-abc2692b7c726f04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+<p>$$
+\left[\begin{array}{c}
+    a\e
+  \end{array} \right]
+\sim N
+  \left( \left[\begin{array}{c}
+    0\0
+  \end{array} \right],
+  \left[\begin{array}{c}
+    G&amp;0<br />
+    0&amp;R<br />
+      \end{array} \right] \right)
+$$</p>
 
-<p>意思是a和e这2个向量的参数（均值和方差），均值都是0，方差分别是G和R，协方差是0（彼此独立，没有线性关系）。G和R具体又是什么？
-<img src="http://upload-images.jianshu.io/upload_images/3289684-f1d006b08e18fa41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />，
-<img src="http://upload-images.jianshu.io/upload_images/3289684-72ceccb21c11e509.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />。*A*是随机效应中q个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵*I*。这里只假设a是1个效应，a也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是<strong>E(y)=Xb</strong>，方差（marginal）<strong>var(y)=V=ZGZ^T+R</strong>。期望比较容易理解，方差为何是这个形式？G左右为何乘以Z？很多材料没有给详细的推导式子。Mrode（2013，p35）中：</p>
+<p>意思是$a$和$e$这2个向量的参数（均值和方差），均值都是0，方差分别是$G$和$R$，协方差是0（彼此独立，没有线性关系）。$G$和$R$具体又是什么？</p>
+
+<p>$var(a)=A_{q\times q}\sigma_a^2=G$， $var(e)=I{n\times n}\sigma_e^2=R$。
+$A$是随机效应中q个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵$I$。这里只假设a是1个效应，a也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是$$E(y)=Xb$$，方差（marginal）$$var(y)=V=ZGZ^T+R$$。期望比较容易理解，方差为何是这个形式？$G$左右为何乘以$Z$？很多材料没有给详细的推导式子。Mrode（2013，p35）中：</p>
 
 <p><img src="http://upload-images.jianshu.io/upload_images/3289684-9fa74adafa220543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
 
