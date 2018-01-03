@@ -322,9 +322,9 @@
 <div class="section level1">
 <h1>2.潜在的高斯模型</h1>
 <p>LGM的一般形式是：</p>
-<p>$  | ,  _i  p(y_i | _i, ) $ “Likelihood”</p>
+<p><span class="math inline">\(\mathbf{y} | \mathbf{x}, \mathbf{\theta_2} \sim \prod_i \ p(y_i | \eta_i, \mathbf{\theta_2})\)</span> “Likelihood”</p>
 <p><span class="math inline">\(\mathbf{x} | \mathbf{\theta_1} \sim p(\mathbf{x}|\mathbf{\theta_1}) = \mathcal{N}(0,\mathbf{\Sigma})\)</span> “Latent field”</p>
-<p>$  = [,]^T p() $ “Hyperpriors”</p>
+<p><span class="math inline">\(\mathbf{{\theta}} = [\mathbf{\theta_1},\mathbf{\theta_2}]^T \sim p(\mathbf{\theta})\)</span> “Hyperpriors”</p>
 <p>哪里<span class="math inline">\(\mathbf{y}\)</span>是一个观察数据集， <span class="math inline">\(\mathbf{x}\)</span> 不是协变量，而是线性预测变量（包括它本身）中所有参数的联合分布，<span class="math inline">\(\mathbf{\theta}\)</span>是潜在域的超参数，不是高斯。</p>
 <p>我们熟悉的模型，比如前面提到的GLM（M）如何适合这个框架？那么，考虑一个广义（线性/加法）（混合）模型的一般形式：</p>
 <p><span class="math display">\[ \mathbf{y} \sim \prod_i^N p(y_i | \mu_i)\]</span> <span class="math display">\[ g(\mu_i) = \eta_i = \alpha + \sum_{k=1}^{n_\beta} \beta_k z_{ki}  + \sum_{j=1}^{n_f} f^{(j)}(w_{ji}) + \varepsilon_i \]</span></p>
@@ -380,13 +380,12 @@ f(x;\,k) &amp;=
 <p><span class="math display">\[p(x_j | \mathbf{y}) = \int p(x_j, \mathbf{\theta} | \mathbf{y}) d\mathbf{\theta}  = \int p(x_j | \mathbf{\theta},\mathbf{y}) p(\mathbf{\theta} | \mathbf{y})  d\mathbf{\theta}\]</span></p>
 <p><span class="math display">\[p(\theta_k | \mathbf{y}) = \int p(\mathbf{\theta}|\mathbf{y}) d\mathbf{\theta}_{-k}\]</span></p>
 <p>因此，我们需要近似的项是： <span class="math inline">\(p(\mathbf{\theta}|\mathbf{y})\)</span>和<span class="math inline">\(p(x_j | \mathbf{\theta}, \mathbf{y})\)</span>。第一项可以用来估计所有感兴趣的边际<span class="math inline">\(\mathbf{\theta}\)</span>，也需要估计潜在场的边际。从概率回忆：</p>
-$$
-<span class="math display">\[\begin{align}
+<p><span class="math display">\[
+\begin{align}
 p(b) &amp;= \frac{p(a,b)} {p(a|b)} \\
-
 p(b|c) &amp;= \frac{p(a,b|c)} {p(a|b,c)} 
-\end{align}\]</span>
-<p>$$</p>
+\end{align} 
+\]</span></p>
 <p>我们可以用这个规则来重写我们的边际分布：</p>
 <p><span class="math display">\[
 \begin{align}

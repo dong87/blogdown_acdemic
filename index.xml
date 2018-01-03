@@ -97,9 +97,9 @@
 &lt;div class=&#34;section level1&#34;&gt;
 &lt;h1&gt;2.潜在的高斯模型&lt;/h1&gt;
 &lt;p&gt;LGM的一般形式是：&lt;/p&gt;
-&lt;p&gt;$  | ,  _i  p(y_i | _i, ) $ “Likelihood”&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{y} | \mathbf{x}, \mathbf{\theta_2} \sim \prod_i \ p(y_i | \eta_i, \mathbf{\theta_2})\)&lt;/span&gt; “Likelihood”&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x} | \mathbf{\theta_1} \sim p(\mathbf{x}|\mathbf{\theta_1}) = \mathcal{N}(0,\mathbf{\Sigma})\)&lt;/span&gt; “Latent field”&lt;/p&gt;
-&lt;p&gt;$  = [,]^T p() $ “Hyperpriors”&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{{\theta}} = [\mathbf{\theta_1},\mathbf{\theta_2}]^T \sim p(\mathbf{\theta})\)&lt;/span&gt; “Hyperpriors”&lt;/p&gt;
 &lt;p&gt;哪里&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{y}\)&lt;/span&gt;是一个观察数据集， &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt; 不是协变量，而是线性预测变量（包括它本身）中所有参数的联合分布，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\theta}\)&lt;/span&gt;是潜在域的超参数，不是高斯。&lt;/p&gt;
 &lt;p&gt;我们熟悉的模型，比如前面提到的GLM（M）如何适合这个框架？那么，考虑一个广义（线性/加法）（混合）模型的一般形式：&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \mathbf{y} \sim \prod_i^N p(y_i | \mu_i)\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[ g(\mu_i) = \eta_i = \alpha + \sum_{k=1}^{n_\beta} \beta_k z_{ki}  + \sum_{j=1}^{n_f} f^{(j)}(w_{ji}) + \varepsilon_i \]&lt;/span&gt;&lt;/p&gt;
@@ -155,13 +155,12 @@ f(x;\,k) &amp;amp;=
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[p(x_j | \mathbf{y}) = \int p(x_j, \mathbf{\theta} | \mathbf{y}) d\mathbf{\theta}  = \int p(x_j | \mathbf{\theta},\mathbf{y}) p(\mathbf{\theta} | \mathbf{y})  d\mathbf{\theta}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[p(\theta_k | \mathbf{y}) = \int p(\mathbf{\theta}|\mathbf{y}) d\mathbf{\theta}_{-k}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;因此，我们需要近似的项是： &lt;span class=&#34;math inline&#34;&gt;\(p(\mathbf{\theta}|\mathbf{y})\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(p(x_j | \mathbf{\theta}, \mathbf{y})\)&lt;/span&gt;。第一项可以用来估计所有感兴趣的边际&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\theta}\)&lt;/span&gt;，也需要估计潜在场的边际。从概率回忆：&lt;/p&gt;
-$$
-&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align}
 p(b) &amp;amp;= \frac{p(a,b)} {p(a|b)} \\
-
 p(b|c) &amp;amp;= \frac{p(a,b|c)} {p(a|b,c)} 
-\end{align}\]&lt;/span&gt;
-&lt;p&gt;$$&lt;/p&gt;
+\end{align} 
+\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;我们可以用这个规则来重写我们的边际分布：&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 \begin{align}
