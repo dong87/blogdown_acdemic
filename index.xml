@@ -270,8 +270,7 @@ inla(y ~ x + f(nu,model=&amp;quot;iid&amp;quot;), family = c(&amp;quot;poisson&a
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</guid>
-      <description>&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，$\lambda=r(k-1)/(v-1)$，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34; target=&#34;_blank&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
-
+      <description>&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，&lt;span class=&#34;math inline&#34;&gt;\(\lambda=r(k-1)/(v-1)\)&lt;/span&gt;，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;incomplete.block.design &amp;lt;- function(number.alternatives, number.blocks, alternatives.per.block, n.repeats = 1000){
     # Check that the parameters are appropriate
     # Sawtooth recommends that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block
@@ -300,21 +299,15 @@ inla(y ~ x + f(nu,model=&amp;quot;iid&amp;quot;), family = c(&amp;quot;poisson&a
     n.appearances.per.alternative &amp;lt;- table(as.numeric(design))
     combinations.of.alternatives &amp;lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
     list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;套入White[-@White2007]384页的例子
-&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)
-&lt;/code&gt;&lt;/pre&gt;
-
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;套入White&lt;span class=&#34;citation&#34;&gt;(&lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;White2007&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt;384页的例子 &lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;重复设定为100次后得到结果&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; /&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+&lt;/div&gt;
 &lt;p&gt;与书中所使用的软件给出的结果不一致，但应该都能用于实践（现实情况是我们过去的测定林设计多少存在些问题（包括我自己之前的一个设计），或者设计问题不大但造林时没有严格按照设计进行，比较可惜）。&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;林木周期长，测定很关键，设计要专业&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -536,10 +529,9 @@ PEV &amp;lt;-  SE^2 %&amp;gt;% mean
       <description>&lt;div class=&#34;section level2&#34;&gt;
 &lt;h2&gt;模型框架&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;LMM &lt;span class=&#34;math display&#34;&gt;\[
-y=Xb+Zu+e
-\]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;LMM&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y=Xb+Zu+e\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 y=\mu+Xb+Z_1f+Z_2fb+e
 \]&lt;/span&gt;&lt;/p&gt;
@@ -576,12 +568,17 @@ Log
 &lt;/div&gt;
 &lt;div class=&#34;section level2&#34;&gt;
 &lt;h2&gt;混合线性模型&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y=X\beta+Za+e\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-y=Xb+Za+e
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
 var(y)=V=ZGZ&amp;#39;+R
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(var(a)=A\sigma_a^2=G\)&lt;/span&gt;， &lt;span class=&#34;math inline&#34;&gt;\(var(e)=I\sigma_e^2\)&lt;/span&gt;。 &lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align}
+var(a)=A_{q\times q}\sigma_a^2=G \\
+var(e)=I_{n\times n}\sigma_e^2=R 
+\end{align} 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 \begin{eqnarray}
 var(y)&amp;amp;=&amp;amp;V=ZGZ^T+R\\
 &amp;amp;=&amp;amp;Zvar(a)Z^T+var(e)+cov(Za,e)+cov(e,Za)\\
@@ -814,26 +811,6 @@ fs\sim N(0,\sigma_{fs}^2I)
 fb_{(s)}\sim N(0,\sigma_{fb_{(s)}}^2I)
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\left[\begin{array}{c} 
-    g\\s\\r\\p\\e 
-  \end{array}
-  \right]
-  \sim N
-\left(
-\left[\begin{array}{c} 
-    0\\0\\0\\0\\0 
-  \end{array}
-  \right],
-  \left[\begin{array}{c} 
-    A\sigma_{g}^2&amp;amp;0&amp;amp;0&amp;amp;0&amp;amp;0\\
-    0&amp;amp;I\sigma_{s}^2&amp;amp;0&amp;amp;0&amp;amp;0\\
-    0&amp;amp;0&amp;amp;I\sigma_{r}^2&amp;amp;0&amp;amp;0\\
-    0&amp;amp;0&amp;amp;0&amp;amp;I\sigma_{p}^2&amp;amp;0\\
-    0&amp;amp;0&amp;amp;0&amp;amp;0&amp;amp;I\sigma_{e}^2 
-  \end{array}
-  \right]
-  \right)
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
 \left[\begin{array}{c} 
     g\\s\\r\\p\\e 
   \end{array}
@@ -1378,96 +1355,87 @@ blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)
       <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/%E7%BA%BF%E6%80%A7%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8Blmm/</guid>
-      <description>
-
-&lt;h2 id=&#34;线性混合模型基础&#34;&gt;线性混合模型基础&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;线性混合模型（LMM）&lt;/strong&gt;是遗传评估中必用的统计模型，用以将群体中每个个体的观测值按照潜在影响因素进行分解。决定观测值的大小和幅度受2个参数（均值和方差）控制，反过来说也可以。一般我们更关注方差，围绕方差的运算与处理也更为复杂，所以能够将LMM中涉及的方差们的关系搞明白，就大体能理解这些没什么亲和力的模型们了。通常在介绍这一部分内容时，很容易让人发蒙，因为太抽象了，全是符号，所以前提是必须对数学这门外语有一定了解，就是一门外语啊。比如告诉我一个矩阵的维度是4×5，我头脑里有概念，这是小学的数学知识学得好，但你告诉我它的维度是n×p，我的CPU和GPU就不太够用了，所以得像学习英语一样，方法+重复才是硬道理。&lt;/p&gt;
-
+      <description>&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;线性混合模型基础&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;线性混合模型（LMM）&lt;/strong&gt;是遗传评估中必用的统计模型，用以将群体中每个个体的观测值按照潜在影响因素进行分解。决定观测值的大小和幅度受2个参数（均值和方差）控制，反过来说也可以。一般我们更关注方差，围绕方差的运算与处理也更为复杂，所以能够将LMM中涉及的方差们的关系搞明白，就大体能理解这些没什么亲和力的模型们了。通常在介绍这一部分内容时，很容易让人发蒙，因为太抽象了，全是符号，所以前提是必须对数学这门外语有一定了解，就是一门外语啊。比如告诉我一个矩阵的维度是4×5，我头脑里有概念，这是小学的数学知识学得好，但你告诉我它的维度是&lt;span class=&#34;math inline&#34;&gt;\(n\times p\)&lt;/span&gt;，我的CPU和GPU就不太够用了，所以得像学习英语一样，方法+重复才是硬道理。&lt;/p&gt;
 &lt;p&gt;如果知道了这些方差们的具体数值，求算各个因素的系数（我们最终要的是这个）就相对容易多了。但这些方差是怎么计算的？一般会告诉采用了什么方法（REML用的多），但这又是什么我想很多人想知道但没人教，所以一直糊涂着，只停留在会用的地步，当然会处理数据也够用。我很有兴趣，但到今天我也不全会，也没有能力在&lt;code&gt;R&lt;/code&gt;中实现，原因是没那个功底，不会矩阵求导，盼望有一天谁来引领一下，但这不是刚需，因此参数求解就停在这里了。下面就我了解的知识对LMM做2部分的介绍，主要目的是自我梳理，学识有限，错误难免。&lt;/p&gt;
-
-&lt;h3 id=&#34;1-lmm的形式&#34;&gt;1. LMM的形式&lt;/h3&gt;
-
-&lt;p&gt;$$y=X\beta+Za+e$$&lt;/p&gt;
-
+&lt;div id=&#34;lmm&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1. LMM的形式&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y=X\beta+Za+e\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;这是基本形式，更复杂的都是在其基础上演变出来的。&lt;/p&gt;
-
 &lt;p&gt;式子里一共有6个字母，4个小写，2个大写。小写是向量（1维矩阵），大写是矩阵。这几个字母的意思分别是：&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
-&lt;tr&gt;
+&lt;tr class=&#34;header&#34;&gt;
 &lt;th align=&#34;left&#34;&gt;字母&lt;/th&gt;
 &lt;th&gt;名称&lt;/th&gt;
 &lt;th&gt;维度&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
-&lt;tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;y&lt;/td&gt;
 &lt;td&gt;观测值&lt;/td&gt;
 &lt;td&gt;n×1&lt;/td&gt;
 &lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;$\beta$&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/td&gt;
 &lt;td&gt;固定效应（p个水平）&lt;/td&gt;
 &lt;td&gt;p×1&lt;/td&gt;
 &lt;/tr&gt;
-
-&lt;tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;a&lt;/td&gt;
 &lt;td&gt;随机效应（q个水平）&lt;/td&gt;
 &lt;td&gt;q×1&lt;/td&gt;
 &lt;/tr&gt;
-
-&lt;tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;e&lt;/td&gt;
 &lt;td&gt;随机残差&lt;/td&gt;
 &lt;td&gt;n×1&lt;/td&gt;
 &lt;/tr&gt;
-
-&lt;tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;X&lt;/td&gt;
 &lt;td&gt;固定效应设计矩阵&lt;/td&gt;
 &lt;td&gt;n×p&lt;/td&gt;
 &lt;/tr&gt;
-
-&lt;tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Z&lt;/td&gt;
 &lt;td&gt;随机效应设计矩阵&lt;/td&gt;
 &lt;td&gt;n×q&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;有几个假设&lt;/p&gt;
-
-&lt;p&gt;$$
-\left[\begin{array}{c}
-    a\e
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\left[\begin{array}{c} 
+    a\\e 
   \end{array} \right]
 \sim N
-  \left( \left[\begin{array}{c}
-    0\0
+  \left( \left[\begin{array}{c} 
+    0\\0 
   \end{array} \right],
-  \left[\begin{array}{c}
-    G&amp;amp;0&lt;br /&gt;
-    0&amp;amp;R&lt;br /&gt;
+  \left[\begin{array}{c} 
+    G&amp;amp;0\\
+    0&amp;amp;R\\
       \end{array} \right] \right)
-$$&lt;/p&gt;
-
-&lt;p&gt;意思是$a$和$e$这2个向量的参数（均值和方差），均值都是0，方差分别是$G$和$R$，协方差是0（彼此独立，没有线性关系）。$G$和$R$具体又是什么？&lt;/p&gt;
-
-&lt;p&gt;$var(a)=A_{q\times q}\sigma_a^2=G$， $var(e)=I{n\times n}\sigma_e^2=R$。
-$A$是随机效应中q个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵$I$。这里只假设a是1个效应，a也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是$$E(y)=Xb$$，方差（marginal）$$var(y)=V=ZGZ^T+R$$。期望比较容易理解，方差为何是这个形式？$G$左右为何乘以$Z$？很多材料没有给详细的推导式子。Mrode（2013，p35）中：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9fa74adafa220543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;意思是&lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(e\)&lt;/span&gt;这2个向量的参数（均值和方差），均值都是0，方差分别是&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;，协方差是0（彼此独立，没有线性关系）。&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt;具体又是什么？&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(var(a)=A_{q\times q}\sigma_a^2=G\)&lt;/span&gt;， &lt;span class=&#34;math inline&#34;&gt;\(var(e)=I{n\times n}\sigma_e^2=R\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;是随机效应中&lt;em&gt;q&lt;/em&gt;个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵&lt;span class=&#34;math inline&#34;&gt;\(I\)&lt;/span&gt;。这里只假设&lt;em&gt;a&lt;/em&gt;是1个效应，&lt;em&gt;a&lt;/em&gt;也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是&lt;span class=&#34;math display&#34;&gt;\[E(y)=Xb\]&lt;/span&gt;，方差（marginal）&lt;span class=&#34;math display&#34;&gt;\[var(y)=V=ZGZ^T+R\]&lt;/span&gt;。期望比较容易理解，方差为何是这个形式？&lt;span class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt;左右为何乘以&lt;span class=&#34;math inline&#34;&gt;\(Z\)&lt;/span&gt;？很多材料没有给详细的推导式子。Mrode&lt;span class=&#34;citation&#34;&gt;(&lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;Mrode2014&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt; p35中：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\begin{eqnarray}
+var(y)&amp;amp;=&amp;amp;V=ZGZ^T+R\\
+&amp;amp;=&amp;amp;Zvar(a)Z^T+var(e)+cov(Za,e)+cov(e,Za)\\
+&amp;amp;=&amp;amp;ZGZ^T+R+Zcov(a,e)+cov(e,a)Z^T\\
+&amp;amp;=&amp;amp;ZGZ^T+R
+\end{eqnarray}
+\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;总之，一个普通LMM中的元素就这么多，了解了这些内容，才有可能看懂后续的似然函数以及参数具体的ML或REML过程。&lt;/p&gt;
-
-&lt;h3 id=&#34;2-reml过程-待更&#34;&gt;2. REML过程（待更）&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reml&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;2. REML过程（待更）&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

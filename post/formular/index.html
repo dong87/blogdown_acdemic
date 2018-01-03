@@ -293,10 +293,9 @@
         <div class="section level2">
 <h2>模型框架</h2>
 <ul>
-<li>LMM <span class="math display">\[
-y=Xb+Zu+e
-\]</span></li>
+<li>LMM</li>
 </ul>
+<p><span class="math display">\[y=Xb+Zu+e\]</span></p>
 <p><span class="math display">\[
 y=\mu+Xb+Z_1f+Z_2fb+e
 \]</span></p>
@@ -333,12 +332,17 @@ Log
 </div>
 <div class="section level2">
 <h2>混合线性模型</h2>
+<p><span class="math display">\[y=X\beta+Za+e\]</span></p>
 <p><span class="math display">\[
-y=Xb+Za+e
-\]</span> <span class="math display">\[
 var(y)=V=ZGZ&#39;+R
 \]</span></p>
-<p><span class="math inline">\(var(a)=A\sigma_a^2=G\)</span>， <span class="math inline">\(var(e)=I\sigma_e^2\)</span>。 <span class="math display">\[
+<p><span class="math display">\[
+\begin{align}
+var(a)=A_{q\times q}\sigma_a^2=G \\
+var(e)=I_{n\times n}\sigma_e^2=R 
+\end{align} 
+\]</span></p>
+<p><span class="math display">\[
 \begin{eqnarray}
 var(y)&amp;=&amp;V=ZGZ^T+R\\
 &amp;=&amp;Zvar(a)Z^T+var(e)+cov(Za,e)+cov(e,Za)\\
@@ -571,26 +575,6 @@ fs\sim N(0,\sigma_{fs}^2I)
 fb_{(s)}\sim N(0,\sigma_{fb_{(s)}}^2I)
 \]</span></p>
 <p><span class="math display">\[
-\left[\begin{array}{c} 
-    g\\s\\r\\p\\e 
-  \end{array}
-  \right]
-  \sim N
-\left(
-\left[\begin{array}{c} 
-    0\\0\\0\\0\\0 
-  \end{array}
-  \right],
-  \left[\begin{array}{c} 
-    A\sigma_{g}^2&amp;0&amp;0&amp;0&amp;0\\
-    0&amp;I\sigma_{s}^2&amp;0&amp;0&amp;0\\
-    0&amp;0&amp;I\sigma_{r}^2&amp;0&amp;0\\
-    0&amp;0&amp;0&amp;I\sigma_{p}^2&amp;0\\
-    0&amp;0&amp;0&amp;0&amp;I\sigma_{e}^2 
-  \end{array}
-  \right]
-  \right)
-\]</span> <span class="math display">\[
 \left[\begin{array}{c} 
     g\\s\\r\\p\\e 
   \end{array}

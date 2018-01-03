@@ -290,96 +290,87 @@
 
 
       <div class="article-style" itemprop="articleBody">
-        
-
-<h2 id="线性混合模型基础">线性混合模型基础</h2>
-
-<p><strong>线性混合模型（LMM）</strong>是遗传评估中必用的统计模型，用以将群体中每个个体的观测值按照潜在影响因素进行分解。决定观测值的大小和幅度受2个参数（均值和方差）控制，反过来说也可以。一般我们更关注方差，围绕方差的运算与处理也更为复杂，所以能够将LMM中涉及的方差们的关系搞明白，就大体能理解这些没什么亲和力的模型们了。通常在介绍这一部分内容时，很容易让人发蒙，因为太抽象了，全是符号，所以前提是必须对数学这门外语有一定了解，就是一门外语啊。比如告诉我一个矩阵的维度是4×5，我头脑里有概念，这是小学的数学知识学得好，但你告诉我它的维度是n×p，我的CPU和GPU就不太够用了，所以得像学习英语一样，方法+重复才是硬道理。</p>
-
+        <div class="section level2">
+<h2>线性混合模型基础</h2>
+<p><strong>线性混合模型（LMM）</strong>是遗传评估中必用的统计模型，用以将群体中每个个体的观测值按照潜在影响因素进行分解。决定观测值的大小和幅度受2个参数（均值和方差）控制，反过来说也可以。一般我们更关注方差，围绕方差的运算与处理也更为复杂，所以能够将LMM中涉及的方差们的关系搞明白，就大体能理解这些没什么亲和力的模型们了。通常在介绍这一部分内容时，很容易让人发蒙，因为太抽象了，全是符号，所以前提是必须对数学这门外语有一定了解，就是一门外语啊。比如告诉我一个矩阵的维度是4×5，我头脑里有概念，这是小学的数学知识学得好，但你告诉我它的维度是<span class="math inline">\(n\times p\)</span>，我的CPU和GPU就不太够用了，所以得像学习英语一样，方法+重复才是硬道理。</p>
 <p>如果知道了这些方差们的具体数值，求算各个因素的系数（我们最终要的是这个）就相对容易多了。但这些方差是怎么计算的？一般会告诉采用了什么方法（REML用的多），但这又是什么我想很多人想知道但没人教，所以一直糊涂着，只停留在会用的地步，当然会处理数据也够用。我很有兴趣，但到今天我也不全会，也没有能力在<code>R</code>中实现，原因是没那个功底，不会矩阵求导，盼望有一天谁来引领一下，但这不是刚需，因此参数求解就停在这里了。下面就我了解的知识对LMM做2部分的介绍，主要目的是自我梳理，学识有限，错误难免。</p>
-
-<h3 id="1-lmm的形式">1. LMM的形式</h3>
-
-<p>$$y=X\beta+Za+e$$</p>
-
+<div id="lmm" class="section level3">
+<h3>1. LMM的形式</h3>
+<p><span class="math display">\[y=X\beta+Za+e\]</span></p>
 <p>这是基本形式，更复杂的都是在其基础上演变出来的。</p>
-
 <p>式子里一共有6个字母，4个小写，2个大写。小写是向量（1维矩阵），大写是矩阵。这几个字母的意思分别是：</p>
-
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th align="left">字母</th>
 <th>名称</th>
 <th>维度</th>
 </tr>
 </thead>
-
 <tbody>
-<tr>
+<tr class="odd">
 <td align="left">y</td>
 <td>观测值</td>
 <td>n×1</td>
 </tr>
-
-<tr>
-<td align="left">$\beta$</td>
+<tr class="even">
+<td align="left"><span class="math inline">\(\beta\)</span></td>
 <td>固定效应（p个水平）</td>
 <td>p×1</td>
 </tr>
-
-<tr>
+<tr class="odd">
 <td align="left">a</td>
 <td>随机效应（q个水平）</td>
 <td>q×1</td>
 </tr>
-
-<tr>
+<tr class="even">
 <td align="left">e</td>
 <td>随机残差</td>
 <td>n×1</td>
 </tr>
-
-<tr>
+<tr class="odd">
 <td align="left">X</td>
 <td>固定效应设计矩阵</td>
 <td>n×p</td>
 </tr>
-
-<tr>
+<tr class="even">
 <td align="left">Z</td>
 <td>随机效应设计矩阵</td>
 <td>n×q</td>
 </tr>
 </tbody>
 </table>
-
 <p>有几个假设</p>
-
-<p>$$
-\left[\begin{array}{c}
-    a\e
+<p><span class="math display">\[
+\left[\begin{array}{c} 
+    a\\e 
   \end{array} \right]
 \sim N
-  \left( \left[\begin{array}{c}
-    0\0
+  \left( \left[\begin{array}{c} 
+    0\\0 
   \end{array} \right],
-  \left[\begin{array}{c}
-    G&amp;0<br />
-    0&amp;R<br />
+  \left[\begin{array}{c} 
+    G&amp;0\\
+    0&amp;R\\
       \end{array} \right] \right)
-$$</p>
-
-<p>意思是$a$和$e$这2个向量的参数（均值和方差），均值都是0，方差分别是$G$和$R$，协方差是0（彼此独立，没有线性关系）。$G$和$R$具体又是什么？</p>
-
-<p>$var(a)=A_{q\times q}\sigma_a^2=G$， $var(e)=I{n\times n}\sigma_e^2=R$。
-$A$是随机效应中q个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵$I$。这里只假设a是1个效应，a也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是$$E(y)=Xb$$，方差（marginal）$$var(y)=V=ZGZ^T+R$$。期望比较容易理解，方差为何是这个形式？$G$左右为何乘以$Z$？很多材料没有给详细的推导式子。Mrode（2013，p35）中：</p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/3289684-9fa74adafa220543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-
+\]</span></p>
+<p>意思是<span class="math inline">\(a\)</span>和<span class="math inline">\(e\)</span>这2个向量的参数（均值和方差），均值都是0，方差分别是<span class="math inline">\(G\)</span>和<span class="math inline">\(R\)</span>，协方差是0（彼此独立，没有线性关系）。<span class="math inline">\(G\)</span>和<span class="math inline">\(R\)</span>具体又是什么？</p>
+<p><span class="math inline">\(var(a)=A_{q\times q}\sigma_a^2=G\)</span>， <span class="math inline">\(var(e)=I{n\times n}\sigma_e^2=R\)</span>。</p>
+<p><span class="math inline">\(A\)</span>是随机效应中<em>q</em>个水平之间的关系矩阵（分子关系矩阵），如果水平间不相关（独立），那么就等同于单位矩阵<span class="math inline">\(I\)</span>。这里只假设<em>a</em>是1个效应，<em>a</em>也可以是含有多个效应的列向量；同样，在某些情况下，也可以继续分解R。此外，观测值的期望是<span class="math display">\[E(y)=Xb\]</span>，方差（marginal）<span class="math display">\[var(y)=V=ZGZ^T+R\]</span>。期望比较容易理解，方差为何是这个形式？<span class="math inline">\(G\)</span>左右为何乘以<span class="math inline">\(Z\)</span>？很多材料没有给详细的推导式子。Mrode<span class="citation">(<span class="citeproc-not-found" data-reference-id="Mrode2014"><strong>???</strong></span>)</span> p35中：</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+var(y)&amp;=&amp;V=ZGZ^T+R\\
+&amp;=&amp;Zvar(a)Z^T+var(e)+cov(Za,e)+cov(e,Za)\\
+&amp;=&amp;ZGZ^T+R+Zcov(a,e)+cov(e,a)Z^T\\
+&amp;=&amp;ZGZ^T+R
+\end{eqnarray}
+\]</span></p>
 <p>总之，一个普通LMM中的元素就这么多，了解了这些内容，才有可能看懂后续的似然函数以及参数具体的ML或REML过程。</p>
-
-<h3 id="2-reml过程-待更">2. REML过程（待更）</h3>
+</div>
+<div id="reml" class="section level3">
+<h3>2. REML过程（待更）</h3>
+</div>
+</div>
 
       </div>
 

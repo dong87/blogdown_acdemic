@@ -290,8 +290,7 @@
 
 
       <div class="article-style" itemprop="articleBody">
-        <p>林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在<code>R</code>中利用<code>agricolae</code>包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 <em>bkvrλ</em> 全为整数， <em>b</em> 是区组数、 <em>k</em> 是区组大小即小区数、 <em>v</em> 是处理数比如家系个数、 <em>r</em> 是重复次数，$\lambda=r(k-1)/(v-1)$，对于测定处理较多的材料不能满足λ为整数这个限制。<code>ibd</code>这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在<a href="http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R" target="_blank">网页</a>找到方法，函数的代码如下</p>
-
+        <p>林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在<code>R</code>中利用<code>agricolae</code>包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 <em>bkvrλ</em> 全为整数， <em>b</em> 是区组数、 <em>k</em> 是区组大小即小区数、 <em>v</em> 是处理数比如家系个数、 <em>r</em> 是重复次数，<span class="math inline">\(\lambda=r(k-1)/(v-1)\)</span>，对于测定处理较多的材料不能满足λ为整数这个限制。<code>ibd</code>这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在<a href="http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R">网页</a>找到方法，函数的代码如下</p>
 <pre><code>incomplete.block.design &lt;- function(number.alternatives, number.blocks, alternatives.per.block, n.repeats = 1000){
     # Check that the parameters are appropriate
     # Sawtooth recommends that number.blocks &gt;= 3 * number.alternatives / alternatives.per.block
@@ -320,21 +319,15 @@
     n.appearances.per.alternative &lt;- table(as.numeric(design))
     combinations.of.alternatives &lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
     list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
-}
-</code></pre>
-
-<p>套入White[-@White2007]384页的例子
-<img src="http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-
-<pre><code>incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)
-</code></pre>
-
+}</code></pre>
+<p>套入White<span class="citation">(<span class="citeproc-not-found" data-reference-id="White2007"><strong>???</strong></span>)</span>384页的例子 <img src="http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<pre><code>incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)</code></pre>
 <p>重复设定为100次后得到结果</p>
+<div class="figure">
+<img src="http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
 
-<p><img src="http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
-
+</div>
 <p>与书中所使用的软件给出的结果不一致，但应该都能用于实践（现实情况是我们过去的测定林设计多少存在些问题（包括我自己之前的一个设计），或者设计问题不大但造林时没有严格按照设计进行，比较可惜）。</p>
-
 <blockquote>
 <p><strong>林木周期长，测定很关键，设计要专业</strong></p>
 </blockquote>
