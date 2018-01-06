@@ -11,6 +11,66 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>自由授粉子代进行数量遗传分析造成的偏差</title>
+      <link>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt;在非原生境进行的植物定量遗传研究中，每个个体产生的大量种子促进了开放授粉后代测试的使用。在随后的分析中，在同一母株上收集的种子被假定为半同胞。自20世纪60年代以来，使用模拟方法和最近使用基于分子的实验方法研究了从半同胞假设出发在后代测试中的结果。这篇综述旨在综合这些模拟和实证研究的结果和结论。我们专注于树种，其中受控杂交难以实验性地进行，并且偏离半同胞假设在自然种群中经常发生。首先，&lt;strong&gt;许多树种群的母本后代的亲缘关系的平均水平高于半同胞。这是非随机交配的结果，这是由于每个雌性有效花粉供体数量少，雄性繁殖成功和/或自交不平等。因此，对数量性状的遗传变异和遗传力的估计可能是上偏的。&lt;/strong&gt;另外，&lt;strong&gt;通常忽略近亲繁殖抑制，显性效应和雄配子库在雌性中的异质性，这可能导致低估性状的遗传力。&lt;/strong&gt;后代与亲本之间亲缘关系的平均遗传相关性的校正通常用于补偿这些偏差。然而，这种校正不能准确地调整在后代中存在家族遗传相关性，显性效应或近交衰退的情况下的估计。另一种有希望的方法是使用“动物模型”方法，该方法优化了分子数据和父亲信息的使用，从而更准确地估计遗传性。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;关键词：&lt;/strong&gt;加性遗传方差;动物模型;共同的花园;主导地位;家庭模式;半同胞家族遗传;近亲繁殖;自交;树&lt;/p&gt;
+
+&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;了解自然种群中有多少表型变异是由遗传或环境变异形成的，以及表型变异的遗传成分是由选择或人口统计驱动是进化定量遗传学的两个主要目标（Kingsolver et al.2001; Charmantier and Garant 2005） 。&lt;/strong&gt;虽然数量遗传学最初是从育种的角度出发的，但其理论和实验工具现在被进化遗传学家普遍用来回答他们自己的问题。例如，许多关于野生物种的研究调查了加性遗传方差（$V_A$）和遗传力（适应性状的遗传力（见Kruuk 2004），性状之间的遗传相关性（Etterson和Shaw，2001）以及性状的遗传分化（Ducousso，Guyon和Kremer，1995），这些定量遗传参数的估计重新获得了预测变化环境中遗传进化速率的兴趣（Kingsolver et al。2001; Conner 2001）。理解遗传亲缘关系可以部分或完全已知先验（控制的杂交，母系家族&amp;hellip;），并实现了遗传学（遗传相关系数$\rho$）相关性可以使用分子标记进行后验估计。&lt;/p&gt;
+
+&lt;p&gt;在植物中，开放授粉的后代（OP）设计被广泛用于表征种群的适应潜力，因为它们易于执行，并且可以容易地估计VA和$h^2$。家庭内的后代直接收集在母本植物上，被认为是半同胞，相关系数为0.25。在这些半同胞家族试验中，加性遗传方差等于家系（VF，在受控环境中估计）乘以系数$\alpha= 1 / \rho= 4$（因此VA = 4$\times$VF）的方差。&lt;/p&gt;
+
+&lt;p&gt;因此，OP设计的分析依赖于这样的主要假设，即家庭内的个人是真正的同胞（= 0.25），而这又对交配系统和配偶之间的相关性产生了几个其他的假设：（1） （2）与大量无关的雄性交配，这与雌性无关，（3）不发生自交，（4）不发生配子交配（即优先交配男性和女性）。所有这些条件通常不会在自然种群中实现，第一个结果是家族内的后代之间的平均遗传相关性（平均值）大于0.25，VA和h？可能被高估。此外，偏离上述假设也会影响VF，因为当家庭中有一定比例的全同胞时，家庭间差异成分可以通过非加性效应（显性，上位性）膨胀。另外，当亲属之间发生杂交时，家庭内部的差异可以通过近亲繁殖降低，或者自我受精是不可忽略的。&lt;/p&gt;
+
+&lt;p&gt;这些问题在树木中特别重要，因为受控的杂交难以在原地进行，而且经常出现半同胞假设。和大多数植物一样，树木通常具有混合交配系统（即有性生殖既是通过自我授粉，也是通过自交结实; Robledo-Arnuncio，Alia和Gil 2004; Ward等，2005）有效的花粉供体，雄性不育的成功率不平衡（Kang et al.2003; Oddou-Muratorio，Klein and Austerlitz 2005），显着的空间遗传结构（Vekemans and Hardy 2004），距离限制花粉扩散（Ashley 2010）通过开花同步诱导（Soularue和Kremer 2012）。 OP后代的另一个重要的偏向来源是母体效应，这增加了母系相关半同胞之间的表型相似性，导致家族之间的遗传差异膨胀，因此，高估了VA和h（Wang，Lechowicz和Potvin 1994）。在这里，母亲的影响将不被详细处理，因为它们不依赖于交配系统或种群特征，但是将讨论在定量遗传模型中解释它们的可能方式。对于树种，OP设计都被用来研究自然种群和繁殖种群（例如种子果园）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>行测技巧——from知乎</title>
+      <link>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/23195752/answer/44300950?group_id=592001463770464256&#34; target=&#34;_blank&#34;&gt;在公务员考试中，如何提高行测成绩？ - 知乎&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;不要用战术上的勤奋来掩盖战略上的懒惰。&lt;/p&gt;
+
+&lt;p&gt;公考作为淘汰性考试，不是要考某个分数线，而是要考过别人，所以感觉好没用，这个部分有竞争力才是王道。&lt;/p&gt;
+
+&lt;p&gt;资料分析就是该拿满分的&lt;/p&gt;
+
+&lt;p&gt;我高中班主任对我说过一句话，对我多年的学习生涯产生了不可磨灭的影响：“你可以来问我学习方法，但是你别问我：化学该怎么学？我的化学成绩为什么不能提高？”因为如果你问这么宏观的问题，说明你对你自己的问题没有进行思考，没有进行细化。很多问题一旦细化，你不用请教别人就能找到解决办法。&lt;/p&gt;
+
+&lt;p&gt;要真正让题海战术得到提高——尤其是语文逻辑和资料分析，全靠总结。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/22211899&#34; target=&#34;_blank&#34;&gt;行测技巧篇：逻辑填空&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;逻辑填空题一定不能当成语文题来做！一定不能当成语文题来做！一定不能当成语文题来做！所以主页菌一定要强调名称的重要性，是“逻辑填空”，不是“选词填空”，做此类题目要靠逻辑思维，而不是靠语感。&lt;/p&gt;
+
+&lt;p&gt;公务员的文字能力并非追求辞藻华丽，而是用词&lt;strong&gt;准确、恰当&lt;/strong&gt;，归根到底还是逻辑思维。请记住这两个关键词。&lt;/p&gt;
+
+&lt;p&gt;具体就逻辑填空题而言，出题的角度就是考察你在语言表达中用词能否做到&lt;strong&gt;准确和恰当&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/20527549&#34; target=&#34;_blank&#34;&gt;从五大误区谈如何备考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;行测考试的方向就是弱化不同知识背景带来的差异，近几年更是连法律常识都考得少了，因为在那几个题目里法学背景的考生占优势。我们一定要深刻理解这种大方向，不要埋头在补充知识量上苦苦耕耘，多在方法思路上动脑筋才是力气用对了地方。&lt;/p&gt;
+
+&lt;p&gt;对于行测考试乃至整个公务员考试，做题量和成绩没有关系。&lt;/p&gt;
+
+&lt;p&gt;公务员考试的备战应该是长期规划，以“考上”为目标，而不是“这次就要考上。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>rmarkdown生成带格式的word文档</title>
       <link>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
@@ -1336,53 +1396,6 @@ L=L_{breeding}+L_{testing}+L_{selection}
 &lt;li&gt;有用的变异useful variation&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>netlify搭建blog笔记</title>
-      <link>/post/netlify%E6%90%AD%E5%BB%BAblog%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/netlify%E6%90%AD%E5%BB%BAblog%E7%AC%94%E8%AE%B0/</guid>
-      <description>
-
-&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
-
-&lt;p&gt;开博客的主要目的是当做一个笔记本，把一些要紧的知识点、代码和流程等做个梳理和记录，方便下次使用时的查找。其实很早就有博客，只是不认为那就是，比如QQ空间和校内网。以前记笔记使用过网易产品一段时间，后来就转到博客上，例如&lt;a href=&#34;http://blog.sina.com.cn/u/1696852495&#34; target=&#34;_blank&#34;&gt;新浪&lt;/a&gt;，不支持&lt;strong&gt;markdown&lt;/strong&gt;。后来转到&lt;a href=&#34;https://www.jianshu.com/u/c7b1f5e71e92&#34; target=&#34;_blank&#34;&gt;简书&lt;/a&gt;，但这家伙不支持公式。CSDN用过两天，支持公式编辑，但不及简书简便。&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;支持&lt;a href=&#34;https://dong87.github.io/&#34; target=&#34;_blank&#34;&gt;个人博客&lt;/a&gt;，但模板很折腾，一直不理想，用了两天就不更新了。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;非常好用，帮助我输出&lt;code&gt;R&lt;/code&gt;结果到pdf或者word。之前用过&lt;a href=&#34;https://yihui.name/&#34; target=&#34;_blank&#34;&gt;yihui&lt;/a&gt;开发的&lt;strong&gt;bookdown&lt;/strong&gt;，用来转电子书的格式，也听说过他开发的&lt;strong&gt;blogdown&lt;/strong&gt;，但并没有用过。有天&lt;a href=&#34;http://luansheng.netlify.com/&#34; target=&#34;_blank&#34;&gt;栾生&lt;/a&gt;推荐了一下![]()&lt;/p&gt;
-
-&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
-
-&lt;p&gt;首先要感谢&lt;a href=&#34;http://dapengde.com/&#34; target=&#34;_blank&#34;&gt;大鹏志&lt;/a&gt;给的中文教程&lt;a href=&#34;http://dapengde.com/archives/19304&#34; target=&#34;_blank&#34;&gt;用Rblogdown 搭建个人博客或科研网站&lt;/a&gt;。最难的一步出现在&lt;a href=&#34;https://www.netlify.com/&#34; target=&#34;_blank&#34;&gt;netlify&lt;/a&gt;与&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;的关联上。按照&lt;code&gt;netlify&lt;/code&gt;的要求，指定了&lt;code&gt;public&lt;/code&gt;文件夹，但在打开博客网址时总是报错无法打开网页。最后还是从栾老师的GitHub里发现他只同步了&lt;code&gt;public&lt;/code&gt;文件夹而非整个建站文件夹，然后就大功告成了。&lt;/p&gt;
-
-&lt;p&gt;简略步骤如下：
-+ 安装&lt;code&gt;blogdown&lt;/code&gt;，在&lt;code&gt;Rstudio&lt;/code&gt;里直接安装也可以。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(!require(devtools)) install.packages(&#39;devtools&#39;)
-devtools::install_github(&#39;rstudio/blogdown&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;建一个空文件夹，然后使用模板&lt;code&gt;gcushen/hugo-academic&lt;/code&gt;建立建站文件。还有其他一些模板，见&lt;a href=&#34;https://github.com/gohugoio/hugoThemes&#34; target=&#34;_blank&#34;&gt;这里&lt;/a&gt;，每个点进去，选择喜欢的样式，替换这里的就行。
-&lt;code&gt;{r}
-setwd(&amp;quot;D:/blogdown_default&amp;quot;)
-blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Genetic Variation, Heritability and Genotype × Environment Interactions of Resin Yield, Growth Traits and Morphologic Traits for Pinus elliottii at Three Progeny Trials</title>
-      <link>/publication/lai_forests_2017/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/lai_forests_2017/</guid>
-      <description>&lt;p&gt;I accountable for most of the statistical analysis.&lt;/p&gt;
-
-&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     

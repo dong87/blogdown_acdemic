@@ -11,6 +11,66 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>自由授粉子代进行数量遗传分析造成的偏差</title>
+      <link>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt;在非原生境进行的植物定量遗传研究中，每个个体产生的大量种子促进了开放授粉后代测试的使用。在随后的分析中，在同一母株上收集的种子被假定为半同胞。自20世纪60年代以来，使用模拟方法和最近使用基于分子的实验方法研究了从半同胞假设出发在后代测试中的结果。这篇综述旨在综合这些模拟和实证研究的结果和结论。我们专注于树种，其中受控杂交难以实验性地进行，并且偏离半同胞假设在自然种群中经常发生。首先，&lt;strong&gt;许多树种群的母本后代的亲缘关系的平均水平高于半同胞。这是非随机交配的结果，这是由于每个雌性有效花粉供体数量少，雄性繁殖成功和/或自交不平等。因此，对数量性状的遗传变异和遗传力的估计可能是上偏的。&lt;/strong&gt;另外，&lt;strong&gt;通常忽略近亲繁殖抑制，显性效应和雄配子库在雌性中的异质性，这可能导致低估性状的遗传力。&lt;/strong&gt;后代与亲本之间亲缘关系的平均遗传相关性的校正通常用于补偿这些偏差。然而，这种校正不能准确地调整在后代中存在家族遗传相关性，显性效应或近交衰退的情况下的估计。另一种有希望的方法是使用“动物模型”方法，该方法优化了分子数据和父亲信息的使用，从而更准确地估计遗传性。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;关键词：&lt;/strong&gt;加性遗传方差;动物模型;共同的花园;主导地位;家庭模式;半同胞家族遗传;近亲繁殖;自交;树&lt;/p&gt;
+
+&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;了解自然种群中有多少表型变异是由遗传或环境变异形成的，以及表型变异的遗传成分是由选择或人口统计驱动是进化定量遗传学的两个主要目标（Kingsolver et al.2001; Charmantier and Garant 2005） 。&lt;/strong&gt;虽然数量遗传学最初是从育种的角度出发的，但其理论和实验工具现在被进化遗传学家普遍用来回答他们自己的问题。例如，许多关于野生物种的研究调查了加性遗传方差（$V_A$）和遗传力（适应性状的遗传力（见Kruuk 2004），性状之间的遗传相关性（Etterson和Shaw，2001）以及性状的遗传分化（Ducousso，Guyon和Kremer，1995），这些定量遗传参数的估计重新获得了预测变化环境中遗传进化速率的兴趣（Kingsolver et al。2001; Conner 2001）。理解遗传亲缘关系可以部分或完全已知先验（控制的杂交，母系家族&amp;hellip;），并实现了遗传学（遗传相关系数$\rho$）相关性可以使用分子标记进行后验估计。&lt;/p&gt;
+
+&lt;p&gt;在植物中，开放授粉的后代（OP）设计被广泛用于表征种群的适应潜力，因为它们易于执行，并且可以容易地估计VA和$h^2$。家庭内的后代直接收集在母本植物上，被认为是半同胞，相关系数为0.25。在这些半同胞家族试验中，加性遗传方差等于家系（VF，在受控环境中估计）乘以系数$\alpha= 1 / \rho= 4$（因此VA = 4$\times$VF）的方差。&lt;/p&gt;
+
+&lt;p&gt;因此，OP设计的分析依赖于这样的主要假设，即家庭内的个人是真正的同胞（= 0.25），而这又对交配系统和配偶之间的相关性产生了几个其他的假设：（1） （2）与大量无关的雄性交配，这与雌性无关，（3）不发生自交，（4）不发生配子交配（即优先交配男性和女性）。所有这些条件通常不会在自然种群中实现，第一个结果是家族内的后代之间的平均遗传相关性（平均值）大于0.25，VA和h？可能被高估。此外，偏离上述假设也会影响VF，因为当家庭中有一定比例的全同胞时，家庭间差异成分可以通过非加性效应（显性，上位性）膨胀。另外，当亲属之间发生杂交时，家庭内部的差异可以通过近亲繁殖降低，或者自我受精是不可忽略的。&lt;/p&gt;
+
+&lt;p&gt;这些问题在树木中特别重要，因为受控的杂交难以在原地进行，而且经常出现半同胞假设。和大多数植物一样，树木通常具有混合交配系统（即有性生殖既是通过自我授粉，也是通过自交结实; Robledo-Arnuncio，Alia和Gil 2004; Ward等，2005）有效的花粉供体，雄性不育的成功率不平衡（Kang et al.2003; Oddou-Muratorio，Klein and Austerlitz 2005），显着的空间遗传结构（Vekemans and Hardy 2004），距离限制花粉扩散（Ashley 2010）通过开花同步诱导（Soularue和Kremer 2012）。 OP后代的另一个重要的偏向来源是母体效应，这增加了母系相关半同胞之间的表型相似性，导致家族之间的遗传差异膨胀，因此，高估了VA和h（Wang，Lechowicz和Potvin 1994）。在这里，母亲的影响将不被详细处理，因为它们不依赖于交配系统或种群特征，但是将讨论在定量遗传模型中解释它们的可能方式。对于树种，OP设计都被用来研究自然种群和繁殖种群（例如种子果园）。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>行测技巧——from知乎</title>
+      <link>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/23195752/answer/44300950?group_id=592001463770464256&#34; target=&#34;_blank&#34;&gt;在公务员考试中，如何提高行测成绩？ - 知乎&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;不要用战术上的勤奋来掩盖战略上的懒惰。&lt;/p&gt;
+
+&lt;p&gt;公考作为淘汰性考试，不是要考某个分数线，而是要考过别人，所以感觉好没用，这个部分有竞争力才是王道。&lt;/p&gt;
+
+&lt;p&gt;资料分析就是该拿满分的&lt;/p&gt;
+
+&lt;p&gt;我高中班主任对我说过一句话，对我多年的学习生涯产生了不可磨灭的影响：“你可以来问我学习方法，但是你别问我：化学该怎么学？我的化学成绩为什么不能提高？”因为如果你问这么宏观的问题，说明你对你自己的问题没有进行思考，没有进行细化。很多问题一旦细化，你不用请教别人就能找到解决办法。&lt;/p&gt;
+
+&lt;p&gt;要真正让题海战术得到提高——尤其是语文逻辑和资料分析，全靠总结。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/22211899&#34; target=&#34;_blank&#34;&gt;行测技巧篇：逻辑填空&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;逻辑填空题一定不能当成语文题来做！一定不能当成语文题来做！一定不能当成语文题来做！所以主页菌一定要强调名称的重要性，是“逻辑填空”，不是“选词填空”，做此类题目要靠逻辑思维，而不是靠语感。&lt;/p&gt;
+
+&lt;p&gt;公务员的文字能力并非追求辞藻华丽，而是用词&lt;strong&gt;准确、恰当&lt;/strong&gt;，归根到底还是逻辑思维。请记住这两个关键词。&lt;/p&gt;
+
+&lt;p&gt;具体就逻辑填空题而言，出题的角度就是考察你在语言表达中用词能否做到&lt;strong&gt;准确和恰当&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/20527549&#34; target=&#34;_blank&#34;&gt;从五大误区谈如何备考&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;行测考试的方向就是弱化不同知识背景带来的差异，近几年更是连法律常识都考得少了，因为在那几个题目里法学背景的考生占优势。我们一定要深刻理解这种大方向，不要埋头在补充知识量上苦苦耕耘，多在方法思路上动脑筋才是力气用对了地方。&lt;/p&gt;
+
+&lt;p&gt;对于行测考试乃至整个公务员考试，做题量和成绩没有关系。&lt;/p&gt;
+
+&lt;p&gt;公务员考试的备战应该是长期规划，以“考上”为目标，而不是“这次就要考上。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>rmarkdown生成带格式的word文档</title>
       <link>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</link>
       <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
@@ -1730,304 +1790,6 @@ $ git log --pretty=oneline --abbrev-commit --decorate HEAD..upstream/master
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Customizing the homepage with widgets</title>
-      <link>/post/widgets/</link>
-      <pubDate>Tue, 19 Apr 2016 00:00:00 +0800</pubDate>
-      
-      <guid>/post/widgets/</guid>
-      <description>
-
-&lt;p&gt;Homepage widgets display as sections on the homepage. They can be enabled/disabled and configured as desired. Academic has the following widgets available to use:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;About/biography&lt;/li&gt;
-&lt;li&gt;Selected publications&lt;/li&gt;
-&lt;li&gt;Recent publications&lt;/li&gt;
-&lt;li&gt;Recent news/blog posts&lt;/li&gt;
-&lt;li&gt;Projects&lt;/li&gt;
-&lt;li&gt;Selected talks&lt;/li&gt;
-&lt;li&gt;Recent talks&lt;/li&gt;
-&lt;li&gt;Contact&lt;/li&gt;
-&lt;li&gt;Tag cloud&lt;/li&gt;
-&lt;li&gt;Hero (introduction)&lt;/li&gt;
-&lt;li&gt;Custom widget (demonstrated with the &lt;em&gt;teaching&lt;/em&gt; example)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The example site that you copied to create your site uses all the different types of widget (except talks), so you can generally just delete the widgets you don&amp;rsquo;t need and customize the parameters of the widgets you wish to keep.&lt;/p&gt;
-
-&lt;p&gt;The parameters for each widget vary. They can be found in the preamble/frontmatter (between the pair of &lt;code&gt;+++&lt;/code&gt;) for each widget installed in the &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;By default, publications will be displayed in a simple list. If you prefer a more detailed list with abstract and image, you can enable the detailed publication list on the homepage by setting &lt;code&gt;list_format = 2&lt;/code&gt; in &lt;code&gt;content/home/publications.md&lt;/code&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;add-a-widget-to-the-homepage&#34;&gt;Add a widget to the homepage&lt;/h2&gt;
-
-&lt;p&gt;To add a widget manually, copy the relevant widget from &lt;code&gt;themes/academic/exampleSite/content/home/&lt;/code&gt; to your &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;Widget identifiers are set to their respective filenames, so a &lt;code&gt;content/home/about.md&lt;/code&gt; widget can be linked from the navigation bar by setting the relevant URL as &lt;code&gt;&amp;quot;#about&amp;quot;&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This means that if you want to use multiple instances of a widget, each widget will be assigned a unique ID based on the filename that you set. You can then use that ID for linking, like in the above example.&lt;/p&gt;
-
-&lt;h2 id=&#34;using-the-custom-widget&#34;&gt;Using the custom widget&lt;/h2&gt;
-
-&lt;p&gt;You can use the custom widget to create your own home page sections.&lt;/p&gt;
-
-&lt;p&gt;Simply duplicate (copy/paste) and rename the example &lt;em&gt;teaching&lt;/em&gt; file at &lt;code&gt;content/home/teaching.md&lt;/code&gt;. Then edit the section title, weight (refer to &lt;em&gt;Ordering sections&lt;/em&gt; below), and content as desired.&lt;/p&gt;
-
-&lt;p&gt;You may also wish to add a navigation link to the top of the page that points to the new section. This can be achieved by adding something similar to the following lines to your &lt;code&gt;config.toml&lt;/code&gt;, where the URL will consist of the first title word in lowercase:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[[menu.main]]
-    name = &amp;quot;Research&amp;quot;
-    url = &amp;quot;#research&amp;quot;
-    weight = 10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;remove-a-widget-from-the-homepage&#34;&gt;Remove a widget from the homepage&lt;/h2&gt;
-
-&lt;p&gt;If you do not require a particular widget, you can simply delete any associated files from the &lt;code&gt;content/home/&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;To remove a navigation link from the top of the page, remove the associated &lt;code&gt;[[menu.main]]&lt;/code&gt; entry in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;ordering-widgets&#34;&gt;Ordering widgets&lt;/h2&gt;
-
-&lt;p&gt;The order that the homepage widgets are displayed in is defined by the &lt;code&gt;weight&lt;/code&gt; parameter in each of the files in the &lt;code&gt;content/home/&lt;/code&gt; directory. The widgets are displayed in ascending order of their &lt;code&gt;weight&lt;/code&gt;, so you can simply edit the &lt;code&gt;weight&lt;/code&gt; parameters as desired.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Managing content</title>
-      <link>/post/managing-content/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 +0800</pubDate>
-      
-      <guid>/post/managing-content/</guid>
-      <description>&lt;p&gt;This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, news/blog articles, and widget pages. After you have read this guide about creating and managing content, you may also be interested to learn about &lt;a href=&#34;../post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Markdown, LaTeX, and Shortcodes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To enable LaTeX math rendering for a page, you should include &lt;code&gt;math = true&lt;/code&gt; in the page&amp;rsquo;s &lt;code&gt;+++&lt;/code&gt; preamble, as demonstrated in the included example site. Otherwise, to enable math on the homepage or for all pages, you must globally set &lt;code&gt;math = true&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To disable source code highlighting by default for all pages, set &lt;code&gt;highlight = false&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;. You can then enable source code highlighting only on pages that need it by setting &lt;code&gt;highlight = true&lt;/code&gt; in that page&amp;rsquo;s preamble. See the &lt;a href=&#34;../post/writing-markdown-latex/#code-highlighting&#34; target=&#34;_blank&#34;&gt;code-highlighting docs&lt;/a&gt; for more details.&lt;/p&gt;
-
-&lt;p&gt;To display a featured image in content page headers, the parameters below can be inserted towards the end of a page&amp;rsquo;s &lt;code&gt;+++&lt;/code&gt; preamble. It is assumed that the image is located in your &lt;code&gt;static/img/&lt;/code&gt; folder, so the full path in the example below will be &lt;code&gt;static/img/headers/getting-started.png&lt;/code&gt;. The &lt;code&gt;caption&lt;/code&gt; parameter can be used to write an image caption or credit.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[header]
-image = &amp;quot;headers/getting-started.png&amp;quot;
-caption = &amp;quot;Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)&amp;quot;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;If you wish to prevent a featured image automatically being used for a post&amp;rsquo;s thumbnail on the homepage, the &lt;code&gt;preview = false&lt;/code&gt; parameter can be added to &lt;code&gt;[header]&lt;/code&gt;.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#create-a-publication&#34;&gt;Create a publication&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#create-a-blog-post&#34;&gt;Create a blog post&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#create-a-project&#34;&gt;Create a project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#create-a-talk&#34;&gt;Create a talk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#create-a-widget-page&#34;&gt;Create a widget page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#create-other-pages-e-g-cv&#34;&gt;Create other pages (e.g. CV)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#manage-archive-pages&#34;&gt;Manage archive pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#removing-content&#34;&gt;Removing content&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#view-your-updated-site&#34;&gt;View your updated site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#deploy-your-site&#34;&gt;Deploy your site&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-
-
-&lt;h2 id=&#34;create-a-publication&#34;&gt;Create a publication&lt;/h2&gt;
-
-&lt;p&gt;To create a new publication:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new publication/my-paper-name.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then edit the default variables at the top of &lt;code&gt;content/publication/my-paper-name.md&lt;/code&gt; to include the details of your publication. The &lt;code&gt;url_&lt;/code&gt; variables are used to generate links associated with your publication, such as for viewing PDFs of papers. Here is an example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+++
-title = &amp;quot;A publication title, such as title of a paper&amp;quot;
-
-# Date first published.
-date = &amp;quot;2013-07-01&amp;quot;
-
-# Authors. Comma separated list, e.g. `[&amp;quot;Bob Smith&amp;quot;, &amp;quot;David Jones&amp;quot;]`.
-authors = [&amp;quot;First author&#39;s name&amp;quot;, &amp;quot;Second author&#39;s name&amp;quot;]
-
-# Publication type.
-# Legend:
-# 0 = Uncategorized
-# 1 = Conference proceedings
-# 2 = Journal
-# 3 = Work in progress
-# 4 = Technical report
-# 5 = Book
-# 6 = Book chapter
-publication_types = [&amp;quot;1&amp;quot;]
-
-# Publication name and optional abbreviated version.
-publication = &amp;quot;In *International Conference on Academic*. You may use *Markdown* for italics etc.&amp;quot;
-publication_short = &amp;quot;In *ICA*&amp;quot;
-
-# Abstract and optional shortened version.
-abstract = &amp;quot;The abstract. Markdown and math can be used (note that math may require escaping as detailed in the red alert box below).&amp;quot;
-abstract_short = &amp;quot;A short version of the abstract.&amp;quot;
-
-# Featured image thumbnail (optional)
-image_preview = &amp;quot;&amp;quot;
-
-# Is this a selected publication? (true/false)
-selected = true
-
-# Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter the filename (excluding &#39;.md&#39;) of your project file in `content/project/`.
-#   E.g. `projects = [&amp;quot;deep-learning&amp;quot;]` references `content/project/deep-learning.md`.
-projects = []
-
-# Links (optional).
-url_pdf = &amp;quot;pdf/my-paper-name.pdf&amp;quot;
-url_preprint = &amp;quot;&amp;quot;
-url_code = &amp;quot;&amp;quot;
-url_dataset = &amp;quot;&amp;quot;
-url_project = &amp;quot;&amp;quot;
-url_slides = &amp;quot;&amp;quot;
-url_video = &amp;quot;&amp;quot;
-url_poster = &amp;quot;&amp;quot;
-url_source = &amp;quot;&amp;quot;
-
-# Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{name = &amp;quot;Custom Link&amp;quot;, url = &amp;quot;http://example.org&amp;quot;}]
-
-# Does the content use math formatting?
-math = true
-
-# Does the content use source code highlighting?
-highlight = true
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = &amp;quot;example.jpg&amp;quot;`.
-[header]
-image = &amp;quot;headers/bubbles-wide.jpg&amp;quot;
-caption = &amp;quot;My caption 😄&amp;quot;
-
-+++
-
-Further details on your publication can be written here using *Markdown* for formatting. This text will be displayed on the Publication Detail page.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;url_&lt;/code&gt; links can either point to local or web content. Associated local publication content, such as PDFs, may be copied to a &lt;code&gt;static/pdf/&lt;/code&gt; folder and referenced like &lt;code&gt;url_pdf = &amp;quot;pdf/my-paper-name.pdf&amp;quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can also associate custom link buttons with the publication by adding the following block within the variable preamble above, which is denoted by &lt;code&gt;+++&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;url_custom = [{name = &amp;quot;Custom Link 1&amp;quot;, url = &amp;quot;http://example.org&amp;quot;},
-              {name = &amp;quot;Custom Link 2&amp;quot;, url = &amp;quot;http://example.org&amp;quot;}]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you set &lt;code&gt;list_format=2&lt;/code&gt; to enable a detailed listing of publications in the Publication Widget (&lt;code&gt;home/publications.md&lt;/code&gt;) or Publication Archive (&lt;code&gt;publication/_index.md&lt;/code&gt;), then there are a few more optional variables that you can include in the publication page preamble. You may use &lt;code&gt;abstract_short = &amp;quot;friendly summary of abstract&amp;quot;&lt;/code&gt; and &lt;code&gt;publication_short = &amp;quot;abbreviated publication details&amp;quot;&lt;/code&gt; to display a friendly summary of the abstract and abbreviate the publication details, respectively. Furthermore, there is the option to display a different image on the homepage to the publication detail page by setting &lt;code&gt;image_preview = &amp;quot;my-image.jpg&amp;quot;&lt;/code&gt;. This can be useful if you wish to scale down the image for the homepage or simply if you just wish to show a different image for the preview.&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;p&gt;Any double quotes (&lt;code&gt;&amp;quot;&lt;/code&gt;) or backslashes (e.g. LaTeX &lt;code&gt;\times&lt;/code&gt;) occurring within the value of any frontmatter parameter (such as the &lt;em&gt;abstract&lt;/em&gt;) should be escaped with a backslash (&lt;code&gt;\&lt;/code&gt;). For example, the symbol &lt;code&gt;&amp;quot;&lt;/code&gt; and LaTeX text &lt;code&gt;\times&lt;/code&gt; become &lt;code&gt;\&amp;quot;&lt;/code&gt; and &lt;code&gt;\\times&lt;/code&gt;, respectively. Refer to the &lt;a href=&#34;https://github.com/toml-lang/toml#user-content-string&#34; target=&#34;_blank&#34;&gt;TOML documentation&lt;/a&gt; for more info.&lt;/p&gt;
-
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;create-a-blog-post&#34;&gt;Create a blog post&lt;/h2&gt;
-
-&lt;p&gt;To create a blog/news article:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new post/my-article-name.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then edit the newly created file &lt;code&gt;content/post/my-article-name.md&lt;/code&gt; with your full title and content.&lt;/p&gt;
-
-&lt;p&gt;Hugo will automatically generate summaries of posts that appear on the homepage. If you are dissatisfied with an automated summary, you can either limit the summary length by appropriately placing &lt;code&gt;&amp;#60;&amp;#33;&amp;#45;&amp;#45;more&amp;#45;&amp;#45;&amp;#62;&lt;/code&gt; in the article body, or completely override the automated summary by adding a &lt;code&gt;summary&lt;/code&gt; parameter to the &lt;code&gt;+++&lt;/code&gt; preamble such that:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;summary = &amp;quot;Summary of my post.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To disable commenting for a specific post, you can add &lt;code&gt;disable_comments = true&lt;/code&gt; to the post &lt;code&gt;+++&lt;/code&gt; preamble. Or to disable commenting for all posts, you can either set &lt;code&gt;disqusShortname = &amp;quot;&amp;quot;&lt;/code&gt; or &lt;code&gt;disable_comments = true&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-project&#34;&gt;Create a project&lt;/h2&gt;
-
-&lt;p&gt;To create a project:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new project/my-project-name.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then edit the newly created file &lt;code&gt;content/project/my-project-name.md&lt;/code&gt;. Either you can link the project to an external project website by setting the &lt;code&gt;external_link = &amp;quot;http://external-project.com&amp;quot;&lt;/code&gt; variable at the top of the file, or you can add content (below the final &lt;code&gt;+++&lt;/code&gt;) in order to render a project page on your website.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-talk&#34;&gt;Create a talk&lt;/h2&gt;
-
-&lt;p&gt;To create a talk:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new talk/my-talk-name.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then edit the newly created file &lt;code&gt;content/talk/my-talk-name.md&lt;/code&gt; with your full talk title and details. Note that many of the talk parameters are similar to the publication parameters.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-widget-page&#34;&gt;Create a widget page&lt;/h2&gt;
-
-&lt;p&gt;So you would like to create a page which utilizes Academic&amp;rsquo;s widget system, similar to the homepage?&lt;/p&gt;
-
-&lt;p&gt;Create a new folder in your &lt;code&gt;content&lt;/code&gt; folder, naming it with your new page name. In this example, we will create a &lt;em&gt;courses&lt;/em&gt; page by creating a &lt;code&gt;content/courses/&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;Within your new &lt;code&gt;content/courses/&lt;/code&gt; folder, create a file named &lt;code&gt;_index.md&lt;/code&gt; containing the following parameters:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+++
-title = &amp;quot;Courses&amp;quot;
-date = 2017-01-01
-widgets = true
-+++
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Install widgets into your &lt;code&gt;content/courses/&lt;/code&gt; folder. To achieve this, widgets can be copied from your &lt;code&gt;content/home/&lt;/code&gt; folder or downloaded from &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/home&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-other-pages-e-g-cv&#34;&gt;Create other pages (e.g. CV)&lt;/h2&gt;
-
-&lt;p&gt;For other types of content, it is possible to create your own custom pages. For example, let&amp;rsquo;s create a &lt;code&gt;cv.md&lt;/code&gt; page for your Curriculum Vitae in your &lt;code&gt;content&lt;/code&gt; folder. Copy across the frontmatter from the top of one of your post files, adapting it as necessary, and editing your Markdown content below. You can then link to your new page by adding the code &lt;code&gt;[My CV]{{&amp;lt; ref &amp;quot;cv.md&amp;quot; &amp;gt;}}&lt;/code&gt; to any of your existing content.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, for the above example, we could use a PDF of your Curriculum Vitae. For this purpose, create a folder called &lt;code&gt;files&lt;/code&gt; within your &lt;code&gt;static&lt;/code&gt; folder and move a PDF file named &lt;code&gt;cv.pdf&lt;/code&gt; to that location, so we have a &lt;code&gt;static/files/cv.pdf&lt;/code&gt; file path. The PDF can then be linked to from any content by using the code: &lt;code&gt;{{% staticref &amp;quot;files/cv.pdf&amp;quot; %}}Download my CV{{% /staticref %}}&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;manage-archive-pages&#34;&gt;Manage archive pages&lt;/h2&gt;
-
-&lt;p&gt;The archive (or &lt;em&gt;node index&lt;/em&gt;) pages (e.g. &lt;code&gt;/post/&lt;/code&gt;) are the special pages which list all of your content. They can exist for blog posts, publications, and talks. The homepage widgets will automatically link to the archive pages when you have more items of content than can be displayed in the widget. Therefore, if you don&amp;rsquo;t have much content, you may not see the automatic links yet - but you can also manually link to them using a normal Markdown formatted link in your content.&lt;/p&gt;
-
-&lt;p&gt;You can edit the title and add your own content, such as an introduction, by copying the following content &lt;code&gt;_index.md&lt;/code&gt; files from the example site to the same structure within your &lt;code&gt;content/&lt;/code&gt; folder:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/themes/academic/exampleSite/content/post/_index.md
-/themes/academic/exampleSite/content/publication/_index.md
-/themes/academic/exampleSite/content/talk/_index.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then edit the &lt;code&gt;title&lt;/code&gt; parameter in each &lt;code&gt;_index.md&lt;/code&gt; as desired and add any content after the &lt;code&gt;+++&lt;/code&gt; preamble/frontmatter ends. You will notice that the &lt;code&gt;_index.md&lt;/code&gt; files differ slightly, with some having special options available for the associated content type. For example, &lt;code&gt;publication/_index.md&lt;/code&gt; contains an option for setting the citation style of the listings which appear on the publication archive page.&lt;/p&gt;
-
-&lt;h2 id=&#34;removing-content&#34;&gt;Removing content&lt;/h2&gt;
-
-&lt;p&gt;Generally, to remove content, simply delete the relevant file from your &lt;code&gt;content/post&lt;/code&gt;, &lt;code&gt;content/publication&lt;/code&gt;, &lt;code&gt;content/project&lt;/code&gt;, or &lt;code&gt;content/talk&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;h2 id=&#34;view-your-updated-site&#34;&gt;View your updated site&lt;/h2&gt;
-
-&lt;p&gt;After you have made changes to your site, you can view it by running the &lt;code&gt;hugo server&lt;/code&gt; command and then opening &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; in your web browser.&lt;/p&gt;
-
-&lt;h2 id=&#34;deploy-your-site&#34;&gt;Deploy your site&lt;/h2&gt;
-
-&lt;p&gt;Finally, you can build the static website to a &lt;code&gt;public/&lt;/code&gt; folder ready for deployment using the &lt;code&gt;hugo&lt;/code&gt; command.&lt;/p&gt;
-
-&lt;p&gt;You may then deploy your site by copying the &lt;code&gt;public/&lt;/code&gt; directory (by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.&lt;/p&gt;
-
-&lt;p&gt;Note that running &lt;code&gt;hugo&lt;/code&gt; does not remove any previously generated files before building. Therefore, it&amp;rsquo;s best practice to delete your &lt;code&gt;public/&lt;/code&gt; directory prior to running &lt;code&gt;hugo&lt;/code&gt; to ensure no old or interim files are deployed to your server.&lt;/p&gt;</description>
     </item>
     
   </channel>
