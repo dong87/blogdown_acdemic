@@ -62,9 +62,7 @@ gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.md&amp;quot
       <guid>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</guid>
       <description>
 
-&lt;blockquote&gt;
-&lt;p&gt;Gauzere [-@Gauzere2013]&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;from Gauzere [-@Gauzere2013]&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt;在非原生境进行的植物定量遗传研究中，每个个体产生的大量种子促进了开放授粉后代测试的使用。在随后的分析中，在同一母株上收集的种子被假定为半同胞。自20世纪60年代以来，使用模拟方法和最近使用基于分子的实验方法研究了从半同胞假设出发在后代测试中的结果。这篇综述旨在综合这些模拟和实证研究的结果和结论。我们专注于树种，其中受控杂交难以实验性地进行，并且偏离半同胞假设在自然种群中经常发生。首先，&lt;strong&gt;许多树种群的母本后代的亲缘关系的平均水平高于半同胞。这是非随机交配的结果，这是由于每个雌性有效花粉供体数量少，雄性繁殖成功和/或自交不平等。因此，对数量性状的遗传变异和遗传力的估计可能是上偏的。&lt;/strong&gt;另外，&lt;strong&gt;通常忽略近亲繁殖抑制，显性效应和雄配子库在雌性中的异质性，这可能导致低估性状的遗传力。&lt;/strong&gt;后代与亲本之间亲缘关系的平均遗传相关性的校正通常用于补偿这些偏差。然而，这种校正不能准确地调整在后代中存在家族遗传相关性，显性效应或近交衰退的情况下的估计。另一种有希望的方法是使用“动物模型”方法，该方法优化了分子数据和父亲信息的使用，从而更准确地估计遗传性。&lt;/p&gt;
 
@@ -1463,7 +1461,7 @@ blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)
       <guid>/post/funda2011-%E5%88%A9%E7%94%A8%E7%B3%BB%E8%B0%B1%E9%87%8D%E5%BB%BA%E7%A1%AE%E5%AE%9A%E4%BA%B2%E6%9C%AC%E7%94%9F%E6%AE%96%E6%8A%95%E8%B5%84%E5%92%8C%E6%88%90%E5%8A%9F%E6%98%AF%E5%90%A6%E4%B8%80%E8%87%B4/</guid>
       <description>
 
-&lt;p&gt;from Funda[-@Funda2011]&lt;/p&gt;
+&lt;p&gt;from Funda [-@Funda2011]&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;种子果园的父母繁殖成功通常通过对种子和花粉锥生产（生殖投资）的调查进行评估&lt;/strong&gt;。虽然这种方法的可靠性受到质疑，但其速度和轻松度使其成为为种子果园作物的遗传质量和数量提供近似估计值的首选方法。在本研究中，来自三个种子果园（大麦松（Pinus contorta Dougl。ex。Loud。var。latifolia Engelm。），Douglas-fir（Pseudotsuga menziesii（Mirb。）Franco）的各种女性和男性表型评估方法的生殖投资数据， ，西部落叶松（Larix occidentalis Nutt。））与基于DNA指纹图谱和亲本分析的繁殖成功估算进行比较。评估了使用生殖投资作为估算种子作物体积遗传价值和多样性（由有效父母数量衡量）的生殖成功的代表。回归分析表明，&lt;strong&gt;表型评估方法反映了真正的父母繁殖成功，并且种子和花粉锥体积生产的估计分别似乎是女性和男性生殖成功的最适当指标&lt;/strong&gt;。虽然女性男性调查方法的最佳组合产生了父母有效数量的估计，遗传价值估计与基于DNA的遗传价值估计相似，突显了其对生育力变异评估的鲁棒性。&lt;/p&gt;
 
