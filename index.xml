@@ -11,6 +11,50 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>2018-01-07-生成一个空post的函数</title>
+      <link>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
+      <description>&lt;p&gt;问题：blogdown能够自动生成新的空白博客，但需要自己添加summary、math、bib等信息以适合academic主题，较麻烦。&lt;/p&gt;
+
+&lt;p&gt;于是自编了一个函数能够适合自己的需求，而且可以随意更改，如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#&#39; generate new posts
+#&#39;
+#&#39; @param post_title 
+#&#39; @param post_format 
+#&#39; @param post_summary 
+#&#39; @param post_tags 
+#&#39;
+#&#39; @return
+#&#39; @export
+#&#39;
+#&#39; @examples
+#&#39; gen_post(&amp;quot;天使很美丽&amp;quot;, &amp;quot;.Rmd&amp;quot;, &amp;quot;本文描述了天使是如何变美的&amp;quot;, &amp;quot;skills&amp;quot;)
+
+gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.md&amp;quot;, post_summary=post_title, post_tags=&amp;quot;stats&amp;quot;) {
+  require(magrittr)
+  post_date &amp;lt;- Sys.time() %&amp;gt;% as.character %&amp;gt;% strsplit(&amp;quot; &amp;quot;) %&amp;gt;% unlist %&amp;gt;% .[1]
+  ifelse (is.null(post_title), post_title &amp;lt;- paste0(post_date, &amp;quot;-New-post&amp;quot;), post_title &amp;lt;- paste0(post_date, &amp;quot;-&amp;quot;, post_title))
+  sink(paste0(&amp;quot;./content/post/&amp;quot;, post_title, post_format))
+  cat(&amp;quot;---\n&amp;quot;, 
+      &amp;quot;title: &amp;quot;, post_title, &amp;quot;\n&amp;quot;, 
+      &amp;quot;author: Leiming Dong&amp;quot;, &amp;quot;\n&amp;quot;, 
+      &amp;quot;date: &amp;quot;, post_date, &amp;quot;\n&amp;quot;,
+      &amp;quot;summary: &amp;quot;, post_summary, &amp;quot;\n&amp;quot;,
+      &amp;quot;math: ture&amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;tags: &amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;  - &amp;quot;, post_tags, &amp;quot;\n&amp;quot;,
+      &amp;quot;bibliography: bib.bib&amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;---\n&amp;quot;, sep = &amp;quot;&amp;quot;)
+  sink()
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>自由授粉子代进行数量遗传分析造成的偏差</title>
       <link>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
@@ -1324,82 +1368,6 @@ L=L_{breeding}+L_{testing}+L_{selection}
 &lt;p&gt;$$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2017-12-29-english</title>
-      <link>/post/english/</link>
-      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/english/</guid>
-      <description>
-
-&lt;h1 id=&#34;2017-11-27&#34;&gt;2017-11-27&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;decimate 大批摧毁 destroy&lt;/li&gt;
-&lt;li&gt;delineate breeding zones&lt;/li&gt;
-&lt;li&gt;develop variety&lt;/li&gt;
-&lt;li&gt;prompt new research&lt;/li&gt;
-&lt;li&gt;operational seed orchard&lt;/li&gt;
-&lt;li&gt;intensive vs extensive&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;2017-11-22&#34;&gt;2017-11-22&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;for the sake of 为了&lt;/li&gt;
-&lt;li&gt;butter up 讨好&lt;/li&gt;
-&lt;li&gt;hub 中心，集&lt;/li&gt;
-&lt;li&gt;摘要中提出了（propose）一个&amp;hellip;， 要用现在时&lt;/li&gt;
-&lt;li&gt;通过&amp;hellip;手段用via或through，后者用的多&lt;/li&gt;
-&lt;li&gt;superior genotypes是固定搭配&lt;/li&gt;
-&lt;li&gt;search for&lt;/li&gt;
-&lt;li&gt;among是在..间的意思，可翻译成从&amp;hellip;&lt;/li&gt;
-&lt;li&gt;a是一个的意思，一般翻译成一种&lt;/li&gt;
-&lt;li&gt;preserve是保存的意思，与conserve有什么区别？&lt;/li&gt;
-&lt;li&gt;remaining剩余，residual&lt;/li&gt;
-&lt;li&gt;建立处理establish，还有built和create&lt;/li&gt;
-&lt;li&gt;application 后可跟to/in/for，不容易区分用哪个&lt;/li&gt;
-&lt;li&gt;新的用novel&lt;/li&gt;
-&lt;li&gt;需要need to/require，后边是动词时用need to&lt;/li&gt;
-&lt;li&gt;发现find/discover/uncover&lt;/li&gt;
-&lt;li&gt;将&amp;hellip;作为regard&amp;hellip;as/treat&amp;hellip;as&lt;/li&gt;
-&lt;li&gt;用很多时候是with而非use&lt;/li&gt;
-&lt;li&gt;解决solve it&lt;/li&gt;
-&lt;li&gt;根据accord to/depend on&lt;/li&gt;
-&lt;li&gt;selection criterion&lt;/li&gt;
-&lt;li&gt;be beneficial&lt;/li&gt;
-&lt;li&gt;点估计point estimate&lt;/li&gt;
-&lt;li&gt;进行假设时一般用would而非will&lt;/li&gt;
-&lt;li&gt;circadian clock 生物钟&lt;/li&gt;
-&lt;li&gt;mediator中介&lt;/li&gt;
-&lt;li&gt;susceptibility&lt;/li&gt;
-&lt;li&gt;compare with&lt;/li&gt;
-&lt;li&gt;由&amp;hellip;表示represented by&lt;/li&gt;
-&lt;li&gt;中等大小intermediate-size&lt;/li&gt;
-&lt;li&gt;长度&amp;gt;8kb， &amp;gt;8kb in length&lt;/li&gt;
-&lt;li&gt;analysis，analyze，analyses是analysis的复数&lt;/li&gt;
-&lt;li&gt;we validated &lt;strong&gt;112 of&lt;/strong&gt; the structural variants, including several &lt;strong&gt;that are of&lt;/strong&gt; biomedical &lt;strong&gt;relevance&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;relevance&amp;ndash;related with。relevance前+adj，表示具有&amp;hellip;相关性&lt;/li&gt;
-&lt;li&gt;requisite必须的&lt;/li&gt;
-&lt;li&gt;后续研究subsequent studies&lt;/li&gt;
-&lt;li&gt;有效的方法efficient methods&lt;/li&gt;
-&lt;li&gt;适应性性状adaptive trait&lt;/li&gt;
-&lt;li&gt;迫切需要be urgently required&lt;/li&gt;
-&lt;li&gt;一种方法工作的前提&amp;hellip;works on the premise that&lt;/li&gt;
-&lt;li&gt;可能 be likely to&lt;/li&gt;
-&lt;li&gt;选择压力selection pressures&lt;/li&gt;
-&lt;li&gt;发育的环境the environment in which it developed&lt;/li&gt;
-&lt;li&gt;描述&amp;hellip;的参数parameters describing &amp;hellip;&lt;/li&gt;
-&lt;li&gt;criteria单数，复数是criterion&lt;/li&gt;
-&lt;li&gt;可能性the probability&lt;/li&gt;
-&lt;li&gt;发现uncover&lt;/li&gt;
-&lt;li&gt;有用的变异useful variation&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
