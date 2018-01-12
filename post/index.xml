@@ -76,17 +76,22 @@
 &lt;h2&gt;Cholesky分解（将一个对称正定矩阵分解为一个矩阵和其转置的积）&lt;/h2&gt;
 &lt;p&gt;满足&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle A=LL^*}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的共轭转置矩阵[^1]&lt;/p&gt;
-&lt;p&gt;[^1]将复数理解为复平面，则复共轭无非是对实轴的反射。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的共轭转置矩阵&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;因为我们的处理对象都是实数，所以&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;就是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的转置矩阵。&lt;/p&gt;
-&lt;p&gt;Cholesky分解只适用于对称正定矩阵[^2]。&lt;/p&gt;
-&lt;p&gt;[^2]一个n×n的实对称矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle M}\)&lt;/span&gt; M是正定的，当且仅当对于所有的非零实系数向量z，都有&lt;span class=&#34;math inline&#34;&gt;\(z^T {\displaystyle M} z &amp;gt; 0\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;Cholesky分解只适用于对称正定矩阵&lt;a href=&#34;#fn2&#34; class=&#34;footnoteRef&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
 &lt;div id=&#34;ref-Howard2017&#34;&gt;
 &lt;p&gt;Howard, James Patrick. 2017. &lt;em&gt;Computational methods for numerical analysis with R&lt;/em&gt;. 1st ed. Chapman &amp;amp; Hall/Crc Numerical Analysis and Scientific Computing Series. Chapman; Hall/;CRC Press. &lt;a href=&#34;http://gen.lib.rus.ec/book/index.php?md5=6957AA74C02676D2FF39712D80535E9E&#34; class=&#34;uri&#34;&gt;http://gen.lib.rus.ec/book/index.php?md5=6957AA74C02676D2FF39712D80535E9E&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;将复数理解为复平面，则复共轭无非是对实轴的反射。&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;一个n×n的实对称矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle M}\)&lt;/span&gt; 是正定的，当且仅当对于所有的非零实系数向量z，都有&lt;span class=&#34;math inline&#34;&gt;\(z^T {\displaystyle M} z &amp;gt; 0\)&lt;/span&gt;。&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;
 </description>
     </item>
