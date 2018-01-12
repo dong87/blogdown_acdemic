@@ -11,34 +11,93 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>2018-01-12-English note</title>
+      <link>/post/2018-01-12-english_note/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-12-english_note/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;start from scratch从头开始&lt;/li&gt;
+&lt;li&gt;in a sense在某种意义上&lt;/li&gt;
+&lt;li&gt;matrix factorization矩阵因子分解&lt;/li&gt;
+&lt;li&gt;interrogate
+&lt;ul&gt;
+&lt;li&gt;Their application here can corroborate established evidence for the causal role of smoking in lung cancer as well as &lt;strong&gt;interrogate&lt;/strong&gt; the causal role for methylation as a mediating mechanism. (Teschendorff, Relton, 2017) be embedded in嵌入 tiresome令人讨厌的 elementary row operation初等行运算 Echelon Form阶梯形式&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>矩阵代数学习笔记</title>
+      <link>/post/2018-01-12-%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-12-%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;我越来越喜欢矩阵代数了，深深被它的魅力所吸引。总结一些笔记，包括概念和方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;-&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;什么是 齐次线性方程组？&lt;/h1&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;线性方程组&lt;/h2&gt;
+&lt;p&gt;先说一下什么是 &lt;a href=&#34;https://zh.wikipedia.org/zh-hans/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84&#34;&gt;线性方程组&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle {\begin{cases}a_{1,1}x_{1}+a_{1,2}x_{2}+\cdots +a_{1,n}x_{n}=b_{1}\\a_{2,1}x_{1}+a_{2,2}x_{2}+\cdots +a_{2,n}x_{n}=b_{2}\\\vdots \quad \quad \quad \vdots \\a_{m,1}x_{1}+a_{m,2}x_{2}+\cdots +a_{m,n}x_{n}=b_{m}\end{cases}}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;其中的&lt;span class=&#34;math inline&#34;&gt;\(a_{1,1}, \, a_{1,2}\)&lt;/span&gt;以及&lt;span class=&#34;math inline&#34;&gt;\(b_{1}, \, b_{2}\)&lt;/span&gt;等等是已知的常数，而&lt;span class=&#34;math inline&#34;&gt;\(x_{1}, \, x_{2}\)&lt;/span&gt;等等则是要求的未知数。&lt;/p&gt;
+&lt;p&gt;如果用线性代数中的概念来表达，则线性方程组可以写成：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{A} \mathbf{x} = \mathbf{b}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这里的&lt;i&gt;A&lt;/i&gt;是&lt;i&gt;m&lt;/i&gt;×&lt;i&gt;n&lt;/i&gt;矩阵，&lt;b&gt;x&lt;/b&gt;是含有&lt;i&gt;n&lt;/i&gt;个元素列向量&lt;/a&gt;，&lt;b&gt;b&lt;/b&gt;是含有&lt;i&gt;m&lt;/i&gt; 个元素列向量。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A={\begin{bmatrix}a_{1,1}&amp;amp;a_{1,2}&amp;amp;\cdots &amp;amp;a_{1,n}\\a_{2,1}&amp;amp;a_{2,2}&amp;amp;\cdots &amp;amp;a_{2,n}\\\vdots &amp;amp;\vdots &amp;amp;\ddots &amp;amp;\vdots \\a_{m,1}&amp;amp;a_{m,2}&amp;amp;\cdots &amp;amp;a_{m,n}\end{bmatrix}},\quad {\mathbf {x}}={\begin{bmatrix}x_{1}\\x_{2}\\\vdots \\x_{n}\end{bmatrix}},\quad {\mathbf {b}}={\begin{bmatrix}b_{1}\\b_{2}\\\vdots \\b_{m}\end{bmatrix}}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这是线性方程组的另一种记录方法。&lt;strong&gt;在已知矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;和向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {b}}\)&lt;/span&gt;的情况求得未知向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {x} }\)&lt;/span&gt;是线性代数的基本问题之一。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们可以将线性方程组的求解问题看成&lt;strong&gt;向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {b}}\)&lt;/span&gt;在矩阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;所张成的线性空间里面的投影的问题&lt;/strong&gt;。未知数的个数如果是一般的n个的话，可以想象每个方程代表了n维空间里面的一个超平面。而方程组的解就是所有超平面的公共点。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;齐次线性方程组齐次线性方程组&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;齐次的线性方程组&lt;/strong&gt;是指向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {b} =0}\)&lt;/span&gt;的情况。这时候方程变成：&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A\mathbf {x} =0}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这个方程肯定会有一组解：&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {x}=0}\)&lt;/span&gt;。实际上，方程的解就是矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;对应的线性变换的零空间。一般来说，当方程的个数小于未知数的个数时，方程组会有除 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {x} =0}\)&lt;/span&gt;以外的解。当方程组个数变多时，则要看其中“有效”的方程的个数。有时候某一个方程可以表示成另外几个方程的线性组合。比如方程组：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle {\begin{cases}3x_{1}+x_{2}+2x_{3}=0\\x_{1}-x_{2}+4x_{3}=0\\2x_{1}+3x_{3}=0\end{cases}}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;之中，第三个方程就可以表示为前两个方程的线性组合：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle 2x_{1}+3x_{3}={\frac {1}{2}}(3x_{1}+x_{2}+2x_{3})+{\frac {1}{2}}(x_{1}-x_{2}+4x_{3})}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这时第三个方程组就可以不必考虑了。用线性代数的词汇表达，“有效”的方程的个数就是矩阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;中线性无关的行向量的个数，或者说行向量线性张成的空间的维数。这个数也被称为矩阵的&lt;strong&gt;秩&lt;/strong&gt;。当矩阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;的秩&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle r}\)&lt;/span&gt;小于未知数的个数&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n}\)&lt;/span&gt;时，方程组的解会有无穷多个，构成一个&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n-r}\)&lt;/span&gt;维的线性空间。而当&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle r}\)&lt;/span&gt;等于未知数的个数&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n}\)&lt;/span&gt;时，方程组有唯一零解，&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle r}\)&lt;/span&gt;不可能大于&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;矩阵分解&lt;/h1&gt;
+&lt;div id=&#34;lu&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;LU分解&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LU分解&lt;/strong&gt;得名于分解的两部分：下（lower）三角和上（upper）三角矩阵&lt;span class=&#34;citation&#34;&gt;(Howard 2017)&lt;/span&gt;（P76）使得方阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;有&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle A=LU}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[A \mathbf{x} = \mathbf{b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;所以有&lt;span class=&#34;math display&#34;&gt;\[L(U \mathbf{x})=\mathbf{b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;因为&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;是一个向量，所以&lt;span class=&#34;math inline&#34;&gt;\(U \mathbf{x}\)&lt;/span&gt;还是一个向量，令&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{t} = U \mathbf{x}\)&lt;/span&gt;，于是有 &lt;span class=&#34;math display&#34;&gt;\[L \mathbf{t} = \mathbf{b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这样如果能先解出t就能得到x。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cholesky&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cholesky分解（将一个对称正定矩阵分解为一个矩阵和其转置的积）&lt;/h2&gt;
+&lt;p&gt;满足&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle A=LL^*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的共轭转置矩阵[^1]&lt;/p&gt;
+&lt;p&gt;[^1]将复数理解为复平面，则复共轭无非是对实轴的反射。&lt;/p&gt;
+&lt;p&gt;因为我们的处理对象都是实数，所以&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;就是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的转置矩阵。&lt;/p&gt;
+&lt;p&gt;Cholesky分解只适用于对称正定矩阵[^2]。&lt;/p&gt;
+&lt;p&gt;[^2]一个n×n的实对称矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle M}\)&lt;/span&gt; M是正定的，当且仅当对于所有的非零实系数向量z，都有&lt;span class=&#34;math inline&#34;&gt;\(z^T {\displaystyle M} z &amp;gt; 0\)&lt;/span&gt;。&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Howard2017&#34;&gt;
+&lt;p&gt;Howard, James Patrick. 2017. &lt;em&gt;Computational methods for numerical analysis with R&lt;/em&gt;. 1st ed. Chapman &amp;amp; Hall/Crc Numerical Analysis and Scientific Computing Series. Chapman; Hall/;CRC Press. &lt;a href=&#34;http://gen.lib.rus.ec/book/index.php?md5=6957AA74C02676D2FF39712D80535E9E&#34; class=&#34;uri&#34;&gt;http://gen.lib.rus.ec/book/index.php?md5=6957AA74C02676D2FF39712D80535E9E&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Comparative genomic analyses reveal the features for adaptation to nematodes in fungi</title>
       <link>/publication/wang_dnare_2018/</link>
       <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/publication/wang_dnare_2018/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-08-imperative, imper=command紧急</title>
-      <link>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</link>
-      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Furthermore, it is &lt;strong&gt;imperative&lt;/strong&gt; that good marker sets with high exclusion power are available. (Trong et al., 2013)&lt;/li&gt;
-&lt;li&gt;Given that more pine plantations are going to be established with clonal loblolly pine seedlings, it is &lt;strong&gt;imperative&lt;/strong&gt; to compare the growth and wood properties of clonally propagated loblolly pine with full-sib and open-pollinated seedlings. (Antony et al., 2014)&lt;/li&gt;
-&lt;li&gt;When a tree-breeding programme proceeds beyond the first generation, early selection becomes a practical &lt;strong&gt;imperative&lt;/strong&gt;. (Burdon, 1989)&lt;/li&gt;
-&lt;li&gt;And a particularly urgent &lt;strong&gt;imperative&lt;/strong&gt; is to make user-friendly software readily available to those whose crop environments are most diverse and whose food supplies are most insecure: third-world agricultural researchers. (Gauch, Piepho, Annicchiarico, 2008)&lt;/li&gt;
-&lt;li&gt;Where the economic product is the seed or fruit, it is &lt;strong&gt;imperative&lt;/strong&gt; to have female and male plants in the field in an appropriate ratio. (Veatch-Blohm, 2007)&lt;/li&gt;
-&lt;li&gt;To understand the full significance of epigenetic processes, however, it is &lt;strong&gt;imperative&lt;/strong&gt; to study them in an ecological context. (Bossdorf, Richards, Pigliucci, 2007)&lt;/li&gt;
-&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt; that our linkage model is examined in terms of its estimation precision and power. (Wu, Ma, 2005)&lt;/li&gt;
-&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt;, therefore, to improve the technical toolkit to such extent that cloning QTL, whether of major or minor effect, becomes a cost effective and simple routine. (Varshney, Tuberosa, 2007)&lt;/li&gt;
-&lt;li&gt;To make sense of the sequence data, it is therefore &lt;strong&gt;imperative&lt;/strong&gt; that the EST sequences be cleaned, clustered and assembled to produce a minimal ‘unigene-set’. (Varshney, Tuberosa, 2007)&lt;/li&gt;
-&lt;li&gt;While never much used, the persistence of convergent improvement in the literature indicates that the &lt;strong&gt;imperative&lt;/strong&gt; of inbred improvement outweighed the need for maintaining or increasing diversity. (Tracy, Chandler, 2008)&lt;/li&gt;
-&lt;li&gt;The high cost of hybrid breeding relative to pure species breeding creates an &lt;strong&gt;imperative&lt;/strong&gt; to identify the most efficient breeding strategy. (Mutete, Murepa, Gapare, 2015)&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -93,7 +152,29 @@
     </item>
     
     <item>
-      <title>2018-01-07-SkLai2010-系谱重建揭示花旗松种子园授粉动态</title>
+      <title>imperative, imper=command紧急</title>
+      <link>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Furthermore, it is &lt;strong&gt;imperative&lt;/strong&gt; that good marker sets with high exclusion power are available. (Trong et al., 2013)&lt;/li&gt;
+&lt;li&gt;Given that more pine plantations are going to be established with clonal loblolly pine seedlings, it is &lt;strong&gt;imperative&lt;/strong&gt; to compare the growth and wood properties of clonally propagated loblolly pine with full-sib and open-pollinated seedlings. (Antony et al., 2014)&lt;/li&gt;
+&lt;li&gt;When a tree-breeding programme proceeds beyond the first generation, early selection becomes a practical &lt;strong&gt;imperative&lt;/strong&gt;. (Burdon, 1989)&lt;/li&gt;
+&lt;li&gt;And a particularly urgent &lt;strong&gt;imperative&lt;/strong&gt; is to make user-friendly software readily available to those whose crop environments are most diverse and whose food supplies are most insecure: third-world agricultural researchers. (Gauch, Piepho, Annicchiarico, 2008)&lt;/li&gt;
+&lt;li&gt;Where the economic product is the seed or fruit, it is &lt;strong&gt;imperative&lt;/strong&gt; to have female and male plants in the field in an appropriate ratio. (Veatch-Blohm, 2007)&lt;/li&gt;
+&lt;li&gt;To understand the full significance of epigenetic processes, however, it is &lt;strong&gt;imperative&lt;/strong&gt; to study them in an ecological context. (Bossdorf, Richards, Pigliucci, 2007)&lt;/li&gt;
+&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt; that our linkage model is examined in terms of its estimation precision and power. (Wu, Ma, 2005)&lt;/li&gt;
+&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt;, therefore, to improve the technical toolkit to such extent that cloning QTL, whether of major or minor effect, becomes a cost effective and simple routine. (Varshney, Tuberosa, 2007)&lt;/li&gt;
+&lt;li&gt;To make sense of the sequence data, it is therefore &lt;strong&gt;imperative&lt;/strong&gt; that the EST sequences be cleaned, clustered and assembled to produce a minimal ‘unigene-set’. (Varshney, Tuberosa, 2007)&lt;/li&gt;
+&lt;li&gt;While never much used, the persistence of convergent improvement in the literature indicates that the &lt;strong&gt;imperative&lt;/strong&gt; of inbred improvement outweighed the need for maintaining or increasing diversity. (Tracy, Chandler, 2008)&lt;/li&gt;
+&lt;li&gt;The high cost of hybrid breeding relative to pure species breeding creates an &lt;strong&gt;imperative&lt;/strong&gt; to identify the most efficient breeding strategy. (Mutete, Murepa, Gapare, 2015)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SkLai2010-系谱重建揭示花旗松种子园授粉动态</title>
       <link>/post/2018-01-07-sklai2010-%E7%B3%BB%E8%B0%B1%E9%87%8D%E5%BB%BA%E6%8F%AD%E7%A4%BA%E8%8A%B1%E6%97%97%E6%9D%BE%E7%A7%8D%E5%AD%90%E5%9B%AD%E6%8E%88%E7%B2%89%E5%8A%A8%E6%80%81/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -117,7 +198,7 @@
     </item>
     
     <item>
-      <title>2018-01-07-生成一个空post的函数</title>
+      <title>生成一个空post的函数</title>
       <link>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -588,90 +669,6 @@ inla(y ~ x + f(nu,model=&amp;quot;iid&amp;quot;), family = c(&amp;quot;poisson&a
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>正则表达式学习笔记</title>
-      <link>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;如果需要从文本文件中识别具有一定模式的字符串时，学一点正则表达式比一个个查找-复制粘贴效率要高得多。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我常用的能够通过正则表达式进行检索的软件有：Notepad++和Filelocator。用Notepad的机会更多一些。转入正题：
-比如我有一串字符：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Aoli|XP_011119616.1,Aoli|XP_011122673.1,Aoli|XP_011128430.1,Bbas|XP_008594286.1,Bbas|XP_008594329.1,Bbas|XP_008595160.1,
-Bbas|XP_008596935.1,Bbas|XP_008597129.1,Bbas|XP_008597693.1,Bbas|XP_008598495.1,Bbas|XP_008600657.1,Bbas|XP_008600739.1,
-Bbas|XP_008601538.1,Bbas|XP_008603064.1,Bbas|XP_008603175.1,Bbas|XP_008603621.1,Chig|XP_018154735.1,Chig|XP_018155044.1,
-Chig|XP_018155047.1,Chig|XP_018153301.1,Chig|XP_018151759.1,Chig|XP_018164608.1,Chig|XP_018152642.1,Chig|XP_018152650.1,
-Chig|XP_018150745.1,Chig|XP_018151082.1,Chig|XP_018151207.1,Chig|XP_018151210.1,Chig|XP_018151211.1,Chig|XP_018151295.1,
-Chig|XP_018151323.1,Chig|XP_018151575.1,Chig|XP_018151609.1,Chig|XP_018151641.1,Chig|XP_018163482.1,Chig|XP_018150468.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;我需要把&lt;code&gt;|&lt;/code&gt;连同之前的字符都去掉，如果手动删除或是用空值一组一组地替换是非常繁琐的，数据量非常大时成本很高。而如果采用正则表达式则是几秒钟的事：查找&lt;code&gt;\w*\|&lt;/code&gt;，然后替换框里空着，全部替换就可以了（Fig 1），Amazing！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-e3b38112a6024a88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;Fig 1&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;匹配字符&#34;&gt;匹配字符&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;.&lt;/code&gt;，句点代表除换行符外的所有字符。比如&lt;code&gt;a..b&lt;/code&gt;能匹配类似&lt;code&gt;a alb&lt;/code&gt;，&lt;code&gt;A18|B&lt;/code&gt;，&lt;code&gt;ATP-b&lt;/code&gt;。不区分大小写，当然也可以区分，下同。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[...]&lt;/code&gt;，代表字符集。&lt;code&gt;a[rl_]b&lt;/code&gt;匹配&lt;code&gt;arb&lt;/code&gt;，&lt;code&gt;AlB&lt;/code&gt;，&lt;code&gt;A_b&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\d&lt;/code&gt;， 代表数字。&lt;code&gt;XP_\d&lt;/code&gt;匹配&lt;code&gt;XP_0&lt;/code&gt;，&lt;code&gt;XP_0&lt;/code&gt;，&amp;hellip;，&lt;code&gt;XP_9&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\D&lt;/code&gt;， 代表非数字。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\s&lt;/code&gt;， 代表空白字符。&lt;code&gt;a\sb&lt;/code&gt;匹配&lt;code&gt;a b&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\S&lt;/code&gt;， 代表非空白字符。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\w&lt;/code&gt;， 代表字母和数字。[a-z0-9]。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\w&lt;/code&gt;， 代表非字母和数字。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\b&lt;/code&gt;， 代表边界，如&lt;code&gt;\b love&lt;/code&gt;，不会匹配&lt;code&gt;alove&lt;/code&gt;之类的单词。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;\r\n&lt;/code&gt;，这是Notepad里替换换换行符的字符串，有时会用到，非常方便！比如&lt;code&gt;(\r\n){2}&lt;/code&gt;能替换空行，类似Word里的&lt;code&gt;^p^p&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;匹配字符的次数&#34;&gt;匹配字符的次数&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;*&lt;/code&gt;，≥0次。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;+&lt;/code&gt;，≥1次。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;?&lt;/code&gt;，匹配问号前一个字符前面的全部字符含有或不含问号前这个字符，比较难理解，试一下就知道了。&lt;code&gt;kdheo?&lt;/code&gt;，问号前一个字符是&lt;code&gt;o&lt;/code&gt;，&lt;code&gt;o&lt;/code&gt;前面的全部字符是&lt;code&gt;kdhe&lt;/code&gt;，&lt;code&gt;kdheo?&lt;/code&gt;匹配&lt;code&gt;kdheo（含o）&lt;/code&gt;或&lt;code&gt;kdhe（不含o）&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{}&lt;/code&gt;，花括号里是匹配前一个字符的次数1-9，也可以是个范围{1,5}。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;逻辑匹配&#34;&gt;逻辑匹配&lt;/h2&gt;
-
-&lt;p&gt;想要同时匹配多个字符串时用逻辑字符&lt;code&gt;|&lt;/code&gt;，如&lt;code&gt;blue|Blue&lt;/code&gt;，能忽略blue首字母的大小写。
-以含有多个字符的字符串为单位进行处理时要用圆括号&lt;code&gt;()&lt;/code&gt;括起来。&lt;/p&gt;
-
-&lt;h2 id=&#34;一个例子&#34;&gt;一个例子&lt;/h2&gt;
-
-&lt;p&gt;有这样一串字符：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[1] &amp;quot;db&amp;quot;               &amp;quot;G.clavigera&amp;quot;      &amp;quot;F.graminearum&amp;quot;    &amp;quot;M.oryzae&amp;quot;         &amp;quot;Z.tritici&amp;quot;        &amp;quot;C.higginsianum&amp;quot;  
- [7] &amp;quot;V.dahliae&amp;quot;        &amp;quot;C.militaris&amp;quot;      &amp;quot;B.bassiana&amp;quot;       &amp;quot;M.anisopliae&amp;quot;     &amp;quot;M.robertsii&amp;quot;      &amp;quot;M.libera&amp;quot;        
-[13] &amp;quot;S.insectorum&amp;quot;     &amp;quot;A.oligospora&amp;quot;     &amp;quot;D.haptotyla&amp;quot;      &amp;quot;E.vermicola&amp;quot;      &amp;quot;H.minnesotensis&amp;quot;  &amp;quot;D.coniospora&amp;quot;    
-[19] &amp;quot;P.chlamydosporia&amp;quot; &amp;quot;O.piceae&amp;quot;         &amp;quot;S.schenckii&amp;quot;      &amp;quot;S.brasiliensis&amp;quot; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;特点是有&lt;code&gt;方括号&lt;/code&gt;， 方括号括起来的&lt;code&gt;数字&lt;/code&gt;且位数不等，有&lt;code&gt;空格&lt;/code&gt;且空格的个数不等，还有&lt;code&gt;换行符&lt;/code&gt;。
-我想要的是保留引号中的内容（连同引号），之间用逗点隔开，放到一行中。
-具体步骤：
-1. 去掉方括号及其中的数字，表达式为&lt;code&gt;\[[0-9]+\]&lt;/code&gt;；
-1. 去掉换行符，表达式为&lt;code&gt;\r\n&lt;/code&gt;；
-1. 去掉空格，表达式为&lt;code&gt;\s+&lt;/code&gt;，替换为&lt;code&gt;,&lt;/code&gt;，然后去掉两头多于的逗点即可。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>统计&amp;编程</title>
-      <link>/project/stats_r/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/project/stats_r/</guid>
-      <description></description>
     </item>
     
   </channel>

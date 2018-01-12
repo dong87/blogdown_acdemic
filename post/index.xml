@@ -11,24 +11,83 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>2018-01-08-imperative, imper=command紧急</title>
-      <link>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</link>
-      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      <title>2018-01-12-English note</title>
+      <link>/post/2018-01-12-english_note/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</guid>
+      <guid>/post/2018-01-12-english_note/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;Furthermore, it is &lt;strong&gt;imperative&lt;/strong&gt; that good marker sets with high exclusion power are available. (Trong et al., 2013)&lt;/li&gt;
-&lt;li&gt;Given that more pine plantations are going to be established with clonal loblolly pine seedlings, it is &lt;strong&gt;imperative&lt;/strong&gt; to compare the growth and wood properties of clonally propagated loblolly pine with full-sib and open-pollinated seedlings. (Antony et al., 2014)&lt;/li&gt;
-&lt;li&gt;When a tree-breeding programme proceeds beyond the first generation, early selection becomes a practical &lt;strong&gt;imperative&lt;/strong&gt;. (Burdon, 1989)&lt;/li&gt;
-&lt;li&gt;And a particularly urgent &lt;strong&gt;imperative&lt;/strong&gt; is to make user-friendly software readily available to those whose crop environments are most diverse and whose food supplies are most insecure: third-world agricultural researchers. (Gauch, Piepho, Annicchiarico, 2008)&lt;/li&gt;
-&lt;li&gt;Where the economic product is the seed or fruit, it is &lt;strong&gt;imperative&lt;/strong&gt; to have female and male plants in the field in an appropriate ratio. (Veatch-Blohm, 2007)&lt;/li&gt;
-&lt;li&gt;To understand the full significance of epigenetic processes, however, it is &lt;strong&gt;imperative&lt;/strong&gt; to study them in an ecological context. (Bossdorf, Richards, Pigliucci, 2007)&lt;/li&gt;
-&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt; that our linkage model is examined in terms of its estimation precision and power. (Wu, Ma, 2005)&lt;/li&gt;
-&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt;, therefore, to improve the technical toolkit to such extent that cloning QTL, whether of major or minor effect, becomes a cost effective and simple routine. (Varshney, Tuberosa, 2007)&lt;/li&gt;
-&lt;li&gt;To make sense of the sequence data, it is therefore &lt;strong&gt;imperative&lt;/strong&gt; that the EST sequences be cleaned, clustered and assembled to produce a minimal ‘unigene-set’. (Varshney, Tuberosa, 2007)&lt;/li&gt;
-&lt;li&gt;While never much used, the persistence of convergent improvement in the literature indicates that the &lt;strong&gt;imperative&lt;/strong&gt; of inbred improvement outweighed the need for maintaining or increasing diversity. (Tracy, Chandler, 2008)&lt;/li&gt;
-&lt;li&gt;The high cost of hybrid breeding relative to pure species breeding creates an &lt;strong&gt;imperative&lt;/strong&gt; to identify the most efficient breeding strategy. (Mutete, Murepa, Gapare, 2015)&lt;/li&gt;
+&lt;li&gt;start from scratch从头开始&lt;/li&gt;
+&lt;li&gt;in a sense在某种意义上&lt;/li&gt;
+&lt;li&gt;matrix factorization矩阵因子分解&lt;/li&gt;
+&lt;li&gt;interrogate
+&lt;ul&gt;
+&lt;li&gt;Their application here can corroborate established evidence for the causal role of smoking in lung cancer as well as &lt;strong&gt;interrogate&lt;/strong&gt; the causal role for methylation as a mediating mechanism. (Teschendorff, Relton, 2017) be embedded in嵌入 tiresome令人讨厌的 elementary row operation初等行运算 Echelon Form阶梯形式&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>矩阵代数学习笔记</title>
+      <link>/post/2018-01-12-%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-12-%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;我越来越喜欢矩阵代数了，深深被它的魅力所吸引。总结一些笔记，包括概念和方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;-&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;什么是 齐次线性方程组？&lt;/h1&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;线性方程组&lt;/h2&gt;
+&lt;p&gt;先说一下什么是 &lt;a href=&#34;https://zh.wikipedia.org/zh-hans/%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84&#34;&gt;线性方程组&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle {\begin{cases}a_{1,1}x_{1}+a_{1,2}x_{2}+\cdots +a_{1,n}x_{n}=b_{1}\\a_{2,1}x_{1}+a_{2,2}x_{2}+\cdots +a_{2,n}x_{n}=b_{2}\\\vdots \quad \quad \quad \vdots \\a_{m,1}x_{1}+a_{m,2}x_{2}+\cdots +a_{m,n}x_{n}=b_{m}\end{cases}}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;其中的&lt;span class=&#34;math inline&#34;&gt;\(a_{1,1}, \, a_{1,2}\)&lt;/span&gt;以及&lt;span class=&#34;math inline&#34;&gt;\(b_{1}, \, b_{2}\)&lt;/span&gt;等等是已知的常数，而&lt;span class=&#34;math inline&#34;&gt;\(x_{1}, \, x_{2}\)&lt;/span&gt;等等则是要求的未知数。&lt;/p&gt;
+&lt;p&gt;如果用线性代数中的概念来表达，则线性方程组可以写成：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{A} \mathbf{x} = \mathbf{b}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这里的&lt;i&gt;A&lt;/i&gt;是&lt;i&gt;m&lt;/i&gt;×&lt;i&gt;n&lt;/i&gt;矩阵，&lt;b&gt;x&lt;/b&gt;是含有&lt;i&gt;n&lt;/i&gt;个元素列向量&lt;/a&gt;，&lt;b&gt;b&lt;/b&gt;是含有&lt;i&gt;m&lt;/i&gt; 个元素列向量。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A={\begin{bmatrix}a_{1,1}&amp;amp;a_{1,2}&amp;amp;\cdots &amp;amp;a_{1,n}\\a_{2,1}&amp;amp;a_{2,2}&amp;amp;\cdots &amp;amp;a_{2,n}\\\vdots &amp;amp;\vdots &amp;amp;\ddots &amp;amp;\vdots \\a_{m,1}&amp;amp;a_{m,2}&amp;amp;\cdots &amp;amp;a_{m,n}\end{bmatrix}},\quad {\mathbf {x}}={\begin{bmatrix}x_{1}\\x_{2}\\\vdots \\x_{n}\end{bmatrix}},\quad {\mathbf {b}}={\begin{bmatrix}b_{1}\\b_{2}\\\vdots \\b_{m}\end{bmatrix}}}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这是线性方程组的另一种记录方法。&lt;strong&gt;在已知矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;和向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {b}}\)&lt;/span&gt;的情况求得未知向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {x} }\)&lt;/span&gt;是线性代数的基本问题之一。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们可以将线性方程组的求解问题看成&lt;strong&gt;向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {b}}\)&lt;/span&gt;在矩阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;所张成的线性空间里面的投影的问题&lt;/strong&gt;。未知数的个数如果是一般的n个的话，可以想象每个方程代表了n维空间里面的一个超平面。而方程组的解就是所有超平面的公共点。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;齐次线性方程组齐次线性方程组&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;齐次的线性方程组&lt;/strong&gt;是指向量&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {b} =0}\)&lt;/span&gt;的情况。这时候方程变成：&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A\mathbf {x} =0}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这个方程肯定会有一组解：&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {x}=0}\)&lt;/span&gt;。实际上，方程的解就是矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;对应的线性变换的零空间。一般来说，当方程的个数小于未知数的个数时，方程组会有除 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle \mathbf {x} =0}\)&lt;/span&gt;以外的解。当方程组个数变多时，则要看其中“有效”的方程的个数。有时候某一个方程可以表示成另外几个方程的线性组合。比如方程组：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle {\begin{cases}3x_{1}+x_{2}+2x_{3}=0\\x_{1}-x_{2}+4x_{3}=0\\2x_{1}+3x_{3}=0\end{cases}}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;之中，第三个方程就可以表示为前两个方程的线性组合：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle 2x_{1}+3x_{3}={\frac {1}{2}}(3x_{1}+x_{2}+2x_{3})+{\frac {1}{2}}(x_{1}-x_{2}+4x_{3})}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这时第三个方程组就可以不必考虑了。用线性代数的词汇表达，“有效”的方程的个数就是矩阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;中线性无关的行向量的个数，或者说行向量线性张成的空间的维数。这个数也被称为矩阵的&lt;strong&gt;秩&lt;/strong&gt;。当矩阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;的秩&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle r}\)&lt;/span&gt;小于未知数的个数&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n}\)&lt;/span&gt;时，方程组的解会有无穷多个，构成一个&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n-r}\)&lt;/span&gt;维的线性空间。而当&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle r}\)&lt;/span&gt;等于未知数的个数&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n}\)&lt;/span&gt;时，方程组有唯一零解，&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle r}\)&lt;/span&gt;不可能大于&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle n}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;矩阵分解&lt;/h1&gt;
+&lt;div id=&#34;lu&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;LU分解&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LU分解&lt;/strong&gt;得名于分解的两部分：下（lower）三角和上（upper）三角矩阵&lt;span class=&#34;citation&#34;&gt;(Howard 2017)&lt;/span&gt;（P76）使得方阵&lt;span class=&#34;math inline&#34;&gt;\({\displaystyle A}\)&lt;/span&gt;有&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle A=LU}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[A \mathbf{x} = \mathbf{b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;所以有&lt;span class=&#34;math display&#34;&gt;\[L(U \mathbf{x})=\mathbf{b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;因为&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;是一个向量，所以&lt;span class=&#34;math inline&#34;&gt;\(U \mathbf{x}\)&lt;/span&gt;还是一个向量，令&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{t} = U \mathbf{x}\)&lt;/span&gt;，于是有 &lt;span class=&#34;math display&#34;&gt;\[L \mathbf{t} = \mathbf{b}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这样如果能先解出t就能得到x。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cholesky&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cholesky分解（将一个对称正定矩阵分解为一个矩阵和其转置的积）&lt;/h2&gt;
+&lt;p&gt;满足&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[{\displaystyle A=LL^*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的共轭转置矩阵[^1]&lt;/p&gt;
+&lt;p&gt;[^1]将复数理解为复平面，则复共轭无非是对实轴的反射。&lt;/p&gt;
+&lt;p&gt;因为我们的处理对象都是实数，所以&lt;span class=&#34;math inline&#34;&gt;\(L^*\)&lt;/span&gt;就是&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;的转置矩阵。&lt;/p&gt;
+&lt;p&gt;Cholesky分解只适用于对称正定矩阵[^2]。&lt;/p&gt;
+&lt;p&gt;[^2]一个n×n的实对称矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle M}\)&lt;/span&gt; M是正定的，当且仅当对于所有的非零实系数向量z，都有&lt;span class=&#34;math inline&#34;&gt;\(z^T {\displaystyle M} z &amp;gt; 0\)&lt;/span&gt;。&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Howard2017&#34;&gt;
+&lt;p&gt;Howard, James Patrick. 2017. &lt;em&gt;Computational methods for numerical analysis with R&lt;/em&gt;. 1st ed. Chapman &amp;amp; Hall/Crc Numerical Analysis and Scientific Computing Series. Chapman; Hall/;CRC Press. &lt;a href=&#34;http://gen.lib.rus.ec/book/index.php?md5=6957AA74C02676D2FF39712D80535E9E&#34; class=&#34;uri&#34;&gt;http://gen.lib.rus.ec/book/index.php?md5=6957AA74C02676D2FF39712D80535E9E&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -83,7 +142,29 @@
     </item>
     
     <item>
-      <title>2018-01-07-SkLai2010-系谱重建揭示花旗松种子园授粉动态</title>
+      <title>imperative, imper=command紧急</title>
+      <link>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-08-imperative-impercommand%E7%B4%A7%E6%80%A5/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Furthermore, it is &lt;strong&gt;imperative&lt;/strong&gt; that good marker sets with high exclusion power are available. (Trong et al., 2013)&lt;/li&gt;
+&lt;li&gt;Given that more pine plantations are going to be established with clonal loblolly pine seedlings, it is &lt;strong&gt;imperative&lt;/strong&gt; to compare the growth and wood properties of clonally propagated loblolly pine with full-sib and open-pollinated seedlings. (Antony et al., 2014)&lt;/li&gt;
+&lt;li&gt;When a tree-breeding programme proceeds beyond the first generation, early selection becomes a practical &lt;strong&gt;imperative&lt;/strong&gt;. (Burdon, 1989)&lt;/li&gt;
+&lt;li&gt;And a particularly urgent &lt;strong&gt;imperative&lt;/strong&gt; is to make user-friendly software readily available to those whose crop environments are most diverse and whose food supplies are most insecure: third-world agricultural researchers. (Gauch, Piepho, Annicchiarico, 2008)&lt;/li&gt;
+&lt;li&gt;Where the economic product is the seed or fruit, it is &lt;strong&gt;imperative&lt;/strong&gt; to have female and male plants in the field in an appropriate ratio. (Veatch-Blohm, 2007)&lt;/li&gt;
+&lt;li&gt;To understand the full significance of epigenetic processes, however, it is &lt;strong&gt;imperative&lt;/strong&gt; to study them in an ecological context. (Bossdorf, Richards, Pigliucci, 2007)&lt;/li&gt;
+&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt; that our linkage model is examined in terms of its estimation precision and power. (Wu, Ma, 2005)&lt;/li&gt;
+&lt;li&gt;It is &lt;strong&gt;imperative&lt;/strong&gt;, therefore, to improve the technical toolkit to such extent that cloning QTL, whether of major or minor effect, becomes a cost effective and simple routine. (Varshney, Tuberosa, 2007)&lt;/li&gt;
+&lt;li&gt;To make sense of the sequence data, it is therefore &lt;strong&gt;imperative&lt;/strong&gt; that the EST sequences be cleaned, clustered and assembled to produce a minimal ‘unigene-set’. (Varshney, Tuberosa, 2007)&lt;/li&gt;
+&lt;li&gt;While never much used, the persistence of convergent improvement in the literature indicates that the &lt;strong&gt;imperative&lt;/strong&gt; of inbred improvement outweighed the need for maintaining or increasing diversity. (Tracy, Chandler, 2008)&lt;/li&gt;
+&lt;li&gt;The high cost of hybrid breeding relative to pure species breeding creates an &lt;strong&gt;imperative&lt;/strong&gt; to identify the most efficient breeding strategy. (Mutete, Murepa, Gapare, 2015)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SkLai2010-系谱重建揭示花旗松种子园授粉动态</title>
       <link>/post/2018-01-07-sklai2010-%E7%B3%BB%E8%B0%B1%E9%87%8D%E5%BB%BA%E6%8F%AD%E7%A4%BA%E8%8A%B1%E6%97%97%E6%9D%BE%E7%A7%8D%E5%AD%90%E5%9B%AD%E6%8E%88%E7%B2%89%E5%8A%A8%E6%80%81/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -107,7 +188,7 @@
     </item>
     
     <item>
-      <title>2018-01-07-生成一个空post的函数</title>
+      <title>生成一个空post的函数</title>
       <link>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -652,789 +733,6 @@ Chig|XP_018151323.1,Chig|XP_018151575.1,Chig|XP_018151609.1,Chig|XP_018151641.1,
 1. 去掉方括号及其中的数字，表达式为&lt;code&gt;\[[0-9]+\]&lt;/code&gt;；
 1. 去掉换行符，表达式为&lt;code&gt;\r\n&lt;/code&gt;；
 1. 去掉空格，表达式为&lt;code&gt;\s+&lt;/code&gt;，替换为&lt;code&gt;,&lt;/code&gt;，然后去掉两头多于的逗点即可。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>如何计算效应值（例如育种值）的准确性（accuracy）？</title>
-      <link>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;准确性&lt;/strong&gt;指的是 &lt;em&gt;预测效应值与真值之间的相关系数&lt;/em&gt; 。有时还会遇见一个概念——&lt;strong&gt;可靠性&lt;/strong&gt;（reliability）。可靠性是准确性的平方，也就是说这二者度量的是一个事情。&lt;strong&gt;reliability其实就是遗传力，这句很重要！！！&lt;/strong&gt;。遗传力主要用来计算选择响应（response to selection）。advisor说我的文章&lt;strong&gt;短&lt;/strong&gt;句子太多，不连贯，确实是这样LOL。
-准确性的计算公式为：&lt;/p&gt;
-
-&lt;p&gt;$$r=\sqrt{1-\frac{PEV}{\hat{\sigma}_a^2}}$$&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;PEV&lt;/em&gt; 是prediction error variances的缩写，意思是预测误差方差，预测误差是预测值与真值间的差，即：&lt;/p&gt;
-
-&lt;p&gt;$$PEV=var(\hat g-g)=(1-r_{\hat g,g}^2)\sigma_a^2$$&lt;/p&gt;
-
-&lt;p&gt;$\sigma a^2$是加性方差。&lt;/p&gt;
-
-&lt;p&gt;预测差值的标准误（ &lt;em&gt;SED&lt;/em&gt; ）是可以从&lt;code&gt;Asreml&lt;/code&gt;中直接得到的，与 &lt;em&gt;PEV&lt;/em&gt; 的关系是：&lt;/p&gt;
-
-&lt;p&gt;$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y&lt;em&gt;i-\hat Y&lt;/em&gt;{i^\prime})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;我不知道上面这个公式怎么推导的。&lt;/strong&gt;
-所以有&lt;/p&gt;
-
-&lt;p&gt;$$PEV=(SED)^{2}/2=\hat Var(BLUP.differences)/2$$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;在很长时间里我不知道（或者说模糊地知道）accuracy是怎么实现的。我知道公式，但在软件里分别和公式组分对应的部分是什么却不是很清楚，当然写这篇文字的时候是确定的。具体实现的途径有2：
-- 一是利用Asreml中的&lt;code&gt;prediction&lt;/code&gt;直接得到 &lt;em&gt;SED&lt;/em&gt; 后，再根据公式4得出PEV&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;fm_pred &amp;lt;- predict(fm_asr, classify = &amp;quot;Fam&amp;quot;) #fm_asr是asreml()输出的对象， Fam是随机效应变量
-SED &amp;lt;- fm_pred$predictions$avsed
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;二是逐步得到 &lt;em&gt;PEV&lt;/em&gt; ，每个预测值都有一个 &lt;em&gt;PEV&lt;/em&gt; ，是预测值 &lt;em&gt;SE&lt;/em&gt; 平方的均值，所以从预测函数得到的对象中提取出 &lt;em&gt;SE&lt;/em&gt; 平方后再平均即可&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;fm_pred &amp;lt;- predict(fm_asr, classify = &amp;quot;Fam&amp;quot;, present = &amp;quot;Plot&amp;quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot）
-SE &amp;lt;- fm_pred$predictions$pvals$standard.error
-PEV &amp;lt;-  SE^2 %&amp;gt;% mean
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这里的 &lt;em&gt;PEV&lt;/em&gt; 是一个向量，对应到每个水平上。
-所以，总体上， &lt;em&gt;PEV&lt;/em&gt; 、 &lt;em&gt;SED&lt;/em&gt; 和 &lt;em&gt;SE&lt;/em&gt; 的关系是&lt;/p&gt;
-
-&lt;p&gt;$$PEV=(SED)^{2}/2=ave(SE_i^2)$$&lt;/p&gt;
-
-&lt;p&gt;另外，在林元震老师的著作&lt;strong&gt;R与ASReml-R统计学&lt;/strong&gt;中（P474）也涉及到accuracy的代码&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;SE &amp;lt;- fm_asr$vcoeff$random * fm_asr$sigma2 #效应值se乘以sigma
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;结果是一样的，但不知道是否合理。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;如果没有Asreml可能需要更底层的计算（比如手动），这时 &lt;em&gt;PEV&lt;/em&gt; 的计算更直观些：&lt;/p&gt;
-
-&lt;p&gt;$$PEV=Var(\hat u-u)=diag(C^{22})\sigma_e^2=d_i\sigma_e^2=(1-r^2)\sigma_u^2$$&lt;/p&gt;
-
-&lt;p&gt;于是有&lt;/p&gt;
-
-&lt;p&gt;$$r^2=1-diag(C^{22})\frac{\sigma_e^2}{\sigma_u^2}$$&lt;/p&gt;
-
-&lt;p&gt;$C^{22}$是方程组关联矩阵的逆矩阵的右下角块，$d_i$是块中的对角线元素。具体可查看&lt;a href=&#34;https://pan.baidu.com/s/1hrDRLeG&#34; target=&#34;_blank&#34;&gt;Pro. Isik编写的教材P84&lt;/a&gt;和&lt;a href=&#34;https://pan.baidu.com/s/1nvmT47n&#34; target=&#34;_blank&#34;&gt;Mrode, 2014的书P44&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;从 &lt;em&gt;PEV&lt;/em&gt; 就可以得到我们需要的准确性和可靠性值了。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;这个问题在群中还被讨论过
-&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9908dc53ac300bbc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;accuracy_chat.jpg&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>常规育种常用公式</title>
-      <link>/post/formular/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/formular/</guid>
-      <description>&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;模型框架&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;LMM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y=Xb+Zu+e\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-y=\mu+Xb+Z_1f+Z_2fb+e
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-y=\mu+X_1s+X_2b_{(s)}+Z_1f+Z_2fs+Z_3fb_{(s)}+e
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GLMM &lt;span class=&#34;math display&#34;&gt;\[
-y=\mu+e
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-\eta=g(\mu)=X\beta+Zu
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-y=\eta+e=X\beta+Zu+e
-\]&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\eta=log(\frac{\pi}{1-\pi})=X\beta+Z_1GCA+Z_2SCA+Z_3REC+Z_4P
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-\eta=log(\frac{\pi}{1-\pi})=X\beta+Z_1GCA+Z_2P
-\]&lt;/span&gt; &lt;em&gt;g&lt;/em&gt;(.) is link function.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-Log
-\begin{bmatrix}
-\frac{P(Y\leq k)}{P(Y&amp;gt;k}
-\end{bmatrix}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-Log
-\left[
-\frac{P(Y\leq k)}{P(Y&amp;gt;k}
-\right]
-=\gamma_k+X\beta+Zu+e
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;混合线性模型&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y=X\beta+Za+e\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-var(y)=V=ZGZ&amp;#39;+R
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align}
-var(a)=A_{q\times q}\sigma_a^2=G \\
-var(e)=I_{n\times n}\sigma_e^2=R 
-\end{align} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{eqnarray}
-var(y)&amp;amp;=&amp;amp;V=ZGZ^T+R\\
-&amp;amp;=&amp;amp;Zvar(a)Z^T+var(e)+cov(Za,e)+cov(e,Za)\\
-&amp;amp;=&amp;amp;ZGZ^T+R+Zcov(a,e)+cov(e,a)Z^T\\
-&amp;amp;=&amp;amp;ZGZ^T+R
-\end{eqnarray}
-\]&lt;/span&gt; 以Mrode example 3.1为例&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(kinship2)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 载入需要的程辑包：Matrix&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 载入需要的程辑包：quadprog&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ped &amp;lt;- data.frame(id = c(4:8), sire = c(1, 3, 1, 4, 3), dam = c(NA, 2, 2, 5, 
-    6), sex = c(1, 2, 2, 1, 1), wwg = c(4.5, 2.9, 3.9, 3.5, 5))
-# 
-A &amp;lt;- 2 * kinship2::kinship(ped$id, ped$sire, ped$dam)
-Z &amp;lt;- diag(1, 5)
-n &amp;lt;- dim(ped)[1]
-sigma_aa &amp;lt;- 20
-sigma_ee &amp;lt;- 40
-R &amp;lt;- diag(sigma_ee, n)
-G &amp;lt;- A * sigma_aa
-V &amp;lt;- Z %*% G %*% t(Z) + R
-lambta0 &amp;lt;- 2
-H &amp;lt;- Z %*% A %*% t(Z) * lambta0 + diag(1, 5)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;材积公式&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[V=H\times DBH^2\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[SV=\frac{0.527\times\pi D^2H}{4}\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[CVA=\frac{\pi CW}{4}\sqrt {CL^2+\frac{CW^2}{4}}\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;双列交配家系模型&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y=Xb+Z_1gm+Z_2gd+Z_3s+Z_4r+Z_5p+e\]&lt;/span&gt; ## 方差 &lt;span class=&#34;math display&#34;&gt;\[
-\sigma_{P}^2=\sigma_{G}^2+\sigma_{e}^2=\sigma_{a}^2+\sigma_{d}^2+\sigma_{e}^2
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[\sigma_{a}^2=4\times\sigma_{F}^2=2\times(\sigma_{M}^2+\sigma_{D}^2)\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[\sigma_{d}^2=4\times\sigma_{MD}^2\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;混合模型方程&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\left[
-  \begin{array}{c}
-    X&amp;#39;R^{-1}X &amp;amp; X&amp;#39;R^{-1}Z\\
-    Z&amp;#39;R^{-1}X &amp;amp; Z&amp;#39;R^{-1}Z+G^{-1}
-  \end{array}
-\right]
-\left[
-  \begin{array}{c}
-    \hat{b}\\
-    \hat{u}
-  \end{array}
-\right]
-=
-\left[
-  \begin{array}{c}
-    X&amp;#39;R^{-1}y\\
-    Z&amp;#39;R^{-1}y
-  \end{array}
-\right]
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;如果我们假设残差方差是IID（对于所有观察是相同和独立的），则可以将R矩阵作为因子。 在大多数应用中我们将看到从现在开始下面的方程式会更方便：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\left[
-  \begin{array}{c}
-    X&amp;#39;X &amp;amp; X&amp;#39;Z\\
-    Z&amp;#39;X &amp;amp; Z&amp;#39;Z+I\alpha
-  \end{array}
-\right]
-\left[
-  \begin{array}{c}
-    \hat{b}\\
-    \hat{u}
-  \end{array}
-\right]
-=
-\left[
-  \begin{array}{c}
-    X&amp;#39;y\\
-    Z&amp;#39;y
-  \end{array}
-\right]
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-\left[
-  \begin{array}{c}
-    \hat{b}\\
-    \hat{u}
-  \end{array}
-\right]
-=
-\left[
-  \begin{array}{c}
-    X&amp;#39;X &amp;amp; X&amp;#39;Z\\
-    Z&amp;#39;X &amp;amp; Z&amp;#39;Z+I\alpha
-  \end{array}
-\right]^{-1}
-\left[
-  \begin{array}{c}
-    X&amp;#39;y\\
-    Z&amp;#39;y
-  \end{array}
-\right]
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-\left[
-  \begin{array}{c}
-    \hat{b}\\
-    \hat{u}
-  \end{array}
-\right]
-=
-\left[
-  \begin{array}{c}
-    X&amp;#39;X &amp;amp; X&amp;#39;Z\\
-    Z&amp;#39;X &amp;amp; Z&amp;#39;Z+A(\sigma_e^2/\sigma_u^2)
-  \end{array}
-\right]^{-1}
-\left[
-  \begin{array}{c}
-    X&amp;#39;y\\
-    Z&amp;#39;y
-  \end{array}
-\right]
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\alpha= \frac{\sigma_e^2}{\sigma_u^2}\)&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;服从正态分布&lt;/h2&gt;
-&lt;p&gt;假定随机项的联合分布服从多变量正态，有均值和（协）方差： &lt;span class=&#34;math display&#34;&gt;\[
-\left[\begin{array}{c} 
-    u\\e 
-  \end{array}
-  \right]
-\sim N
-  \left(
-\left[\begin{array}{c} 
-    0\\0 
-  \end{array}
-  \right],
-  \left[\begin{array}{c} 
-    G&amp;amp;0\\
-    0&amp;amp;R\\
-      \end{array}
-  \right]
-  \right)
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;0&lt;/strong&gt;是零矩阵，&lt;strong&gt;G&lt;/strong&gt; 和 &lt;strong&gt;R&lt;/strong&gt; 分别是&lt;strong&gt;u&lt;/strong&gt; 和 &lt;strong&gt;e&lt;/strong&gt;对应的（协）方差矩阵。&lt;strong&gt;u&lt;/strong&gt;中的不同模型项假定彼此独立，于是&lt;strong&gt;G&lt;/strong&gt; 定义为&lt;span class=&#34;math inline&#34;&gt;\(\oplus_{i=1}^jG_i\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(G_i\)&lt;/span&gt;是第&lt;em&gt;i&lt;/em&gt;（&lt;em&gt;i&lt;/em&gt;=1…&lt;em&gt;j&lt;/em&gt;个随机项的（协）方差，&lt;span class=&#34;math inline&#34;&gt;\(\oplus\)&lt;/span&gt;是直和运算符。 使用在ASREML程序（Gilmour等人2002）中实施的平均信息REML算法（Gilmour等人1995），通过限制最大似然估计（共）方差分量（REML，Patterson和Thompson 1971）。 根据使用泰勒级数展开的近似（Lynch和Walsh 1998），根据比率方差的一般表达式计算参数估计的标准误差。 进行以下分析。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;单性状分析&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(G_i\)&lt;/span&gt;中加性效应定义为&lt;span class=&#34;math inline&#34;&gt;\(A\sigma_{a}^2\)&lt;/span&gt;，其他效应定义为&lt;span class=&#34;math inline&#34;&gt;\(I_{n_i}\sigma_{i}^2\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(I_{n_i}\)&lt;/span&gt;是维度为&lt;span class=&#34;math inline&#34;&gt;\(n_i\times n_i\)&lt;/span&gt;的单位矩阵（&lt;span class=&#34;math inline&#34;&gt;\(n_i\)&lt;/span&gt;=第&lt;em&gt;i&lt;/em&gt;个项的水平数）。&lt;/p&gt;
-&lt;p&gt;如果各基因型是不相关的，那么&lt;span class=&#34;math inline&#34;&gt;\(G_i=I_{n_g}\sigma_{g}^2\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(I_{n_g}\)&lt;/span&gt;是维度为&lt;span class=&#34;math inline&#34;&gt;\(n_g\times n_g\)&lt;/span&gt;的单位矩阵（&lt;span class=&#34;math inline&#34;&gt;\(n_g\)&lt;/span&gt;=基因型的水平数）。残差效应定义为&lt;span class=&#34;math inline&#34;&gt;\(R=I_{N}\sigma_{e}^2\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(I_{N}\)&lt;/span&gt;是维度为&lt;span class=&#34;math inline&#34;&gt;\(N\times N\)&lt;/span&gt;（&lt;em&gt;N&lt;/em&gt;=树木的个数）的单位矩阵，&lt;span class=&#34;math inline&#34;&gt;\(\sigma_{e}^2\)&lt;/span&gt;是环境方差residu&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;双性状分析&lt;/h2&gt;
-&lt;p&gt;方差-协方差矩阵 G 和R 定义为： &lt;span class=&#34;math display&#34;&gt;\[
-G=
-\left[
-  \begin{array}{c}
-    A\sigma_{a_k}^2 &amp;amp; A\sigma_{a_{k,l}}^2\\
-    A\sigma_{a_{k,l}}^2 &amp;amp; A\sigma_{a_l}^2
-  \end{array}
-\right]
-\oplus
-\left[
-  \begin{array}{c}
-    I_{n_f}\sigma_{f_k}^2 &amp;amp; 0\\
-    0 &amp;amp; I_{n_f}\sigma_{f_l}^2
-  \end{array}
-\right]
-\oplus
-\left[
-  \begin{array}{c}
-    I_{n_c}\sigma_{c_k}^2 &amp;amp; 0\\
-    0 &amp;amp; I_{n_c}\sigma_{c_k}
-  \end{array}
-\right]
-\oplus
-\left[
-  \begin{array}{c}
-    I_{n_b}\sigma_{b_k}^2 &amp;amp; I_{n_b}\sigma_{b_{k,l}}^2\\
-    I_{n_b}\sigma_{b_{k,l}}^2 &amp;amp; I_{n_b}\sigma_{b_l}^2
-  \end{array}
-\right]
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-R=
-\left[
-  \begin{array}{c}
-    I_{N}\sigma_{e_k}^2 &amp;amp; I_{N}\sigma_{e_{k,l}}^2\\
-    I_{N}\sigma_{e_{k,l}}^2 &amp;amp; I_{N}\sigma_{e_l}^2
-  \end{array}
-\right]
-\]&lt;/span&gt; ## 双性状多点分析&lt;/p&gt;
-&lt;p&gt;以获得关于遗传效应的性状之间和整个位点间相关性的共同估计，以及通过估计给定性状的位点之间的共同遗传相关性来评估环境（G×E）相互作用的基因型的大小。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(G_i\)&lt;/span&gt;中加性效应定义为 &lt;span class=&#34;math display&#34;&gt;\[
-\left(
-  \left[
-    \begin{array}{c}
-    D_k &amp;amp; 0\\
-    0 &amp;amp; D_l
-    \end{array}
-  \right]
-  \left[
-    \begin{array}{c}
-    C_k &amp;amp; C_{k,l}\\
-    C_{l,k} &amp;amp; C_l
-    \end{array}
-  \right]
-  \left[
-    \begin{array}{c}
-    D_k &amp;amp; 0\\
-    0 &amp;amp; D_l
-    \end{array}
-  \right]
-\right)
-\otimes A
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;相关&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\hat r_g=\frac{\hat \sigma_{g(xy)}}{\sqrt {\hat \sigma_{g(x)}^2\times \hat \sigma_{g(y)}^2}}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\hat r_A=\frac{\hat \sigma_{A_1A_2}}{\sqrt {\hat \sigma_{A_1}^2\hat \sigma_{A_2}^2}}
-\]&lt;/span&gt; ## type b&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-r_b=\frac{\hat{\sigma}_f^2}{\hat{\sigma}_f^2+\hat{\sigma}_{fs}^2}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-f\sim N(0,\sigma_{f}^2I)
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-fs\sim N(0,\sigma_{fs}^2I)
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-fb_{(s)}\sim N(0,\sigma_{fb_{(s)}}^2I)
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\left[\begin{array}{c} 
-    g\\s\\r\\p\\e 
-  \end{array}
-  \right]
-  \sim N
-\left(
-\left[\begin{array}{c} 
-    0\\0\\0\\0\\0 
-  \end{array}
-  \right],
-  \left[\begin{array}{c} 
-    A\sigma_{g}^2&amp;amp;0&amp;amp;0&amp;amp;0&amp;amp;0\\
-    0&amp;amp;I\sigma_{s}^2&amp;amp;0&amp;amp;0&amp;amp;0\\
-    0&amp;amp;0&amp;amp;I\sigma_{r}^2&amp;amp;0&amp;amp;0\\
-    0&amp;amp;0&amp;amp;0&amp;amp;I\sigma_{p}^2&amp;amp;0\\
-    0&amp;amp;0&amp;amp;0&amp;amp;0&amp;amp;I\sigma_{e}^2 
-  \end{array}
-  \right]
-  \right)
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;近交系数&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-ID(\%)=\frac{OP_i-Self_i}{OP_i} \times 100\%
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;变异系数&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-CV_G=\hat{\sigma}_a/\bar{X}\times100\%
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-CV_P=\hat{\sigma}_p/\bar{X}\times100\%
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-CV_E=\hat{\sigma}_e/\bar{X}\times100\%
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;遗传力&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}_i^2=\frac{\hat{\sigma}_a^2}{\hat{\sigma}_p^2}
-\]&lt;/span&gt; +全同胞 &lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}^2=\frac{4\hat{\sigma}_a^2}{2\hat{\sigma}_a^2+\hat{\sigma}_s^2+\hat{\sigma}_r^2+\hat{\sigma}_p^2+\hat{\sigma}_e^2}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\hat{H}^2=\frac{4(\hat{\sigma}_a^2+\hat{\sigma}_s^2)}{2\hat{\sigma}_a^2+\hat{\sigma}_s^2+\hat{\sigma}_r^2+\hat{\sigma}_p^2+\hat{\sigma}_e^2}\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[\hat{\sigma}_P^2=\hat{\sigma}_a^2+\hat{\sigma}_p^2+\hat{\sigma}_e^2\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}^2=\frac{\hat{\sigma}_a^2}{\hat{\sigma}_P^2}
-\]&lt;/span&gt; +半同胞 单点 &lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}^2=\frac{4\hat{\sigma}_f^2}{\hat{\sigma}_f^2+\hat{\sigma}_{p}^2+\hat{\sigma}_e^2}
-\]&lt;/span&gt; 多点 &lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}^2=\frac{4\hat{\sigma}_f^2}{\hat{\sigma}_f^2+\hat{\sigma}_{fs}^2+\hat{\sigma}_{fb_{(s)}}^2+\hat{\sigma}_e^2}
-\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}_i^2=\frac{4\hat{\sigma}_f^2}{\hat{\sigma}_f^2+\hat{\sigma}_{fs}^2+\hat{\sigma}_{fb_{(s)}}^2+\hat{\sigma}_e^2}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;+家系遗传力 &lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}_f^2=\frac{\hat{\sigma}_a^2}{\hat{\sigma}_f^2+\hat{\sigma}_{fb}^2/n_{b}+\hat{\sigma}_e^2/(n_{b}\times n_k)}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\hat{h}_f^2=\frac{\hat{\sigma}_a^2}{\hat{\sigma}_f^2+\hat{\sigma}_{fs}^2/n_{s}+\hat{\sigma}_{fb_{(s)}}^2/(n_{s}\times n_{b})+\hat{\sigma}_e^2/(n_{s}\times n_{b}\times n_k)}
-\]&lt;/span&gt; ## 育种值精度&lt;/p&gt;
-&lt;p&gt;预测误差方差（prediction error variance，PEV）是BLUP的SE的平方和，并且可以用于根据以下公式估计BLUP预测的预期精度： &lt;span class=&#34;math display&#34;&gt;\[r=\sqrt{1-\frac{PEV}{\hat{\sigma}_a^2}}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[PEV=var(\hat g-g)=(1-r_{\hat g,g}^2)\sigma_a^2\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Y_i-\hat Y_{i^\prime})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[PEV=(SED)^2/2=\hat Var(BLUP.differences)/2\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[PEV=(SED)^2/2=ave(SE_i^2)\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[PEV=Var(\hat u-u)=diag(C^{22})\sigma_e^2=d_i\sigma_e^2=(1-r^2)\sigma_u^2\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[r^2=1-diag(C^{22})\frac{\sigma_e^2}{\sigma_u^2}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\left[\begin{array}{cc}
-I_{n} &amp;amp; 0_n \\
-0_n &amp;amp; 0_n 
-\end{array} \right]\sigma_{gca}^2
-+
-\left(\begin{array}{cc}
-0_n  &amp;amp; 0_n \\
-0_n &amp;amp; I_{n}
-\end{array} \right) \sigma_{selfed\_parents}^2
-+
-\left(\begin{array}{cc}
-I_n  &amp;amp; 0_n \\
-0_n &amp;amp; I_n
-\end{array} \right)\sigma_{gca;selfed\_parents}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-B=
-\left[
-  \begin{array}{cc} 
-    -z^{(1)}(2) &amp;amp; 1\\ 
-    -z^{(1)}(3) &amp;amp; 1\\
-    \vdots &amp;amp; \vdots\\
-    -z^{(1)}(n) &amp;amp; 1\\ 
-  \end{array}
-\right]
-\]&lt;/span&gt; &lt;img src=&#34;D:/R/Formula/Fig/1.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-y=\left\{
-  \begin{array}{}
-    -1&amp;amp;:&amp;amp;x&amp;lt;0\\
-    0&amp;amp;:&amp;amp;x=0\\
-    +1&amp;amp;:&amp;amp;x&amp;gt;0
-  \end{array}
-\right.
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[P_i=DBV_i+\sum_{j\neq i}^{n_i}CBV_j+E_i\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ar1&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;空间分析(AR1)&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-R=\sigma_\xi^2\Sigma_c(\rho_c)\otimes\Sigma_r(\rho_r)+I\sigma_\eta^2
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\sigma_\xi^2\)&lt;/span&gt;是空间残差方差，&lt;span class=&#34;math inline&#34;&gt;\(\sigma_\eta^2\)&lt;/span&gt;是独立残差方差，&lt;span class=&#34;math inline&#34;&gt;\(\Sigma_r(\rho_r)\)&lt;/span&gt; 是具有维度&lt;em&gt;r×r&lt;/em&gt;的行模型的相关矩阵，&lt;span class=&#34;math inline&#34;&gt;\(\rho_r\)&lt;/span&gt;是行方向上的自相关参数；&lt;span class=&#34;math inline&#34;&gt;\(\Sigma_c(\rho_c)\)&lt;/span&gt;是具有维度&lt;em&gt;c×c&lt;/em&gt;的列模型的相关矩阵，&lt;span class=&#34;math inline&#34;&gt;\(\rho_c\)&lt;/span&gt; 是列方向上的自相关参数，而且有： &lt;span class=&#34;math display&#34;&gt;\[
-\Sigma_r=
-\left[
-  \begin{array}{c}
-  1&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\
-  \rho_r&amp;amp;1&amp;amp;&amp;amp;&amp;amp;\\
-  \rho_r^2&amp;amp;\rho_r&amp;amp;1&amp;amp;&amp;amp;\\
-  \vdots&amp;amp;\vdots&amp;amp;\vdots&amp;amp;\ddots&amp;amp;\\
-  \rho_r^{r-1}&amp;amp;\rho_r^{r-2}&amp;amp;\rho_r^{r-3}&amp;amp;\cdots&amp;amp;1
-  \end{array}
-\right]
-　
-\Sigma_c=
-\left[
-  \begin{array}{c}
-  1&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\
-  \rho_c&amp;amp;1&amp;amp;&amp;amp;&amp;amp;\\
-  \rho_c^2&amp;amp;\rho_c&amp;amp;1&amp;amp;&amp;amp;\\
-  \vdots&amp;amp;\vdots&amp;amp;\vdots&amp;amp;\ddots&amp;amp;\\
-  \rho_c^{c-1}&amp;amp;\rho_c^{c-2}&amp;amp;\rho_c^{c-3}&amp;amp;\cdots&amp;amp;1
-  \end{array}
-\right]
-\]&lt;/span&gt; ## AIC准则 &lt;span class=&#34;math display&#34;&gt;\[AIC=2\times (logL-\rho)\]&lt;/span&gt;&lt;/p&gt;
-&lt;div id=&#34;-table-2-examples-of-five-covariance-structures-adapted-from-wolfinger-1996&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;方差-协方差结构Table 2 Examples of five covariance structures (adapted from Wolfinger 1996)&lt;/h2&gt;
-&lt;table style=&#34;width:11%;&#34;&gt;
-&lt;colgroup&gt;
-&lt;col width=&#34;2%&#34; /&gt;
-&lt;col width=&#34;2%&#34; /&gt;
-&lt;col width=&#34;2%&#34; /&gt;
-&lt;col width=&#34;2%&#34; /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th&gt;Structure&lt;/th&gt;
-&lt;th&gt;Notation&lt;/th&gt;
-&lt;th&gt;Example&lt;/th&gt;
-&lt;th&gt;Parameters&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;Diagonal 对角矩阵&lt;/td&gt;
-&lt;td&gt;I&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;math display&#34;&gt;\[\left[\begin{array}{c}\sigma^2&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;\sigma^2&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;\sigma^2&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\sigma^2\end{array}\right]\]&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;Variance Components 方差组分&lt;/td&gt;
-&lt;td&gt;VC(A B)&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;math display&#34;&gt;\[\left[\begin{array}{c}\sigma_A^2&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;\sigma_A^2&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;\sigma_B^2&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\sigma_B^2\end{array}\right]\]&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;Compound Symmetry 混合对称&lt;/td&gt;
-&lt;td&gt;CS&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;math display&#34;&gt;\[\left[\begin{array}{c}\sigma_A^2&amp;amp;&amp;amp;&amp;amp;\\&amp;amp;\sigma_A^2&amp;amp;&amp;amp;\\&amp;amp;&amp;amp;\sigma_B^2&amp;amp;\\&amp;amp;&amp;amp;&amp;amp;\sigma_B^2\end{array}\right]\]&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td&gt;First-order autoregressive 一阶自回归&lt;/td&gt;
-&lt;td&gt;AR(1)&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;math display&#34;&gt;\[\sigma^2\left[\begin{array}{c}  1&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\  \rho_r&amp;amp;1&amp;amp;&amp;amp;&amp;amp;\\  \rho_r^2&amp;amp;\rho_r&amp;amp;1&amp;amp;&amp;amp;\\  \vdots&amp;amp;\vdots&amp;amp;\vdots&amp;amp;\ddots&amp;amp;\\  \rho_r^{r-1}&amp;amp;\rho_r^{r-2}&amp;amp;\rho_r^{r-3}&amp;amp;\cdots&amp;amp;1  \end{array}\right]\]&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td&gt;Unstructured 无结构&lt;/td&gt;
-&lt;td&gt;UN&lt;/td&gt;
-&lt;td&gt;&lt;span class=&#34;math display&#34;&gt;\[\left[\begin{array}{c}\sigma_{11}^2&amp;amp;\sigma_{12}&amp;amp;\sigma_{13}&amp;amp;\sigma_{14}\\&amp;amp;\sigma_{22}^2&amp;amp;\sigma_{23}&amp;amp;\sigma_{24}\\&amp;amp;&amp;amp;\sigma_{33}^2&amp;amp;\sigma_{34}\\&amp;amp;&amp;amp;&amp;amp;\sigma_{44}^2\end{array}\right]\]&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div id=&#34;remlrt&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;REMLRT&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-D = 2\log(\ell_{R2}/\ell_{R1}) = 2[\log(\ell_{R2})-\log(\ell_{R1})]
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;卡方&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\chi_{r2-r1}^2
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;遗传增益&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\Delta G=\frac{i\times \hat{h}^2\times \sigma_P}{M}\times 100
-\]&lt;/span&gt; &lt;em&gt;i&lt;/em&gt;是选择强度，&lt;span class=&#34;math inline&#34;&gt;\(\hat{h}^2\)&lt;/span&gt;是狭义遗传力，&lt;span class=&#34;math inline&#34;&gt;\(\sigma_P\)&lt;/span&gt;是表型方差的标准差，&lt;em&gt;M&lt;/em&gt;是表型均值。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[L(\lambda )=-n/2 ln(r^TH^{-1}r)-1/2 ln|H|\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[\lambda^{t+1}=\lambda^{t}-[\frac{\partial^2L(\lambda )}{\partial\lambda^2}]^{-1}\frac{\partial L(\lambda )}{\partial\lambda}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{eqnarray}
-y_{ijkpqt}=\mu&amp;amp;+&amp;amp;L_i+B_{j(i)}+M_k+F_p+MF_{kp}+C_{q(kp)}\\
-              &amp;amp;+&amp;amp;LM_{ik}+LF_{ip}+LMF_{ikp}+LC_{iq(kp)}+MB_{kj(i)}\\
-              &amp;amp;+&amp;amp;FB_{pj(i)}+MFB_{kpj(i)}+CB_{q(kp)j(i)}+e_{ijkpqt}
-\end{eqnarray}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{eqnarray} a^2 + b^2 &amp;amp;=&amp;amp; c^2 \\ &amp;amp;=&amp;amp; 5 \end{eqnarray}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{eqnarray}
-var(y)&amp;amp;=&amp;amp;V=ZGZ^T+R\\
-&amp;amp;=&amp;amp;Zvar(a)Z^T+var(e)+cov(Za,e)+cov(e,Za)\\
-&amp;amp;=&amp;amp;ZGZ^T+R+Zcov(a,e)+cov(e,a)Z^T\\
-&amp;amp;=&amp;amp;ZGZ^T+R
-\end{eqnarray}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;latex-for-beginners&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt; FOR BEGINNERS&lt;/h1&gt;
-&lt;div id=&#34;basic-operations&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;BASIC OPERATIONS&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-6 + 7 - 4 \times 18 \div 3 ^ 2 = 5
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-3 &amp;lt; x \le 5 \\ 8 &amp;gt; y \ge 4 \\ z \ne 2
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\frac23 + \frac{41}{x} + \frac{ 1 + \dfrac2x}{3+\dfrac45}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-15.2\overline{7} \% \approx \frac{3}{20}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\sqrt{5x} \pm \sqrt[3]{78 + \sqrt{6}}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-ax^2 + bx + c = 0 \\ x = \frac{-b \pm \sqrt{ b^2 - 4ac}}{2a}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-(f \circ g )(x) = 3 \left( \frac{|x|}{4} + 5 \right)
- - \left| \frac{|x|}{4} \right|
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-f(x) =
- \begin{cases}
- x^2, &amp;amp; \text{if } x \le 0 \\
- 0, &amp;amp; \text{otherwise}
- \end{cases}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*}
- x+3 &amp;amp;= \sqrt{x+5} \\
- x^2 + 6x + 9 &amp;amp;= x + 5 \\
- x^2 + 5x + 4 &amp;amp;= 0
- \end{align*}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{pmatrix} 12 &amp;amp; 34 \\ 5 &amp;amp; 6 \end{pmatrix}
- \begin{pmatrix} x \\ y \end{pmatrix}
- = \left\{ \begin{array}{l} 12x + 34y \\ 5x + 6y
- \end{array} \right.
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\text{Maximize } P=40x+75y \\
- \text{subject to the constraints} \\
- \begin{align*}
- 5x+10y &amp;amp;\le 600 \\ 4x + 3y &amp;amp;\le 240 \\
- x &amp;amp;\ge 0 \\ y &amp;amp;\ge 0
- \end{align*}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\binom{10}{4} = { }_{15} P_2 = 210
-\]&lt;/span&gt; The command takes its name from this traditional name; just means ”two quads”. However in TeX the has no height, but only width.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\angle A \cong \angle BOC , \quad
- \triangle ABC \sim \triangle DEF \\
- a \parallel b ,\quad c \perp d
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\sin \frac{\pi}{4} = \sin 45^\circ = \frac{\sqrt{2}}{2}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\sin^{-1} x + \arctan y + \operatorname{arcsec} z
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*}
- z^n &amp;amp;= r^n (\cos n \theta + i \sin n \theta) \\
- &amp;amp;= r^n \operatorname{cis} n \theta
- \end{align*}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-e = \lim \limits_{n \to \infty}
- \left( 1 + \frac1n \right )^n
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\frac{\partial}{\partial x} (3x^2 y)
- + \frac{d}{dy}(5y^2)=6xy + 10y
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\int _3^6 \frac1x \, dx = \ln 2
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\sin x = \displaystyle \sum_{n=0} ^\infty
- \frac{(-1)^n}{(2n+1)!} x^{2n+1}
- = x - \dfrac{x^3}{6} + \dots
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\int_a^b f(x)\, dx
- = \lim \limits_{ \| \Delta \| \to 0}
- \displaystyle \sum _{i=1}^n f(c_i) \Delta x_i
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\forall x \in \mathbb{N} \quad
- \exists y \in \mathbb{R} \quad xy=5
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-(-3,1] \cap [-2,5) \subseteq
- \mathbb{R}^+ \cup [-3,0] \subset \mathbb{C}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-L=L_{breeding}+L_{testing}+L_{selection}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\Delta G=\frac{ir\sigma_a}{L}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;p&gt;$$&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     
