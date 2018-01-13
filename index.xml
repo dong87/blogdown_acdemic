@@ -22,10 +22,54 @@
 &lt;li&gt;matrix factorization矩阵因子分解&lt;/li&gt;
 &lt;li&gt;interrogate
 &lt;ul&gt;
-&lt;li&gt;Their application here can corroborate established evidence for the causal role of smoking in lung cancer as well as &lt;strong&gt;interrogate&lt;/strong&gt; the causal role for methylation as a mediating mechanism. (Teschendorff, Relton, 2017) be embedded in嵌入 tiresome令人讨厌的 elementary row operation初等行运算 Echelon Form阶梯形式&lt;/li&gt;
+&lt;li&gt;Their application here can corroborate established evidence for the causal role of smoking in lung cancer as well as &lt;strong&gt;interrogate&lt;/strong&gt; the causal role for methylation as a mediating mechanism. (Teschendorff, Relton, 2017)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;be embedded in嵌入&lt;/li&gt;
+&lt;li&gt;tiresome令人讨厌的&lt;/li&gt;
+&lt;li&gt;elementary row operation初等行运算&lt;/li&gt;
+&lt;li&gt;Echelon Form阶梯形式&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>2018-01-12-resort解决</title>
+      <link>/post/2018-01-12-resort%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-12-resort%E8%A7%A3%E5%86%B3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R-error-collects</title>
+      <link>/post/2018-01-12-r-error-collects/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-12-r-error-collects/</guid>
+      <description>&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;检查一个字符串里是否有空格的代码&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;grepl(&amp;quot;\\s&amp;quot;, your_string)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;stopifnot&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;stopifnot只能停止不能自定义错误信息&lt;/h1&gt;
+&lt;p&gt;应该用&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if ()
+  stop(
+    msg(cli::rule(center = crayon::bold(&amp;quot;RM the spetial char in your title!&amp;quot;)),
+          startup = TRUE)
+    )&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>resort</title>
+      <link>/post/2018-01-12-resort/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-12-resort/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -92,6 +136,108 @@
 &lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;将复数理解为复平面，则复共轭无非是对实轴的反射。&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;一个n×n的实对称矩阵 &lt;span class=&#34;math inline&#34;&gt;\({\displaystyle M}\)&lt;/span&gt; 是正定的，当且仅当对于所有的非零实系数向量z，都有&lt;span class=&#34;math inline&#34;&gt;\(z^T {\displaystyle M} z &amp;gt; 0\)&lt;/span&gt;。&lt;a href=&#34;#fnref2&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>统计建模中的一切都可以看作是一个回归</title>
+      <link>/post/regression/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/regression/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:来自@siminaboca&#34;&gt;来自@siminaboca&lt;/a&gt; &lt;a href=&#34;https://github.com/SiminaB/Mentoring/blob/master/Regression.Rmd&#34;&gt;Github的一篇文章&lt;/a&gt;，由Google翻译。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这当然有点夸张！ 这也取决于强调的方面，例如统计研究生课程。 我知道我自己的培训项目高度集中于把大量的统计数据看作是一种特殊情况，或者是某种线性回归模型的推广。 我很喜欢这个观点，只要我能和合作者合作，就尽量强调这一点，但我承认，有时你必须从特殊情况出发才能建立起整体。&lt;/p&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;回归概念与损失函数和条件均值和中值相关&lt;/h2&gt;
+&lt;p&gt;“回归”一词目前以各种各样的方式使用。一般情况下，如果有一个称为结果变量或因变量的变量&lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;，以及一些其他称为解释变量或自变量的变量&lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(X_2\)&lt;/span&gt;等，则一个&lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;在&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;s上的回归可以是 &lt;a href=&#34;http://www.jstor.org/stable/2727353&#34;&gt;给定&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;（或“以&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;为条件”）&lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;的“概率分布的任何特征”&lt;/a&gt; 。这些特征通常涉及分布的“平均”或“中心”的一些度量，例如均值或中值。&lt;/p&gt;
+&lt;p&gt;最简单的回归方法就是具有单一解释变量的线性回归。换句话说，试图通过散点图来绘制“最佳拟合线”。有很多方法来定义“最佳拟合”，而通常考虑的方法是基于&lt;a href=&#34;https://en.wikipedia.org/wiki/Loss_function#Quadratic_loss_function&#34;&gt;二次损失函数quadratic loss function&lt;/a&gt; （也称为平方误差损失或&lt;span class=&#34;math inline&#34;&gt;\(L_2\)&lt;/span&gt;损失）。基本上，如果试图&lt;strong&gt;最小化平方和的误差&lt;/strong&gt;，即真实结果Y和&lt;span class=&#34;math inline&#34;&gt;\(\hat{Y}\)&lt;/span&gt;上的拟合值之间的差异，解决方案是“常规usual” 的&lt;a href=&#34;https://en.wikipedia.org/wiki/Ordinary_least_squares&#34;&gt;普通最小二乘法ordinary least squares (OLS)&lt;/a&gt;。拿这个例子来说，有一个单一的解释变量&lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt;，结果变量&lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;只是增加了一些噪音。回归OLS拟合标蓝色，拟合值与Y的真实值之间的线段也是蓝色。其他两行以橙色虚线显示。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/Regression_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;误差平方为OLS拟合的总和6.19，而其他两条线的误差平方是7.58和10.19。&lt;/p&gt;
+&lt;p&gt;如果没有解释变量，则拟合线是平坦的，代表结果值的平均值（平均值）：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./post/Regression_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;对于上面的例子，这显然是不合适的。事实上，在这种情况下，平方误差的总和是49.34！&lt;/p&gt;
+&lt;p&gt;一般来说，OLS有一些很好的属性，例如，如果噪声项定义为&lt;span class=&#34;math inline&#34;&gt;\(\epsilon = Y - \beta_0 - \beta_1 X_1\)&lt;/span&gt;，其中&lt;span class=&#34;math inline&#34;&gt;\(\beta_0\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt;是真正的截距和斜率线——是有限方差的独立同分布，OLS拟合是条件均值E(Y|X)的无偏估计（即其均值等于条件均值），实际上是 &lt;a href=&#34;https://en.wikipedia.org/wiki/Minimum-variance_unbiased_estimator&#34;&gt;最小方差无偏估计量minimum-variance unbiased estimator&lt;/a&gt;。请注意，到目前为止，我还没有讨论Y的分布，甚至Y是否连续。然而，在噪声项（因此Y是以X为条件）正态分布的情况下，OLS也是条件均值E(Y|X)的最大似然估计（maximum likelihood estimator，MLE）。&lt;/p&gt;
+&lt;p&gt;为什么常常考虑二次损失函数的一个原因是因为数学运算非常好（可以使用通常的基于微积分的二阶导数测试来求解最大值）。如果存在更多的解释变量，这也可以很好地推广 - 我们可以将它们全部包含在矩阵X中，并且在一些多元微积分的帮助下基本上以相同的方式进行。然而，还有许多其他的方式来定义“最适合”。然而，也许有人有兴趣估计之外的Y|X分布的一个方面而非其平均值，比如它的中位数。中位数自然地连接到 &lt;a href=&#34;https://en.wikipedia.org/wiki/Loss_function&#34;&gt;绝对损失absolute loss&lt;/a&gt;（也称为&lt;span class=&#34;math inline&#34;&gt;\(L_1\)&lt;/span&gt;损失），同样，均值就联系到二次误差损失。在这种情况下，标准是&lt;strong&gt;最小化误差的绝对值的总和&lt;/strong&gt;，也称为 &lt;a href=&#34;https://en.wikipedia.org/wiki/Least_absolute_deviations&#34;&gt;最小绝对偏差（least absolute deviations，LAD）或最小绝对残差（least absolute residuals）&lt;/a&gt;。在没有解释变量的情况下，平面拟合线表示解释值的中值。如果我们更广义地看一个函数f，其中的值f(X)最为相似的Y，有相似的使用二次损失来定义，那么“最适合” &lt;a href=&#34;https://web.stanford.edu/~hastie/Papers/ESLII.pdf&#34;&gt;最大限度地减少预期的预测误差expected prediction error（EPE -见统计学习基础 &lt;em&gt;Elements of statistical learning&lt;/em&gt; 第2.4节）&lt;/a&gt;是函数f(x) = E(Y|X=x)（条件均值）; 相反，如果使用绝对损失来定义，则为f(x)=中值median(Y|X=x)（条件中值）。一般来说，中值比均值方法更稳健，因为它们缺乏对异常值的依赖性，但由于不连续的求导复杂化了优化程序，数学变得更加困难。对于上面的例子，无论是最小化平方和还是误差的绝对值总和，结果都几乎相同：&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##intercept and slope estimated via OLS利用OLS估计截距和斜率
+coef(lm(y ~ x1))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## (Intercept)          x1 
+##   0.1263162   0.9645116&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(quantreg)
+##intercept and slope estimated via quantile regression with median (see below)利用分位数回归和中值估计截距和斜率
+coef(rq(y ~ x1, tau=0.5))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## (Intercept)          x1 
+##   0.1218339   0.9931817&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;类似地，如果使用 &lt;a href=&#34;http://www.jstor.org/stable/2727353&#34;&gt;阶跃函数（0-1）损失step function (0-1) loss&lt;/a&gt; ，则结果为f(x) = mode(Y|X=x) (conditional mode)。请注意，均值，中位数和模式是描述连续分布的“中心”的最常用方式。&lt;/p&gt;
+&lt;p&gt;考虑除中位数之外的另一个分位数也可能是有意义的，当考虑具有不对称分布的变量（例如收入分配）时有时是这种情况。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Quantile_regression&#34;&gt;分位数回归Quantile regression&lt;/a&gt;为此考虑了不同的损失函数; 用于中位数的损失函数等同于LAD。如果噪声项具有不对称的拉普拉斯分布，则在此获得的用于特定分位数的估计量就是其 &lt;a href=&#34;http://www.american.edu/cas/economics/info-metrics/pdf/upload/working-paper-bera.pdf&#34;&gt;MLE&lt;/a&gt;。对于本文档的其余部分，考虑到平方误差损失，我们通常会以“常规方式”使用“回归”。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ols&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;更多关于OLS拟合：线性代数和几何解释&lt;/h2&gt;
+&lt;p&gt;上面我们考虑了二维拟合线的特殊情况，其中只有一个解释变量，并估计了两个参数：“最佳拟合线”的斜率和截距。一般来说，可以考虑许多变量。通常将所有这些变量考虑在一个单一的矩阵&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;中，每个变量都作为列，每个样本作为一行，第一列通常由1组成，目标是估计一个“参数”&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;向量，所以结果&lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;是“尽可能接近”到&lt;span class=&#34;math inline&#34;&gt;\(X\beta\)&lt;/span&gt;（因此，&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;的第一个元素是截距）。在一定的线性代数假设下， &lt;a href=&#34;https://en.wikipedia.org/wiki/Proofs_involving_ordinary_least_squares&#34;&gt;多元情况下的OLS有一个很好的封闭形式&lt;/a&gt;：&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta} = (X&amp;#39;X)^{-1}X&amp;#39;Y\)&lt;/span&gt;。这意味着拟合值是：&lt;span class=&#34;math inline&#34;&gt;\(\hat{Y}=X\hat{\beta} = X(X&amp;#39;X)^{-1}X&amp;#39;Y\)&lt;/span&gt;。矩阵&lt;span class=&#34;math inline&#34;&gt;\(X(X&amp;#39;X)^{-1}X&amp;#39;\)&lt;/span&gt;实际上是 &lt;a href=&#34;https://en.wikipedia.org/wiki/Ordinary_least_squares&#34;&gt;投影矩阵在由X的列所跨越的空间上&lt;/a&gt;，这是另一种概念化&lt;span class=&#34;math inline&#34;&gt;\(\hat{Y}\)&lt;/span&gt;表示最接近向量是解释变量的线性组合的所有向量中的&lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;。我们再一次使用&lt;span class=&#34;math inline&#34;&gt;\(L^2\)&lt;/span&gt;损失定义“最接近的”，或者在线性代数术语中，最小化&lt;span class=&#34;math inline&#34;&gt;\(L^2\)&lt;/span&gt;的范数 &lt;span class=&#34;math inline&#34;&gt;\(||.||\)&lt;/span&gt;：&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta} = \arg\min||Y-X\beta||\)&lt;/span&gt;。值得注意的是，解&lt;span class=&#34;math inline&#34;&gt;\(X\beta = Y\)&lt;/span&gt;中的&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;实际上代表一个 &lt;a href=&#34;https://en.wikipedia.org/wiki/Ordinary_least_squares&#34;&gt;超定系统overdetermined system&lt;/a&gt; 因此通常无法得到准确解——因此，我们寻找一种解决方案，给出一个“接近”Y的拟合，同时处于解释变量所跨越的空间中。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;t&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;T检验、方差分析，及其他：线性模型中的假设检验&lt;/h2&gt;
+&lt;p&gt;也许大多数人首先想到的统计方法是t检验。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Student%27s_t-test#Independent_two-sample_t-test&#34;&gt;学生氏两样本t-test&lt;/a&gt; 用于&lt;strong&gt;比较两个分布的均值&lt;/strong&gt;，对于正态分布的随机变量或对于具有足够大的样本大小的连续随机变量，&lt;strong&gt;零假设表明它们是相等的&lt;/strong&gt;。关于线性回归的一个强有力的事情是假定等式的两样本t检验实际上与线性模型相同，其中解释变量是定义组成员关系的0/1变量：&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(380148)
+n &amp;lt;- 10
+##define the two random variables定义2个随机变量
+##y1 is from a normal distribution with mean=0, sd=1
+y1 &amp;lt;- rnorm(n,0,1)
+##y2 is from a normal distribution with mean=0.5, sd=1
+y2 &amp;lt;- rnorm(n,0.5,1)
+##run a t-test!
+t.test(y1,y2,var.equal = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Two Sample t-test
+## 
+## data:  y1 and y2
+## t = -0.66034, df = 18, p-value = 0.5174
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.5638050  0.8158546
+## sample estimates:
+## mean of x mean of y 
+## 0.2961889 0.6701641&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;##create a single vector of outcomes and a vector indicating group membership表示组关系的向量
+y &amp;lt;- c(y1,y2)
+x1 &amp;lt;- c(rep(0,length(y1)),rep(1,length(y2)))
+summary(lm(y~x1))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Call:
+## lm(formula = y ~ x1)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.3130 -0.9469  0.1265  1.0192  1.7432 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&amp;gt;|t|)
+## (Intercept)   0.2962     0.4005    0.74    0.469
+## x1            0.3740     0.5663    0.66    0.517
+## 
+## Residual standard error: 1.266 on 18 degrees of freedom
+## Multiple R-squared:  0.02365,    Adjusted R-squared:  -0.03059 
+## F-statistic: 0.436 on 1 and 18 DF,  p-value: 0.5174&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我们可以看到，p值是相同的，估计的斜率实际上等于平均值之间的差异。由于OLS属性背后的一个假设是噪声项是相同分布的，这就意味着方差不等的情况不能直接放在这个框架中。但是，如果方差不相等，这意味着也许应该考虑其他解释变量，所以之后这些变量可以包含在回归模型中。&lt;/p&gt;
+&lt;p&gt;ANOVA也是同样的思想：要比较多组均值。拥有回归思维方式的好处之一是，用条件方法解释结果是非常容易的，它也允许一个统一的框架，它可以包括连续和离散的解释变量以及它们之间的相互作用，而不必求助于像双向ANOVA，ANCOVA等特殊术语&lt;/p&gt;
+&lt;p&gt;一般而言，我们可以通过执行F检验来测试多变量模型中参数的任何线性组合是否等于0 。这是一个强有力的方法，因为它包括两个系数相等的情况，当然，单个参数是否等于0有一个特殊情况。对于后一种情况，这种方法相当于使用$ t np-1 &lt;span class=&#34;math inline&#34;&gt;\(自由度，其中\)&lt;/span&gt; p $是不包括截距的参数的数量。因此，回归方法再一次考虑了一个更一般的框架，特殊情况自然就会出现。&lt;/p&gt;
+&lt;p&gt;The same idea holds in the case of ANOVA, where multiple group means are being compared. One of the benefits of having a regression mindset is that it very easy to interpret the results in terms of conditional means and it also allows for a unified framework which can include both continuous and discrete explanatory variables and interactions between them, without having to resort to special terminology like two-way ANOVA, ANCOVA, etc.&lt;/p&gt;
+&lt;p&gt;In general, we can test whether any linear combination of parameters in a multivariate model is equal to 0 by performing an &lt;a href=&#34;https://courses.washington.edu/b515/l6.pdf&#34;&gt;F-test&lt;/a&gt;. This is a powerful approach, as it includes cases including the equality of two coefficients and of course, has a special case whether a single parameter is equal to 0. For this latter case, this approach is equivalent to using a t-test with &lt;span class=&#34;math inline&#34;&gt;\(n-p-1\)&lt;/span&gt; degrees of freedom, where &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt; is the number of parameters, excluding the intercept. Thus, once again, the regression approach allows for a more general framework from which the special cases naturally fall out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;from-weighted-regression-to-generalized-linear-models&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;From weighted regression to generalized linear models&lt;/h2&gt;
+&lt;p&gt;We mentioned before that one of the properties that is generally assumed for linear regression is that the noise terms are independent and identically distributed. In case this does not hold, an &lt;a href=&#34;https://en.wikipedia.org/wiki/Generalized_linear_model&#34;&gt;alterative to OLS&lt;/a&gt; is to use either &lt;em&gt;weighted least squares&lt;/em&gt; (WLS) or &lt;em&gt;generalized least squares&lt;/em&gt; (GLS) approaches. This means that if the variance-covariance matrix of the noise terms is &lt;span class=&#34;math inline&#34;&gt;\(W\)&lt;/span&gt;, then the MLE solution is: &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}=(X&amp;#39;W^{-1}X)^{-1}X&amp;#39;W^{-1}Y\)&lt;/span&gt;. This is equivalent to minimizing &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta} = \arg\min(Y-X\beta)&amp;#39;W^{-1}(Y-X\beta)\)&lt;/span&gt;, known as the &lt;em&gt;Mahalanobis length,&lt;/em&gt; instead of &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta} = \arg\min||Y-X\beta||\)&lt;/span&gt; as before. If W has all off-diagonal terms equal to 0 (i.e. the noise terms are independent), this is the WLS estimate, otherwise it is the GLS estimate.&lt;/p&gt;
+&lt;p&gt;What happens if the outcome is not normally distributed? Here we come to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Generalized_linear_model&#34;&gt;generalized linear model&lt;/a&gt;. In the case in which the outcome Y is from a class of distributions known as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Exponential_family&#34;&gt;exponential family&lt;/a&gt; - which include the normal, exponential, and Bernoulli distributions - instead of trying to directly estimate the conditional mean &lt;span class=&#34;math inline&#34;&gt;\(E(Y|X)\)&lt;/span&gt; as a linear function &lt;span class=&#34;math inline&#34;&gt;\(X\beta\)&lt;/span&gt;, it is generally more convenient to estimate a transformation of this mean, &lt;span class=&#34;math inline&#34;&gt;\(g[E(Y|X)]\)&lt;/span&gt;. This is because, for example, for a 0/1 outcome, using just the OLS will often result in fitted values outside of the [0,1] range, but using a &lt;em&gt;link function&lt;/em&gt; g that transforms the (0,1) range corresponding to the probability of success in a Bernoulli distribution into the entire real line solves this problem. If the link function is the log-odds (logit), we find ourselves looking at logistic regression. In the general case, we cannot obtain a closed form MLE solution, but by applying a first-order Taylor approximation, we obtain an algorithm that performs &lt;a href=&#34;https://web.as.uky.edu/statistics/users/pbreheny/760/S13/notes/2-19.pdf&#34;&gt;iteratively reweighted least squares (IRLS)&lt;/a&gt;, where the matrix &lt;span class=&#34;math inline&#34;&gt;\(W\)&lt;/span&gt; is related to the derivative of the inverse link function.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;smoothing-and-regression&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Smoothing and regression&lt;/h2&gt;
+&lt;p&gt;So far we have discussed fitting linear models between an outcome and explanatory variables, but what happens if the relationship is clearly nonlinear? One option is to add more explanatory variables, including polynomial terms, and fit a linear function to those - for example, instead of having &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; as an explanatory variable, can consider &lt;span class=&#34;math inline&#34;&gt;\(X_1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X_1^2\)&lt;/span&gt;, so that we fit the model &lt;span class=&#34;math inline&#34;&gt;\(E(Y|X_1) = \beta_0+\beta_1X_1+\beta_2X_1^2\)&lt;/span&gt; instead of &lt;span class=&#34;math inline&#34;&gt;\(E(Y|X_1) = \beta_0+\beta_1X_1\)&lt;/span&gt;. Note that the function is still linear in the explanatory variables that are considered. More flexibility can be obtained by using regression models that have piecewise polynomial terms, known as &lt;a href=&#34;https://en.wikipedia.org/wiki/Spline_(mathematics)&#34;&gt;splines&lt;/a&gt;. For the case of a single explanatory variable, another popular approach is &lt;a href=&#34;https://en.wikipedia.org/wiki/Local_regression&#34;&gt;local regression (loess)&lt;/a&gt;, which fits simple linear regression using a moving window, resulting in a smooth function. Many other advanced approaches are built on these concepts, including &lt;a href=&#34;https://en.wikipedia.org/wiki/Smoothing_spline&#34;&gt;smoothing splines&lt;/a&gt;, which place knots at every observation but have a &lt;a href=&#34;https://web.stanford.edu/class/stats202/content/lec17.pdf&#34;&gt;“roughness penalty” to reduce overfitting&lt;/a&gt; and &lt;a href=&#34;https://web.stanford.edu/class/stats202/content/lec17.pdf&#34;&gt;generalized additive models (GAMs)&lt;/a&gt; which fit smooth functions for each separate explanatory variable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;regression-and-machine-learning&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Regression and machine learning&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Machine learning&lt;/em&gt;, also known as &lt;em&gt;statistical learning&lt;/em&gt;, focuses on “learning from the data” in order to either predict the outcomes for new data points (supervised learning) or to find patterns in the data (unsupervised learning). “Predicting” in this case means obtaining the values &lt;span class=&#34;math inline&#34;&gt;\(\hat{Y}\)&lt;/span&gt; for new points which are not in the dataset on which the model was fitted (the “training data”), using the model parameters estimated from that dataset. For supervised learning tasks, any of the regression approaches described above can be considered, noting that in machine learning, the main goal is having a low prediction error for new points, as opposed to performing statistical inference. If the number of predictors is very large, potentially larger than the number of samples, &lt;a href=&#34;https://en.wikipedia.org/wiki/Regularization_(mathematics)&#34;&gt;regularization approaches&lt;/a&gt; like ridge regression, LASSO, or elastic net can be used to reduce overfitting. Many more approaches exist, some which build on or are similar to regression. For example, &lt;a href=&#34;https://en.wikipedia.org/wiki/Support_vector_machine#Regression&#34;&gt;support vector machines (SVMs)&lt;/a&gt; for continuous outcomes are equivalent to regression models with a regularization term and the hinge loss instead of the quadratic loss function. Similarly, &lt;a href=&#34;https://github.com/greenelab/deep-review/blob/master/content/02.intro.md&#34;&gt;neural networks&lt;/a&gt; can be seen as extensions of linear or logistic regression. It is also increasingly common in machine learning to use &lt;a href=&#34;https://en.wikipedia.org/wiki/Ensemble_learning&#34;&gt;ensemble methods&lt;/a&gt; that combine several approaches and perform a type of averaging or “voting” to obtain the final predicted values.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -373,306 +519,6 @@ gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.md&amp;quot
 &lt;li&gt;Scientists are explorers. Philosophers are tourists.&lt;/li&gt;
 &lt;li&gt;If you have any talent, any occupation that delights you, do it, and do it to the hilt. Don&amp;rsquo;t ask why or what difficulties you may get into.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugo Academic主题中斜体不能正确显示</title>
-      <link>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hugo Academic&lt;/strong&gt;是一个很好的主题，但斜体（*）斜体不能正确显示，让我苦恼了一阵儿。在&lt;strong&gt;Google&lt;/strong&gt;中检索原因，遇到这样一个&lt;a href=&#34;https://meta.stackexchange.com/questions/188249/why-markdown-bold-rendered-as-italic-on-parts-of-words&#34; target=&#34;_blank&#34;&gt;问题&lt;/a&gt;：加粗不能正常显示。问题底下给出的原因是单词内加粗让人感觉怪怪的。而我们中文是不用空格来界定单词的，所以星号左右各加空格就可以了。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>INLA教程|A gentle INLA tutorial</title>
-      <link>/post/a-gentle-inla-tutorial/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/a-gentle-inla-tutorial/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文翻译自&lt;a href=&#34;https://www.precision-analytics.ca/blog-1/inla&#34;&gt;A gentle INLA tutorial&lt;/a&gt;，作者Kathryn Morrison，Google &amp;amp; Leiming Dong 翻译。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;INLA是替代MCMC拟合贝叶斯模型的一个很好的（快速）方案。这两种方法各有优缺点：MCMC是非常直观的方法，甚至在简单的情况下你自己就能实现；INLA算法对我来说是数学的延伸。&lt;/p&gt;
-&lt;p&gt;我觉得现在好多了，但是当我第一次学习INLA的论文的时候，并没有多少介绍。我在博士学位上花费了好几个月的时间，仔细研究INLA论文中的证明试图理解这一切。&lt;/p&gt;
-&lt;p&gt;为了我自己的好处，我为应用统计学家做了一个总结 - 像我这样的人，对正态分布、泰勒级数展开和贝叶斯定理等理论已经足够熟悉，但是可能没有花很多时间在最近的Hessian上。&lt;/p&gt;
-&lt;p&gt;有一个非常简单的解释。如果你对更的理解感兴趣，那么开创性的论文是非常彻底和清晰的，值得一读（或读五十遍）。细节是有趣和重要的。但是，我的目的是给你一些要点，这是我开始时所希望的。&lt;/p&gt;
-&lt;div id=&#34;inla&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;简介：为什么选择INLA&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;分层模型&lt;/strong&gt;广泛用于多学科，表示数据中复杂的依赖结构。模型参数和潜在变量或过程中的不确定性可以在贝叶斯框架中使用适当的先验分布进行编码。&lt;/p&gt;
-&lt;p&gt;虽然后验分布几乎没有封闭形式的解，但是通过&lt;strong&gt;马尔可夫链蒙特卡洛（MCMC）&lt;/strong&gt;方法的广义解已经被开发成WinBUGS之类的软件。MCMC速度慢，不能很好地扩展，对于一些复杂的模型可能会失败（模型不会收敛）。较新的软件（JAGS，Stan）试图解决这些问题。&lt;/p&gt;
-&lt;p&gt;MCMC是一种渐近确切的方法，INLA则是一种近似。有时使用INLA会遇到怀疑或问题，例如“但近似误差怎么样？您的结果有多自信？”有些时候INLA会失败，但最好记住我们不住在asymptopia中。从经验上讲，MCMC误差和INLA误差常常非常相似，正如许多模拟研究所显示的那样，而且我自己也多次观察到。&lt;/p&gt;
-&lt;p&gt;对于&lt;strong&gt;潜在高斯模型（LGM）&lt;/strong&gt;的一般类别，INLA是MCMC的快速替代方案。许多熟悉的模型可以被重新塑造成LGM，比如GLM（M）、GAM（M）、时间序列、空间模型、测量误差模型等等。&lt;/p&gt;
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;p&gt;要了解INLA那里的要点，我们需要熟悉：&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;1.贝叶斯推理 2.潜在高斯模型（LGM） 3.高斯马尔科夫随机场（GMRF） 4.拉普拉斯近似&lt;/p&gt;
-&lt;p&gt;如果您有兴趣了解INLA，那么我认为您已经熟悉贝叶斯推理，但是我们将从一个非常简短的回顾开始。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;1.贝叶斯推理&lt;/h1&gt;
-&lt;p&gt;在贝叶斯模型中，我们通常想要得到模型的后验分布（例如给定数据的参数分布）或预测后验分布（预测/预测 - 观察到的新值的分布）。让我们把重点放在前一种情况，然后是后者。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;后验分布等于数据可能性乘以标准化常数的先验值（所以后验积分为1）。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[p(\theta | y) = \frac{p(y|\theta) p(\theta)} {\int p(y|\theta) p(\theta)d\theta} \propto  p(y|\theta) p(\theta) \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在一个频率学派框架中，我们经常使用像Newton-Raphson这样的数值方法来最大化数据可能性，以获得给定参数（我们认为是固定的但是未知的）的点估计，并且使用理论重采样的思想来估计围绕该参数估计相应的置信区间。&lt;/strong&gt;实际上，我们经常使用bootstrapping形式的显式重采样，但这是另一回事。在贝叶斯分析中，我们获得参数的后验分布（我们将其视为一个随机变量），为此我们可以提供汇总统计（中位数，中位数或模式）和分位数来直接获得可靠的区间。&lt;/p&gt;
-&lt;p&gt;如果我们对每个参数使用共轭先验（使数学容易的规范分布的种类），那么我们可能能够确定闭合形式的后验分布。通常，&lt;strong&gt;分母中的积分是难以处理的，所以我们使用MCMC等数值方法从条件中进行抽样，并估计每个感兴趣的参数的边际分布&lt;/strong&gt;。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;2.潜在的高斯模型&lt;/h1&gt;
-&lt;p&gt;LGM的一般形式是：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{y} | \mathbf{x}, \mathbf{\theta_2} \sim \prod_i \ p(y_i | \eta_i, \mathbf{\theta_2})\)&lt;/span&gt; “Likelihood”&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x} | \mathbf{\theta_1} \sim p(\mathbf{x}|\mathbf{\theta_1}) = \mathcal{N}(0,\mathbf{\Sigma})\)&lt;/span&gt; “Latent field”&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{{\theta}} = [\mathbf{\theta_1},\mathbf{\theta_2}]^T \sim p(\mathbf{\theta})\)&lt;/span&gt; “Hyperpriors”&lt;/p&gt;
-&lt;p&gt;哪里&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{y}\)&lt;/span&gt;是一个观察数据集， &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt; 不是协变量，而是线性预测变量（包括它本身）中所有参数的联合分布，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\theta}\)&lt;/span&gt;是潜在域的超参数，不是高斯。&lt;/p&gt;
-&lt;p&gt;我们熟悉的模型，比如前面提到的GLM（M）如何适合这个框架？那么，考虑一个广义（线性/加法）（混合）模型的一般形式：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ \mathbf{y} \sim \prod_i^N p(y_i | \mu_i)\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[ g(\mu_i) = \eta_i = \alpha + \sum_{k=1}^{n_\beta} \beta_k z_{ki}  + \sum_{j=1}^{n_f} f^{(j)}(w_{ji}) + \varepsilon_i \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(g(\cdot)\)&lt;/span&gt;是链接函数， &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;是截距， &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\beta}\)&lt;/span&gt;是（线性的）协变量的熟悉的回归参数&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{z}\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{f} = f_1(\cdot), f_2(\cdot), ..., f_{n_\beta}(\cdot)\)&lt;/span&gt;是一些协变量 &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{w}\)&lt;/span&gt;的一组函数，协变量可能是非线性的，比如随机（&lt;span class=&#34;math inline&#34;&gt;\(iid\)&lt;/span&gt;）效应，空间或时间相关效应，平滑样条等。&lt;/p&gt;
-&lt;p&gt;线性回归是一个特殊情况，其结果是高斯，链接函数是identity， &lt;span class=&#34;math inline&#34;&gt;\({\mathbf{f}}(.)\)&lt;/span&gt; = 0。在传统的BYM空间模型中， &lt;span class=&#34;math inline&#34;&gt;\(f_1(\cdot) \sim CAR\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(f_2(\cdot) \sim N(0, \sigma^2_{f_2})\)&lt;/span&gt;，及链接函数通常是 &lt;em&gt;logit&lt;/em&gt; 或 &lt;em&gt;log&lt;/em&gt; ，因为你经常有一个二项或泊松结果变量。许多熟悉的模型是这种最一般形式的特例（比其他更明显）。&lt;/p&gt;
-&lt;p&gt;这个模型是一个LGM &lt;span class=&#34;math inline&#34;&gt;\(iff\)&lt;/span&gt;我们假设这些参数具有联合的高斯分布。这可以通过在每个参数上设置普通的先验来实现）：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mathbf{x} = [\mathbf{\eta}, \alpha, \mathbf{\beta}, \mathbf{f}(\cdot)] \sim \mathcal{N}(0, \mathbf{\Sigma}) \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;如果我们可以假设&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;中条件独立，那么这个潜在场 &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;是一个高斯马尔科夫随机场。在令人惊讶的很多情况下，这个假设是合理的。当我在下一节介绍GMRF时，我将讨论更多。这里需要注意的是维度的重要性&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt; 通常是很大的，因为它通过线性预测器与数据成比例，而非高斯超参数&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\theta}\)&lt;/span&gt;一般很小。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;3.高斯马尔可夫随机场&lt;/h1&gt;
-&lt;p&gt;GMRF是一个随机向量，遵循具有马尔可夫性质的多元正态分布：例如&lt;span class=&#34;math inline&#34;&gt;\(i\neq j\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(x_i \perp x_j | \mathbf{x}_{-ij}\)&lt;/span&gt;。“&lt;span class=&#34;math inline&#34;&gt;\(-ij\)&lt;/span&gt;”是指“除了”&lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;之外的所有元素。考虑（空间或时间）自回归过程作为这个马尔可夫性质的一个自然的例子。&lt;/p&gt;
-&lt;p&gt;回想一下，&lt;strong&gt;精度是方差的逆&lt;/strong&gt;。同样，精度矩阵（&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Q}\)&lt;/span&gt;）是其对应的协方差矩阵的逆（&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\Sigma}\)&lt;/span&gt;），例如， &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x} \sim \mathcal{N}(0,\mathbf{\Sigma}), \mathbf{Q} = \mathbf{\Sigma}^{-1}\)&lt;/span&gt;。还记得在重要情况下，对矩阵求逆是一个复杂且计算密集的操作，&lt;span class=&#34;math inline&#34;&gt;\(\mathcal{O}(n^3)\)&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;稀疏矩阵（有很多零）更容易求逆。例如，一个对角矩阵是稀疏的，很容易求逆（实际上是元素的逆），单位矩阵是它自己的逆矩阵：&lt;span class=&#34;math inline&#34;&gt;\(I^{-1} = I\)&lt;/span&gt;。但是，即使一些非对角元素是非零的，零也会大大提升计算。&lt;/p&gt;
-&lt;p&gt;我们已经知道以下结果：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ x_i \perp x_j  \Leftrightarrow \mathbf{\Sigma}_{ij} = 0 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;因此，如果我们想要获得稀疏的协方差矩阵，我们将不得不假设参数之间有很大的&lt;strong&gt;边际独立性&lt;/strong&gt;，这是一个强大而且通常不合理的假设。然而，条件独立性（通过马尔可夫性）往往是一个非常合理的假设。GMRF方法的威力来自Havard Rue et al显示了条件独立特性是如何在精度矩阵中编码的，以及如何利用这些特性来改进涉及这些矩阵的计算。经过大量的工作，可以看出：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ x_i \perp x_j | \mathbf{x}_{-ij} \Leftrightarrow \mathbf{Q}_{ij} = 0 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;因此，GMRF中的马尔可夫假设产生了一个稀疏精度矩阵。这个稀疏被转化为Cholesky分解矩阵（&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{Q}=\mathbf{LL}^T\)&lt;/span&gt;）并且帮助极快的计算。由于这是大矩阵，所以它是计算最重要的一个。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;4.拉普拉斯近似&lt;/h1&gt;
-&lt;p&gt;回想一下基本的泰勒级数展开式，其中有关于某一点&lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt;的函数 可以扩展成（有时是无限的）项的和，并且使用有限数量的这些项可以用作近似（通常使用前三个项，直到二阶导数）。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[f(x) = f(a) + \frac{f&amp;#39;(a)}{1!}(x-a) +  \frac{f&amp;#39;&amp;#39;(a)}{2!}(x-a)^2 +  \frac{f&amp;#39;&amp;#39;&amp;#39;(a)}{3!}(x-a)^3 + ...\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;我们有基本的抛物线， &lt;span class=&#34;math inline&#34;&gt;\(y = x^2\)&lt;/span&gt;。围绕a=2展开（这里我们可以选择任何值）：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[f(x) = x^2 \hspace{7mm} f&amp;#39;(x) = 2x, \hspace{7mm} f&amp;#39;&amp;#39;(x) = 2, \hspace{7mm} f&amp;#39;&amp;#39;&amp;#39;(x) = 0 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;因此：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[f(x) = x^2 = 2^2 + 2(2)(x-2) + \frac{2}{2}(x-2)^2 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;{{&amp;lt; figure src=“/img/taylor.png” title=“taylor” &amp;gt;}}&lt;/p&gt;
-&lt;p&gt;拉普拉斯近似用于估计具有正态分布的任何分布（PDF）。它使用前三项（二次函数）泰勒级数展开模式(&lt;span class=&#34;math inline&#34;&gt;\(\hat{x}\)&lt;/span&gt;)的函数来近似&lt;span class=&#34;math inline&#34;&gt;\(\log g(x)\)&lt;/span&gt;（log简化了微分）：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\log g(x) \approx \log g(\hat{x}) + \frac{\partial \log g(\hat{x})} {\partial x} (x-\hat{x}) +  \frac{\partial^2 \log g(\hat{x})} {2 \partial x^2} (x-\hat{x})^2\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;模式中的一阶导数为零，所以上面的表达式简化了，如果我们说估计的方差（基于曲率）是 $^2 = -1 /  $，那么我们可以重写这些表达式为：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\log g(x) \approx \log g(\hat{x}) - \frac{1}{2\sigma^2} (x-\hat{x})^2\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;希望开始看起来很熟悉！我们可以用这个结果做一个正常的近似。以双边的指数和积分取出常数：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\int g(x)dx = \int exp[\log g(x) dx] \approx constant \int exp[ - \frac{(x-\hat{x})^2}{2\hat{\sigma^2}}]dx\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;使用拉普拉斯近似的分布&lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;与平均值近似正常&lt;span class=&#34;math inline&#34;&gt;\(\hat{x}\)&lt;/span&gt;这可以在模式下通过解&lt;span class=&#34;math inline&#34;&gt;\(f&amp;#39;(x) = 0\)&lt;/span&gt;及方差&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}^2 = -1/f&amp;#39;&amp;#39;(x)\)&lt;/span&gt;找到 。不太相信？以下是一个简单的例子&lt;span class=&#34;math inline&#34;&gt;\(\chi^2\)&lt;/span&gt; （因为很容易用手区分;分母中的伽马项只是常数）。 &lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*}
-f(x;\,k) &amp;amp;=
-  \frac{x^{(k/2-1)} e^{-x/2}}{2^{k/2} \Gamma\left(\frac{k}{2}\right)},   x \geq 0 \\
-\log f(x) &amp;amp;= (k/2 - 1) \log x - x/2  \\
-\log f&amp;#39;(x) &amp;amp;= (k/2 -1)/x - 1/2 = 0   \\
-\log f&amp;#39;&amp;#39;(x) &amp;amp;= -(k/2 - 1)/x^2  \\
-\therefore \chi^2_k    &amp;amp;\overset{LA}{\sim}  N(\hat{x} = k-2, \hat{\sigma}^2 = 2(k-2))
-\end{align*} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;{{&amp;lt; figure src=“/img/approximation.png” title=“approximation” &amp;gt;}}&lt;/p&gt;
-&lt;p&gt;当自由度更高时（当分布更接近正常时），逼近显然更好。这是一个非常简单的单变量的例子，但重要的是要说服你，当事情大致正常时，这往往运作良好。它可以延伸到多元的情况，就像你所期望的一样，使用Hessian曲率，大量的数学运算发生。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;把它们放在一起：集成的嵌套拉普拉斯近似&lt;/h1&gt;
-&lt;p&gt;我们只是覆盖了很多不同的部分，但是我们从LGM中需要的是潜在场的元素的边界（例如回归参数）以及可能来自超前分布的一些元素（例如，自回归模型中的相关参数，或随机效应的方差）——我们想要拟合分层模型！&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[p(x_j | \mathbf{y}) = \int p(x_j, \mathbf{\theta} | \mathbf{y}) d\mathbf{\theta}  = \int p(x_j | \mathbf{\theta},\mathbf{y}) p(\mathbf{\theta} | \mathbf{y})  d\mathbf{\theta}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[p(\theta_k | \mathbf{y}) = \int p(\mathbf{\theta}|\mathbf{y}) d\mathbf{\theta}_{-k}\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;因此，我们需要近似的项是： &lt;span class=&#34;math inline&#34;&gt;\(p(\mathbf{\theta}|\mathbf{y})\)&lt;/span&gt;和&lt;span class=&#34;math inline&#34;&gt;\(p(x_j | \mathbf{\theta}, \mathbf{y})\)&lt;/span&gt;。第一项可以用来估计所有感兴趣的边际&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\theta}\)&lt;/span&gt;，也需要估计潜在场的边际。从概率回忆：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align}
-p(b) &amp;amp;= \frac{p(a,b)} {p(a|b)} \\
-p(b|c) &amp;amp;= \frac{p(a,b|c)} {p(a|b,c)} 
-\end{align} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;我们可以用这个规则来重写我们的边际分布：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align}
-p(\mathbf{\theta} | \mathbf{y}) &amp;amp;= \frac{p(\mathbf{x}, \mathbf{\theta} \mathbf{|} \mathbf{y})} {p(\mathbf{x} \mathbf{|} \mathbf{\theta}, \mathbf{y}) } \nonumber 
- \end{align} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;我们可以扩大分子（细节略），并使用拉普拉斯近似为分母，这是未知的：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ 
-\begin{align}
-p(\mathbf{\theta} | \mathbf{y}) &amp;amp;\approx \frac{p(\mathbf{y|x,\theta}) p(\mathbf{x|\theta})p(\mathbf{\theta})} {\tilde{p}(\mathbf{x|\theta,y})} \bigg|_{x={x^*}(\theta)}  = \tilde{p}(\mathbf{\theta|y}) 
-\end{align} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(x^*(\theta)\)&lt;/span&gt; 是的模式&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;对于给定的配置&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{\theta}\)&lt;/span&gt;。获取&lt;span class=&#34;math inline&#34;&gt;\(p(x_j | \mathbf{\theta}, \mathbf{y})\)&lt;/span&gt;使用相同的逻辑，但是因为维数更复杂 &lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;更大。&lt;/p&gt;
-&lt;p&gt;最明显的选择是直接使用一个正常的近似值&lt;span class=&#34;math inline&#34;&gt;\(p(x_j|\mathbf{\theta},\mathbf{y})\)&lt;/span&gt;，因为我们已经在上面的分母中计算了这一点。这是非常快的，但假设太强大，结果往往很差（这些条件分布常常有些偏斜或重尾）。或者，我们可以划分&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x} = [x_j, \mathbf{x}_{-j}]\)&lt;/span&gt;并使用拉普拉斯近似来表示潜在场中的每个元素&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align}
-p(x_j | \mathbf{\theta,y}) \propto \frac{p(\mathbf{x,\theta |y})}{p(\mathbf{x}_{-j} | x_j, \mathbf{\theta, y})} \propto \frac{p(\mathbf{\theta})p(\mathbf{x|\theta})p(\mathbf{y|x})}{p(\mathbf{x}_{-j} | x_j, \mathbf{\theta, y})}  
-\end{align} 
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这种方法工作得很好，因为条件&lt;span class=&#34;math inline&#34;&gt;\(p(\mathbf{x_{-j}} | x_j, \mathbf{\theta, y})\)&lt;/span&gt;往往接近正常，但在计算上更昂贵。&lt;/p&gt;
-&lt;p&gt;第三个选项（默认在INLA软件中）使用简化的拉普拉斯近似（两者之间的折衷），这在计算上是非常有效的，并且近似值仍然非常好。它使用一个泰勒级数展开直到分子和分母的三阶来估计&lt;span class=&#34;math inline&#34;&gt;\(p(x_j|\mathbf{\theta,y})\)&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;其他两种选择都可以在INLA中使用。我个人将这些模型与近似值进行拟合，因为它非常快。结果大概是一样的，但是和使用MCMC（或者如果你正在做一个模拟的话）是不一样的。所以我做了一些基本的构建和近似验证，然后使用简化的或完整的Laplace作为最终的模型。我从来没有亲自观察过可以在简化和完全拉普拉斯之间进行有意义区分的场景。&lt;/p&gt;
-&lt;p&gt;INLA算法使用类似牛顿的方法来探索超参数的联合后验分布&lt;span class=&#34;math inline&#34;&gt;\(\tilde{p}(\mathbf{\theta|y})\)&lt;/span&gt;为数值积分寻找合适的点：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*} 
-\tilde{p}(x_j|\mathbf{y}) \approx \sum_{h=1}^H \tilde{p}(x_j | \theta^*_h,\mathbf{y}) \tilde{p}(\theta^*_h|\mathbf{y}) \Delta_h
-\end{align*}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;现在我们可以得到INLA正在做的事情的要点！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;积分&lt;/strong&gt;：使用数值积分&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;嵌套&lt;/strong&gt;：因为我们需要&lt;span class=&#34;math inline&#34;&gt;\(p(\mathbf{\theta | y)}\)&lt;/span&gt;得到&lt;span class=&#34;math inline&#34;&gt;\(p(x_j | \mathbf{y})\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;拉普拉斯近似&lt;/strong&gt;：用于获得正态近似参数的方法&lt;/p&gt;
-&lt;p&gt;Finn Lindgren等人在2011年的研究中提出了一种INLA的随机偏微分方程（SPDE）方法，允许在点数据表面具有曲率的大地理区域进行更真实的空间建模，从而实现连续的协方差函数。我今天不会讨论这个，但是可能会在SPDE上做一个未来的帖子。如果您刚刚开始了解INLA，除非SPDE是您感兴趣的唯一部分，否则我会建议先学习基础知识。随机微积分不是我们中间大多数每天使用的应用类型。&lt;/p&gt;
-&lt;p&gt;我知道有很多的信息——但实际上我几乎没有抓到表面！我建议查看2009年的原始INLA论文（参见参考文献）。现在，让我们看看R-INLA代码长什么样样子，以及在一些简单的例子中，如何使用MCMC来比较输出。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;r-inla&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;使用R-INLA&lt;/h1&gt;
-&lt;p&gt;R-INLA依赖于独立的C库（GMRF），因此不在CRAN上，但可以从&lt;a href=&#34;http://www.r-inla.org&#34; class=&#34;uri&#34;&gt;http://www.r-inla.org&lt;/a&gt;获取所有信息。&lt;/p&gt;
-&lt;p&gt;我将通过两个使用rjags和INLA使用R-INLA的MCMC的简单例子&lt;/p&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;1.简单的线性回归&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(y_i|x_i) = \alpha + \beta x_i\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;R中的模拟数据&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;N = 100 #500, 5000, 25000, 100000  
-x = rnorm(N, mean=6,sd=2)
-y = rnorm(N, mean=x,sd=1) 
-data = list(x=x,y=y,N=N) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;JAGS代码&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;model = function() {  
-  for(i in 1:N) {
-    y[i] ~ dnorm(mu[i],tau)
-    mu[i] &amp;lt;- alpha + beta*x[i] 
-  }
-  alpha  ~ dnorm(0,0.001)
-  beta  ~ dnorm(0,0.001) 
-  tau ~ dgamma(0.01,0.01) 
-}  
-params = c(&amp;quot;alpha&amp;quot;,&amp;quot;beta&amp;quot;,&amp;quot;tau&amp;quot;,&amp;quot;mu&amp;quot;) 
-jags(data=data,param=params,n.chains=3,n.iter=50000, n.burnin=5000, model.file=model)  &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;INLA代码&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;inla(y~x, family = c(&amp;quot;gaussian&amp;quot;), data = data, control.predictor=list(link=1)) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;INLA生成一个后验密度，而不是像MCMC这样的模拟经验分布。您可以在下边的图中看到这三个参数与JAGS（直方图）和INLA（密度曲线）的分布有多相似。&lt;/p&gt;
-&lt;p&gt;{{&amp;lt; figure src=“/img/inla-posteriors.png” title=“inla-posteriors” &amp;gt;}}&lt;/p&gt;
-&lt;p&gt;在这里很容易，但有时很难知道默认的INLA先验，他们可以发挥很大的作用，特别是当数据集很小时。如果您在比较MCMC和INLA之前，在假设INLA近似值失败之前，我强烈建议您确认使用的先验值是否相同。有时，INLA定义了逻辑尺度上的先验（例如）。&lt;/p&gt;
-&lt;p&gt;即使是这样一个简单的例子，随着样本量的增加，R-INLA和JAGS的节省时间显着。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;iidglm&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;2.具有iid随机效应的泊松GLM&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(y_i|x_i) = poisson(\mu_i) \]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[log(\mu_i) = \alpha + \beta x_i + \nu_i\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[\nu_i \sim N(0,\tau_\nu)\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;模拟的数据&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;N = 100 # 500, 5000, 25000, 100000 
-x = rnorm(N, mean=5,sd=1) 
-nu = rnorm(N,0,0.1)
-mu = exp(1 + 0.5*x + nu) 
-y = rpois(N,mu)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;JAGS&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;model = function() {  
-  for(i in 1:N) {
-    y[i] ~ dpois(mu[i]) 
-    log(mu[i]) &amp;lt;- alpha + beta*x[i] + nu[i]
-    nu[i] ~ dnorm(0,tau.nu) 
-  }
-  alpha  ~ dnorm(0,0.001)
-  beta  ~ dnorm(0,0.001) 
-  tau.nu ~ dgamma(0.01,0.01) 
-}  
-params = c(&amp;quot;alpha&amp;quot;,&amp;quot;beta&amp;quot;,&amp;quot;tau.nu&amp;quot;,&amp;quot;mu&amp;quot;) 
-jags(data=data,param=params,n.chains=3,n.iter=50000, n.burnin=5000, model.file=model)   &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;INLA代码&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;nu = 1:N 
-inla(y ~ x + f(nu,model=&amp;quot;iid&amp;quot;), family = c(&amp;quot;poisson&amp;quot;), 
-           data = data, control.predictor=list(link=1)) &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我没有在这里显示分布，但参数估计是可比的。节省的时间真的再次显着。在我的博士学位中，我提出了一个多变量（多重结果）的预测模型，并且没有INLA方法，对于我正在研究的公共卫生应用来说，它不是一个实用的模型，因为模型必须适合每个模型天。我也会在这里引用我关于这个模型的论文。尽管我现在所做的事情往往不那么复杂，但我仍然喜欢使用INLA来进行很多贝叶斯工作。&lt;/p&gt;
-&lt;p&gt;除了更直观的理论之外，我更喜欢关于MCMC代码的唯一的东西是BUGS/JAGS和INLA的语法。虽然INLA看起来不错，因为它与R的glm功能相似，但有时前辈对我的喜好太隐蔽了。我发现BUGS代码真正以一种对教学和学习有益的方式来突出模型的层次结构。&lt;/p&gt;
-&lt;p&gt;你在应用研究/工作中使用贝叶斯模型吗？你写自己的MCMC，和/或使用Bug/Jags/Stan，和/或你是否尝试过INLA？我很乐意在评论中听到任何人的思想和经验。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;参考&lt;/h1&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>不完全区组设计</title>
-      <link>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</guid>
-      <description>&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，&lt;span class=&#34;math inline&#34;&gt;\(\lambda = r (k-1) / (v-1)\)&lt;/span&gt;，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;incomplete.block.design &amp;lt;- function(number.alternatives, number.blocks, alternatives.per.block, n.repeats = 1000){
-    # Check that the parameters are appropriate
-    # Sawtooth recommends that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block
-    if (number.blocks &amp;lt; 3 * number.alternatives / alternatives.per.block)
-        warning(&amp;quot;It is recomended that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block&amp;quot;);
-    library(AlgDesign)
-    best.result = NULL
-    best.D = -Inf
-    for (i in 1:n.repeats){
-        alg.results &amp;lt;- optBlock(~.,withinData=factor(1:number.alternatives),blocksizes=rep(alternatives.per.block,number.blocks), nRepeats=5000) #BIB
-        if (alg.results$D &amp;gt; best.D){
-            best.result = alg.results
-            best.D = alg.results$D
-        }
-    }
-    design &amp;lt;- matrix(NA,number.blocks,alternatives.per.block, dimnames= list(block = 1:number.blocks, Alternative = 1:alternatives.per.block))
-    binary.design &amp;lt;- matrix(0,number.blocks,number.alternatives, dimnames= list(block = 1:number.blocks, alternative = 1:number.alternatives))
-    counter &amp;lt;- 0
-    for (block in best.result$Blocks){
-        counter &amp;lt;- counter + 1
-        blck &amp;lt;- unlist(block)
-        design[counter,] &amp;lt;- blck
-        for (a in blck)
-            binary.design[counter,a] &amp;lt;- 1
-    }
-    n.appearances.per.alternative &amp;lt;- table(as.numeric(design))
-    combinations.of.alternatives &amp;lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
-    list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;套入White&lt;span class=&#34;citation&#34;&gt;(2007)&lt;/span&gt;384页的例子 &lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; /&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;重复设定为100次后得到结果&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt;与书中所使用的软件给出的结果不一致，但应该都能用于实践（现实情况是我们过去的测定林设计多少存在些问题（包括我自己之前的一个设计），或者设计问题不大但造林时没有严格按照设计进行，比较可惜）。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;林木周期长，测定很关键，设计要专业&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;section level1 unnumbered&#34;&gt;
-&lt;h1&gt;参考文献&lt;/h1&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-White2007&#34;&gt;
-&lt;p&gt;White, Timothy L, W Thomas Adams, and David B Neale. 2007. &lt;em&gt;Forest Genetics&lt;/em&gt;. 1st ed. Vol. 167. 4254. Cambridge (MA): CABI.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>到底是固定还是随机？</title>
-      <link>/post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/</guid>
-      <description>&lt;p&gt;一个效应到底应该当做固定还是随机通常令人困惑。如果已有惯例，例如父本、家系效应一般当做随机，而重复、性别当做固定，照搬就是。相反，对另外一些效应的处理如果没有多少文献支撑，就有点让人模棱两可。总不能没有规则地按照自己的喜好吧？Smith&lt;span class=&#34;citation&#34;&gt;(2001)&lt;/span&gt;&lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;给了一个明确的信息，即在需要&lt;strong&gt;预测一个效应的未来表现&lt;/strong&gt;时要随机，否则要固定，并举例说要预测品种（variety）的未来表现，而不希望预测环境效应。这样这个问题就很明确了。原文如下：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;One possibly contentious issue is the choice between fixed and random effects in the analysis. The standard text-book notion of effects being random if they have been sampled from a population and fixed if attention is confined only to those effects in the model (see Searle, 1971, for example) is unhelpful and can lead to a circular argument. In our opinion the choice depends on the aim of the analysis. In terms of variety effects our aim is to &lt;strong&gt;predict&lt;/strong&gt; future performance. This is best achieved by assuming the effects to be random. We do not wish to predict environment effects. The effects could be assumed random in order to recover information on varieties, but the variance component for environments is usually so large that very little information is recovered. The magnitude of the component also means there is very little shrinkage of environment effects, with the result that BLUPs and BLUEs are almost identical. We therefore assume that environment effects are fixed.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;section level1 unnumbered&#34;&gt;
-&lt;h1&gt;参考文献&lt;/h1&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Smith2001a&#34;&gt;
-&lt;p&gt;Smith, Alison B, Brian R Cullis, and Arthur R Gilmour. 2001. “The Analysis of Crop Variety Evaluation Data in Australia.” &lt;em&gt;Australian {&amp;amp;} New Zealand Journal of Statistics&lt;/em&gt; 43 (2): 129–45. doi:&lt;a href=&#34;https://doi.org/10.1111/1467-842X.00163&#34;&gt;10.1111/1467-842X.00163&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;感谢&lt;a href=&#34;http://www.pzhao.org/zh/post/rblogdown-bib/&#34;&gt;zhaopeng的帖子&lt;/a&gt;.&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 </description>
     </item>
     
