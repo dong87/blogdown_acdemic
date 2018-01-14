@@ -11,6 +11,30 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>2018-01-14-English-note</title>
+      <link>/post/2018-01-14-english-note/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-14-english-note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>invoke|调用，引用</title>
+      <link>/post/2018-01-14-invoke/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-14-invoke/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;You create a command line object specifying the options (e.g. the input filename and the output filename), then &lt;strong&gt;invoke&lt;/strong&gt; this command line via a Python operating system call (e.g. using the subprocess module). (Chapman et al., 2000)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;By piping the result to wc we &lt;strong&gt;invoke&lt;/strong&gt; the word count program which indicates how many lines (i.e., rows) have the &amp;gt; symbol (this should be 101 for this example). (Pevsner, 2009)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Because of the high copy number of retrotransposons in the genomes of extant pine species, it is tempting to &lt;strong&gt;invoke&lt;/strong&gt; the mechanism of reverse transcription in the generation of complex pine gene families. (Kinlaw, Neale, 1997)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Proofs given in the statistical literature of the latter part either assume that = 0, which is a relatively easy case, or &lt;strong&gt;invoke&lt;/strong&gt; the same result by Laha (1956) that was mentioned earlier. (Khuri, 2009)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2018-01-12-English note</title>
       <link>/post/2018-01-12-english_note/</link>
       <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
@@ -351,7 +375,56 @@ summary(lm(y~x1))&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
-      <description>&lt;p&gt;问题：blogdown能够自动生成新的空白博客，但需要自己添加summary、math、bib等信息以适合academic主题，较麻烦。&lt;/p&gt;
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Jan 14更新&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;题目中不能有空格等字符，否则报错，新版会提示修改。新版能在建文件后自动打开，但前提是题目中不能含中文，谨记。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#&#39; generate new posts
+#&#39;
+#&#39; @param post_title
+#&#39; @param post_format
+#&#39; @param post_summary
+#&#39; @param post_tags
+#&#39;
+#&#39; @return
+#&#39; @export
+#&#39;
+#&#39; @examples
+#&#39; gen_post(&amp;quot;R-error-collects&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;skills&amp;quot;)
+#&#39; gen_post(&amp;quot;English-note&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;word&amp;quot;)
+
+gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.Rmd&amp;quot;, post_summary=post_title, post_tags=&amp;quot;stats&amp;quot;) {
+  if (isTRUE(grepl(&amp;quot;\\s&amp;quot;, post_title)))
+    stop(
+      msg(cli::rule(center = crayon::bold(&amp;quot;RM the spetial char in your title!&amp;quot;)),
+          startup = TRUE)
+      )
+  require(magrittr)
+  post_date &amp;lt;- Sys.time() %&amp;gt;% as.character %&amp;gt;% strsplit(&amp;quot; &amp;quot;) %&amp;gt;% unlist %&amp;gt;% .[1]
+  ifelse (is.null(post_title), post_title &amp;lt;- paste0(post_date, &amp;quot;-New-post&amp;quot;), post_title &amp;lt;- paste0(post_date, &amp;quot;-&amp;quot;, post_title))
+  con &amp;lt;- file(paste0(&amp;quot;./content/post/&amp;quot;, post_title, post_format), encoding = &amp;quot;UTF-8&amp;quot;)
+  sink(con)
+  cat(&amp;quot;---\n&amp;quot;,
+      &amp;quot;title: &amp;quot;, post_title, &amp;quot;\n&amp;quot;,
+      &amp;quot;author: Leiming Dong&amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;date: &amp;quot;, post_date, &amp;quot;\n&amp;quot;,
+      &amp;quot;summary: &amp;quot;, post_summary, &amp;quot;\n&amp;quot;,
+      &amp;quot;math: ture&amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;tags: &amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;  - &amp;quot;, post_tags, &amp;quot;\n&amp;quot;,
+      &amp;quot;bibliography: bib.bib&amp;quot;, &amp;quot;\n&amp;quot;,
+      &amp;quot;---\n&amp;quot;, sep = &amp;quot;&amp;quot;)
+  sink()
+  Sys.setlocale(category = &amp;quot;LC_ALL&amp;quot;, locale = &amp;quot;chs&amp;quot;)
+  file.show(paste0(&amp;quot;./content/post/&amp;quot;, post_title, post_format))
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;问题：blogdown能够自动生成新的空白博客，但需要自己添加summary、math、bib等信息以适合academic主题，较麻烦。&lt;/p&gt;
 
 &lt;p&gt;于是自编了一个函数能够适合自己的需求，而且可以随意更改，如下:&lt;/p&gt;
 
@@ -477,55 +550,6 @@ gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.md&amp;quot
   word_document:  
     reference_docx: &amp;quot;../common/word-styles-reference-01.docx&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Feynman&#39;s words</title>
-      <link>/post/feynman-s-words/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/feynman-s-words/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;These words come from Feynman&amp;rsquo;s &lt;a href=&#34;https://twitter.com/proffeynman&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It doesn&amp;rsquo;t matter how beautiful your theory is. If it disagrees with experiment, it&amp;rsquo;s wrong. In that simple statement is the key to science.&lt;/li&gt;
-&lt;li&gt;We must be careful not to believe things simply because we want them to be true. No one can fool you as easily as you can fool yourself!&lt;/li&gt;
-&lt;li&gt;I was an ordinary person who studied hard. There&amp;rsquo;s no miracle people!&lt;/li&gt;
-&lt;li&gt;hours ago Teach principles not formulas.&lt;/li&gt;
-&lt;li&gt;There is no &amp;ldquo;authority&amp;rdquo; who decides what is a good idea.&lt;/li&gt;
-&lt;li&gt;Religion is a culture of faith; science is a culture of doubt.&lt;/li&gt;
-&lt;li&gt;Students should be made to think like scientists, be open-minded, curious, and especially, to doubt.&lt;/li&gt;
-&lt;li&gt;Teach principles not formulas.&lt;/li&gt;
-&lt;li&gt;There is no &amp;ldquo;authority&amp;rdquo; who decides what is a good idea.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m smart enough to know that I&amp;rsquo;m dumb.&lt;/li&gt;
-&lt;li&gt;We never are definitely right, we can only be sure we are wrong.&lt;/li&gt;
-&lt;li&gt;Physics isn&amp;rsquo;t the most important thing. Love is.&lt;/li&gt;
-&lt;li&gt;When we know that we actually live in uncertainty, then we ought to admit it; it is of great value to realize that we do not know answers!&lt;/li&gt;
-&lt;li&gt;You&amp;rsquo;re unlikely to discover something new without a lot of practice on old stuff.&lt;/li&gt;
-&lt;li&gt;The statements of science are not of what is true and what is not true, but statements of what is known with different degrees of certainty.&lt;/li&gt;
-&lt;li&gt;It is imperative in science to doubt; it is absolutely necessary, for progress in science, to have uncertainty as a fundamental part of your inner nature. To make progress in understanding, we must remain modest and allow that we do not know.&lt;/li&gt;
-&lt;li&gt;The only way to deep happiness is to do something you love to the best of your ability.&lt;/li&gt;
-&lt;li&gt;If you cannot explain something in simple terms, you don&amp;rsquo;t understand it.&lt;/li&gt;
-&lt;li&gt;Teach principles not formulas.&lt;/li&gt;
-&lt;li&gt;Religion is a culture of faith; science is a culture of doubt.&lt;/li&gt;
-&lt;li&gt;It is imperative in science to doubt; it is absolutely necessary, for progress in science, to have uncertainty as a fundamental part of your inner nature.&lt;/li&gt;
-&lt;li&gt;We must be careful not to believe things simply because we want them to be true. No one can fool you as easily as you can fool yourself!&lt;/li&gt;
-&lt;li&gt;Scientists are explorers. Philosophers are tourists.&lt;/li&gt;
-&lt;li&gt;If you have any talent, any occupation that delights you, do it, and do it to the hilt. Don&amp;rsquo;t ask why or what difficulties you may get into.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugo Academic主题中斜体不能正确显示</title>
-      <link>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Hugo Academic&lt;/strong&gt;是一个很好的主题，但斜体（*）斜体不能正确显示，让我苦恼了一阵儿。在&lt;strong&gt;Google&lt;/strong&gt;中检索原因，遇到这样一个&lt;a href=&#34;https://meta.stackexchange.com/questions/188249/why-markdown-bold-rendered-as-italic-on-parts-of-words&#34; target=&#34;_blank&#34;&gt;问题&lt;/a&gt;：加粗不能正常显示。问题底下给出的原因是单词内加粗让人感觉怪怪的。而我们中文是不用空格来界定单词的，所以星号左右各加空格就可以了。&lt;/p&gt;
 </description>
     </item>
     
