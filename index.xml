@@ -33,15 +33,6 @@
     </item>
     
     <item>
-      <title>2018-01-12-resort解决</title>
-      <link>/post/2018-01-12-resort%E8%A7%A3%E5%86%B3/</link>
-      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-12-resort%E8%A7%A3%E5%86%B3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R-error-collects</title>
       <link>/post/2018-01-12-r-error-collects/</link>
       <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
@@ -64,12 +55,18 @@
     </item>
     
     <item>
-      <title>resort</title>
+      <title>resort to 依靠 求助于</title>
       <link>/post/2018-01-12-resort/</link>
       <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-01-12-resort/</guid>
-      <description></description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;In order to discover novel motifs, we must &lt;strong&gt;resort to&lt;/strong&gt; de novo motif-finding algorithms. (Valentin et al., 2007)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Many longitudinal data models &lt;strong&gt;resort to&lt;/strong&gt; structured covariances which, although positive-definite and computationally favorable due to a 1068 reduced number of parameters, are possibly highly biased. (Yap, Fan, Wu, 2009)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When approximate methods are intractable or result in insufficient accuracy, we must &lt;strong&gt;resort to&lt;/strong&gt; numerical integration. (Carlin, Louis, Carlin, 2009)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;As a result, g should be chosen as the prior as a last &lt;strong&gt;resort&lt;/strong&gt;, when methods of finding a better approximation have failed. (Carlin, Louis, Carlin, 2009)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -147,7 +144,7 @@
       
       <guid>/post/regression/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;mailto:来自@siminaboca&#34;&gt;来自@siminaboca&lt;/a&gt; &lt;a href=&#34;https://github.com/SiminaB/Mentoring/blob/master/Regression.Rmd&#34;&gt;Github的一篇文章&lt;/a&gt;，由Google翻译。&lt;/p&gt;
+&lt;p&gt;来自siminaboca &lt;a href=&#34;https://github.com/SiminaB/Mentoring/blob/master/Regression.Rmd&#34;&gt;Github的一篇文章&lt;/a&gt;，由Google翻译。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;这当然有点夸张！ 这也取决于强调的方面，例如统计研究生课程。 我知道我自己的培训项目高度集中于把大量的统计数据看作是一种特殊情况，或者是某种线性回归模型的推广。 我很喜欢这个观点，只要我能和合作者合作，就尽量强调这一点，但我承认，有时你必须从特殊情况出发才能建立起整体。&lt;/p&gt;
 &lt;div class=&#34;section level2&#34;&gt;
@@ -519,6 +516,16 @@ gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.md&amp;quot
 &lt;li&gt;Scientists are explorers. Philosophers are tourists.&lt;/li&gt;
 &lt;li&gt;If you have any talent, any occupation that delights you, do it, and do it to the hilt. Don&amp;rsquo;t ask why or what difficulties you may get into.&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Academic主题中斜体不能正确显示</title>
+      <link>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hugo Academic&lt;/strong&gt;是一个很好的主题，但斜体（*）斜体不能正确显示，让我苦恼了一阵儿。在&lt;strong&gt;Google&lt;/strong&gt;中检索原因，遇到这样一个&lt;a href=&#34;https://meta.stackexchange.com/questions/188249/why-markdown-bold-rendered-as-italic-on-parts-of-words&#34; target=&#34;_blank&#34;&gt;问题&lt;/a&gt;：加粗不能正常显示。问题底下给出的原因是单词内加粗让人感觉怪怪的。而我们中文是不用空格来界定单词的，所以星号左右各加空格就可以了。&lt;/p&gt;
 </description>
     </item>
     
