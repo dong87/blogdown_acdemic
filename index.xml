@@ -11,12 +11,92 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>2018-01-20-English-note</title>
+      <link>/post/2018-01-20-english-note/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-20-english-note/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;seeding progeny&lt;/strong&gt; were &lt;strong&gt;raised in&lt;/strong&gt; containers stem cutting across a range of sites and conditions single-tree non-contiguous plots pilodyn penetration (PIL)用来测定木材密度 are defined as above &lt;span class=&#34;math inline&#34;&gt;\(\otimes\)&lt;/span&gt; denotes the Kronecker product operation &lt;span class=&#34;math inline&#34;&gt;\(\oplus\)&lt;/span&gt; denotes the direct sum operation analysis of DBH assess the statistical significance评估统计显著性 in previous single-site analyses预分析 make use of利用 take advantage of利用 manipulate this problem处理问题 to deal with this issue there is obvious evidence有明显的证据 A considerable body of research on大量 Theoretical work理论工作 quantitative variation plays a &lt;strong&gt;pronounced&lt;/strong&gt; role in显著的 empirical investigations实证研究，对应的是理论研究 One of the reasons for this may be due to the fact that methodological limitation方法局限 owing to由于 a portion of一份 a fraction of一部分 be relaxed somewhat缓解 in the case the question has not been explored这个问题尚未探索/探讨&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2018-01-20-purrr</title>
+      <link>/post/2018-01-20-purrr/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-20-purrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wu1996-克隆重复试验检测上位方差</title>
+      <link>/post/2018-01-20-wu1996/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-20-wu1996/</guid>
+      <description>&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;摘要&lt;/h1&gt;
+&lt;p&gt;定量遗传模型是利用已知的克隆复制家族结构&lt;strong&gt;将遗传变异分解为其加性，显性和上位性成分&lt;/strong&gt;的一种定量遗传模型。利用后代测试，这个模型是基于这样一个理论：来自实验设计的线性模型的方差分量可以用亲属之间的期望协方差来表示。然而，&lt;strong&gt;如果一对数量性状位点（QTL）之间的相互作用解释了总体上位性的大部分，则将严重高估加性和显性差异，但低估了上位性差异。&lt;/strong&gt;在本文中，开发了一个新的模型来处理这个问题，将父母和子女的材料结合到同一个测试中。在上述条件下，新模型可以为加性x加性方差提供准确的估计。此外，其估计优势和总的上位变异的准确性远远大于以前的模型的准确性。但是，&lt;strong&gt;如果有明显证据显示高阶相互作用，尤其是&amp;gt;4个QTL对总上位性的主要贡献，以前的模型更适合将数量性状的遗传方差划分&lt;/strong&gt;。对杨树阶乘交配设计的一个例子的再分析显示，当使用两个不同的假设（低与高阶的上位相互作用）时，估计新模型和先前模型之间的方差分量存在很大差异。这个新模型将成为估计物种数量遗传模式的一种替代方法，特别是对长寿的，主要是异交的林木，可以进行克隆复制。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;介绍&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;上位性&lt;/strong&gt;，或者不同但功能相关基因座上的等位基因之间的遗传相互作用，是基因和特征之间非线性关系的结果（Falconer 1989）。生物化学，生理学和生物遗传学研究的大量研究强烈地表明，数量性状中无处不在的位点间互作（Hayman和Mather，1955; Hayman，1958; Wright，1980; Mather and Jinks，1982）。 Sewall Wright对进化论的最大贡献之一是显示&lt;strong&gt;上位性在表型进化和物种形成中如何起着核心作用&lt;/strong&gt;（Wright 1932,1980; Templeton 1979,1980; Carson and Tempteton 1984; Provine 1986; Wade 1992）。理论工作表明，&lt;strong&gt;野生种群的数量变异可能带有潜在的强上位性成分&lt;/strong&gt;（Crow和Kimura，1970），因为&lt;strong&gt;这些成分的小表型效应往往隐藏着更大的分子效应&lt;/strong&gt;。因此，&lt;strong&gt;当基因型频率受选择或种群瓶颈严重干扰时，神秘的上位变异可能变得重要&lt;/strong&gt;（Carson和Templeton 1984; Bryant等1986; Goodnight 1987,1988; Tachida和Cockerham 1989; Bryant和Meffert 1992; Wade 1992年）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;上位可能也是杂种优势的重要原因。&lt;/strong&gt; Jinks和Jones（1958）通过将不同的上位性成分整合到遗传模型中，观察到杂种优势的存在与否以及一年生植物中是否存在非等位相互作用。在Minvielle（1987）的双轨迹双列模型中，&lt;strong&gt;杂种优势可能来自乘性上位相互作用而不是显性效应&lt;/strong&gt;。 （Wright 1922; Dempster 1942; Ricky 1942; Williams 1959; Griffing 1990; Schnell and Cockerham 1992）研究了繁殖积累对复杂性状杂种优势的贡献。&lt;/p&gt;
+&lt;p&gt;尽管上位性在进化和育种中起着显着的作用，但是对这种现象的实证研究惊人地少。造成这种现象的原因之一可能是由于&lt;strong&gt;分离世代以检测上位性不能在许多物种中获得&lt;/strong&gt;（Mather and Jinks 1982）。即使在目前的基于分子标记的图谱中，也存在处理这个问题的方法限制（Tanksley 1993）。 Fisher（1981）首先介绍了遗传方差分解为其加性，显性和上位性组分。 Cockerham（1954）将上位分量进一步细分为附加x加性，加性x显性和显性x显性的相互作用。所有这些&lt;strong&gt;相互作用可以根据世代均值来估计&lt;/strong&gt;（Hayman和Mather，1955）。福斯特（Foster）和肖（Shaw，1988）利用克隆从总遗传方差中分离上位性，通过表达亲缘关系期望协方差的实验设计线性模型的方差分量（Cockerham，1963）。由于其强大的性质，福斯特 - 肖的方法已被应用于许多森林树种（例如，Foster和Shaw 1988; Foster 1990; Mullin等1992; Mullin和Part 1994; R6nnberg-Wiistljung等1994）。 不幸的是，&lt;strong&gt;Foster-Shaw的方法不能提供遗传方差分量的准确估计&lt;/strong&gt;。一方面，&lt;strong&gt;半同胞或者同胞之间由协方差估计的加性和显性方差受到一部分上位性，尤其是低阶相互作用的污染&lt;/strong&gt;（Cockerham，1963）。另一方面，&lt;strong&gt;对上位变异的估计仅仅是家族变异所包含的上位性的一部分，而不是总的上位变异&lt;/strong&gt;。尽管假定多个位点之间有强的高度相互作用（至少_&amp;gt; 3）（Mullin和Park，1992），有偏倚的估计值可能会有所缓解，但在存在双位点相互作用的情况下，这将是误导。&lt;strong&gt;当低阶相互作用形成上位性的一部分时，估计的加性和显性方差将被严重污染，并且估计的上位性方差仅为总上位性的四分之一&lt;/strong&gt;。到目前为止，尚未探索基于不同交互类型如何准确排除上位性的问题。 在本文中，我试图通过在交配设计中结合父母和子代信息，在假设二基因上位 的情况下检测更精确的上位性估计。 从精确性分析和杨树实例可以看出，新方法可以作为将数量性状的遗传方差划分为可克隆物种的因果成分的替代方法。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2018-01-14-English-note</title>
       <link>/post/2018-01-14-english-note/</link>
       <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-01-14-english-note/</guid>
-      <description></description>
+      <description>&lt;ul&gt;
+&lt;li&gt;data retrieval数据检索&lt;/li&gt;
+&lt;li&gt;deemed to be视为&lt;/li&gt;
+&lt;li&gt;irretrievable loss不可挽回的损失&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;patiently waiting&lt;/strong&gt; for &lt;strong&gt;optimum maturity&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Leftover lunch剩饭&lt;/li&gt;
+&lt;li&gt;interactive visualizations&lt;/li&gt;
+&lt;li&gt;Hello good &lt;strong&gt;people of Great Britain&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;When Rex Tillerson visited New Zealand last year, he &lt;strong&gt;stated&lt;/strong&gt; he had never seen so many middle fingers &lt;strong&gt;aimed at&lt;/strong&gt; his motorcade.&lt;/li&gt;
+&lt;li&gt;Sometimes looks are &lt;strong&gt;deceiving&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;instant translate&lt;/li&gt;
+&lt;li&gt;Impediments&lt;/li&gt;
+&lt;li&gt;Nearly half of the &lt;strong&gt;residents&lt;/strong&gt; of low-income countries live more than one hour’s travel from a city, where vital resources such as education and health care are concentrated&lt;/li&gt;
+&lt;li&gt;airport runway机场跑道&lt;/li&gt;
+&lt;li&gt;Racial resentment种族仇恨&lt;/li&gt;
+&lt;li&gt;Justice and dignity尊严, the endless shortage&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Excited to be joining&lt;/strong&gt; the … Biostatistics Department in February!&lt;/li&gt;
+&lt;li&gt;hands-on&lt;/li&gt;
+&lt;li&gt;ON MY DAY OFF休息日&lt;/li&gt;
+&lt;li&gt;wearable sensor&lt;/li&gt;
+&lt;li&gt;grant-in-aid资助款&lt;/li&gt;
+&lt;li&gt;the &lt;strong&gt;aegis&lt;/strong&gt; of保护&lt;/li&gt;
+&lt;li&gt;capitalize on利用&lt;/li&gt;
+&lt;li&gt;tantamount to相当于&lt;/li&gt;
+&lt;li&gt;in lieu of替代&lt;/li&gt;
+&lt;li&gt;cheat sheet速查表&lt;/li&gt;
+&lt;li&gt;Why might you do otherwise? 你为什么要这样做呢？&lt;/li&gt;
+&lt;li&gt;sheepishly adv. 羞怯地；愚蠢地&lt;/li&gt;
+&lt;li&gt;religiously adv. 虔诚地，笃信地&lt;/li&gt;
+&lt;li&gt;highly internally consistent内部高度一致&lt;/li&gt;
+&lt;li&gt;US authorities美国当局&lt;/li&gt;
+&lt;li&gt;poring凝视&lt;/li&gt;
+&lt;li&gt;transaction交易&lt;/li&gt;
+&lt;li&gt;cash withdrawal现金提取&lt;/li&gt;
+&lt;li&gt;inauguration就职&lt;/li&gt;
+&lt;li&gt;There is nothing we can’t overcome.没有什么是我们解决不了的&lt;/li&gt;
+&lt;li&gt;Donald J. Trump&lt;/li&gt;
+&lt;li&gt;Let me be very clear here&lt;/li&gt;
+&lt;li&gt;Today, we &lt;strong&gt;witnessed&lt;/strong&gt; an &lt;strong&gt;incredible&lt;/strong&gt; moment in history&lt;/li&gt;
+&lt;li&gt;furiously猛烈地&lt;/li&gt;
+&lt;li&gt;internship实习生&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -30,6 +110,21 @@
 &lt;li&gt;&lt;p&gt;By piping the result to wc we &lt;strong&gt;invoke&lt;/strong&gt; the word count program which indicates how many lines (i.e., rows) have the &amp;gt; symbol (this should be 101 for this example). (Pevsner, 2009)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Because of the high copy number of retrotransposons in the genomes of extant pine species, it is tempting to &lt;strong&gt;invoke&lt;/strong&gt; the mechanism of reverse transcription in the generation of complex pine gene families. (Kinlaw, Neale, 1997)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Proofs given in the statistical literature of the latter part either assume that = 0, which is a relatively easy case, or &lt;strong&gt;invoke&lt;/strong&gt; the same result by Laha (1956) that was mentioned earlier. (Khuri, 2009)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>retrieve|检索，恢复</title>
+      <link>/post/2018-01-14-retrieve/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-14-retrieve/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;This task is undertaken at the NCBI in the form of Entrez Genome, the section of the NCBI sequence &lt;strong&gt;retrieval&lt;/strong&gt; system concerned with genomes and individual genome assembly versions, and the sequences of individual whole genome shotgun reads are also available. (Valentin et al., 2007)序列检索系统&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Archiving spectra required a tremendous amount of magnetic storage and the problems of &lt;strong&gt;retrieval&lt;/strong&gt; were becoming insurmountable. (Lodder, 2002)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This abundance of material, assembled to guard against its &lt;strong&gt;irretrievable&lt;/strong&gt; loss, has intensified the problems of how best to conserve it and how to use it in plant breeding. (Brown, 1989)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A sophisticated two-level EM algorithm was implemented to estimate and &lt;strong&gt;retrieve&lt;/strong&gt; the missing information of segregation characterized by dominant-segregating markers such as single methylation polymorphisms. (Zhu et al., 2016)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -366,190 +461,6 @@ summary(lm(y~x1))&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>生成一个空post的函数</title>
-      <link>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Jan 14更新&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;题目中不能有空格等字符，否则报错，新版会提示修改。新版能在建文件后自动打开，但前提是题目中不能含中文，谨记。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#&#39; generate new posts
-#&#39;
-#&#39; @param post_title
-#&#39; @param post_format
-#&#39; @param post_summary
-#&#39; @param post_tags
-#&#39;
-#&#39; @return
-#&#39; @export
-#&#39;
-#&#39; @examples
-#&#39; gen_post(&amp;quot;R-error-collects&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;skills&amp;quot;)
-#&#39; gen_post(&amp;quot;English-note&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;word&amp;quot;)
-
-gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.Rmd&amp;quot;, post_summary=post_title, post_tags=&amp;quot;stats&amp;quot;) {
-  if (isTRUE(grepl(&amp;quot;\\s&amp;quot;, post_title)))
-    stop(
-      msg(cli::rule(center = crayon::bold(&amp;quot;RM the spetial char in your title!&amp;quot;)),
-          startup = TRUE)
-      )
-  require(magrittr)
-  post_date &amp;lt;- Sys.time() %&amp;gt;% as.character %&amp;gt;% strsplit(&amp;quot; &amp;quot;) %&amp;gt;% unlist %&amp;gt;% .[1]
-  ifelse (is.null(post_title), post_title &amp;lt;- paste0(post_date, &amp;quot;-New-post&amp;quot;), post_title &amp;lt;- paste0(post_date, &amp;quot;-&amp;quot;, post_title))
-  con &amp;lt;- file(paste0(&amp;quot;./content/post/&amp;quot;, post_title, post_format), encoding = &amp;quot;UTF-8&amp;quot;)
-  sink(con)
-  cat(&amp;quot;---\n&amp;quot;,
-      &amp;quot;title: &amp;quot;, post_title, &amp;quot;\n&amp;quot;,
-      &amp;quot;author: Leiming Dong&amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;date: &amp;quot;, post_date, &amp;quot;\n&amp;quot;,
-      &amp;quot;summary: &amp;quot;, post_summary, &amp;quot;\n&amp;quot;,
-      &amp;quot;math: ture&amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;tags: &amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;  - &amp;quot;, post_tags, &amp;quot;\n&amp;quot;,
-      &amp;quot;bibliography: bib.bib&amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;---\n&amp;quot;, sep = &amp;quot;&amp;quot;)
-  sink()
-  Sys.setlocale(category = &amp;quot;LC_ALL&amp;quot;, locale = &amp;quot;chs&amp;quot;)
-  file.show(paste0(&amp;quot;./content/post/&amp;quot;, post_title, post_format))
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;问题：blogdown能够自动生成新的空白博客，但需要自己添加summary、math、bib等信息以适合academic主题，较麻烦。&lt;/p&gt;
-
-&lt;p&gt;于是自编了一个函数能够适合自己的需求，而且可以随意更改，如下:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#&#39; generate new posts
-#&#39;
-#&#39; @param post_title 
-#&#39; @param post_format 
-#&#39; @param post_summary 
-#&#39; @param post_tags 
-#&#39;
-#&#39; @return
-#&#39; @export
-#&#39;
-#&#39; @examples
-#&#39; gen_post(&amp;quot;天使很美丽&amp;quot;, &amp;quot;.Rmd&amp;quot;, &amp;quot;本文描述了天使是如何变美的&amp;quot;, &amp;quot;skills&amp;quot;)
-
-gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.md&amp;quot;, post_summary=post_title, post_tags=&amp;quot;stats&amp;quot;) {
-  require(magrittr)
-  post_date &amp;lt;- Sys.time() %&amp;gt;% as.character %&amp;gt;% strsplit(&amp;quot; &amp;quot;) %&amp;gt;% unlist %&amp;gt;% .[1]
-  ifelse (is.null(post_title), post_title &amp;lt;- paste0(post_date, &amp;quot;-New-post&amp;quot;), post_title &amp;lt;- paste0(post_date, &amp;quot;-&amp;quot;, post_title))
-  sink(paste0(&amp;quot;./content/post/&amp;quot;, post_title, post_format))
-  cat(&amp;quot;---\n&amp;quot;, 
-      &amp;quot;title: &amp;quot;, post_title, &amp;quot;\n&amp;quot;, 
-      &amp;quot;author: Leiming Dong&amp;quot;, &amp;quot;\n&amp;quot;, 
-      &amp;quot;date: &amp;quot;, post_date, &amp;quot;\n&amp;quot;,
-      &amp;quot;summary: &amp;quot;, post_summary, &amp;quot;\n&amp;quot;,
-      &amp;quot;math: ture&amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;tags: &amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;  - &amp;quot;, post_tags, &amp;quot;\n&amp;quot;,
-      &amp;quot;bibliography: bib.bib&amp;quot;, &amp;quot;\n&amp;quot;,
-      &amp;quot;---\n&amp;quot;, sep = &amp;quot;&amp;quot;)
-  sink()
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>自由授粉子代进行数量遗传分析造成的偏差</title>
-      <link>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;from Gauzere &lt;span class=&#34;citation&#34;&gt;(2013)&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;摘要：&lt;/strong&gt;在非原生境进行的植物定量遗传研究中，每个个体产生的大量种子促进了开放授粉后代测试的使用。在随后的分析中，在同一母株上收集的种子被假定为半同胞。自20世纪60年代以来，使用模拟方法和最近使用基于分子的实验方法研究了从半同胞假设出发在后代测试中的结果。这篇综述旨在综合这些模拟和实证研究的结果和结论。我们专注于树种，其中受控杂交难以实验性地进行，并且偏离半同胞假设在自然种群中经常发生。首先，&lt;strong&gt;许多树种群的母本后代的亲缘关系的平均水平高于半同胞。这是非随机交配的结果，这是由于每个雌性有效花粉供体数量少，雄性繁殖成功和/或自交不平等。因此，对数量性状的遗传变异和遗传力的估计可能是上偏的。&lt;/strong&gt;另外，&lt;strong&gt;通常忽略近亲繁殖抑制，显性效应和雄配子库在雌性中的异质性，这可能导致低估性状的遗传力。&lt;/strong&gt;后代与亲本之间亲缘关系的平均遗传相关性的校正通常用于补偿这些偏差。然而，这种校正不能准确地调整在后代中存在家族遗传相关性，显性效应或近交衰退的情况下的估计。另一种有希望的方法是使用“动物模型”方法，该方法优化了分子数据和父亲信息的使用，从而更准确地估计遗传性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;关键词：&lt;/strong&gt;加性遗传方差;动物模型;共同的花园;主导地位;家庭模式;半同胞家族遗传;近亲繁殖;自交;树&lt;/p&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;介绍&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;了解自然种群中有多少表型变异是由遗传或环境变异形成的，以及表型变异的遗传成分是由选择或人口统计驱动是进化定量遗传学的两个主要目标（Kingsolver et al.2001; Charmantier and Garant 2005） 。&lt;/strong&gt;虽然数量遗传学最初是从育种的角度出发的，但其理论和实验工具现在被进化遗传学家普遍用来回答他们自己的问题。例如，许多关于野生物种的研究调查了加性遗传方差（&lt;span class=&#34;math inline&#34;&gt;\(V_A\)&lt;/span&gt;）和遗传力（适应性状的遗传力（见Kruuk 2004），性状之间的遗传相关性（Etterson和Shaw，2001）以及性状的遗传分化（Ducousso，Guyon和Kremer，1995），这些定量遗传参数的估计重新获得了预测变化环境中遗传进化速率的兴趣（Kingsolver et al。2001; Conner 2001）。理解遗传亲缘关系可以部分或完全已知先验（控制的杂交，母系家族…），并实现了遗传学（遗传相关系数&lt;span class=&#34;math inline&#34;&gt;\(\rho\)&lt;/span&gt;）相关性可以使用分子标记进行后验估计。&lt;/p&gt;
-&lt;p&gt;在植物中，开放授粉的后代（OP）设计被广泛用于表征种群的适应潜力，因为它们易于执行，并且可以容易地估计VA和&lt;span class=&#34;math inline&#34;&gt;\(h^2\)&lt;/span&gt;。家庭内的后代直接收集在母本植物上，被认为是半同胞，相关系数为0.25。在这些半同胞家族试验中，加性遗传方差等于家系（VF，在受控环境中估计）乘以系数&lt;span class=&#34;math inline&#34;&gt;\(\alpha= 1 / \rho= 4\)&lt;/span&gt;（因此VA = 4&lt;span class=&#34;math inline&#34;&gt;\(\times\)&lt;/span&gt;VF）的方差。&lt;/p&gt;
-&lt;p&gt;因此，OP设计的分析依赖于这样的主要假设，即家庭内的个人是真正的同胞（= 0.25），而这又对交配系统和配偶之间的相关性产生了几个其他的假设：（1） （2）与大量无关的雄性交配，这与雌性无关，（3）不发生自交，（4）不发生配子交配（即优先交配男性和女性）。所有这些条件通常不会在自然种群中实现，第一个结果是家族内的后代之间的平均遗传相关性（平均值）大于0.25，VA和h？可能被高估。此外，偏离上述假设也会影响VF，因为当家庭中有一定比例的全同胞时，家庭间差异成分可以通过非加性效应（显性，上位性）膨胀。另外，当亲属之间发生杂交时，家庭内部的差异可以通过近亲繁殖降低，或者自我受精是不可忽略的。&lt;/p&gt;
-&lt;p&gt;这些问题在树木中特别重要，因为受控的杂交难以在原地进行，而且经常出现半同胞假设。和大多数植物一样，树木通常具有混合交配系统（即有性生殖既是通过自我授粉，也是通过自交结实; Robledo-Arnuncio，Alia和Gil 2004; Ward等，2005）有效的花粉供体，雄性不育的成功率不平衡（Kang et al.2003; Oddou-Muratorio，Klein and Austerlitz 2005），显着的空间遗传结构（Vekemans and Hardy 2004），距离限制花粉扩散（Ashley 2010）通过开花同步诱导（Soularue和Kremer 2012）。 OP后代的另一个重要的偏向来源是母体效应，这增加了母系相关半同胞之间的表型相似性，导致家族之间的遗传差异膨胀，因此，高估了VA和h（Wang，Lechowicz和Potvin 1994）。在这里，母亲的影响将不被详细处理，因为它们不依赖于交配系统或种群特征，但是将讨论在定量遗传模型中解释它们的可能方式。对于树种，OP设计都被用来研究自然种群和繁殖种群（例如种子果园）。&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Gauzere2013&#34;&gt;
-&lt;p&gt;Gauzere, Julie, Sylvie Oddou-Muratorio, Christian Pichot, François Lefèvre, and Etienne Klein. 2013. “Biases in quantitative genetic analyses using open-pollinated progeny tests from natural tree populations.” &lt;em&gt;Acta Botanica Gallica&lt;/em&gt; 160 (December 2014): 227–38. doi:&lt;a href=&#34;https://doi.org/10.1080/12538078.2013.822827&#34;&gt;10.1080/12538078.2013.822827&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>行测技巧——from知乎</title>
-      <link>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/23195752/answer/44300950?group_id=592001463770464256&#34; target=&#34;_blank&#34;&gt;在公务员考试中，如何提高行测成绩？ - 知乎&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;不要用战术上的勤奋来掩盖战略上的懒惰。&lt;/p&gt;
-
-&lt;p&gt;公考作为淘汰性考试，不是要考某个分数线，而是要考过别人，所以感觉好没用，这个部分有竞争力才是王道。&lt;/p&gt;
-
-&lt;p&gt;资料分析就是该拿满分的&lt;/p&gt;
-
-&lt;p&gt;我高中班主任对我说过一句话，对我多年的学习生涯产生了不可磨灭的影响：“你可以来问我学习方法，但是你别问我：化学该怎么学？我的化学成绩为什么不能提高？”因为如果你问这么宏观的问题，说明你对你自己的问题没有进行思考，没有进行细化。很多问题一旦细化，你不用请教别人就能找到解决办法。&lt;/p&gt;
-
-&lt;p&gt;要真正让题海战术得到提高——尤其是语文逻辑和资料分析，全靠总结。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/22211899&#34; target=&#34;_blank&#34;&gt;行测技巧篇：逻辑填空&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;逻辑填空题一定不能当成语文题来做！一定不能当成语文题来做！一定不能当成语文题来做！所以主页菌一定要强调名称的重要性，是“逻辑填空”，不是“选词填空”，做此类题目要靠逻辑思维，而不是靠语感。&lt;/p&gt;
-
-&lt;p&gt;公务员的文字能力并非追求辞藻华丽，而是用词&lt;strong&gt;准确、恰当&lt;/strong&gt;，归根到底还是逻辑思维。请记住这两个关键词。&lt;/p&gt;
-
-&lt;p&gt;具体就逻辑填空题而言，出题的角度就是考察你在语言表达中用词能否做到&lt;strong&gt;准确和恰当&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/20527549&#34; target=&#34;_blank&#34;&gt;从五大误区谈如何备考&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;行测考试的方向就是弱化不同知识背景带来的差异，近几年更是连法律常识都考得少了，因为在那几个题目里法学背景的考生占优势。我们一定要深刻理解这种大方向，不要埋头在补充知识量上苦苦耕耘，多在方法思路上动脑筋才是力气用对了地方。&lt;/p&gt;
-
-&lt;p&gt;对于行测考试乃至整个公务员考试，做题量和成绩没有关系。&lt;/p&gt;
-
-&lt;p&gt;公务员考试的备战应该是长期规划，以“考上”为目标，而不是“这次就要考上。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>rmarkdown生成带格式的word文档</title>
-      <link>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</guid>
-      <description>
-
-&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;
-
-&lt;p&gt;我的MS word如果包含wmf格式的图片就无限无响应，着实让我苦恼。&lt;code&gt;rstudio&lt;/code&gt;可以将md或rmd文档利用pandoc生成word，因此非常方便。但有时候需要特殊的格式，还得去word里逐个修改，这不是rmarkdown的风格，我想应该可以有模板供使用的。果不其然，Google帮我搜到一个相关的博客&lt;a href=&#34;http://rmarkdown.rstudio.com/articles_docx.html&#34; target=&#34;_blank&#34;&gt;Happy collaboration with Rmd to docx&lt;/a&gt;，介绍如何自定义文档格式模板，job done。&lt;/p&gt;
-
-&lt;h1 id=&#34;实现方法&#34;&gt;实现方法&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;生成一个空白的文档&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;修改格式成模板&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;在新的md文档的yaml里添加一些信息就可以了&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;output:
-  word_document:  
-    reference_docx: &amp;quot;../common/word-styles-reference-01.docx&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
