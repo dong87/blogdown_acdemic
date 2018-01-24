@@ -5,7 +5,25 @@
     
     <url>
     
+      <loc>/post/2018-01-23-english-note/</loc>
+      <lastmod>2018-01-23T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/2018-01-20-english-note/</loc>
+      <lastmod>2018-01-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/2018-01-20-ericjang/</loc>
       <lastmod>2018-01-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -534,7 +552,7 @@
     
     <url>
     
-      <loc>/tags/notes/</loc>
+      <loc>/categories/notes/</loc>
       <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -544,7 +562,7 @@
     
     <url>
     
-      <loc>/categories/notes/</loc>
+      <loc>/tags/notes/</loc>
       <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -605,7 +623,7 @@
     <url>
     
       <loc>/tags/stats/</loc>
-      <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -625,7 +643,7 @@
     <url>
     
       <loc>/tags/word/</loc>
-      <lastmod>2018-01-20T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
