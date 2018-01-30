@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="董雷鸣Leiming Dong">
+  <meta name="description" content="PhD">
+
+  
+  <link rel="alternate" hreflang="en-us" href="../../post/2018-01-24-cantor2010/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="../../styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="../../index.xml" type="application/rss+xml" title="Enterprising &amp; Concentrating">
+  <link rel="feed" href="../../index.xml" type="application/rss+xml" title="Enterprising &amp; Concentrating">
+  
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="icon" type="image/png" href="../../img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="../../img/icon-192.png">
+
+  <link rel="canonical" href="../../post/2018-01-24-cantor2010/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@donglm2008">
+  <meta property="twitter:creator" content="@donglm2008">
+  
+  <meta property="og:site_name" content="Enterprising &amp; Concentrating">
+  <meta property="og:url" content="/post/2018-01-24-cantor2010/">
+  <meta property="og:title" content="Cantor2010 GWAS中的统计方法 | Enterprising &amp; Concentrating">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-01-24T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-01-24T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>Cantor2010 GWAS中的统计方法 | Enterprising &amp; Concentrating</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="../../"><img src="../../img/dong_logo.png" alt="Enterprising &amp; Concentrating"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">Cantor2010 GWAS中的统计方法</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-01-24 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jan 24, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="董雷鸣Leiming Dong">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="../../post/2018-01-24-cantor2010/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Cantor2010%20GWAS%e4%b8%ad%e7%9a%84%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95&amp;url=%2fpost%2f2018-01-24-cantor2010%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2f2018-01-24-cantor2010%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2018-01-24-cantor2010%2f&amp;title=Cantor2010%20GWAS%e4%b8%ad%e7%9a%84%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2018-01-24-cantor2010%2f&amp;title=Cantor2010%20GWAS%e4%b8%ad%e7%9a%84%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Cantor2010%20GWAS%e4%b8%ad%e7%9a%84%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95&amp;body=%2fpost%2f2018-01-24-cantor2010%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        <div class="section level1">
+<h1>统计方法</h1>
+<p>交互建模在统计学方面有着悠久的历史，在这篇综述中不可能公正地讨论这个话题。要求更广泛的报道的读者可以参考两篇极好的综合评论文章[55,56]。这里我们强调数据挖掘方面的一些最新进展，可以用来优先考虑GWAS结果。在二分性状中，逻辑回归已经被用来进行GWAS的关联测试;比例相等或费舍尔精确测试的替代测试缺乏处理多个预测因子的灵活性。对于连续性状，GWAS使用线性回归。 <strong>回归的一个主要力量是它很容易提供一个包含交互的机会</strong>。回归分析的其他优点包括（1）明确的参数模型; （2）参数估计的稳定算法; （3）主效应和相互作用效应的似然比和F检验的可用性; （4）容易并入诸如年龄，性别和族裔的协变量;和（5）可靠和有据可查的软件的广泛可用性。</p>
+<p>大部分的缺点与当前数据集的规模和预测者超过观测值有关。其缺点是：（1）数量性状的正态性假设失败;（2）p值背后大样本近似的细分;（3）欠定问题中的搜索算法失败;（4）倾向于过拟合;（5）提供备用解决方案，以及（6）在检测交互之前需要检测主效应的模型选择的分层性质。在解释如何处理这些缺陷之前，简要总结一些检测上位性的替代方法是有用的。</p>
+<p>数据挖掘的新兴领域57为理解交互提供了许多途径。当然， <strong>逻辑回归和判别分析是密切相关的</strong>。原则上，任何判别分析方法都可以将案件与控制分开。 __CART（分类和回归树）和随机森林__等判别分析方法与交互建模显然是相关的。其他更有针对性的竞争者包括多 <strong>因子降维方法，组合分割方法62和限制分割方法</strong>。尽管这些工具在探索性数据分析中有所帮助，而且在区分病例和控制方面也很出色，但是 <strong>它们受到了一些限制。例如，纯组合方法不产生效应量或p值，也不能处理协变量。根据所采用的算法，它们很容易被大量的预测因子和交叉验证和置换测试的要求所淹没</strong>。针对这些批评，一些方法正在重新设计。例如，Lou等[52]修改了多因素降维方法64，以便进行协变量调整，连续和二元特征分析以及系谱数据。他们的新公式重视FBAT（家庭联想测试）方法的智力负担[65,66]。其他创新包括引入交互的熵和条件熵度量67,68;利用个人之间的邻近措施69？1;神经网络的应用，72遗传规划，73逻辑回归，74模式挖掘，64,75和贝叶斯分区76。</p>
+<p>客观评估这一令人眼花缭乱的方法的需求是显而易见的。 Cordell55强调处理大量SNP数据集时计算速度的重要性。实际上，统计方法和软件是密不可分的。在计算速度的基础上，Cordell更喜欢使用标准回归，随机森林和贝叶斯分区的 <strong>PLINK</strong>，77 Random Jungle，78和BEAM等程序。 Musani及其同事[56]在他们的建议中不太具体，并且认为综合的方法可以为消费者提供最好的服务。在我们自己的研究中，我们主要 <strong>使用PLINK77进行经典回归，Mendel79进行套索惩罚回归</strong>。80？2 PLINK是用户友好的，具有内置的数据管理和质量控制例程。孟德尔诊断较少，但 <strong>在SNP数量远远超过个体数量时，在模型选择上更胜一筹</strong>。在描述对传统参数模型的改进之前，让我们简单地提一些研究设计问题。在仅有情况的设计中，我们寻找标记基因型的不依赖性。在偏离独立性的可能测试中，值得挑出 <strong>卡方检验，熵和最大Z分数</strong>。这些测试具有相当大的力量，但应该记住它们的局限性。 因为 <strong>他们不允许协变量，他们容易受到人口分层和连锁不平衡的影响</strong>。 __潜在的应急表可能是稀疏的，所以p值的置换评估是一个好主__意。 不幸的是， <strong>排列测试的代价是更重的计算</strong>。 另一方面， <strong>谱系数据也带来了真正的挑战。 除非完全由连锁不平衡驱动，否则连锁分析需要系谱。</strong></p>
+</div>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="../../tags/literature-studying">literature studying</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="../../post/2018-01-20-wu1996/">Wu1996-克隆重复试验检测上位方差</a></li>
+    
+    <li><a href="../../post/2018-01-08-talbert1979%E9%AB%98%E4%B8%96%E4%BB%A3%E8%82%B2%E7%A7%8D%E8%AE%A1%E5%88%92/">Talbert1979高世代育种计划</a></li>
+    
+    <li><a href="../../post/2018-01-07-sklai2010-%E7%B3%BB%E8%B0%B1%E9%87%8D%E5%BB%BA%E6%8F%AD%E7%A4%BA%E8%8A%B1%E6%97%97%E6%9D%BE%E7%A7%8D%E5%AD%90%E5%9B%AD%E6%8E%88%E7%B2%89%E5%8A%A8%E6%80%81/">SkLai2010-系谱重建揭示花旗松种子园授粉动态</a></li>
+    
+    <li><a href="../../post/2018-01-06-%E8%87%AA%E7%94%B1%E6%8E%88%E7%B2%89%E5%AD%90%E4%BB%A3%E8%BF%9B%E8%A1%8C%E6%95%B0%E9%87%8F%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90%E9%80%A0%E6%88%90%E7%9A%84%E5%81%8F%E5%B7%AE/">自由授粉子代进行数量遗传分析造成的偏差</a></li>
+    
+    <li><a href="../../post/funda2011-%E5%88%A9%E7%94%A8%E7%B3%BB%E8%B0%B1%E9%87%8D%E5%BB%BA%E7%A1%AE%E5%AE%9A%E4%BA%B2%E6%9C%AC%E7%94%9F%E6%AE%96%E6%8A%95%E8%B5%84%E5%92%8C%E6%88%90%E5%8A%9F%E6%98%AF%E5%90%A6%E4%B8%80%E8%87%B4/">Funda2011-利用系谱重建确定亲本生殖投资和成功是否一致</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dong" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Dong &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//dong.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="../../js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

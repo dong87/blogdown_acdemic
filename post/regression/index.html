@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="董雷鸣Leiming Dong">
+  <meta name="description" content="PhD">
+
+  
+  <link rel="alternate" hreflang="en-us" href="../../post/regression/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="../../styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="../../index.xml" type="application/rss+xml" title="Enterprising &amp; Concentrating">
+  <link rel="feed" href="../../index.xml" type="application/rss+xml" title="Enterprising &amp; Concentrating">
+  
+
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="icon" type="image/png" href="../../img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="../../img/icon-192.png">
+
+  <link rel="canonical" href="../../post/regression/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@donglm2008">
+  <meta property="twitter:creator" content="@donglm2008">
+  
+  <meta property="og:site_name" content="Enterprising &amp; Concentrating">
+  <meta property="og:url" content="/post/regression/">
+  <meta property="og:title" content="统计建模中的一切都可以看作是一个回归 | Enterprising &amp; Concentrating">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-01-12T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-01-12T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>统计建模中的一切都可以看作是一个回归 | Enterprising &amp; Concentrating</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="../../"><img src="../../img/dong_logo.png" alt="Enterprising &amp; Concentrating"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="../../#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">统计建模中的一切都可以看作是一个回归</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-01-12 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jan 12, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="董雷鸣Leiming Dong">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="../../post/regression/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=%e7%bb%9f%e8%ae%a1%e5%bb%ba%e6%a8%a1%e4%b8%ad%e7%9a%84%e4%b8%80%e5%88%87%e9%83%bd%e5%8f%af%e4%bb%a5%e7%9c%8b%e4%bd%9c%e6%98%af%e4%b8%80%e4%b8%aa%e5%9b%9e%e5%bd%92&amp;url=%2fpost%2fregression%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fregression%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fregression%2f&amp;title=%e7%bb%9f%e8%ae%a1%e5%bb%ba%e6%a8%a1%e4%b8%ad%e7%9a%84%e4%b8%80%e5%88%87%e9%83%bd%e5%8f%af%e4%bb%a5%e7%9c%8b%e4%bd%9c%e6%98%af%e4%b8%80%e4%b8%aa%e5%9b%9e%e5%bd%92"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fregression%2f&amp;title=%e7%bb%9f%e8%ae%a1%e5%bb%ba%e6%a8%a1%e4%b8%ad%e7%9a%84%e4%b8%80%e5%88%87%e9%83%bd%e5%8f%af%e4%bb%a5%e7%9c%8b%e4%bd%9c%e6%98%af%e4%b8%80%e4%b8%aa%e5%9b%9e%e5%bd%92"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=%e7%bb%9f%e8%ae%a1%e5%bb%ba%e6%a8%a1%e4%b8%ad%e7%9a%84%e4%b8%80%e5%88%87%e9%83%bd%e5%8f%af%e4%bb%a5%e7%9c%8b%e4%bd%9c%e6%98%af%e4%b8%80%e4%b8%aa%e5%9b%9e%e5%bd%92&amp;body=%2fpost%2fregression%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        <blockquote>
+<p>来自siminaboca <a href="https://github.com/SiminaB/Mentoring/blob/master/Regression.Rmd">Github的一篇文章</a>，由Google翻译。</p>
+</blockquote>
+<p>这当然有点夸张！ 这也取决于强调的方面，例如统计研究生课程。 我知道我自己的培训项目高度集中于把大量的统计数据看作是一种特殊情况，或者是某种线性回归模型的推广。 我很喜欢这个观点，只要我能和合作者合作，就尽量强调这一点，但我承认，有时你必须从特殊情况出发才能建立起整体。</p>
+<div class="section level2">
+<h2>回归概念与损失函数和条件均值和中值相关</h2>
+<p>“回归”一词目前以各种各样的方式使用。一般情况下，如果有一个称为结果变量或因变量的变量<span class="math inline">\(Y\)</span>，以及一些其他称为解释变量或自变量的变量<span class="math inline">\(X_1\)</span>，<span class="math inline">\(X_2\)</span>等，则一个<span class="math inline">\(Y\)</span>在<span class="math inline">\(X\)</span>s上的回归可以是 <a href="http://www.jstor.org/stable/2727353">给定<span class="math inline">\(X\)</span>（或“以<span class="math inline">\(X\)</span>为条件”）<span class="math inline">\(Y\)</span>的“概率分布的任何特征”</a> 。这些特征通常涉及分布的“平均”或“中心”的一些度量，例如均值或中值。</p>
+<p>最简单的回归方法就是具有单一解释变量的线性回归。换句话说，试图通过散点图来绘制“最佳拟合线”。有很多方法来定义“最佳拟合”，而通常考虑的方法是基于<a href="https://en.wikipedia.org/wiki/Loss_function#Quadratic_loss_function">二次损失函数quadratic loss function</a> （也称为平方误差损失或<span class="math inline">\(L_2\)</span>损失）。基本上，如果试图<strong>最小化平方和的误差</strong>，即真实结果Y和<span class="math inline">\(\hat{Y}\)</span>上的拟合值之间的差异，解决方案是“常规usual” 的<a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">普通最小二乘法ordinary least squares (OLS)</a>。拿这个例子来说，有一个单一的解释变量<span class="math inline">\(X_1\)</span>，结果变量<span class="math inline">\(Y\)</span>只是增加了一些噪音。回归OLS拟合标蓝色，拟合值与Y的真实值之间的线段也是蓝色。其他两行以橙色虚线显示。</p>
+<p><img src="../../post/Regression_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>误差平方为OLS拟合的总和6.19，而其他两条线的误差平方是7.58和10.19。</p>
+<p>如果没有解释变量，则拟合线是平坦的，代表结果值的平均值（平均值）：</p>
+<p><img src="../../post/Regression_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>对于上面的例子，这显然是不合适的。事实上，在这种情况下，平方误差的总和是49.34！</p>
+<p>一般来说，OLS有一些很好的属性，例如，如果噪声项定义为<span class="math inline">\(\epsilon = Y - \beta_0 - \beta_1 X_1\)</span>，其中<span class="math inline">\(\beta_0\)</span>和<span class="math inline">\(\beta_1\)</span>是真正的截距和斜率线——是有限方差的独立同分布，OLS拟合是条件均值E(Y|X)的无偏估计（即其均值等于条件均值），实际上是 <a href="https://en.wikipedia.org/wiki/Minimum-variance_unbiased_estimator">最小方差无偏估计量minimum-variance unbiased estimator</a>。请注意，到目前为止，我还没有讨论Y的分布，甚至Y是否连续。然而，在噪声项（因此Y是以X为条件）正态分布的情况下，OLS也是条件均值E(Y|X)的最大似然估计（maximum likelihood estimator，MLE）。</p>
+<p>为什么常常考虑二次损失函数的一个原因是因为数学运算非常好（可以使用通常的基于微积分的二阶导数测试来求解最大值）。如果存在更多的解释变量，这也可以很好地推广 - 我们可以将它们全部包含在矩阵X中，并且在一些多元微积分的帮助下基本上以相同的方式进行。然而，还有许多其他的方式来定义“最适合”。然而，也许有人有兴趣估计之外的Y|X分布的一个方面而非其平均值，比如它的中位数。中位数自然地连接到 <a href="https://en.wikipedia.org/wiki/Loss_function">绝对损失absolute loss</a>（也称为<span class="math inline">\(L_1\)</span>损失），同样，均值就联系到二次误差损失。在这种情况下，标准是<strong>最小化误差的绝对值的总和</strong>，也称为 <a href="https://en.wikipedia.org/wiki/Least_absolute_deviations">最小绝对偏差（least absolute deviations，LAD）或最小绝对残差（least absolute residuals）</a>。在没有解释变量的情况下，平面拟合线表示解释值的中值。如果我们更广义地看一个函数f，其中的值f(X)最为相似的Y，有相似的使用二次损失来定义，那么“最适合” <a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf">最大限度地减少预期的预测误差expected prediction error（EPE -见统计学习基础 <em>Elements of statistical learning</em> 第2.4节）</a>是函数f(x) = E(Y|X=x)（条件均值）; 相反，如果使用绝对损失来定义，则为f(x)=中值median(Y|X=x)（条件中值）。一般来说，中值比均值方法更稳健，因为它们缺乏对异常值的依赖性，但由于不连续的求导复杂化了优化程序，数学变得更加困难。对于上面的例子，无论是最小化平方和还是误差的绝对值总和，结果都几乎相同：</p>
+<pre class="r"><code>##intercept and slope estimated via OLS利用OLS估计截距和斜率
+coef(lm(y ~ x1))</code></pre>
+<pre><code>## (Intercept)          x1 
+##   0.1263162   0.9645116</code></pre>
+<pre class="r"><code>library(quantreg)
+##intercept and slope estimated via quantile regression with median (see below)利用分位数回归和中值估计截距和斜率
+coef(rq(y ~ x1, tau=0.5))</code></pre>
+<pre><code>## (Intercept)          x1 
+##   0.1218339   0.9931817</code></pre>
+<p>类似地，如果使用 <a href="http://www.jstor.org/stable/2727353">阶跃函数（0-1）损失step function (0-1) loss</a> ，则结果为f(x) = mode(Y|X=x) (conditional mode)。请注意，均值，中位数和模式是描述连续分布的“中心”的最常用方式。</p>
+<p>考虑除中位数之外的另一个分位数也可能是有意义的，当考虑具有不对称分布的变量（例如收入分配）时有时是这种情况。 <a href="https://en.wikipedia.org/wiki/Quantile_regression">分位数回归Quantile regression</a>为此考虑了不同的损失函数; 用于中位数的损失函数等同于LAD。如果噪声项具有不对称的拉普拉斯分布，则在此获得的用于特定分位数的估计量就是其 <a href="http://www.american.edu/cas/economics/info-metrics/pdf/upload/working-paper-bera.pdf">MLE</a>。对于本文档的其余部分，考虑到平方误差损失，我们通常会以“常规方式”使用“回归”。</p>
+</div>
+<div id="ols" class="section level2">
+<h2>更多关于OLS拟合：线性代数和几何解释</h2>
+<p>上面我们考虑了二维拟合线的特殊情况，其中只有一个解释变量，并估计了两个参数：“最佳拟合线”的斜率和截距。一般来说，可以考虑许多变量。通常将所有这些变量考虑在一个单一的矩阵<span class="math inline">\(X\)</span>中，每个变量都作为列，每个样本作为一行，第一列通常由1组成，目标是估计一个“参数”<span class="math inline">\(\beta\)</span>向量，所以结果<span class="math inline">\(Y\)</span>是“尽可能接近”到<span class="math inline">\(X\beta\)</span>（因此，<span class="math inline">\(\beta\)</span>的第一个元素是截距）。在一定的线性代数假设下， <a href="https://en.wikipedia.org/wiki/Proofs_involving_ordinary_least_squares">多元情况下的OLS有一个很好的封闭形式</a>：<span class="math inline">\(\hat{\beta} = (X&#39;X)^{-1}X&#39;Y\)</span>。这意味着拟合值是：<span class="math inline">\(\hat{Y}=X\hat{\beta} = X(X&#39;X)^{-1}X&#39;Y\)</span>。矩阵<span class="math inline">\(X(X&#39;X)^{-1}X&#39;\)</span>实际上是 <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">投影矩阵在由X的列所跨越的空间上</a>，这是另一种概念化<span class="math inline">\(\hat{Y}\)</span>表示最接近向量是解释变量的线性组合的所有向量中的<span class="math inline">\(Y\)</span>。我们再一次使用<span class="math inline">\(L^2\)</span>损失定义“最接近的”，或者在线性代数术语中，最小化<span class="math inline">\(L^2\)</span>的范数 <span class="math inline">\(||.||\)</span>：<span class="math inline">\(\hat{\beta} = \arg\min||Y-X\beta||\)</span>。值得注意的是，解<span class="math inline">\(X\beta = Y\)</span>中的<span class="math inline">\(\beta\)</span>实际上代表一个 <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">超定系统overdetermined system</a> 因此通常无法得到准确解——因此，我们寻找一种解决方案，给出一个“接近”Y的拟合，同时处于解释变量所跨越的空间中。</p>
+</div>
+<div id="t" class="section level2">
+<h2>T检验、方差分析，及其他：线性模型中的假设检验</h2>
+<p>也许大多数人首先想到的统计方法是t检验。 <a href="https://en.wikipedia.org/wiki/Student%27s_t-test#Independent_two-sample_t-test">学生氏两样本t-test</a> 用于<strong>比较两个分布的均值</strong>，对于正态分布的随机变量或对于具有足够大的样本大小的连续随机变量，<strong>零假设表明它们是相等的</strong>。关于线性回归的一个强有力的事情是假定等式的两样本t检验实际上与线性模型相同，其中解释变量是定义组成员关系的0/1变量：</p>
+<pre class="r"><code>set.seed(380148)
+n &lt;- 10
+##define the two random variables定义2个随机变量
+##y1 is from a normal distribution with mean=0, sd=1
+y1 &lt;- rnorm(n,0,1)
+##y2 is from a normal distribution with mean=0.5, sd=1
+y2 &lt;- rnorm(n,0.5,1)
+##run a t-test!
+t.test(y1,y2,var.equal = TRUE)</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  y1 and y2
+## t = -0.66034, df = 18, p-value = 0.5174
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.5638050  0.8158546
+## sample estimates:
+## mean of x mean of y 
+## 0.2961889 0.6701641</code></pre>
+<pre class="r"><code>##create a single vector of outcomes and a vector indicating group membership表示组关系的向量
+y &lt;- c(y1,y2)
+x1 &lt;- c(rep(0,length(y1)),rep(1,length(y2)))
+summary(lm(y~x1))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x1)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.3130 -0.9469  0.1265  1.0192  1.7432 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)   0.2962     0.4005    0.74    0.469
+## x1            0.3740     0.5663    0.66    0.517
+## 
+## Residual standard error: 1.266 on 18 degrees of freedom
+## Multiple R-squared:  0.02365,    Adjusted R-squared:  -0.03059 
+## F-statistic: 0.436 on 1 and 18 DF,  p-value: 0.5174</code></pre>
+<p>我们可以看到，p值是相同的，估计的斜率实际上等于平均值之间的差异。由于OLS属性背后的一个假设是噪声项是相同分布的，这就意味着方差不等的情况不能直接放在这个框架中。但是，如果方差不相等，这意味着也许应该考虑其他解释变量，所以之后这些变量可以包含在回归模型中。</p>
+<p>ANOVA也是同样的思想：要比较多组均值。拥有回归思维方式的好处之一是，用条件方法解释结果是非常容易的，它也允许一个统一的框架，它可以包括连续和离散的解释变量以及它们之间的相互作用，而不必求助于像双向ANOVA，ANCOVA等特殊术语</p>
+<p>一般而言，我们可以通过执行F检验来测试多变量模型中参数的任何线性组合是否等于0 。这是一个强有力的方法，因为它包括两个系数相等的情况，当然，单个参数是否等于0有一个特殊情况。对于后一种情况，这种方法相当于使用$ t np-1 <span class="math inline">\(自由度，其中\)</span> p $是不包括截距的参数的数量。因此，回归方法再一次考虑了一个更一般的框架，特殊情况自然就会出现。</p>
+<p>The same idea holds in the case of ANOVA, where multiple group means are being compared. One of the benefits of having a regression mindset is that it very easy to interpret the results in terms of conditional means and it also allows for a unified framework which can include both continuous and discrete explanatory variables and interactions between them, without having to resort to special terminology like two-way ANOVA, ANCOVA, etc.</p>
+<p>In general, we can test whether any linear combination of parameters in a multivariate model is equal to 0 by performing an <a href="https://courses.washington.edu/b515/l6.pdf">F-test</a>. This is a powerful approach, as it includes cases including the equality of two coefficients and of course, has a special case whether a single parameter is equal to 0. For this latter case, this approach is equivalent to using a t-test with <span class="math inline">\(n-p-1\)</span> degrees of freedom, where <span class="math inline">\(p\)</span> is the number of parameters, excluding the intercept. Thus, once again, the regression approach allows for a more general framework from which the special cases naturally fall out.</p>
+</div>
+<div id="from-weighted-regression-to-generalized-linear-models" class="section level2">
+<h2>From weighted regression to generalized linear models</h2>
+<p>We mentioned before that one of the properties that is generally assumed for linear regression is that the noise terms are independent and identically distributed. In case this does not hold, an <a href="https://en.wikipedia.org/wiki/Generalized_linear_model">alterative to OLS</a> is to use either <em>weighted least squares</em> (WLS) or <em>generalized least squares</em> (GLS) approaches. This means that if the variance-covariance matrix of the noise terms is <span class="math inline">\(W\)</span>, then the MLE solution is: <span class="math inline">\(\hat{\beta}=(X&#39;W^{-1}X)^{-1}X&#39;W^{-1}Y\)</span>. This is equivalent to minimizing <span class="math inline">\(\hat{\beta} = \arg\min(Y-X\beta)&#39;W^{-1}(Y-X\beta)\)</span>, known as the <em>Mahalanobis length,</em> instead of <span class="math inline">\(\hat{\beta} = \arg\min||Y-X\beta||\)</span> as before. If W has all off-diagonal terms equal to 0 (i.e. the noise terms are independent), this is the WLS estimate, otherwise it is the GLS estimate.</p>
+<p>What happens if the outcome is not normally distributed? Here we come to the <a href="https://en.wikipedia.org/wiki/Generalized_linear_model">generalized linear model</a>. In the case in which the outcome Y is from a class of distributions known as the <a href="https://en.wikipedia.org/wiki/Exponential_family">exponential family</a> - which include the normal, exponential, and Bernoulli distributions - instead of trying to directly estimate the conditional mean <span class="math inline">\(E(Y|X)\)</span> as a linear function <span class="math inline">\(X\beta\)</span>, it is generally more convenient to estimate a transformation of this mean, <span class="math inline">\(g[E(Y|X)]\)</span>. This is because, for example, for a 0/1 outcome, using just the OLS will often result in fitted values outside of the [0,1] range, but using a <em>link function</em> g that transforms the (0,1) range corresponding to the probability of success in a Bernoulli distribution into the entire real line solves this problem. If the link function is the log-odds (logit), we find ourselves looking at logistic regression. In the general case, we cannot obtain a closed form MLE solution, but by applying a first-order Taylor approximation, we obtain an algorithm that performs <a href="https://web.as.uky.edu/statistics/users/pbreheny/760/S13/notes/2-19.pdf">iteratively reweighted least squares (IRLS)</a>, where the matrix <span class="math inline">\(W\)</span> is related to the derivative of the inverse link function.</p>
+</div>
+<div id="smoothing-and-regression" class="section level2">
+<h2>Smoothing and regression</h2>
+<p>So far we have discussed fitting linear models between an outcome and explanatory variables, but what happens if the relationship is clearly nonlinear? One option is to add more explanatory variables, including polynomial terms, and fit a linear function to those - for example, instead of having <span class="math inline">\(X_1\)</span> as an explanatory variable, can consider <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_1^2\)</span>, so that we fit the model <span class="math inline">\(E(Y|X_1) = \beta_0+\beta_1X_1+\beta_2X_1^2\)</span> instead of <span class="math inline">\(E(Y|X_1) = \beta_0+\beta_1X_1\)</span>. Note that the function is still linear in the explanatory variables that are considered. More flexibility can be obtained by using regression models that have piecewise polynomial terms, known as <a href="https://en.wikipedia.org/wiki/Spline_(mathematics)">splines</a>. For the case of a single explanatory variable, another popular approach is <a href="https://en.wikipedia.org/wiki/Local_regression">local regression (loess)</a>, which fits simple linear regression using a moving window, resulting in a smooth function. Many other advanced approaches are built on these concepts, including <a href="https://en.wikipedia.org/wiki/Smoothing_spline">smoothing splines</a>, which place knots at every observation but have a <a href="https://web.stanford.edu/class/stats202/content/lec17.pdf">“roughness penalty” to reduce overfitting</a> and <a href="https://web.stanford.edu/class/stats202/content/lec17.pdf">generalized additive models (GAMs)</a> which fit smooth functions for each separate explanatory variable.</p>
+</div>
+<div id="regression-and-machine-learning" class="section level2">
+<h2>Regression and machine learning</h2>
+<p><em>Machine learning</em>, also known as <em>statistical learning</em>, focuses on “learning from the data” in order to either predict the outcomes for new data points (supervised learning) or to find patterns in the data (unsupervised learning). “Predicting” in this case means obtaining the values <span class="math inline">\(\hat{Y}\)</span> for new points which are not in the dataset on which the model was fitted (the “training data”), using the model parameters estimated from that dataset. For supervised learning tasks, any of the regression approaches described above can be considered, noting that in machine learning, the main goal is having a low prediction error for new points, as opposed to performing statistical inference. If the number of predictors is very large, potentially larger than the number of samples, <a href="https://en.wikipedia.org/wiki/Regularization_(mathematics)">regularization approaches</a> like ridge regression, LASSO, or elastic net can be used to reduce overfitting. Many more approaches exist, some which build on or are similar to regression. For example, <a href="https://en.wikipedia.org/wiki/Support_vector_machine#Regression">support vector machines (SVMs)</a> for continuous outcomes are equivalent to regression models with a regularization term and the hinge loss instead of the quadratic loss function. Similarly, <a href="https://github.com/greenelab/deep-review/blob/master/content/02.intro.md">neural networks</a> can be seen as extensions of linear or logistic regression. It is also increasingly common in machine learning to use <a href="https://en.wikipedia.org/wiki/Ensemble_learning">ensemble methods</a> that combine several approaches and perform a type of averaging or “voting” to obtain the final predicted values.</p>
+</div>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="../../tags/stats">stats</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="../../post/2018-01-12-%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">矩阵代数学习笔记</a></li>
+    
+    <li><a href="../../project/stats_r/">统计&amp;编程</a></li>
+    
+    <li><a href="../../post/a-gentle-inla-tutorial/">INLA教程|A gentle INLA tutorial</a></li>
+    
+    <li><a href="../../post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/">到底是固定还是随机？</a></li>
+    
+    <li><a href="../../post/%E7%BA%BF%E6%80%A7%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8Blmm/">线性混合模型LMM</a></li>
+    
+  </ul>
+</div>
+
+
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dong" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Dong &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//dong.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="../../js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

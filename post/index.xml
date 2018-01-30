@@ -11,6 +11,19 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Errors-in-site-building</title>
+      <link>/post/2018-01-30-errors-in-site-building/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-30-errors-in-site-building/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Started building sites … ERROR 2018/01/30 09:40:14 Error while rendering “page”: template: theme/_default/single.html:17:7: executing “theme/_default/single.html&amp;quot; at &lt;partial &#34;tags.html&#34; ...&gt;: error calling partial: template: theme/partials/tags.html:5:22: executing “theme/partials/tags.html” at &amp;lt;$.Params.tags&amp;gt;: range can’t iterate over stats&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;检查最近新建的post的yaml是不是有错&lt;/strong&gt;。原因：我建了一个rmd文件，并knit到word，yaml就被自动修改导致渲染错误。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>latex_math</title>
       <link>/post/2018-01-29-latex_math/</link>
       <pubDate>Mon, 29 Jan 2018 00:00:00 +0000</pubDate>
@@ -616,21 +629,6 @@ g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k\gamma_k
 &lt;li&gt;Today, we &lt;strong&gt;witnessed&lt;/strong&gt; an &lt;strong&gt;incredible&lt;/strong&gt; moment in history&lt;/li&gt;
 &lt;li&gt;furiously猛烈地&lt;/li&gt;
 &lt;li&gt;internship实习生&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>invoke|调用，引用</title>
-      <link>/post/2018-01-14-invoke/</link>
-      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-14-invoke/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;You create a command line object specifying the options (e.g. the input filename and the output filename), then &lt;strong&gt;invoke&lt;/strong&gt; this command line via a Python operating system call (e.g. using the subprocess module). (Chapman et al., 2000)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;By piping the result to wc we &lt;strong&gt;invoke&lt;/strong&gt; the word count program which indicates how many lines (i.e., rows) have the &amp;gt; symbol (this should be 101 for this example). (Pevsner, 2009)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Because of the high copy number of retrotransposons in the genomes of extant pine species, it is tempting to &lt;strong&gt;invoke&lt;/strong&gt; the mechanism of reverse transcription in the generation of complex pine gene families. (Kinlaw, Neale, 1997)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Proofs given in the statistical literature of the latter part either assume that = 0, which is a relatively easy case, or &lt;strong&gt;invoke&lt;/strong&gt; the same result by Laha (1956) that was mentioned earlier. (Khuri, 2009)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
