@@ -11,6 +11,85 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>2018-02-07-English-note</title>
+      <link>/post/2018-02-07-english-note/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-02-07-english-note/</guid>
+      <description>&lt;p&gt;akin to emerge out of从……中出现&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2018-02-06-English-note</title>
+      <link>/post/2018-02-06-english-note/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-02-06-english-note/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;with a few exceptions&lt;/li&gt;
+&lt;li&gt;the proportion … has commonly been small&lt;/li&gt;
+&lt;li&gt;the financial resources required … were considerable&lt;/li&gt;
+&lt;li&gt;advances in … have led to&lt;/li&gt;
+&lt;li&gt;enhance response to selection&lt;/li&gt;
+&lt;li&gt;conventional selection&lt;/li&gt;
+&lt;li&gt;information is growing&lt;/li&gt;
+&lt;li&gt;has not &lt;strong&gt;lived up to&lt;/strong&gt; initial expectations满足&lt;/li&gt;
+&lt;li&gt;logistical requirement&lt;/li&gt;
+&lt;li&gt;attitude toward&lt;/li&gt;
+&lt;li&gt;made advances&lt;/li&gt;
+&lt;li&gt;traits of importance/interests&lt;/li&gt;
+&lt;li&gt;enable opportunities&lt;/li&gt;
+&lt;li&gt;set the stage for打好基础&lt;/li&gt;
+&lt;li&gt;technique … notably achieved by&lt;/li&gt;
+&lt;li&gt;embodied in体现在&lt;/li&gt;
+&lt;li&gt;aftermath后果&lt;/li&gt;
+&lt;li&gt;be underway处理之中&lt;/li&gt;
+&lt;li&gt;bring about带来，引起&lt;/li&gt;
+&lt;li&gt;assess &lt;strong&gt;the extend to which&lt;/strong&gt; information has been uesd in&lt;/li&gt;
+&lt;li&gt;by necessity必然的&lt;/li&gt;
+&lt;li&gt;In what follows下文中&lt;/li&gt;
+&lt;li&gt;insightful discussion&lt;/li&gt;
+&lt;li&gt;a general consensus&lt;/li&gt;
+&lt;li&gt;considering large numbers of&lt;/li&gt;
+&lt;li&gt;concurrently&lt;/li&gt;
+&lt;li&gt;ground-breaking&lt;/li&gt;
+&lt;li&gt;in an attempt to&lt;/li&gt;
+&lt;li&gt;reliant on&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2018-01-30-English-note</title>
+      <link>/post/2018-01-30-english-note/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-30-english-note/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;moderately high&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;in line with&lt;/strong&gt; trends in heritabilities&lt;/li&gt;
+&lt;li&gt;For both &lt;strong&gt;classes&lt;/strong&gt; of traits&lt;/li&gt;
+&lt;li&gt;sharply decreased&lt;/li&gt;
+&lt;li&gt;compensate for&lt;/li&gt;
+&lt;li&gt;broken up&lt;/li&gt;
+&lt;li&gt;striking显著&lt;/li&gt;
+&lt;li&gt;in the case of至于，在…的情况下&lt;/li&gt;
+&lt;li&gt;call into question对…表示怀疑&lt;/li&gt;
+&lt;li&gt;plus a penalty on complexity加上对复杂性的惩罚&lt;/li&gt;
+&lt;li&gt;well versed in精通&lt;/li&gt;
+&lt;li&gt;gradient descent梯度下降&lt;/li&gt;
+&lt;li&gt;be a matter of问题的关键是&lt;/li&gt;
+&lt;li&gt;It is worth noting值得注意的是&lt;/li&gt;
+&lt;li&gt;to a great extent在很大程度上&lt;/li&gt;
+&lt;li&gt;it is hardly surprising这并不奇怪&lt;/li&gt;
+&lt;li&gt;opt for选择&lt;/li&gt;
+&lt;li&gt;go against the grain背道而驰，违背别人的想法做事 a wide variety of run out of &lt;strong&gt;purportedly&lt;/strong&gt; aiming to据称 pros and cons正反两方面 in the light of根据&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Errors-in-site-building</title>
       <link>/post/2018-01-30-errors-in-site-building/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
@@ -20,6 +99,61 @@
 &lt;p&gt;Started building sites … ERROR 2018/01/30 09:40:14 Error while rendering “page”: template: theme/_default/single.html:17:7: executing “theme/_default/single.html&amp;quot; at &lt;partial &#34;tags.html&#34; ...&gt;: error calling partial: template: theme/partials/tags.html:5:22: executing “theme/partials/tags.html” at &amp;lt;$.Params.tags&amp;gt;: range can’t iterate over stats&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;检查最近新建的post的yaml是不是有错&lt;/strong&gt;。原因：我建了一个rmd文件，并knit到word，yaml就被自动修改导致渲染错误。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine learning在遗传和基因组领域的应用</title>
+      <link>/post/2018-01-30-machine-learning/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-30-machine-learning/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;资料来源&lt;span class=&#34;citation&#34;&gt;(Libbrecht and Noble 2015; Xavier et al. 2016; González-Recio, Rosa, and Gianola 2014)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;推论和模型可以是经验或实验设计。 经验方法最适用于可以分析找到解决方案的特征明显的现象，而从数据推断和 &lt;strong&gt;使用算法&lt;/strong&gt; 识别数据中的模式需要实验方法。 &lt;strong&gt;研究这些算法的科学被称为机器学习&lt;/strong&gt;。 &lt;strong&gt;机器学习致力于构建和研究能够从数据中学习的算法，努力寻找一种最小化给定损失的最佳解决方案。 这使得这些机器学习算法比逻辑算法更加灵活。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机器学习&lt;/strong&gt;：一个与 &lt;strong&gt;计算机算法&lt;/strong&gt; 的发展和应用有关的领域，随着经验改进。 &lt;strong&gt;机器学习&lt;/strong&gt; 是预测和分类的另一种方法，能够灵活地处理维数问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应用&lt;/strong&gt;：识别基因组序列中转录起始位点（TSS）的位置、鉴定剪接位点，启动子，增强子或定位的核小体。 一般来说，如果能够编译一个给定类型的序列元素的列表，那么机器学习方法可能被训练来识别这些元素。 此外，可以将识别个体类型的基因组元素的模型与（学习的）关于其相对位置的逻辑相组合，以构建能够注释基因（包括其非翻译区（UTR），内含子和 外显子 - 沿整个真核生物染色体。&lt;/p&gt;
+&lt;p&gt;机器学习的两个特定分支，即所谓的 &lt;strong&gt;有监督和无监督学习&lt;/strong&gt;。监督学习有助于解决 &lt;strong&gt;存在解释变量和响应变量&lt;/strong&gt; 的问题。 这通常适用于数量遗传学中的 &lt;strong&gt;预测，选择和分类&lt;/strong&gt;。 当没有反应变量存在时，使用无监督学习来解决诸如 &lt;strong&gt;基因型聚类和在群体中寻找混合物&lt;/strong&gt; 的问题。&lt;/p&gt;
+&lt;p&gt;由于大多数性状的数量性质，在植物和动物育种中 &lt;strong&gt;使用最广泛的监督学习算法是高斯过程（GP）&lt;/strong&gt;。 GP代表选择理论，育种价值和关联性研究的基础。 在监督学习过程中， &lt;strong&gt;预测对提高数量性状具有重要意义&lt;/strong&gt;， &lt;strong&gt;分类对于决策的制定和分类性状的遗传改良具有重要意义&lt;/strong&gt;。 育种计划开发特定的产品来满足各种市场的需求， &lt;strong&gt;分类模型决定了定义这些市场定位的品质的界限&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;高斯过程&lt;/h2&gt;
+&lt;p&gt;对于正态分布，随机变量&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;的期望是其均值&lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;，方差&lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt;是和期望的离差（的平方和）。这两个参数一旦确定，概率密度函数（PDF，&lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;）就可以用于推断任何观测事件的概率。计算一个区间的概率用积分，比如小于某个产量的概率，计算用累积密度函数（CDF，&lt;span class=&#34;math inline&#34;&gt;\(\Phi\)&lt;/span&gt;）。&lt;/p&gt;
+&lt;p&gt;在所有数据集中，每个观测值都包含一些关于未知参数的信息。 似然法搜索使观测数据的似然性（&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;）最大化的未知参数， &lt;strong&gt;使用PDF来定义数据和参数&lt;span class=&#34;math inline&#34;&gt;\(p(\mathbf{X},\mathbf{\theta})\)&lt;/span&gt;的联合概率&lt;/strong&gt;，其中&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X}\)&lt;/span&gt;表示观测数据，theta（&lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;）表示未知参数。贝叶斯是在似然的基础上给位置参数指定一个先验的概率分布。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;无限小模型和选择理论&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;选择强度&lt;/strong&gt; （&lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;）表示用作总体截断值的平均值的标准偏差数; 换句话说，选择个体作为祖先保留在繁殖种群中的截断点。&lt;/p&gt;
+&lt;p&gt;Hilbert spaces：无限维空间。 随着时间的推移， &lt;strong&gt;遗传增益的稳定性依赖于选择强度，突变率以及总（n）和有效（Ne）种群大小&lt;/strong&gt;。 根据Zeng和Hill（1986）的研究，当新的单体型与等位基因发生固定的频率相同时，就会出现最佳的选择强度，这样群体就不会消耗其多样性。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;parsimony&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;方差分解和parsimony&lt;/h2&gt;
+&lt;p&gt;在统计学上，遗传力被称为类内相关系数，它是指由于其中一个成分而引起的总变异量。 广义遗传力说明了“nature-versus-nurture”，区分遗传因素和环境因素造成的变异。 遗传方差组分的估计首先通过使用 &lt;strong&gt;核矩阵（又名亲缘关系矩阵）&lt;/strong&gt; 的定义个体之间的关系。&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Gonzalez-Recio2014&#34;&gt;
+&lt;p&gt;González-Recio, Oscar, Guilherme J M Rosa, and Daniel Gianola. 2014. “Machine learning methods and predictive ability metrics for genome-wide prediction of complex traits.” &lt;em&gt;Livestock Science&lt;/em&gt; 166 (1). Elsevier: 217–31. doi:&lt;a href=&#34;https://doi.org/10.1016/j.livsci.2014.05.036&#34;&gt;10.1016/j.livsci.2014.05.036&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Libbrecht2015&#34;&gt;
+&lt;p&gt;Libbrecht, Maxwell W, and William Stafford Noble. 2015. “Machine learning applications in genetics and genomics.” &lt;em&gt;Nature Reviews Genetics&lt;/em&gt; 16 (6). Nature Publishing Group: 321–32. doi:&lt;a href=&#34;https://doi.org/10.1038/nrg3920&#34;&gt;10.1038/nrg3920&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Xavier2016a&#34;&gt;
+&lt;p&gt;Xavier, Alencar, William M. Muir, Bruce Craig, and Katy Martin Rainey. 2016. “Walking through the statistical black boxes of plant breeding.” &lt;em&gt;Theoretical and Applied Genetics&lt;/em&gt; 129 (10). Springer Berlin Heidelberg: 1933–49. doi:&lt;a href=&#34;https://doi.org/10.1007/s00122-016-2750-y&#34;&gt;10.1007/s00122-016-2750-y&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R碎碎念</title>
+      <link>/post/2018-01-30-r-skills/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-30-r-skills/</guid>
+      <description>&lt;div id=&#34;replace-all-0-values-to-na&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Replace all 0 values to NA&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;df[df == 0] &amp;lt;- NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -64,6 +198,8 @@
 &lt;td align=&#34;right&#34;&gt;cdots&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sum_{j=1}^{p}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;sum_{j=1}^{p}&lt;/td&gt;
 &lt;td align=&#34;right&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -78,7 +214,7 @@
       
       <guid>/post/2018-01-29-norm-zhihu-jiweiwei/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/people/ji-weiwei&#34;&gt;知乎JI weiwei的回答&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;你是问向量范数还是矩阵范数？ 要更好的理解范数，就 &lt;strong&gt;要从函数、几何与矩阵的角度去理解&lt;/strong&gt;，我尽量讲的通俗一些。 我们都知道， &lt;strong&gt;函数与几何图形往往是有对应的关系&lt;/strong&gt;，这个很好想象，特别是在三维以下的空间内， &lt;strong&gt;函数是几何图像的数学概括，而几何图像是函数的高度形象化&lt;/strong&gt;，比如一个函数对应几何空间上若干点组成的图形。 但 __当函数与几何超出三维空间时，就难以获得较好的想象，于是就有了映射的概念，映射表达的就是一个集合通过某种关系转为另外一个集合。__通常数学书是先说映射，然后再讨论函数，这是因为 &lt;strong&gt;函数是映射的一个特例&lt;/strong&gt;。 __为了更好的在数学上表达这种映射关系，（这里特指线性关系）于是就引进了矩阵。__这里的矩阵就是表征上述空间映射的线性关系。而 __通过向量来表示上述映射中所说的这个集合，而我们通常所说的基，就是这个集合的最一般关系。__于是，我们可以这样理解， &lt;strong&gt;一个集合（向量），通过一种映射关系（矩阵），得到另外一个几何（另外一个向量）&lt;/strong&gt;。 那么 &lt;strong&gt;向量的范数，就是表示这个原有集合的大小&lt;/strong&gt;。 &lt;strong&gt;而矩阵的范数，就是表示这个变化过程的大小的一个度量&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;你是问向量范数还是矩阵范数？ 要更好的理解范数，就 &lt;strong&gt;要从函数、几何与矩阵的角度去理解&lt;/strong&gt;，我尽量讲的通俗一些。 我们都知道， &lt;strong&gt;函数与几何图形往往是有对应的关系&lt;/strong&gt;，这个很好想象，特别是在三维以下的空间内， &lt;strong&gt;函数是几何图像的数学概括，而几何图像是函数的高度形象化&lt;/strong&gt;，比如一个函数对应几何空间上若干点组成的图形。 但 &lt;strong&gt;当函数与几何超出三维空间时，就难以获得较好的想象，于是就有了映射的概念，映射表达的就是一个集合通过某种关系转为另外一个集合。&lt;/strong&gt; 通常数学书是先说映射，然后再讨论函数，这是因为 &lt;strong&gt;函数是映射的一个特例&lt;/strong&gt;。 &lt;strong&gt;为了更好的在数学上表达这种映射关系，（这里特指线性关系）于是就引进了矩阵。&lt;/strong&gt; 这里的矩阵就是表征上述空间映射的线性关系。而 &lt;strong&gt;通过向量来表示上述映射中所说的这个集合，而我们通常所说的基，就是这个集合的最一般关系。&lt;/strong&gt; 于是，我们可以这样理解， &lt;strong&gt;一个集合（向量），通过一种映射关系（矩阵），得到另外一个几何（另外一个向量）&lt;/strong&gt;。 那么 &lt;strong&gt;向量的范数，就是表示这个原有集合的大小&lt;/strong&gt;。 &lt;strong&gt;而矩阵的范数，就是表示这个变化过程的大小的一个度量&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;那么说到具体几几范数，其不过是定义不同，一个矩阵范数往往由一个向量范数引出，我们称之为算子范数，其物理意义都如我上述所述。&lt;/p&gt;
 &lt;p&gt;以上符合知乎回答问题的方式。&lt;/p&gt;
 &lt;p&gt;接下来用百度回答方式：&lt;/p&gt;
@@ -116,85 +252,127 @@
     </item>
     
     <item>
-      <title>GS模型学习</title>
+      <title>GS学习笔记</title>
       <link>/post/2018-01-28-gs-models/</link>
       <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-01-28-gs-models/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;学习的参考文献是&lt;span class=&#34;citation&#34;&gt;(Lorenz et al. 2011)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;学习的参考文献是&lt;span class=&#34;citation&#34;&gt;(Lorenz et al. 2011; Campos et al. 2013)&lt;/span&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;最小二乘法不能估计全部的效应值，因为自由度不够（&lt;span class=&#34;math inline&#34;&gt;\(X&amp;#39;X\)&lt;/span&gt;矩阵奇异）。即便自由度足够用，标记间共线性会过拟合模型。过拟合模型能夸大小幅波动，导致预测能力差。&lt;/p&gt;
-&lt;p&gt;于是提出各种统计模型，大致可分为4类： &lt;strong&gt;收缩、变量选择、核和降维方法&lt;/strong&gt;。 模型的基本形式一样： &lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;假定标记之间的连锁相或标记单倍型块与因果多态性在家系间是一致的，因此全体标记效应的估计将是有意义的(Meuwissen2001)。 # large p，small n；预测子间相关或共线性&lt;/p&gt;
+&lt;p&gt;最小二乘法不能估计全部的效应值，因为自由度不够（ &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(X&amp;#39;X\)&lt;/span&gt;矩阵奇异&lt;/strong&gt; ）。即便自由度足够用，标记间共线性会 &lt;strong&gt;过拟合&lt;/strong&gt; 模型。过拟合模型能夸大小幅波动，导致预测能力差。或只能在训练群体中表现很好。&lt;/p&gt;
+&lt;p&gt;于是提出各种统计模型，大致可分为4类： &lt;strong&gt;收缩、变量选择、核和降维方法&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;3类：收缩、贝叶斯（变量选择）和半参或非参（支持向量、随机森林回归）。这些方法在遗传架构的假设方面不同。(Gamal El-Dien2015)&lt;/p&gt;
+&lt;p&gt;模型的基本形式一样： &lt;span class=&#34;math display&#34;&gt;\[
 y_i=g(\mathbf{x}_i)+e_i
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{x}_i)\)&lt;/span&gt;是基因型和表型的关联函数。模型都设法最小化一个特定的成本函数。最小二乘的成本函数是残差的平方和：&lt;span class=&#34;math inline&#34;&gt;\(\sum e_{i}^{2}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{x}_i)\)&lt;/span&gt;是基因型和表型的关联函数。模型都设法最小化一个特定的成本函数。最小二乘的成本函数是残差的平方和：&lt;span class=&#34;math inline&#34;&gt;\(\sum e_{i}^{2}\)&lt;/span&gt;。最小二乘的回归系数是： &lt;span class=&#34;math display&#34;&gt;\[
+\hat\beta=(\mathbf{X}^{\prime}\mathbf{X})^{-1}\mathbf{X}^{\prime}y
+\]&lt;/span&gt;&lt;/p&gt;
 &lt;div id=&#34;blup&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;岭回归（又叫随机回归BLUP）&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;遗传值是&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;个标记效应值之和。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-\beta_i=(\mathbf{X}^{\prime}\mathbf{X}+\lambda \mathbf{I})^{-1}\mathbf{X}^{\prime}y
-\]&lt;/span&gt; 与最小二乘的区别是多了一个&lt;span class=&#34;math inline&#34;&gt;\(\lambda \mathbf{I}\)&lt;/span&gt;项，引入的目的是避免矩阵&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X}^{\prime}\mathbf{X}\)&lt;/span&gt;奇异，并且降低预测子间的共线性。 &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;选择的标准是最小化模型误差；还有一个方法是假定标记效应从一个均值为0的正态分布中随机抽取的，然后解混合线性模型方程，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;是残差方差与标记效应方差的比值var(&lt;em&gt;e&lt;/em&gt;)/var(&lt;em&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/em&gt;)。如果var(&lt;em&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/em&gt;)比var(&lt;em&gt;e&lt;/em&gt;)小得多的话，会造成标记效应收缩到0，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;很大。 岭回归的成本函数是 &lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;遗传值是&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;个标记效应值之和。 &lt;span class=&#34;math display&#34;&gt;\[
+\hat\beta=(\mathbf{X}^{\prime}\mathbf{X}+\lambda \mathbf{I})^{-1}\mathbf{X}^{\prime}y
+\]&lt;/span&gt; 与最小二乘的区别是多了一个&lt;span class=&#34;math inline&#34;&gt;\(\lambda \mathbf{I}\)&lt;/span&gt;项，引入的目的是 &lt;strong&gt;避免矩阵&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X}^{\prime}\mathbf{X}\)&lt;/span&gt;奇异，并且降低预测子间的共线性&lt;/strong&gt;。 &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;选择的标准是最小化模型误差；还有一个方法是假定标记效应从一个均值为0的正态分布中随机抽取的，然后解混合线性模型方程，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;是残差方差与标记效应方差的比值var(&lt;em&gt;e&lt;/em&gt;)/var(&lt;em&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/em&gt;)。如果var(&lt;em&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/em&gt;)比var(&lt;em&gt;e&lt;/em&gt;)小得多的话，会造成标记效应收缩到0，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;很大。 岭回归的成本函数是 &lt;span class=&#34;math display&#34;&gt;\[
 \frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\mathbf{b}^{\prime}\mathbf{b}
 \]&lt;/span&gt; 第二项称为约束（constraint）、惩罚（penalty）或正则化（regularizer）。&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;越大，大的&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;收缩得越厉害。假设是标记效应同分布，指的是同样收缩到0，不是所有效应都相等。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;lasso-least-absolute-shrinkage-and-selection-operator&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;LASSO Least absolute shrinkage and selection operator&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;岭回归和LMM的等价是有条件的，尤其是假设。一个LMM将随机效应视为一个样本，该样本是从一个具有色散参数的基础分布中得出的，而岭回归只是一个计算方法，当模型过饱和时就提供估计。只有在RR中选择的惩罚参数等于相应LMM中方差分量的比例时，它们在数学上才是相同的(shen2013)。&lt;/strong&gt; LMM和RR之间的差异可以在所使用的估算技术中找到，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;不同。 ## LASSO Least absolute shrinkage and selection operator&lt;/p&gt;
 &lt;p&gt;LASSO的成本函数： &lt;span class=&#34;math display&#34;&gt;\[
 \frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\sum_k \left| \beta_k \right|
 \]&lt;/span&gt; 与岭回归的共同点是都惩罚大的标记效应，二者的一般形式是： &lt;span class=&#34;math display&#34;&gt;\[
 \frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\sum_k \left| \beta_k \right|^q
-\]&lt;/span&gt; &lt;em&gt;q&lt;/em&gt;=1时是LASSO，&lt;em&gt;q&lt;/em&gt;=2时是RR-BLUP，&lt;span class=&#34;math inline&#34;&gt;\(1\leq q\leq 2\)&lt;/span&gt;时，称为弹性网回归（elastic net）。因为正则化矩阵公式不同，LASSO的系数收缩比RR-BLUP的要强，而且一些系数收缩到0，产生一个稀疏模型，因此LASSO也能进行变量选择（所以有selection operator的意思）。LASSO的一个问题也是&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;的取值问题。 Park and Casella (2008)提出贝叶斯LASSO。 在非贝叶斯LASSO中，解决方案允许有n - 1个非零回归系数。 这是一个问题，因为在密集的标记数据的情况下，没有理由为什么训练集中的个体数量应该限制具有非零效应的标记的数量。&lt;/p&gt;
+\]&lt;/span&gt; &lt;em&gt;q&lt;/em&gt;=1时是LASSO，&lt;em&gt;q&lt;/em&gt;=2时是RR-BLUP，&lt;span class=&#34;math inline&#34;&gt;\(1\leq q\leq 2\)&lt;/span&gt;时，称为弹性网回归（elastic net）。因为正则化矩阵公式不同， &lt;strong&gt;LASSO的系数收缩比RR-BLUP的要强，更有效，因为当&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;很小时，&lt;span class=&#34;math inline&#34;&gt;\(\left| \beta_k \right|\)&lt;/span&gt;比&lt;span class=&#34;math inline&#34;&gt;\(\beta^2\)&lt;/span&gt;要大得多&lt;span class=&#34;citation&#34;&gt;(Wu et al. 2009)&lt;/span&gt;&lt;/strong&gt;，而且一些系数收缩到0，产生一个稀疏模型，因此LASSO也能进行变量选择（所以有selection operator的意思）。LASSO的一个问题也是&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;的取值问题。 Park and Casella (2008)提出贝叶斯LASSO。&lt;/p&gt;
+&lt;div id=&#34;lasso&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lasso的局限&lt;/h3&gt;
+&lt;p&gt;在非贝叶斯LASSO中，解决方案允许有n - 1个非零回归系数。 这是一个问题，因为在密集的标记数据的情况下，没有理由为什么训练集中的个体数量应该限制具有非零效应的标记的数量。 最多允许n个非零估计的回归系数。在复杂性状的WGR中，没有理由限制具有非零效应的标记的数量被n（观测的数量）限制。 当预测变量相关时，当LD跨越很长的区域时会出现某种情况，执行变量选择的方法如LASSO通常会被岭回归超过。&lt;/p&gt;
+&lt;p&gt;zou提出了综合RR和LASSO二者优点的方法（弹性网）：建议 &lt;strong&gt;将L1和L2范数的加权平均值用作惩罚&lt;/strong&gt; ，即，对于&lt;span class=&#34;math inline&#34;&gt;\(0\leq\alpha\leq1\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(J(\beta)=\alpha\sum_{j=1}^{p}||\beta_j||+(1-\alpha)\sum_{j=1}^{p}||\beta_j^2||\)&lt;/span&gt;。模型涉及2个正则参数(&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;)和&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;reproducing-kernel-hilbert-spaces-rkhs-and-support-vector-machine-regression&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Reproducing kernel Hilbert spaces (RKHS) and support vector machine regression&lt;/h2&gt;
-&lt;p&gt;RKHS：经典加性遗传模型结合核函数。核函数将预测变量转换为观测值之间的一组距离，以产生一个&lt;span class=&#34;math inline&#34;&gt;\(n\times n\)&lt;/span&gt;正定矩阵，用于线性模型。 __输入空间和特征空间__是这个文献中经常遇到的术语。 在GS的情况下， &lt;strong&gt;输入数据是标记得分数据&lt;/strong&gt;，因此，输入空间是多维空间，其中每个个体的位置由其标记分数确定。 通过 &lt;strong&gt;对输入数据应用内核函数将输入空间转换为特征空间&lt;/strong&gt;。 RKHS可以用矩阵符号表示： &lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;RKHS：经典加性遗传模型结合核函数。核函数将预测变量转换为观测值之间的一组距离，以产生一个&lt;span class=&#34;math inline&#34;&gt;\(n\times n\)&lt;/span&gt;正定矩阵，用于线性模型。 &lt;strong&gt;输入空间和特征空间&lt;/strong&gt; 是这个文献中经常遇到的术语。 在GS的情况下， &lt;strong&gt;输入数据是标记得分数据&lt;/strong&gt;，因此，输入空间是多维空间，其中每个个体的位置由其标记分数确定。 通过 &lt;strong&gt;对输入数据应用内核函数将输入空间转换为特征空间&lt;/strong&gt;。 RKHS可以用矩阵符号表示： &lt;span class=&#34;math display&#34;&gt;\[
 g(x)=\mathbf{K}_h\mathbf{\alpha}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{K}_h\)&lt;/span&gt;是核心条目的矩阵，量化个体彼此之间的距离，就像量化系谱关系的加性关系矩阵，即个体之间的遗传距离。这里的区别在于，核函数包括一个或多个平滑参数（ &lt;strong&gt;h&lt;/strong&gt;）以影响特征空间中的距离和输入空间中的距离之间的关系。&lt;span class=&#34;math inline&#34;&gt;\(n\times 1\)&lt;/span&gt;向量&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;可以被解释为可以使用标准混合模型方程估计的特征空间内的单独效应。CV或bootstrap方法可以用来确定h的最优值，例如在群体和性状之间的模型中允许很大的灵活性。RKHS方法可以在标准的定量遗传模型框架内解释。 由于内核方法包含了很大的灵活性，而且没有线性假设，所以它们可以 &lt;strong&gt;同时捕获所有类型的非加性效应&lt;/strong&gt;。 &lt;strong&gt;支持向量机也是核方法。&lt;strong&gt;其成本函数可称为 &lt;/strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;-intensive&lt;/strong&gt;&lt;/p&gt;
-&lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
 C \sum_i L_{\varepsilon}(e_{i})+\frac{1}{2}\mathbf{b}^{\prime}\mathbf{b}
-\]&lt;/span&gt; C是一个用来衡量误差对成本函数的贡献的常数；&lt;span class=&#34;math inline&#34;&gt;\(L_{\varepsilon}\)&lt;/span&gt;是 &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;-intensive损失函数&lt;/strong&gt;，意思是不惩罚误差，除非它们大于&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;： $$ L_{}(e_{i}) =
-&lt;span class=&#34;math display&#34;&gt;\[\begin{cases}
+\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;是一个用来衡量误差对成本函数的贡献的常数；&lt;span class=&#34;math inline&#34;&gt;\(L_{\varepsilon}\)&lt;/span&gt;是 &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;-intensive损失函数&lt;/strong&gt;，意思是不惩罚误差，除非它们大于&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+L_{\varepsilon}(e_{i}) =
+ \begin{cases}
  0, &amp;amp; \text{for} \left| e_{i} \right|&amp;lt;\varepsilon \\
- 
  \left| e_{i} \right|-\varepsilon, &amp;amp; \text{otherwise}
- \end{cases}\]&lt;/span&gt;
-&lt;p&gt;$$ 正常情况下，残差的总和不管是大还是小，都会对回归模型进行惩罚。在这里，只有最小化“大”（&amp;gt; &lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;）残差的模型才是有利的，而所有其他残差是可以接受的。 &lt;strong&gt;这个步骤的目的是开发牺牲许多小错误为了排除大错误的模型。&lt;/strong&gt; 这个问题的解决方案涉及 &lt;strong&gt;拉格朗日（Lagrange）优化&lt;/strong&gt;，其产生一组系数，乘以训练样本与正在预测的观察之间的所有可能的内积的和。训练样本 __i__和 __j__的内积定义为&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_i^{\prime}\mathbf{x}_j\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;是观测标记得分向量。为了允许非线性，内积项可以被核函数替换，有效地将SVR优化从输入空间传送到特征空间。&lt;/p&gt;
+ \end{cases}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;正常情况下，残差的总和不管是大还是小，都会对回归模型进行惩罚。在这里，只有最小化“大”（&amp;gt; &lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;）残差的模型才是有利的，而所有其他残差是可以接受的。 &lt;strong&gt;这个步骤的目的是开发牺牲许多小错误为了排除大错误的模型。&lt;/strong&gt; 这个问题的解决方案涉及 &lt;strong&gt;拉格朗日（Lagrange）优化&lt;/strong&gt;，其产生一组系数，乘以训练样本与正在预测的观察之间的所有可能的内积的和。训练样本 &lt;strong&gt;i&lt;/strong&gt; 和 &lt;strong&gt;j&lt;/strong&gt; 的内积定义为&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_i^{\prime}\mathbf{x}_j\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;是观测标记得分向量。为了允许非线性，内积项可以被核函数替换，有效地将SVR优化从输入空间传送到特征空间。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;partial-least-squares-regression-and-principle-component-regression&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Partial least squares regression and principle component regression降维&lt;/h2&gt;
-&lt;p&gt;从变量中提取 __潜变量__为预测变量的线性组合，并用于响应预测： &lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;从变量中提取 &lt;strong&gt;潜变量&lt;/strong&gt; 为预测变量的线性组合，并用于响应预测： &lt;span class=&#34;math display&#34;&gt;\[
 g(\mathbf{x}_i)=\sum_{l=1}^{w}t_{il}\beta_l
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(t_{il}\)&lt;/span&gt;是从原始&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;预测变量中提取的潜在变量，&lt;span class=&#34;math inline&#34;&gt;\(\beta_l\)&lt;/span&gt;是与该变量相关联的效应。即&lt;span class=&#34;math inline&#34;&gt;\(t_{il}=\mathbf{x}_i\mathbf{u}_l\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{u}_l\)&lt;/span&gt;是一个&lt;span class=&#34;math inline&#34;&gt;\(p\times1\)&lt;/span&gt;的向量，用于在线性组合中给潜变量&lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;加权。通常&lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;是潜变量的个数，比&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;要小得多，&lt;span class=&#34;math inline&#34;&gt;\(t_{il}\)&lt;/span&gt;是正交的，目的是消除共线性的问题。这个程序涵盖了各种技术，取决于哪个变异来源被认为是最重要的。在PC回归中，选择潜在变量尽可能多地解释原始预测变量。这种方法产生的预测空间信息向量可能不会与响应的变化相关联。在PLS中，选择潜变量以使潜变量和响应之间的关系尽可能强。 __为了避免由于太少或太多潜在变量而导致模型准确性降低（Solberg等人，2009），可以通过CV或相关技术来确定潜在变量的数量。__在PCR和PLS中，&lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{x}_i)\)&lt;/span&gt;都可以重新写成预测变量的直接函数，不用潜变量： &lt;span class=&#34;math display&#34;&gt;\[
+\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(t_{il}\)&lt;/span&gt;是从原始&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;预测变量中提取的潜在变量，&lt;span class=&#34;math inline&#34;&gt;\(\beta_l\)&lt;/span&gt;是与该变量相关联的效应。即&lt;span class=&#34;math inline&#34;&gt;\(t_{il}=\mathbf{x}_i\mathbf{u}_l\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{u}_l\)&lt;/span&gt;是一个&lt;span class=&#34;math inline&#34;&gt;\(p\times1\)&lt;/span&gt;的向量，用于在线性组合中给潜变量&lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;加权。通常&lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;是潜变量的个数，比&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;要小得多，&lt;span class=&#34;math inline&#34;&gt;\(t_{il}\)&lt;/span&gt;是正交的，目的是消除共线性的问题。这个程序涵盖了各种技术，取决于哪个变异来源被认为是最重要的。在PC回归中，选择潜在变量尽可能多地解释原始预测变量。这种方法产生的预测空间信息向量可能不会与响应的变化相关联。在PLS中，选择潜变量以使潜变量和响应之间的关系尽可能强。 &lt;strong&gt;为了避免由于太少或太多潜在变量而导致模型准确性降低（Solberg等人，2009），可以通过CV或相关技术来确定潜在变量的数量。&lt;/strong&gt; 在PCR和PLS中，&lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{x}_i)\)&lt;/span&gt;都可以重新写成预测变量的直接函数，不用潜变量： &lt;span class=&#34;math display&#34;&gt;\[
 \beta_k^*=\sum_{l=1}^{w}\beta_lu_{lk}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;section level2&#34;&gt;
 &lt;h2&gt;贝叶斯&lt;/h2&gt;
+&lt;p&gt;贝叶斯方法也可用于估计的变量选择和收缩。 &lt;strong&gt;大多数惩罚估计等价于某些类型的贝叶斯模型的后验模式&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;RR-BLUP所做的遗传效应在基因组上均匀分布的假设并不令人满意，Meuwissen等 （2001）试图用贝叶斯分析来放松它。&lt;/p&gt;
 &lt;div id=&#34;bayesa&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;BayesA&lt;/h3&gt;
-&lt;p&gt;每个标记效应&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;是从具有其自身方差的正态分布中抽取的：&lt;span class=&#34;math inline&#34;&gt;\(N(0,var(\beta_k))\)&lt;/span&gt;，这使得每个标记都可以向不同的程度缩小到零。反过来，方差参数从经过缩放的反向&lt;span class=&#34;math inline&#34;&gt;\(\chi^2\)&lt;/span&gt;分布中采样。这个模型也被称为贝叶斯收缩回归。 ### BayesB 没有效应的标记也给了概率。 如果遗传变异存在于少数基因座而在许多基因座缺失，这个 &lt;strong&gt;模型将更好地反映潜在的遗传架构&lt;/strong&gt;。 &lt;span class=&#34;math display&#34;&gt;\[
+&lt;p&gt;每个标记效应&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;是从具有其自身方差的正态分布中抽取的：&lt;span class=&#34;math inline&#34;&gt;\(N(0,var(\beta_k))\)&lt;/span&gt;，这使得每个标记都可以向不同的程度缩小到零。反过来，方差参数从经过缩放的反向&lt;span class=&#34;math inline&#34;&gt;\(\chi^2\)&lt;/span&gt;分布中采样。这个模型也被称为贝叶斯收缩回归。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bayesb&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;BayesB&lt;/h3&gt;
+&lt;p&gt;没有效应的标记也给了概率。 如果遗传变异存在于少数基因座而在许多基因座缺失，这个 &lt;strong&gt;模型将更好地反映潜在的遗传架构&lt;/strong&gt;。 &lt;span class=&#34;math display&#34;&gt;\[
 g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k\gamma_k
 \]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\gamma_k\)&lt;/span&gt;是指示预测模型中标记 _k_的存在的指示变量。&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\)&lt;/span&gt;服从均值为0、有限方差的正态分布。&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\)&lt;/span&gt;方差的先验分布服从一个混合分布： &lt;span class=&#34;math display&#34;&gt;\[
 \begin{align}
  var(\beta_k)=0,\quad &amp;amp;\text{with probability} \pi \\
  var(\beta_k)\sim \chi^{-2}(\mathbf{v},\mathbf{S}), \quad&amp;amp; \text{with probability} (1-\pi) \\
  \end{align}
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\pi=0\)&lt;/span&gt;时，BayesB和BayesA是一样的。然而，在处理真实的生物体和性状时，这个参数（&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;）的合理值是未知的。为了克服这个问题，一个称为 __BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;__的分析本身估计&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;，其中&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;的先验分布在0和1之间是均匀的。另外， __BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;__假设所有效应&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=1\)&lt;/span&gt;的标记的先验方差相等。即&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=0\)&lt;/span&gt;时&lt;span class=&#34;math inline&#34;&gt;\(\beta_k=0\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=1\)&lt;/span&gt;时&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\sim N(0,\hat{\sigma}_\beta^2)\)&lt;/span&gt;。反过来，该方法一起估计所有非零的&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}_\beta^2\)&lt;/span&gt;。在估计&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}_\beta^2\)&lt;/span&gt;时，以这样的方式对标记进行分组会对所有先验进行加权。 &lt;strong&gt;随机搜索变量选择（SSVS）&lt;/strong&gt;，早于Meuwissen的（2001）BayesB，但是与BayesB有大致相同的先验假设。&lt;/p&gt;
-&lt;p&gt;__所有这些贝叶斯模型共同的问题是参数估计不能以分析方式获得。__然而，有可能开发所谓的马尔可夫链蒙特卡罗（MCMC）算法，其从后验分布中对参数值进行采样。 然后可以通过重复抽样和计算适当的汇总统计数据（例如分布的均值或中值）来近似这些分布。 不幸的是，这个解决方案在计算上非常昂贵。 因此， __非MCMC方法__已经被用于估计这些汇总统计。&lt;/p&gt;
+\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\pi=0\)&lt;/span&gt;时，BayesB和BayesA是一样的。然而，在处理真实的生物体和性状时，这个参数（&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;）的合理值是未知的。为了克服这个问题，一个称为 &lt;strong&gt;BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;&lt;/strong&gt; 的分析本身估计&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;，其中&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;的先验分布在0和1之间是均匀的。另外， &lt;strong&gt;BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;&lt;/strong&gt; 假设所有效应&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=1\)&lt;/span&gt;的标记的先验方差相等。即&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=0\)&lt;/span&gt;时&lt;span class=&#34;math inline&#34;&gt;\(\beta_k=0\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=1\)&lt;/span&gt;时&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\sim N(0,\hat{\sigma}_\beta^2)\)&lt;/span&gt;。反过来，该方法一起估计所有非零的&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}_\beta^2\)&lt;/span&gt;。在估计&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}_\beta^2\)&lt;/span&gt;时，以这样的方式对标记进行分组会对所有先验进行加权。 &lt;strong&gt;随机搜索变量选择（SSVS）&lt;/strong&gt;，早于Meuwissen的（2001）BayesB，但是与BayesB有大致相同的先验假设。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所有这些贝叶斯模型共同的问题是参数估计不能以分析方式获得。&lt;/strong&gt; 然而，有可能开发所谓的马尔可夫链蒙特卡罗（MCMC）算法，其从后验分布中对参数值进行采样。 然后可以通过重复抽样和计算适当的汇总统计数据（例如分布的均值或中值）来近似这些分布。 不幸的是，这个解决方案在计算上非常昂贵。 因此， &lt;strong&gt;非MCMC方法&lt;/strong&gt; 已经被用于估计这些汇总统计。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;section level2&#34;&gt;
 &lt;h2&gt;统计方法总结&lt;/h2&gt;
 &lt;p&gt;在RR-BLUP模型下，标记效应是来自具有固定方差的正态分布的样本。通过缩小所有的标记效应到相同的程度，并包括模型中的所有标记，RR-BLUP的使用意味着从业者相信这个性状被许多具有小影响的基因座所控制。相反，贝叶斯B假设大多数位点对性状没有影响，因此大多数标记都不在预测模型中。包含在模型中的标记具有从具有不同方差的分布中采样的效果。因此，贝叶斯B有效地假定，性状是由相对较少的效应大小不同的基因座控制的。在BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;的情况下，包含在模型中的标记的比例是根据数据估计的。包括在模型中的标记效应是从估计方差的相同分布从数据。这使得BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;更具灵活性来模拟寡源到多基因的性状。 我们强调这些模型的先验和它们的含义，强调这些模型假定不同的基因结构。因此，就遗传结构不同而言，所有性状和种群都没有单一的最佳模型。 &lt;strong&gt;如果遗传结构由多个小效应位点组成（Buckler et al。，2009），RR-BLUP和利用全球遗传关系信息的模型运作良好。如果大效QTL解释了很多遗传变异（Anderson等，2001; Munkvold等，2009），贝叶斯B等模型应该受到青睐。此外，这些示例模型假定可加性，并且如果非加性遗传效应是重要的，则可能不会很好地执行。一些人群中存在流行的非加性效应的证据（Dudley and Johnson，2009）; RKHS和SVR在这些情况下可能占有优势。&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;非参方法（机器学习）&lt;/h1&gt;
+&lt;div id=&#34;rkhs&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;RKHS&lt;/h2&gt;
+&lt;p&gt;与BLUP类似 在称为基因组BLUP（G-BLUP）的方法中使用的基因组关系矩阵 &lt;strong&gt;被更一般的核矩阵代替&lt;/strong&gt;，所述矩阵在个体之间产生相似性，即使遗传无关。 &lt;strong&gt;核是定义个体之间的协方差结构的任何平滑函数K&lt;/strong&gt;。 该方法假定可以使用测量希尔伯特空间中的objects（焦点）之间的距离的核矩阵来表示欧几里德空间中的距离。 希尔伯特空间中，更相似的基因型比那些具有较少的相似性更密切。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;均方误差有非常好的几何意义，它对应了常用的欧几里得距离或简称“欧氏距离”（Euclidean distance）。基于均方误差最小化来进行模型求解的方法称为“最小二乘法”（least square method）。在线性回归中，最小二乘法就是试图找到一条直线，使所有样本到直线上的欧氏距离之和最小&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;估计量的准确度可以用估计的&lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;和参数&lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;的真实值之间的 &lt;strong&gt;平方欧几里得距离&lt;/strong&gt; 来测量。在标量的情况下，这只是平方的偏差：&lt;span class=&#34;math inline&#34;&gt;\(||\hat{\theta}(y)-\theta||^2=[\hat{\theta}(y)-\theta]^2\)&lt;/span&gt;。写成&lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}(y)\)&lt;/span&gt;的目的是强调预测子是抽样数据的函数。 均方误差（MSE）是平方欧几里得距离的期望值（超过数据的可能实现）：&lt;span class=&#34;math inline&#34;&gt;\(MSE(\hat{\theta})=E[\hat{\theta}(y)-\theta]^2\)&lt;/span&gt;。这能拆成2项：估计值的方差加上其偏差的平方，&lt;span class=&#34;math inline&#34;&gt;\(MSE(\hat{\theta})=Var(\hat{\theta})+Bias[\hat{\theta}]^2=E\{[\hat{\theta}-E(\hat{\theta})]^2\}+[E(\hat{\theta})-\theta]\)&lt;/span&gt;。 处罚和贝叶斯方法是两个最常用的收缩估计程序&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level1&#34;&gt;
+&lt;h1&gt;支持向量机&lt;/h1&gt;
+&lt;p&gt;SVM回归的基本思想是通过非线性映射函数将样本从预测空间映射到高维特征空间，并在后一空间进行线性回归(Jannink2010)。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;kernel&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;kernel&lt;/h1&gt;
+&lt;p&gt;内核方法将预测变量转换为距离，实际上创建了一个类似于加性遗传关系矩阵的矩阵。 核矩阵量化个体之间的距离，但也加入平滑参数[3]。 这种方法是灵活的，可以包含标记之间的复杂关系，因此在怀疑无加性效应的情况下是有用的[40]。&lt;/p&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-DelosCampos2013a&#34;&gt;
+&lt;p&gt;Campos, Gustavo de los, John M Hickey, Ricardo Pong-Wong, Hans D Daetwyler, and Mario P L Calus. 2013. “Whole-Genome Regression and Prediction Methods Applied to Plant and Animal Breeding.” &lt;em&gt;Genetics&lt;/em&gt; 193 (2): 327–45. doi:&lt;a href=&#34;https://doi.org/10.1534/genetics.112.143313&#34;&gt;10.1534/genetics.112.143313&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;ref-Lorenz2011&#34;&gt;
 &lt;p&gt;Lorenz, Aaron J., Shiaoman Chao, Franco G. Asoro, Elliot L. Heffner, Takeshi Hayashi, Hiroyoshi Iwata, Kevin P. Smith, Mark E. Sorrells, and Jean-Luc Jannink. 2011. “Genomic Selection in Plant Breeding.” In &lt;em&gt;Advances in Agronomy&lt;/em&gt;, 110:77–123. C. doi:&lt;a href=&#34;https://doi.org/10.1016/B978-0-12-385531-2.00002-5&#34;&gt;10.1016/B978-0-12-385531-2.00002-5&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Wu2009b&#34;&gt;
+&lt;p&gt;Wu, Tong Tong, Yi Fang Chen, Trevor Hastie, Eric Sobel, and Kenneth Lange. 2009. “Genome-wide association analysis by lasso penalized logistic regression.” &lt;em&gt;Bioinformatics&lt;/em&gt; 25 (6): 714–21. doi:&lt;a href=&#34;https://doi.org/10.1093/bioinformatics/btp041&#34;&gt;10.1093/bioinformatics/btp041&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -437,198 +615,6 @@ g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k\gamma_k
 &lt;li&gt;computationally cumbersome计算繁琐&lt;/li&gt;
 &lt;li&gt;used extensively&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;excellent and comprehensive&lt;/strong&gt; review articles&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-20-English-note</title>
-      <link>/post/2018-01-20-english-note/</link>
-      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-20-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;seeding progeny&lt;/strong&gt; were &lt;strong&gt;raised in&lt;/strong&gt; containers&lt;/li&gt;
-&lt;li&gt;stem cutting&lt;/li&gt;
-&lt;li&gt;across a range of sites and conditions&lt;/li&gt;
-&lt;li&gt;single-tree non-contiguous plots&lt;/li&gt;
-&lt;li&gt;pilodyn penetration (PIL)用来测定木材密度&lt;/li&gt;
-&lt;li&gt;are defined as above&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\otimes\)&lt;/span&gt; denotes the Kronecker product operation&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\oplus\)&lt;/span&gt; denotes the direct sum operation&lt;/li&gt;
-&lt;li&gt;analysis of DBH&lt;/li&gt;
-&lt;li&gt;assess the statistical significance评估统计显著性&lt;/li&gt;
-&lt;li&gt;in previous single-site analyses预分析&lt;/li&gt;
-&lt;li&gt;make use of利用&lt;/li&gt;
-&lt;li&gt;take advantage of利用&lt;/li&gt;
-&lt;li&gt;manipulate this problem处理问题&lt;/li&gt;
-&lt;li&gt;to deal with this issue&lt;/li&gt;
-&lt;li&gt;there is obvious evidence有明显的证据&lt;/li&gt;
-&lt;li&gt;A considerable body of research on大量&lt;/li&gt;
-&lt;li&gt;Theoretical work理论工作&lt;/li&gt;
-&lt;li&gt;quantitative variation&lt;/li&gt;
-&lt;li&gt;plays a &lt;strong&gt;pronounced&lt;/strong&gt; role in显著的&lt;/li&gt;
-&lt;li&gt;empirical investigations实证研究，对应的是理论研究&lt;/li&gt;
-&lt;li&gt;One of the reasons for this may be due to the fact that&lt;/li&gt;
-&lt;li&gt;methodological limitation方法局限&lt;/li&gt;
-&lt;li&gt;owing to由于&lt;/li&gt;
-&lt;li&gt;a portion of一份&lt;/li&gt;
-&lt;li&gt;a fraction of一部分&lt;/li&gt;
-&lt;li&gt;be relaxed somewhat缓解&lt;/li&gt;
-&lt;li&gt;in the case&lt;/li&gt;
-&lt;li&gt;the question has not been explored这个问题尚未探索/探讨 staggered摇摇晃晃地 veiled &lt;strong&gt;chameleons&lt;/strong&gt;变色龙 masterpiece杰作 stunning极好的 sexually harass性骚扰 synopsis大纲 syllabus大纲 rejoice高兴 apostrophe撇&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-20-ericjang</title>
-      <link>/post/2018-01-20-ericjang/</link>
-      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-20-ericjang/</guid>
-      <description>&lt;p&gt;Eric Jang&lt;/p&gt;
-&lt;p&gt;Technology, A.I., Careers&lt;/p&gt;
-&lt;p&gt;Wednesday, January 17, 2018 &lt;a href=&#34;http://blog.evjang.com/2018/01/nf1.html&#34;&gt;&lt;/a&gt; Normalizing Flows Tutorial, Part 1: Distributions and Determinants# E If you are a machine learning practitioner working on generative modeling, Bayesian deep learning, or deep reinforcement learning, normalizing flows are a handy technique to have in your algorithmic toolkit. Normalizing flows transform simple densities (like Gaussians) into rich complex distributions that can be used for generative models, RL, and variational inference. TensorFlow has a nice set of functions that make it easy to build flows and train them to suit real-world data.&lt;/p&gt;
-&lt;p&gt;This tutorial comes in two parts: Part 1: Distributions and Determinants. In this post, I explain how invertible transformations of densities can be used to implement more complex densities, and how these transformations can be chained together to form a “normalizing flow”. Part 2: Modern Normalizing Flows: In a follow-up post, I survey recent techniques developed by researchers to learn normalizing flows, and explain how a slew of modern generative modeling techniques – autoregressive models, MAF, IAF, NICE, Real-NVP, Parallel-Wavenet – are all related to each other. This series is written for an audience with a rudimentary understanding of linear algebra, probability, neural networks, and TensorFlow. Knowledge of recent advances in Deep Learning, generative models will be helpful in understanding the motivations and context underlying these techniques, but they are not necessary.&lt;/p&gt;
-&lt;p&gt;Background&lt;/p&gt;
-&lt;p&gt;Statistical Machine Learning algorithms try to learn the structure of data by fitting a parametric distribution &lt;span class=&#34;math inline&#34;&gt;\(p(x; \theta)\)&lt;/span&gt; to it. Given a dataset, if we can represent it with a distribution, we can: Generate new data “for free” by sampling from the learned distribution in silico; no need to run the true generative process for the data. This is a useful tool if the data is expensive to generate, i.e. a real-world experiment that takes a long time to run [1]. Sampling is also used to construct estimators of high-dimensional integrals over spaces. Evaluate the likelihood of data observed at test time (this can be used for rejection sampling or to score how good our model is). Find the conditional relationship between variables. For example, learning the distribution &lt;span class=&#34;math inline&#34;&gt;\(p(x_2 | x_1)\)&lt;/span&gt; allows us to build discriminative classification or regression models. Score our algorithm by using complexity measures like entropy, mutual information, and moments of the distribution. We’ve gotten pretty good at sampling (1), as evidenced by recent work on generative models for images and audio. These kinds of generative models are already being deployed in real commercial applications and Google products.&lt;/p&gt;
-&lt;p&gt;However, the research community currently directs less attention towards unconditional &amp;amp; conditional likelihood estimation (2, 3) and model scoring (4). For instance, we don’t know how to compute the support of a GAN decoder (how much of the output space has been assigned nonzero probability by the model), we don’t know how to compute the density of an image with respect to a DRAW distribution or even a VAE, and we don’t know how to analytically compute various metrics (KL, earth-mover distance) on arbitrary distributions, even if we know their analytic densities.&lt;/p&gt;
-&lt;p&gt;Generating likely samples isn’t enough: we also care about answering “how likely is the data?” [2], having flexible conditional densities (e.g. for sampling/evaluating divergences of multi-modal policies in RL), and being able to choose rich families of priors and posteriors in variational inference.&lt;/p&gt;
-&lt;p&gt;Consider for a moment, your friendly neighborhood Normal Distribution. It’s the Chicken Soup of distributions: we can draw samples from it easily, we know its analytic density and KL divergence to other Normal distributions, the central limit theorem gives us confidence that we can apply it to pretty much any data, and we can even backprop through its samples via the reparameterization trick. The Normal Distribution’s ease-of-use makes it a very popular choice for many generative modeling and reinforcement learning algorithms.&lt;/p&gt;
-&lt;p&gt;Unfortunately, the Normal distribution just doesn’t cut it in many real-world problems we care about. In Reinforcement Learning – especially continuous control tasks such as robotics – policies are often modeled as multivariate Gaussians with diagonal covariance matrices.&lt;/p&gt;
-&lt;p&gt;By construction, uni-modal Gaussians cannot do well on tasks that require sampling from a multi-modal distribution. A classic example of where uni-modal policies fail is an agent trying to get to its house across a lake. It can get home by circumventing the lake clockwise (left) or counterclockwise (right), but a Gaussian policy is not able to represent two modes. Instead, it chooses actions from a Gaussian whose mean is a linear combination of the two modes, resulting in the agent going straight into the icy water. Sad!&lt;/p&gt;
-&lt;p&gt;The above example illustrates how the Normal distribution can be overly simplistic. In addition to bad symmetry assumptions, Gaussians have most of their density concentrated at the edges in high dimensions and are not robust to rare events. Can we find a better distribution with the following properties?&lt;/p&gt;
-&lt;p&gt;Complex enough to model rich, multi-modal data distributions like images and value functions in RL environments? … while retaining the easy comforts of a Normal distribution: sampling, density evaluation, and with re-parameterizable samples? The answer is yes! Here are a few ways to do it: Use a mixture model to represent a multi-modal policy, where a categorical represents the “option” and the mixture represents the sub-policy. This provides samples that are easy to sample and evaluate, but samples are not trivially re-parameterizable, which makes them hard to use for VAEs and posterior inference. However, using a Gumbel-Softmax / Concrete relaxation of the categorical “option” would provide a multi-modal, re-parameterizable distribution. Autoregressive factorizations of policy / value distributions. In particular, discrete distributions (e.g. Categorical) have the ability to model arbitrary discrete distributions. In RL, one can avoid this altogether by symmetry-breaking the value distribution via recurrent policies, noise, or distributional RL. This helps by collapsing the complex value distributions into simpler conditional distributions at each timestep. Learning with energy-based models, a.k.a undirected graphical models with potential functions that eschew an normalized probabilistic interpretation. Here’s a recent example of this applied to RL. Normalizing Flows: learn invertible, volume-tracking transformations of distributions that we can manipulate easily.&lt;/p&gt;
-&lt;p&gt;Let’s explore the last approach - Normalizing Flows.&lt;/p&gt;
-&lt;p&gt;Change of Variables, Change of Volume&lt;/p&gt;
-&lt;p&gt;Let’s build up some intuition by examining linear transformations of 1D random variables. Let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; be the distribution &lt;span class=&#34;math inline&#34;&gt;\(\text{Uniform}(0,1)\)&lt;/span&gt;. Let random variable &lt;span class=&#34;math inline&#34;&gt;\(Y = f(X) = 2X + 1\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; is a simple affine (scale &amp;amp; shift) transformation of the underlying “source distribution” &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;. What this means is that a sample &lt;span class=&#34;math inline&#34;&gt;\(x^i\)&lt;/span&gt; from &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; can be converted into a sample from &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; by simply applying the function &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; to it.&lt;/p&gt;
-&lt;p&gt;The green square represents the shaded probability mass on &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt; for both &lt;span class=&#34;math inline&#34;&gt;\(p(x)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(p(y)\)&lt;/span&gt; - the height represents the density function at that value. Observe that because probability mass must integrate to 1 for any distribution, the act of scaling the domain by 2 everywhere means we must divide the probability density by 2 everywhere, so that the total area of the green square and blue rectangle are the same (=1).&lt;/p&gt;
-&lt;p&gt;If we zoom in on a particular x and an infinitesimally nearby point &lt;span class=&#34;math inline&#34;&gt;\(x+dx\)&lt;/span&gt;, then applying f to them takes us to the pair &lt;span class=&#34;math inline&#34;&gt;\((y, y+dy)\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;On the left, we have a locally increasing function (&lt;span class=&#34;math inline&#34;&gt;\(dy/dx &amp;gt; 0\)&lt;/span&gt;) and on the right, a locally decreasing function (&lt;span class=&#34;math inline&#34;&gt;\(dy/dx &amp;lt; 0\)&lt;/span&gt;). In order to preserve total probability, the change of &lt;span class=&#34;math inline&#34;&gt;\(p(x)\)&lt;/span&gt; along interval &lt;span class=&#34;math inline&#34;&gt;\(dx\)&lt;/span&gt; must be equivalent to the change of &lt;span class=&#34;math inline&#34;&gt;\(p(y)\)&lt;/span&gt; along interval &lt;span class=&#34;math inline&#34;&gt;\(dy\)&lt;/span&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[p(x) dx = p(y) dy\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;In order to conserve probability, we only care about the amount of change in y and not its direction (it doesn’t matter if &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; is increasing or decreasing at x, we assume the amount of change in y is the same regardless). Therefore, &lt;span class=&#34;math inline&#34;&gt;\(p(y) = p(x) | dx/dy |\)&lt;/span&gt;. Note that in log-space, this is equivalent to &lt;span class=&#34;math inline&#34;&gt;\(\log p(y) = \log p(x) + \log | dx/dy |\)&lt;/span&gt;. Computing log-densities is more well-scaled for numerical stability reasons.&lt;/p&gt;
-&lt;p&gt;Now let’s consider the multivariate case, with 2 variables. Again, zooming into an infinitesimally small region of our domain, our initial “segment” of the base distribution is now a square with width dx.&lt;/p&gt;
-&lt;p&gt;Note that a transformation that merely shifts a rectangular patch &lt;span class=&#34;math inline&#34;&gt;\((x1,x2, x3,x4)\)&lt;/span&gt; does not change the area. We are only interested in the rate of change per unit area of x, so the displacement &lt;span class=&#34;math inline&#34;&gt;\(dx\)&lt;/span&gt; can be thought of as a unit of measure, which is arbitrary. To make the following analysis simple and unit-less, let’s investigate a unit square on the origin, i.e. 4 points &lt;span class=&#34;math inline&#34;&gt;\((0,0), (1,0), (0,1), (1,1)\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Multiplying this by the matrix &lt;span class=&#34;math inline&#34;&gt;\([[a, b];[c, d]]\)&lt;/span&gt; will take points on this square into a parallelogram, as shown on the figure to the right (below). &lt;span class=&#34;math inline&#34;&gt;\((0,0)\)&lt;/span&gt; is sent to &lt;span class=&#34;math inline&#34;&gt;\((0,0)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\((1,0)\)&lt;/span&gt; is sent to &lt;span class=&#34;math inline&#34;&gt;\((a,b)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\((1,0)\)&lt;/span&gt; sent to &lt;span class=&#34;math inline&#34;&gt;\((c,d)\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\((1,1)\)&lt;/span&gt; sent to &lt;span class=&#34;math inline&#34;&gt;\((a+c,b+d)\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;Thus, a unit square in the domain of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; corresponds to a deformed parallelogram in the domain of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;, so the per-unit rate of change in area is the area of the parallelogram, i.e. &lt;span class=&#34;math inline&#34;&gt;\(ad - bc\)&lt;/span&gt;. The area of a parallelogram, &lt;span class=&#34;math inline&#34;&gt;\(ad - bc\)&lt;/span&gt;, is nothing more than the absolute value of the determinant of the linear transformation!&lt;/p&gt;
-&lt;p&gt;In 3 dimensions, the “change in area of parallelogram” becomes a “change in volume of parallelpiped”, and even higher dimensions, this becomes “change in volume of a n-parallelotope”. But the concept remains the same - determinants are nothing more than the amount (and direction) of volume distortion of a linear transformation, generalized to any number of dimensions.&lt;/p&gt;
-&lt;p&gt;What if the transformation f is nonlinear? Instead of a single parallelogram that tracks the distortion of any point in space, you can picture many infinitesimally small parallelograms corresponding to the amount of volume distortion for each point in the domain. Mathematically, this locally-linear change in volume is &lt;span class=&#34;math inline&#34;&gt;\(|\text{det}(J(f^{-1}(x)))|\)&lt;/span&gt;, where J(f^-1(x)) is the Jacobian of the function inverse - a higher-dimensional generalization of the quantity dx/dy from before.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y = f(x)\]&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[p(y) = p(f^{-1}(y)) \cdot |\text{det} J(f^{-1}(y))| = \log p(f^{-1}(y)) + \log |\text{det}(J(f^{-1}(y)))|\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;When I learned about determinants in middle &amp;amp; high school I was very confused at the seemingly arbitrary definition of determinants. We were only taught how to compute a determinant, instead of what a determinant meant: the local, linearized rate of volume change of a transformation.&lt;/p&gt;
-&lt;p&gt;Transformed Distributions in TensorFlow&lt;/p&gt;
-&lt;p&gt;TensorFlow has an elegant API for transforming distributions. A TransformedDistribution is specified by a base distribution object that we will transform, and a Bijector object that implements 1) a forward transformation &lt;span class=&#34;math inline&#34;&gt;\(y = f(x)\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(f : \mathbb{R}^d → \mathbb{R}^d\)&lt;/span&gt; 2) its inverse transformation &lt;span class=&#34;math inline&#34;&gt;\(x = f^-1(y)\)&lt;/span&gt;, and 3) the inverse log determinant of the Jacobian &lt;span class=&#34;math inline&#34;&gt;\(\log |\text{det}J (f^-1(y))|\)&lt;/span&gt;. For the rest of this post, I will abbreviate this quantity as ILDJ.&lt;/p&gt;
-&lt;p&gt;Under this abstraction, forward sampling is trivial:&lt;/p&gt;
-&lt;p&gt;bijector.forward(base_dist.sample())&lt;/p&gt;
-&lt;p&gt;To evaluate log-density of the transformed distribution:&lt;/p&gt;
-&lt;p&gt;distribution.log_prob(bijector.inverse(x)) + bijector.inverse_log_det_jacobian(x)&lt;/p&gt;
-&lt;p&gt;Furthermore, if bijector.forward is a differentiable function, then Y = bijector.forward(x) is a re-parameterizable distribution with respect to samples x = base_distribution.sample(). This means that normalizing flows can be used as a drop-in replacement for variational posteriors in a VAE (as an alternative to a Gaussian).&lt;/p&gt;
-&lt;p&gt;Some commonly used TensorFlow distributions are actually implemented using these TransformedDistributions.&lt;/p&gt;
-&lt;p&gt;Source Distribution Bijector.forward Transformed Distribution&lt;/p&gt;
-&lt;p&gt;Normal exp(x) LogNormal Exp(rate=1) -log(x) Gumbel(0,1) Gumbel(0,1) Softmax(x) Gumbel-Softmax / Concrete&lt;/p&gt;
-&lt;p&gt;Under standard convention, TransformedDistributions are named as &lt;span class=&#34;math inline&#34;&gt;\(\text{Bijector}^{-1}\text{BaseDistribution}\)&lt;/span&gt; so an ExpBijector applied to a Normal distribution becomes LogNormal. There are some exceptions to this naming scheme - the Gumbel-Softmax distribution is implemented as the RelaxedOneHotCategorical distribution, which applies a SoftmaxCentered bijector to a Gumbel distribution.&lt;/p&gt;
-&lt;p&gt;Normalizing Flows and Learning Flexible Bijectors&lt;/p&gt;
-&lt;p&gt;Why stop at 1 bijector? We can chain any number of bijectors together, much like we chain layers together in a neural network [3]. This is construct is known as a “normalizing flow”. Additionally, if a bijector has tunable parameters with respect to bijector.log_prob, then the bijector can actually be learned to transform our base distribution to suit arbitrary densities. Each bijector functions as a learnable “layer”, and you can use an optimizer to learn the parameters of the transformation to suit our data distribution we are trying to model. One algorithm to do this is maximum likelihood estimation, which modifies our model parameters so that our training data points have maximum log-probability under our transformed distribution. We compute and optimize over log probabilities rather than probabilities for numerical stability reasons.&lt;/p&gt;
-&lt;p&gt;This slide from Shakir Mohamed and Danilo Rezende’s UAW talk (slides) that illustrates this concept:&lt;/p&gt;
-&lt;p&gt;However, computing the determinant of an arbitrary &lt;span class=&#34;math inline&#34;&gt;\(N \times N\)&lt;/span&gt; Jacobian matrix has runtime complexity &lt;span class=&#34;math inline&#34;&gt;\(O(N^3)\)&lt;/span&gt;, which is very expensive to put in a neural network. There is also the trouble of inverting an arbitrary function approximator. Much of the current research on Normalizing Flows focuses on how to design expressive Bijectors that exploit GPU parallelism during forward and inverse computations, all while maintaining computationally efficient ILDJs.&lt;/p&gt;
-&lt;p&gt;Code Example&lt;/p&gt;
-&lt;p&gt;Let’s build a basic normalizing flow in TensorFlow in about 100 lines of code. This code example will make use of:&lt;/p&gt;
-&lt;p&gt;TF Distributions - general API for manipulating distributions in TF. For this tutorial you’ll need TensorFlow r1.5 or later. TF Bijector - general API for creating operators on distributions Numpy, Matplotlib.&lt;/p&gt;
-&lt;p&gt;We are trying to model the distribution &lt;span class=&#34;math inline&#34;&gt;\(p(x_1, x_2) = \mathcal{N}(x1|\mu=1/4x_2^2, \sigma=1) \cdot N(x_2|\mu=0, \sigma=4)\)&lt;/span&gt;. We can generate samples from the target distribution using the following code snippet (we generate them in TensorFlow to avoid having to copy samples from the CPU to the GPU on each minibatch):&lt;/p&gt;
-&lt;p&gt;For our base distribution, we’ll use an Isotropic Gaussian.&lt;/p&gt;
-&lt;p&gt;Next, we construct the bijector and create a TransformedDistribution from it. Let’s build a flow that resembles a standard fully-connected network, i.e. alternating matrix multiplication with nonlinearities.&lt;/p&gt;
-&lt;p&gt;The Jacobian of an affine function is trivial to compute, but worst case determinants are &lt;span class=&#34;math inline&#34;&gt;\(O(n^3)\)&lt;/span&gt;, which is unacceptably slow to compute. Instead, TensorFlow provides a structured affine transformation whose determinant can be computed more efficiently. This Affine transform is parameterized as a lower triangular matrix &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; plus a low rank update:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[M + V \cdot D \cdot V^T\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;To compute &lt;span class=&#34;math inline&#34;&gt;\(\text{det}(M + V \cdot D \cdot V^T)\)&lt;/span&gt; cheaply, we use the matrix determinant lemma.&lt;/p&gt;
-&lt;p&gt;Next, we need an invertible nonlinearity in order to express non-linear functions (otherwise the chain of affine bijectors remains affine). Sigmoid / tanh may seem like good choices, but they are incredibly unstable to invert - small changes in the output near -1 or 1 correspond to massive changes in input. In my experiments I could not chain 2 saturating nonlinearities together without gradients exploding. Meanwhile, ReLU is stable, but not invertible for &lt;span class=&#34;math inline&#34;&gt;\(x &amp;lt; 0\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;I chose to implement PReLU (parameterized ReLU), which is the same as Leaky ReLU but with a learnable slope in the negative regime. The simplicity of PReLU and its straightforward Jacobian makes for a nice exercise in implementing your own custom Bijectors: notice that the ILDJ is 0 when &lt;span class=&#34;math inline&#34;&gt;\(x &amp;gt; 0\)&lt;/span&gt; (no volume change) and &lt;span class=&#34;math inline&#34;&gt;\(1/\alpha\)&lt;/span&gt; otherwise (compensating for the contraction in volume from multiplying x by &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;).&lt;/p&gt;
-&lt;p&gt;PReLU is an element-wise transformation, so the Jacobian is diagonal. The determinant of a diagonal matrix is just the product of the diagonal entries, so we compute the ILDJ by simply summing the diagonal entries of the log-Jacobian [4]. We build the “MLP Bijector” by using tfb.Chain(), then apply it to our base distribution to create the transformed distribution:&lt;/p&gt;
-&lt;p&gt;Finally, we’ll train the model using Maximum Likelihood estimation: maximize the expected log probability of samples from the real data distribution, under our choice of model.&lt;/p&gt;
-&lt;p&gt;We can visualize the (slow) deformation of space by coloring samples from base distribution according to their starting quadrant,&lt;/p&gt;
-&lt;p&gt;And that’s it! TensorFlow distributions makes normalizing flows to implement, and automatically accumulate all the Jacobians determinants in a way that is clean and highly readable. Full source code for this post can be found on Github.&lt;/p&gt;
-&lt;p&gt;You might notice that the deformation is rather slow, and it takes a lot of layers to learn a rather simple transformation [5]. In the next post, I will cover more modern techniques for learning normalizing flows.&lt;/p&gt;
-&lt;p&gt;Acknowledgements&lt;/p&gt;
-&lt;p&gt;I am very grateful to Dustin Tran for clarifying my understanding of normalizing flows, Luke Metz, Katherine Lee, and Samy Bengio for proofreading this post, and to Ben Poole, Rif A. Saurous, Ian Langmore for helping me to debug my code. You rock!&lt;/p&gt;
-&lt;p&gt;Footnotes&lt;/p&gt;
-&lt;p&gt;[1] The notion that we can augment our dataset with &lt;em&gt;new&lt;/em&gt; information from a finite set of data is a rather disturbing one, and it remains to be shown whether probabilistic machine learning can truly replace true generative processes (e.g. simulation of fluid dynamics), or whether at the end of the day it is only good for amortizing computation and any generalization we get on the training / test distribution is a lucky accident. [2] See A note on the evaluation of generative models for a thought-provoking discussion about how high log-likelihood is neither sufficient nor necessary to generate “plausible” images. Still, it’s better than nothing and in practice a useful diagnostic tool. [3]There’s a connection between Normalizing Flows and GANs via encoder-decoder GAN architectures that learn the inverse of the generator (ALI / BiGAN). Since there is a separate encoder trying to recover &lt;span class=&#34;math inline&#34;&gt;\(u = G^{-1}(X)\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(X = G(u)\)&lt;/span&gt;, the generator can be thought of as a flow for the simple uniform distribution. However, we don’t know how to compute the amount of volume expansion/contraction w.r.t. X, so we cannot recover density from GANs. However, it’s probably not entirely unreasonable to model the log-det-jacobian numerically or enforce some kind of linear-time Jacobian by construction. [4] The lemma “Determinant of diagonal matrices is the product of the diagonal entries” is quite intuitive from a geometric point of view: each dimension’s length distortion is independent of the other dimensions, so the total volume change is just the product of changes in each direction, as if we were computing the volume of a high-dimensional rectangular prism. [5] This MLP is rather limited in capacity because each affine transformation is only a 2x2 matrix, and the PReLU “warps” the underlying distribution very slowly (so several PreLUs are needed to bend the data into the right shape). For low dimensional distributions, this MLP is a very poor choice of a normalizing flow, and is meant for educational purposes.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-20-purrr</title>
-      <link>/post/2018-01-20-purrr/</link>
-      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-20-purrr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wu1996-克隆重复试验检测上位方差</title>
-      <link>/post/2018-01-20-wu1996/</link>
-      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-20-wu1996/</guid>
-      <description>&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;摘要&lt;/h1&gt;
-&lt;p&gt;定量遗传模型是利用已知的克隆复制家族结构&lt;strong&gt;将遗传变异分解为其加性，显性和上位性成分&lt;/strong&gt;的一种定量遗传模型。利用后代测试，这个模型是基于这样一个理论：来自实验设计的线性模型的方差分量可以用亲属之间的期望协方差来表示。然而，&lt;strong&gt;如果一对数量性状位点（QTL）之间的相互作用解释了总体上位性的大部分，则将严重高估加性和显性差异，但低估了上位性差异。&lt;/strong&gt;在本文中，开发了一个新的模型来处理这个问题，将父母和子女的材料结合到同一个测试中。在上述条件下，新模型可以为加性x加性方差提供准确的估计。此外，其估计优势和总的上位变异的准确性远远大于以前的模型的准确性。但是，&lt;strong&gt;如果有明显证据显示高阶相互作用，尤其是&amp;gt;4个QTL对总上位性的主要贡献，以前的模型更适合将数量性状的遗传方差划分&lt;/strong&gt;。对杨树阶乘交配设计的一个例子的再分析显示，当使用两个不同的假设（低与高阶的上位相互作用）时，估计新模型和先前模型之间的方差分量存在很大差异。这个新模型将成为估计物种数量遗传模式的一种替代方法，特别是对长寿的，主要是异交的林木，可以进行克隆复制。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;介绍&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;上位性&lt;/strong&gt;，或者不同但功能相关基因座上的等位基因之间的遗传相互作用，是基因和特征之间非线性关系的结果（Falconer 1989）。生物化学，生理学和生物遗传学研究的大量研究强烈地表明，数量性状中无处不在的位点间互作（Hayman和Mather，1955; Hayman，1958; Wright，1980; Mather and Jinks，1982）。 Sewall Wright对进化论的最大贡献之一是显示&lt;strong&gt;上位性在表型进化和物种形成中如何起着核心作用&lt;/strong&gt;（Wright 1932,1980; Templeton 1979,1980; Carson and Tempteton 1984; Provine 1986; Wade 1992）。理论工作表明，&lt;strong&gt;野生种群的数量变异可能带有潜在的强上位性成分&lt;/strong&gt;（Crow和Kimura，1970），因为&lt;strong&gt;这些成分的小表型效应往往隐藏着更大的分子效应&lt;/strong&gt;。因此，&lt;strong&gt;当基因型频率受选择或种群瓶颈严重干扰时，神秘的上位变异可能变得重要&lt;/strong&gt;（Carson和Templeton 1984; Bryant等1986; Goodnight 1987,1988; Tachida和Cockerham 1989; Bryant和Meffert 1992; Wade 1992年）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;上位可能也是杂种优势的重要原因。&lt;/strong&gt; Jinks和Jones（1958）通过将不同的上位性成分整合到遗传模型中，观察到杂种优势的存在与否以及一年生植物中是否存在非等位相互作用。在Minvielle（1987）的双轨迹双列模型中，&lt;strong&gt;杂种优势可能来自乘性上位相互作用而不是显性效应&lt;/strong&gt;。 （Wright 1922; Dempster 1942; Ricky 1942; Williams 1959; Griffing 1990; Schnell and Cockerham 1992）研究了繁殖积累对复杂性状杂种优势的贡献。&lt;/p&gt;
-&lt;p&gt;尽管上位性在进化和育种中起着显着的作用，但是对这种现象的实证研究惊人地少。造成这种现象的原因之一可能是由于&lt;strong&gt;分离世代以检测上位性不能在许多物种中获得&lt;/strong&gt;（Mather and Jinks 1982）。即使在目前的基于分子标记的图谱中，也存在处理这个问题的方法限制（Tanksley 1993）。 Fisher（1981）首先介绍了遗传方差分解为其加性，显性和上位性组分。 Cockerham（1954）将上位分量进一步细分为附加x加性，加性x显性和显性x显性的相互作用。所有这些&lt;strong&gt;相互作用可以根据世代均值来估计&lt;/strong&gt;（Hayman和Mather，1955）。福斯特（Foster）和肖（Shaw，1988）利用克隆从总遗传方差中分离上位性，通过表达亲缘关系期望协方差的实验设计线性模型的方差分量（Cockerham，1963）。由于其强大的性质，福斯特 - 肖的方法已被应用于许多森林树种（例如，Foster和Shaw 1988; Foster 1990; Mullin等1992; Mullin和Part 1994; R6nnberg-Wiistljung等1994）。 不幸的是，&lt;strong&gt;Foster-Shaw的方法不能提供遗传方差分量的准确估计&lt;/strong&gt;。一方面，&lt;strong&gt;半同胞或者同胞之间由协方差估计的加性和显性方差受到一部分上位性，尤其是低阶相互作用的污染&lt;/strong&gt;（Cockerham，1963）。另一方面，&lt;strong&gt;对上位变异的估计仅仅是家族变异所包含的上位性的一部分，而不是总的上位变异&lt;/strong&gt;。尽管假定多个位点之间有强的高度相互作用（至少_&amp;gt; 3）（Mullin和Park，1992），有偏倚的估计值可能会有所缓解，但在存在双位点相互作用的情况下，这将是误导。&lt;strong&gt;当低阶相互作用形成上位性的一部分时，估计的加性和显性方差将被严重污染，并且估计的上位性方差仅为总上位性的四分之一&lt;/strong&gt;。到目前为止，尚未探索基于不同交互类型如何准确排除上位性的问题。 在本文中，我试图通过在交配设计中结合父母和子代信息，在假设二基因上位 的情况下检测更精确的上位性估计。 从精确性分析和杨树实例可以看出，新方法可以作为将数量性状的遗传方差划分为可克隆物种的因果成分的替代方法。&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-14-English-note</title>
-      <link>/post/2018-01-14-english-note/</link>
-      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-14-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;data retrieval数据检索&lt;/li&gt;
-&lt;li&gt;deemed to be视为&lt;/li&gt;
-&lt;li&gt;irretrievable loss不可挽回的损失&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;patiently waiting&lt;/strong&gt; for &lt;strong&gt;optimum maturity&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Leftover lunch剩饭&lt;/li&gt;
-&lt;li&gt;interactive visualizations&lt;/li&gt;
-&lt;li&gt;Hello good &lt;strong&gt;people of Great Britain&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;When Rex Tillerson visited New Zealand last year, he &lt;strong&gt;stated&lt;/strong&gt; he had never seen so many middle fingers &lt;strong&gt;aimed at&lt;/strong&gt; his motorcade.&lt;/li&gt;
-&lt;li&gt;Sometimes looks are &lt;strong&gt;deceiving&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;instant translate&lt;/li&gt;
-&lt;li&gt;Impediments&lt;/li&gt;
-&lt;li&gt;Nearly half of the &lt;strong&gt;residents&lt;/strong&gt; of low-income countries live more than one hour’s travel from a city, where vital resources such as education and health care are concentrated&lt;/li&gt;
-&lt;li&gt;airport runway机场跑道&lt;/li&gt;
-&lt;li&gt;Racial resentment种族仇恨&lt;/li&gt;
-&lt;li&gt;Justice and dignity尊严, the endless shortage&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Excited to be joining&lt;/strong&gt; the … Biostatistics Department in February!&lt;/li&gt;
-&lt;li&gt;hands-on&lt;/li&gt;
-&lt;li&gt;ON MY DAY OFF休息日&lt;/li&gt;
-&lt;li&gt;wearable sensor&lt;/li&gt;
-&lt;li&gt;grant-in-aid资助款&lt;/li&gt;
-&lt;li&gt;the &lt;strong&gt;aegis&lt;/strong&gt; of保护&lt;/li&gt;
-&lt;li&gt;capitalize on利用&lt;/li&gt;
-&lt;li&gt;tantamount to相当于&lt;/li&gt;
-&lt;li&gt;in lieu of替代&lt;/li&gt;
-&lt;li&gt;cheat sheet速查表&lt;/li&gt;
-&lt;li&gt;Why might you do otherwise? 你为什么要这样做呢？&lt;/li&gt;
-&lt;li&gt;sheepishly adv. 羞怯地；愚蠢地&lt;/li&gt;
-&lt;li&gt;religiously adv. 虔诚地，笃信地&lt;/li&gt;
-&lt;li&gt;highly internally consistent内部高度一致&lt;/li&gt;
-&lt;li&gt;US authorities美国当局&lt;/li&gt;
-&lt;li&gt;poring凝视&lt;/li&gt;
-&lt;li&gt;transaction交易&lt;/li&gt;
-&lt;li&gt;cash withdrawal现金提取&lt;/li&gt;
-&lt;li&gt;inauguration就职&lt;/li&gt;
-&lt;li&gt;There is nothing we can’t overcome.没有什么是我们解决不了的&lt;/li&gt;
-&lt;li&gt;Donald J. Trump&lt;/li&gt;
-&lt;li&gt;Let me be very clear here&lt;/li&gt;
-&lt;li&gt;Today, we &lt;strong&gt;witnessed&lt;/strong&gt; an &lt;strong&gt;incredible&lt;/strong&gt; moment in history&lt;/li&gt;
-&lt;li&gt;furiously猛烈地&lt;/li&gt;
-&lt;li&gt;internship实习生&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

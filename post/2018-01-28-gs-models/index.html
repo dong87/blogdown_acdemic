@@ -66,7 +66,7 @@
   
   <meta property="og:site_name" content="Enterprising &amp; Concentrating">
   <meta property="og:url" content="/post/2018-01-28-gs-models/">
-  <meta property="og:title" content="GS模型学习 | Enterprising &amp; Concentrating">
+  <meta property="og:title" content="GS学习笔记 | Enterprising &amp; Concentrating">
   <meta property="og:description" content="">
   <meta property="og:locale" content="en-us">
   
@@ -77,7 +77,7 @@
 
   
 
-  <title>GS模型学习 | Enterprising &amp; Concentrating</title>
+  <title>GS学习笔记 | Enterprising &amp; Concentrating</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -208,7 +208,7 @@
 
   <div class="article-container">
     <div class="article-inner">
-      <h1 itemprop="name">GS模型学习</h1>
+      <h1 itemprop="name">GS学习笔记</h1>
 
       
 
@@ -245,7 +245,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=GS%e6%a8%a1%e5%9e%8b%e5%ad%a6%e4%b9%a0&amp;url=%2fpost%2f2018-01-28-gs-models%2f"
+         href="https://twitter.com/intent/tweet?text=GS%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&amp;url=%2fpost%2f2018-01-28-gs-models%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
@@ -259,21 +259,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2018-01-28-gs-models%2f&amp;title=GS%e6%a8%a1%e5%9e%8b%e5%ad%a6%e4%b9%a0"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2018-01-28-gs-models%2f&amp;title=GS%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2018-01-28-gs-models%2f&amp;title=GS%e6%a8%a1%e5%9e%8b%e5%ad%a6%e4%b9%a0"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2018-01-28-gs-models%2f&amp;title=GS%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=GS%e6%a8%a1%e5%9e%8b%e5%ad%a6%e4%b9%a0&amp;body=%2fpost%2f2018-01-28-gs-models%2f">
+         href="mailto:?subject=GS%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0&amp;body=%2fpost%2f2018-01-28-gs-models%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -288,79 +288,121 @@
 
       <div class="article-style" itemprop="articleBody">
         <blockquote>
-<p>学习的参考文献是<span class="citation">(Lorenz et al. 2011)</span>。</p>
+<p>学习的参考文献是<span class="citation">(Lorenz et al. 2011; Campos et al. 2013)</span>。</p>
 </blockquote>
-<p>最小二乘法不能估计全部的效应值，因为自由度不够（<span class="math inline">\(X&#39;X\)</span>矩阵奇异）。即便自由度足够用，标记间共线性会过拟合模型。过拟合模型能夸大小幅波动，导致预测能力差。</p>
-<p>于是提出各种统计模型，大致可分为4类： <strong>收缩、变量选择、核和降维方法</strong>。 模型的基本形式一样： <span class="math display">\[
+<p>假定标记之间的连锁相或标记单倍型块与因果多态性在家系间是一致的，因此全体标记效应的估计将是有意义的(Meuwissen2001)。 # large p，small n；预测子间相关或共线性</p>
+<p>最小二乘法不能估计全部的效应值，因为自由度不够（ <strong><span class="math inline">\(X&#39;X\)</span>矩阵奇异</strong> ）。即便自由度足够用，标记间共线性会 <strong>过拟合</strong> 模型。过拟合模型能夸大小幅波动，导致预测能力差。或只能在训练群体中表现很好。</p>
+<p>于是提出各种统计模型，大致可分为4类： <strong>收缩、变量选择、核和降维方法</strong>。</p>
+<p>3类：收缩、贝叶斯（变量选择）和半参或非参（支持向量、随机森林回归）。这些方法在遗传架构的假设方面不同。(Gamal El-Dien2015)</p>
+<p>模型的基本形式一样： <span class="math display">\[
 y_i=g(\mathbf{x}_i)+e_i
 \]</span></p>
-<p><span class="math inline">\(g(\mathbf{x}_i)\)</span>是基因型和表型的关联函数。模型都设法最小化一个特定的成本函数。最小二乘的成本函数是残差的平方和：<span class="math inline">\(\sum e_{i}^{2}\)</span>。</p>
+<p><span class="math inline">\(g(\mathbf{x}_i)\)</span>是基因型和表型的关联函数。模型都设法最小化一个特定的成本函数。最小二乘的成本函数是残差的平方和：<span class="math inline">\(\sum e_{i}^{2}\)</span>。最小二乘的回归系数是： <span class="math display">\[
+\hat\beta=(\mathbf{X}^{\prime}\mathbf{X})^{-1}\mathbf{X}^{\prime}y
+\]</span></p>
 <div id="blup" class="section level2">
 <h2>岭回归（又叫随机回归BLUP）</h2>
 <p><span class="math display">\[
 g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k
 \]</span></p>
-<p>遗传值是<span class="math inline">\(p\)</span>个标记效应值之和。</p>
-<p><span class="math display">\[
-\beta_i=(\mathbf{X}^{\prime}\mathbf{X}+\lambda \mathbf{I})^{-1}\mathbf{X}^{\prime}y
-\]</span> 与最小二乘的区别是多了一个<span class="math inline">\(\lambda \mathbf{I}\)</span>项，引入的目的是避免矩阵<span class="math inline">\(\mathbf{X}^{\prime}\mathbf{X}\)</span>奇异，并且降低预测子间的共线性。 <span class="math inline">\(\lambda\)</span>选择的标准是最小化模型误差；还有一个方法是假定标记效应从一个均值为0的正态分布中随机抽取的，然后解混合线性模型方程，<span class="math inline">\(\lambda\)</span>是残差方差与标记效应方差的比值var(<em>e</em>)/var(<em><span class="math inline">\(\beta\)</span></em>)。如果var(<em><span class="math inline">\(\beta\)</span></em>)比var(<em>e</em>)小得多的话，会造成标记效应收缩到0，<span class="math inline">\(\lambda\)</span>很大。 岭回归的成本函数是 <span class="math display">\[
+<p>遗传值是<span class="math inline">\(p\)</span>个标记效应值之和。 <span class="math display">\[
+\hat\beta=(\mathbf{X}^{\prime}\mathbf{X}+\lambda \mathbf{I})^{-1}\mathbf{X}^{\prime}y
+\]</span> 与最小二乘的区别是多了一个<span class="math inline">\(\lambda \mathbf{I}\)</span>项，引入的目的是 <strong>避免矩阵<span class="math inline">\(\mathbf{X}^{\prime}\mathbf{X}\)</span>奇异，并且降低预测子间的共线性</strong>。 <span class="math inline">\(\lambda\)</span>选择的标准是最小化模型误差；还有一个方法是假定标记效应从一个均值为0的正态分布中随机抽取的，然后解混合线性模型方程，<span class="math inline">\(\lambda\)</span>是残差方差与标记效应方差的比值var(<em>e</em>)/var(<em><span class="math inline">\(\beta\)</span></em>)。如果var(<em><span class="math inline">\(\beta\)</span></em>)比var(<em>e</em>)小得多的话，会造成标记效应收缩到0，<span class="math inline">\(\lambda\)</span>很大。 岭回归的成本函数是 <span class="math display">\[
 \frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\mathbf{b}^{\prime}\mathbf{b}
 \]</span> 第二项称为约束（constraint）、惩罚（penalty）或正则化（regularizer）。<span class="math inline">\(\lambda\)</span>越大，大的<span class="math inline">\(\beta\)</span>收缩得越厉害。假设是标记效应同分布，指的是同样收缩到0，不是所有效应都相等。</p>
-</div>
-<div id="lasso-least-absolute-shrinkage-and-selection-operator" class="section level2">
-<h2>LASSO Least absolute shrinkage and selection operator</h2>
+<p><strong>岭回归和LMM的等价是有条件的，尤其是假设。一个LMM将随机效应视为一个样本，该样本是从一个具有色散参数的基础分布中得出的，而岭回归只是一个计算方法，当模型过饱和时就提供估计。只有在RR中选择的惩罚参数等于相应LMM中方差分量的比例时，它们在数学上才是相同的(shen2013)。</strong> LMM和RR之间的差异可以在所使用的估算技术中找到，<span class="math inline">\(\lambda\)</span>不同。 ## LASSO Least absolute shrinkage and selection operator</p>
 <p>LASSO的成本函数： <span class="math display">\[
 \frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\sum_k \left| \beta_k \right|
 \]</span> 与岭回归的共同点是都惩罚大的标记效应，二者的一般形式是： <span class="math display">\[
 \frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\sum_k \left| \beta_k \right|^q
-\]</span> <em>q</em>=1时是LASSO，<em>q</em>=2时是RR-BLUP，<span class="math inline">\(1\leq q\leq 2\)</span>时，称为弹性网回归（elastic net）。因为正则化矩阵公式不同，LASSO的系数收缩比RR-BLUP的要强，而且一些系数收缩到0，产生一个稀疏模型，因此LASSO也能进行变量选择（所以有selection operator的意思）。LASSO的一个问题也是<span class="math inline">\(\lambda\)</span>的取值问题。 Park and Casella (2008)提出贝叶斯LASSO。 在非贝叶斯LASSO中，解决方案允许有n - 1个非零回归系数。 这是一个问题，因为在密集的标记数据的情况下，没有理由为什么训练集中的个体数量应该限制具有非零效应的标记的数量。</p>
+\]</span> <em>q</em>=1时是LASSO，<em>q</em>=2时是RR-BLUP，<span class="math inline">\(1\leq q\leq 2\)</span>时，称为弹性网回归（elastic net）。因为正则化矩阵公式不同， <strong>LASSO的系数收缩比RR-BLUP的要强，更有效，因为当<span class="math inline">\(\beta\)</span>很小时，<span class="math inline">\(\left| \beta_k \right|\)</span>比<span class="math inline">\(\beta^2\)</span>要大得多<span class="citation">(Wu et al. 2009)</span></strong>，而且一些系数收缩到0，产生一个稀疏模型，因此LASSO也能进行变量选择（所以有selection operator的意思）。LASSO的一个问题也是<span class="math inline">\(\lambda\)</span>的取值问题。 Park and Casella (2008)提出贝叶斯LASSO。</p>
+<div id="lasso" class="section level3">
+<h3>Lasso的局限</h3>
+<p>在非贝叶斯LASSO中，解决方案允许有n - 1个非零回归系数。 这是一个问题，因为在密集的标记数据的情况下，没有理由为什么训练集中的个体数量应该限制具有非零效应的标记的数量。 最多允许n个非零估计的回归系数。在复杂性状的WGR中，没有理由限制具有非零效应的标记的数量被n（观测的数量）限制。 当预测变量相关时，当LD跨越很长的区域时会出现某种情况，执行变量选择的方法如LASSO通常会被岭回归超过。</p>
+<p>zou提出了综合RR和LASSO二者优点的方法（弹性网）：建议 <strong>将L1和L2范数的加权平均值用作惩罚</strong> ，即，对于<span class="math inline">\(0\leq\alpha\leq1\)</span>，<span class="math inline">\(J(\beta)=\alpha\sum_{j=1}^{p}||\beta_j||+(1-\alpha)\sum_{j=1}^{p}||\beta_j^2||\)</span>。模型涉及2个正则参数(<span class="math inline">\(\lambda\)</span>)和<span class="math inline">\(\alpha\)</span></p>
+</div>
 </div>
 <div id="reproducing-kernel-hilbert-spaces-rkhs-and-support-vector-machine-regression" class="section level2">
 <h2>Reproducing kernel Hilbert spaces (RKHS) and support vector machine regression</h2>
-<p>RKHS：经典加性遗传模型结合核函数。核函数将预测变量转换为观测值之间的一组距离，以产生一个<span class="math inline">\(n\times n\)</span>正定矩阵，用于线性模型。 __输入空间和特征空间__是这个文献中经常遇到的术语。 在GS的情况下， <strong>输入数据是标记得分数据</strong>，因此，输入空间是多维空间，其中每个个体的位置由其标记分数确定。 通过 <strong>对输入数据应用内核函数将输入空间转换为特征空间</strong>。 RKHS可以用矩阵符号表示： <span class="math display">\[
+<p>RKHS：经典加性遗传模型结合核函数。核函数将预测变量转换为观测值之间的一组距离，以产生一个<span class="math inline">\(n\times n\)</span>正定矩阵，用于线性模型。 <strong>输入空间和特征空间</strong> 是这个文献中经常遇到的术语。 在GS的情况下， <strong>输入数据是标记得分数据</strong>，因此，输入空间是多维空间，其中每个个体的位置由其标记分数确定。 通过 <strong>对输入数据应用内核函数将输入空间转换为特征空间</strong>。 RKHS可以用矩阵符号表示： <span class="math display">\[
 g(x)=\mathbf{K}_h\mathbf{\alpha}
 \]</span></p>
 <p><span class="math inline">\(\mathbf{K}_h\)</span>是核心条目的矩阵，量化个体彼此之间的距离，就像量化系谱关系的加性关系矩阵，即个体之间的遗传距离。这里的区别在于，核函数包括一个或多个平滑参数（ <strong>h</strong>）以影响特征空间中的距离和输入空间中的距离之间的关系。<span class="math inline">\(n\times 1\)</span>向量<span class="math inline">\(\alpha\)</span>可以被解释为可以使用标准混合模型方程估计的特征空间内的单独效应。CV或bootstrap方法可以用来确定h的最优值，例如在群体和性状之间的模型中允许很大的灵活性。RKHS方法可以在标准的定量遗传模型框架内解释。 由于内核方法包含了很大的灵活性，而且没有线性假设，所以它们可以 <strong>同时捕获所有类型的非加性效应</strong>。 <strong>支持向量机也是核方法。<strong>其成本函数可称为 </strong><span class="math inline">\(\varepsilon\)</span>-intensive</strong></p>
-<span class="math display">\[
+<p><span class="math display">\[
 C \sum_i L_{\varepsilon}(e_{i})+\frac{1}{2}\mathbf{b}^{\prime}\mathbf{b}
-\]</span> C是一个用来衡量误差对成本函数的贡献的常数；<span class="math inline">\(L_{\varepsilon}\)</span>是 <strong><span class="math inline">\(\varepsilon\)</span>-intensive损失函数</strong>，意思是不惩罚误差，除非它们大于<span class="math inline">\(\varepsilon\)</span>： $$ L_{}(e_{i}) =
-<span class="math display">\[\begin{cases}
+\]</span> <span class="math inline">\(C\)</span>是一个用来衡量误差对成本函数的贡献的常数；<span class="math inline">\(L_{\varepsilon}\)</span>是 <strong><span class="math inline">\(\varepsilon\)</span>-intensive损失函数</strong>，意思是不惩罚误差，除非它们大于<span class="math inline">\(\varepsilon\)</span>：</p>
+<p><span class="math display">\[
+L_{\varepsilon}(e_{i}) =
+ \begin{cases}
  0, &amp; \text{for} \left| e_{i} \right|&lt;\varepsilon \\
- 
  \left| e_{i} \right|-\varepsilon, &amp; \text{otherwise}
- \end{cases}\]</span>
-<p>$$ 正常情况下，残差的总和不管是大还是小，都会对回归模型进行惩罚。在这里，只有最小化“大”（&gt; <span class="math inline">\(\varepsilon\)</span>）残差的模型才是有利的，而所有其他残差是可以接受的。 <strong>这个步骤的目的是开发牺牲许多小错误为了排除大错误的模型。</strong> 这个问题的解决方案涉及 <strong>拉格朗日（Lagrange）优化</strong>，其产生一组系数，乘以训练样本与正在预测的观察之间的所有可能的内积的和。训练样本 __i__和 __j__的内积定义为<span class="math inline">\(\mathbf{x}_i^{\prime}\mathbf{x}_j\)</span>，<span class="math inline">\(\mathbf{x}\)</span>是观测标记得分向量。为了允许非线性，内积项可以被核函数替换，有效地将SVR优化从输入空间传送到特征空间。</p>
+ \end{cases}
+\]</span></p>
+<p>正常情况下，残差的总和不管是大还是小，都会对回归模型进行惩罚。在这里，只有最小化“大”（&gt; <span class="math inline">\(\varepsilon\)</span>）残差的模型才是有利的，而所有其他残差是可以接受的。 <strong>这个步骤的目的是开发牺牲许多小错误为了排除大错误的模型。</strong> 这个问题的解决方案涉及 <strong>拉格朗日（Lagrange）优化</strong>，其产生一组系数，乘以训练样本与正在预测的观察之间的所有可能的内积的和。训练样本 <strong>i</strong> 和 <strong>j</strong> 的内积定义为<span class="math inline">\(\mathbf{x}_i^{\prime}\mathbf{x}_j\)</span>，<span class="math inline">\(\mathbf{x}\)</span>是观测标记得分向量。为了允许非线性，内积项可以被核函数替换，有效地将SVR优化从输入空间传送到特征空间。</p>
 </div>
 <div id="partial-least-squares-regression-and-principle-component-regression" class="section level2">
 <h2>Partial least squares regression and principle component regression降维</h2>
-<p>从变量中提取 __潜变量__为预测变量的线性组合，并用于响应预测： <span class="math display">\[
+<p>从变量中提取 <strong>潜变量</strong> 为预测变量的线性组合，并用于响应预测： <span class="math display">\[
 g(\mathbf{x}_i)=\sum_{l=1}^{w}t_{il}\beta_l
-\]</span> <span class="math inline">\(t_{il}\)</span>是从原始<span class="math inline">\(p\)</span>预测变量中提取的潜在变量，<span class="math inline">\(\beta_l\)</span>是与该变量相关联的效应。即<span class="math inline">\(t_{il}=\mathbf{x}_i\mathbf{u}_l\)</span>，<span class="math inline">\(\mathbf{u}_l\)</span>是一个<span class="math inline">\(p\times1\)</span>的向量，用于在线性组合中给潜变量<span class="math inline">\(l\)</span>加权。通常<span class="math inline">\(w\)</span>是潜变量的个数，比<span class="math inline">\(p\)</span>要小得多，<span class="math inline">\(t_{il}\)</span>是正交的，目的是消除共线性的问题。这个程序涵盖了各种技术，取决于哪个变异来源被认为是最重要的。在PC回归中，选择潜在变量尽可能多地解释原始预测变量。这种方法产生的预测空间信息向量可能不会与响应的变化相关联。在PLS中，选择潜变量以使潜变量和响应之间的关系尽可能强。 __为了避免由于太少或太多潜在变量而导致模型准确性降低（Solberg等人，2009），可以通过CV或相关技术来确定潜在变量的数量。__在PCR和PLS中，<span class="math inline">\(g(\mathbf{x}_i)\)</span>都可以重新写成预测变量的直接函数，不用潜变量： <span class="math display">\[
+\]</span> <span class="math inline">\(t_{il}\)</span>是从原始<span class="math inline">\(p\)</span>预测变量中提取的潜在变量，<span class="math inline">\(\beta_l\)</span>是与该变量相关联的效应。即<span class="math inline">\(t_{il}=\mathbf{x}_i\mathbf{u}_l\)</span>，<span class="math inline">\(\mathbf{u}_l\)</span>是一个<span class="math inline">\(p\times1\)</span>的向量，用于在线性组合中给潜变量<span class="math inline">\(l\)</span>加权。通常<span class="math inline">\(w\)</span>是潜变量的个数，比<span class="math inline">\(p\)</span>要小得多，<span class="math inline">\(t_{il}\)</span>是正交的，目的是消除共线性的问题。这个程序涵盖了各种技术，取决于哪个变异来源被认为是最重要的。在PC回归中，选择潜在变量尽可能多地解释原始预测变量。这种方法产生的预测空间信息向量可能不会与响应的变化相关联。在PLS中，选择潜变量以使潜变量和响应之间的关系尽可能强。 <strong>为了避免由于太少或太多潜在变量而导致模型准确性降低（Solberg等人，2009），可以通过CV或相关技术来确定潜在变量的数量。</strong> 在PCR和PLS中，<span class="math inline">\(g(\mathbf{x}_i)\)</span>都可以重新写成预测变量的直接函数，不用潜变量： <span class="math display">\[
 \beta_k^*=\sum_{l=1}^{w}\beta_lu_{lk}
 \]</span></p>
 </div>
 <div class="section level2">
 <h2>贝叶斯</h2>
+<p>贝叶斯方法也可用于估计的变量选择和收缩。 <strong>大多数惩罚估计等价于某些类型的贝叶斯模型的后验模式</strong>。</p>
 <p>RR-BLUP所做的遗传效应在基因组上均匀分布的假设并不令人满意，Meuwissen等 （2001）试图用贝叶斯分析来放松它。</p>
 <div id="bayesa" class="section level3">
 <h3>BayesA</h3>
-<p>每个标记效应<span class="math inline">\(k\)</span>是从具有其自身方差的正态分布中抽取的：<span class="math inline">\(N(0,var(\beta_k))\)</span>，这使得每个标记都可以向不同的程度缩小到零。反过来，方差参数从经过缩放的反向<span class="math inline">\(\chi^2\)</span>分布中采样。这个模型也被称为贝叶斯收缩回归。 ### BayesB 没有效应的标记也给了概率。 如果遗传变异存在于少数基因座而在许多基因座缺失，这个 <strong>模型将更好地反映潜在的遗传架构</strong>。 <span class="math display">\[
+<p>每个标记效应<span class="math inline">\(k\)</span>是从具有其自身方差的正态分布中抽取的：<span class="math inline">\(N(0,var(\beta_k))\)</span>，这使得每个标记都可以向不同的程度缩小到零。反过来，方差参数从经过缩放的反向<span class="math inline">\(\chi^2\)</span>分布中采样。这个模型也被称为贝叶斯收缩回归。</p>
+</div>
+<div id="bayesb" class="section level3">
+<h3>BayesB</h3>
+<p>没有效应的标记也给了概率。 如果遗传变异存在于少数基因座而在许多基因座缺失，这个 <strong>模型将更好地反映潜在的遗传架构</strong>。 <span class="math display">\[
 g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k\gamma_k
 \]</span> <span class="math inline">\(\gamma_k\)</span>是指示预测模型中标记 _k_的存在的指示变量。<span class="math inline">\(\beta_k\)</span>服从均值为0、有限方差的正态分布。<span class="math inline">\(\beta_k\)</span>方差的先验分布服从一个混合分布： <span class="math display">\[
 \begin{align}
  var(\beta_k)=0,\quad &amp;\text{with probability} \pi \\
  var(\beta_k)\sim \chi^{-2}(\mathbf{v},\mathbf{S}), \quad&amp; \text{with probability} (1-\pi) \\
  \end{align}
-\]</span> <span class="math inline">\(\pi=0\)</span>时，BayesB和BayesA是一样的。然而，在处理真实的生物体和性状时，这个参数（<span class="math inline">\(\pi\)</span>）的合理值是未知的。为了克服这个问题，一个称为 __BayesC<span class="math inline">\(\pi\)</span>__的分析本身估计<span class="math inline">\(\pi\)</span>，其中<span class="math inline">\(\pi\)</span>的先验分布在0和1之间是均匀的。另外， __BayesC<span class="math inline">\(\pi\)</span>__假设所有效应<span class="math inline">\(\gamma_k=1\)</span>的标记的先验方差相等。即<span class="math inline">\(\gamma_k=0\)</span>时<span class="math inline">\(\beta_k=0\)</span>，<span class="math inline">\(\gamma_k=1\)</span>时<span class="math inline">\(\beta_k\sim N(0,\hat{\sigma}_\beta^2)\)</span>。反过来，该方法一起估计所有非零的<span class="math inline">\(\hat{\sigma}_\beta^2\)</span>。在估计<span class="math inline">\(\hat{\sigma}_\beta^2\)</span>时，以这样的方式对标记进行分组会对所有先验进行加权。 <strong>随机搜索变量选择（SSVS）</strong>，早于Meuwissen的（2001）BayesB，但是与BayesB有大致相同的先验假设。</p>
-<p>__所有这些贝叶斯模型共同的问题是参数估计不能以分析方式获得。__然而，有可能开发所谓的马尔可夫链蒙特卡罗（MCMC）算法，其从后验分布中对参数值进行采样。 然后可以通过重复抽样和计算适当的汇总统计数据（例如分布的均值或中值）来近似这些分布。 不幸的是，这个解决方案在计算上非常昂贵。 因此， __非MCMC方法__已经被用于估计这些汇总统计。</p>
+\]</span> <span class="math inline">\(\pi=0\)</span>时，BayesB和BayesA是一样的。然而，在处理真实的生物体和性状时，这个参数（<span class="math inline">\(\pi\)</span>）的合理值是未知的。为了克服这个问题，一个称为 <strong>BayesC<span class="math inline">\(\pi\)</span></strong> 的分析本身估计<span class="math inline">\(\pi\)</span>，其中<span class="math inline">\(\pi\)</span>的先验分布在0和1之间是均匀的。另外， <strong>BayesC<span class="math inline">\(\pi\)</span></strong> 假设所有效应<span class="math inline">\(\gamma_k=1\)</span>的标记的先验方差相等。即<span class="math inline">\(\gamma_k=0\)</span>时<span class="math inline">\(\beta_k=0\)</span>，<span class="math inline">\(\gamma_k=1\)</span>时<span class="math inline">\(\beta_k\sim N(0,\hat{\sigma}_\beta^2)\)</span>。反过来，该方法一起估计所有非零的<span class="math inline">\(\hat{\sigma}_\beta^2\)</span>。在估计<span class="math inline">\(\hat{\sigma}_\beta^2\)</span>时，以这样的方式对标记进行分组会对所有先验进行加权。 <strong>随机搜索变量选择（SSVS）</strong>，早于Meuwissen的（2001）BayesB，但是与BayesB有大致相同的先验假设。</p>
+<p><strong>所有这些贝叶斯模型共同的问题是参数估计不能以分析方式获得。</strong> 然而，有可能开发所谓的马尔可夫链蒙特卡罗（MCMC）算法，其从后验分布中对参数值进行采样。 然后可以通过重复抽样和计算适当的汇总统计数据（例如分布的均值或中值）来近似这些分布。 不幸的是，这个解决方案在计算上非常昂贵。 因此， <strong>非MCMC方法</strong> 已经被用于估计这些汇总统计。</p>
 </div>
 </div>
 <div class="section level2">
 <h2>统计方法总结</h2>
 <p>在RR-BLUP模型下，标记效应是来自具有固定方差的正态分布的样本。通过缩小所有的标记效应到相同的程度，并包括模型中的所有标记，RR-BLUP的使用意味着从业者相信这个性状被许多具有小影响的基因座所控制。相反，贝叶斯B假设大多数位点对性状没有影响，因此大多数标记都不在预测模型中。包含在模型中的标记具有从具有不同方差的分布中采样的效果。因此，贝叶斯B有效地假定，性状是由相对较少的效应大小不同的基因座控制的。在BayesC<span class="math inline">\(\pi\)</span>的情况下，包含在模型中的标记的比例是根据数据估计的。包括在模型中的标记效应是从估计方差的相同分布从数据。这使得BayesC<span class="math inline">\(\pi\)</span>更具灵活性来模拟寡源到多基因的性状。 我们强调这些模型的先验和它们的含义，强调这些模型假定不同的基因结构。因此，就遗传结构不同而言，所有性状和种群都没有单一的最佳模型。 <strong>如果遗传结构由多个小效应位点组成（Buckler et al。，2009），RR-BLUP和利用全球遗传关系信息的模型运作良好。如果大效QTL解释了很多遗传变异（Anderson等，2001; Munkvold等，2009），贝叶斯B等模型应该受到青睐。此外，这些示例模型假定可加性，并且如果非加性遗传效应是重要的，则可能不会很好地执行。一些人群中存在流行的非加性效应的证据（Dudley and Johnson，2009）; RKHS和SVR在这些情况下可能占有优势。</strong></p>
+</div>
+<div class="section level1">
+<h1>非参方法（机器学习）</h1>
+<div id="rkhs" class="section level2">
+<h2>RKHS</h2>
+<p>与BLUP类似 在称为基因组BLUP（G-BLUP）的方法中使用的基因组关系矩阵 <strong>被更一般的核矩阵代替</strong>，所述矩阵在个体之间产生相似性，即使遗传无关。 <strong>核是定义个体之间的协方差结构的任何平滑函数K</strong>。 该方法假定可以使用测量希尔伯特空间中的objects（焦点）之间的距离的核矩阵来表示欧几里德空间中的距离。 希尔伯特空间中，更相似的基因型比那些具有较少的相似性更密切。</p>
+</div>
+</div>
+<div id="section" class="section level1">
+<h1></h1>
+<blockquote>
+<p>均方误差有非常好的几何意义，它对应了常用的欧几里得距离或简称“欧氏距离”（Euclidean distance）。基于均方误差最小化来进行模型求解的方法称为“最小二乘法”（least square method）。在线性回归中，最小二乘法就是试图找到一条直线，使所有样本到直线上的欧氏距离之和最小</p>
+</blockquote>
+<p>估计量的准确度可以用估计的<span class="math inline">\(\hat{\theta}\)</span>和参数<span class="math inline">\(\theta\)</span>的真实值之间的 <strong>平方欧几里得距离</strong> 来测量。在标量的情况下，这只是平方的偏差：<span class="math inline">\(||\hat{\theta}(y)-\theta||^2=[\hat{\theta}(y)-\theta]^2\)</span>。写成<span class="math inline">\(\hat{\theta}(y)\)</span>的目的是强调预测子是抽样数据的函数。 均方误差（MSE）是平方欧几里得距离的期望值（超过数据的可能实现）：<span class="math inline">\(MSE(\hat{\theta})=E[\hat{\theta}(y)-\theta]^2\)</span>。这能拆成2项：估计值的方差加上其偏差的平方，<span class="math inline">\(MSE(\hat{\theta})=Var(\hat{\theta})+Bias[\hat{\theta}]^2=E\{[\hat{\theta}-E(\hat{\theta})]^2\}+[E(\hat{\theta})-\theta]\)</span>。 处罚和贝叶斯方法是两个最常用的收缩估计程序</p>
+</div>
+<div class="section level1">
+<h1>支持向量机</h1>
+<p>SVM回归的基本思想是通过非线性映射函数将样本从预测空间映射到高维特征空间，并在后一空间进行线性回归(Jannink2010)。</p>
+</div>
+<div id="kernel" class="section level1">
+<h1>kernel</h1>
+<p>内核方法将预测变量转换为距离，实际上创建了一个类似于加性遗传关系矩阵的矩阵。 核矩阵量化个体之间的距离，但也加入平滑参数[3]。 这种方法是灵活的，可以包含标记之间的复杂关系，因此在怀疑无加性效应的情况下是有用的[40]。</p>
 <div id="refs" class="references">
+<div id="ref-DelosCampos2013a">
+<p>Campos, Gustavo de los, John M Hickey, Ricardo Pong-Wong, Hans D Daetwyler, and Mario P L Calus. 2013. “Whole-Genome Regression and Prediction Methods Applied to Plant and Animal Breeding.” <em>Genetics</em> 193 (2): 327–45. doi:<a href="https://doi.org/10.1534/genetics.112.143313">10.1534/genetics.112.143313</a>.</p>
+</div>
 <div id="ref-Lorenz2011">
 <p>Lorenz, Aaron J., Shiaoman Chao, Franco G. Asoro, Elliot L. Heffner, Takeshi Hayashi, Hiroyoshi Iwata, Kevin P. Smith, Mark E. Sorrells, and Jean-Luc Jannink. 2011. “Genomic Selection in Plant Breeding.” In <em>Advances in Agronomy</em>, 110:77–123. C. doi:<a href="https://doi.org/10.1016/B978-0-12-385531-2.00002-5">10.1016/B978-0-12-385531-2.00002-5</a>.</p>
+</div>
+<div id="ref-Wu2009b">
+<p>Wu, Tong Tong, Yi Fang Chen, Trevor Hastie, Eric Sobel, and Kenneth Lange. 2009. “Genome-wide association analysis by lasso penalized logistic regression.” <em>Bioinformatics</em> 25 (6): 714–21. doi:<a href="https://doi.org/10.1093/bioinformatics/btp041">10.1093/bioinformatics/btp041</a>.</p>
 </div>
 </div>
 </div>
@@ -396,9 +438,9 @@ g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k\gamma_k
     
     <li><a href="../../post/2018-01-12-%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">矩阵代数学习笔记</a></li>
     
-    <li><a href="../../post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/">到底是固定还是随机？</a></li>
+    <li><a href="../../post/a-gentle-inla-tutorial/">INLA教程|A gentle INLA tutorial</a></li>
     
-    <li><a href="../../project/stats_r/">统计&amp;编程</a></li>
+    <li><a href="../../post/2018-01-02-%E5%88%B0%E5%BA%95%E6%98%AF%E5%9B%BA%E5%AE%9A%E8%BF%98%E6%98%AF%E9%9A%8F%E6%9C%BA/">到底是固定还是随机？</a></li>
     
   </ul>
 </div>
