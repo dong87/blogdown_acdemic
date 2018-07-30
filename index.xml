@@ -48,6 +48,44 @@
     </item>
     
     <item>
+      <title>netlify搭建blog笔记</title>
+      <link>/post/netlify%E6%90%AD%E5%BB%BAblog%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/netlify%E6%90%AD%E5%BB%BAblog%E7%AC%94%E8%AE%B0/</guid>
+      <description>
+
+&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+
+&lt;p&gt;开博客的主要目的是当做一个笔记本，把一些要紧的知识点、代码和流程等做个梳理和记录，方便下次使用时的查找。其实很早就有博客，只是不认为那就是，比如QQ空间和校内网。以前记笔记使用过网易产品一段时间，后来就转到博客上，例如&lt;a href=&#34;http://blog.sina.com.cn/u/1696852495&#34; target=&#34;_blank&#34;&gt;新浪&lt;/a&gt;，不支持&lt;strong&gt;markdown&lt;/strong&gt;。后来转到&lt;a href=&#34;https://www.jianshu.com/u/c7b1f5e71e92&#34; target=&#34;_blank&#34;&gt;简书&lt;/a&gt;，但这家伙不支持公式。CSDN用过两天，支持公式编辑，但不及简书简便。&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;支持&lt;a href=&#34;https://dong87.github.io/&#34; target=&#34;_blank&#34;&gt;个人博客&lt;/a&gt;，但模板很折腾，一直不理想，用了两天就不更新了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;非常好用，帮助我输出&lt;code&gt;R&lt;/code&gt;结果到pdf或者word。之前用过&lt;a href=&#34;https://yihui.name/&#34; target=&#34;_blank&#34;&gt;yihui&lt;/a&gt;开发的&lt;strong&gt;bookdown&lt;/strong&gt;，用来转电子书的格式，也听说过他开发的&lt;strong&gt;blogdown&lt;/strong&gt;，但并没有用过。有天&lt;a href=&#34;http://luansheng.netlify.com/&#34; target=&#34;_blank&#34;&gt;栾生&lt;/a&gt;推荐了一下![]()&lt;/p&gt;
+
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+
+&lt;p&gt;首先要感谢&lt;a href=&#34;http://dapengde.com/&#34; target=&#34;_blank&#34;&gt;大鹏志&lt;/a&gt;给的中文教程&lt;a href=&#34;http://dapengde.com/archives/19304&#34; target=&#34;_blank&#34;&gt;用Rblogdown 搭建个人博客或科研网站&lt;/a&gt;。最难的一步出现在&lt;a href=&#34;https://www.netlify.com/&#34; target=&#34;_blank&#34;&gt;netlify&lt;/a&gt;与&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;的关联上。按照&lt;code&gt;netlify&lt;/code&gt;的要求，指定了&lt;code&gt;public&lt;/code&gt;文件夹，但在打开博客网址时总是报错无法打开网页。最后还是从栾老师的GitHub里发现他只同步了&lt;code&gt;public&lt;/code&gt;文件夹而非整个建站文件夹，然后就大功告成了。&lt;/p&gt;
+
+&lt;p&gt;简略步骤如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;安装&lt;code&gt;blogdown&lt;/code&gt;，在&lt;code&gt;Rstudio&lt;/code&gt;里直接安装也可以。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;if(!require(devtools)) install.packages(&#39;devtools&#39;)
+devtools::install_github(&#39;rstudio/blogdown&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;建一个空文件夹，然后使用模板&lt;code&gt;gcushen/hugo-academic&lt;/code&gt;建立建站文件。还有其他一些模板，见&lt;a href=&#34;https://github.com/gohugoio/hugoThemes&#34; target=&#34;_blank&#34;&gt;这里&lt;/a&gt;，每个点进去，选择喜欢的样式，替换这里的就行。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;setwd(&amp;quot;D:/blogdown_default&amp;quot;)
+blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Genetic Variation, Heritability and Genotype × Environment Interactions of Resin Yield, Growth Traits and Morphologic Traits for Pinus elliottii at Three Progeny Trials</title>
       <link>/publication/lai_forests_2017/</link>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>

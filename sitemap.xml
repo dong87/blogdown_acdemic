@@ -41,6 +41,15 @@
     
     <url>
     
+      <loc>/post/netlify%E6%90%AD%E5%BB%BAblog%E7%AC%94%E8%AE%B0/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/lai_forests_2017/</loc>
       <lastmod>2017-11-01T00:00:00+00:00</lastmod>
     </url>
@@ -145,6 +154,36 @@
     
       <loc>/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/notes/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/notes/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/</loc>
+      <lastmod>2017-12-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
