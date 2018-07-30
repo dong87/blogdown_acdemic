@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skills on Enterprising &amp; Concentrating</title>
+    <link>/tags/skills/</link>
+    <description>Recent content in Skills on Enterprising &amp; Concentrating</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Dong</copyright>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/skills/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>行测技巧——from知乎</title>
+      <link>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</guid>
+      <description>在公务员考试中，如何提高行测成绩？ - 知乎
+不要用战术上的勤奋来掩盖战略上的懒惰。
+公考作为淘汰性考试，不是要考某个分数线，而是要考过别人，所以感觉好没用，这个部分有竞争力才是王道。
+资料分析就是该拿满分的
+我高中班主任对我说过一句话，对我多年的学习生涯产生了不可磨灭的影响：“你可以来问我学习方法，但是你别问我：化学该怎么学？我的化学成绩为什么不能提高？”因为如果你问这么宏观的问题，说明你对你自己的问题没有进行思考，没有进行细化。很多问题一旦细化，你不用请教别人就能找到解决办法。
+要真正让题海战术得到提高——尤其是语文逻辑和资料分析，全靠总结。
+行测技巧篇：逻辑填空
+逻辑填空题一定不能当成语文题来做！一定不能当成语文题来做！一定不能当成语文题来做！所以主页菌一定要强调名称的重要性，是“逻辑填空”，不是“选词填空”，做此类题目要靠逻辑思维，而不是靠语感。
+公务员的文字能力并非追求辞藻华丽，而是用词准确、恰当，归根到底还是逻辑思维。请记住这两个关键词。
+具体就逻辑填空题而言，出题的角度就是考察你在语言表达中用词能否做到准确和恰当。
+从五大误区谈如何备考
+行测考试的方向就是弱化不同知识背景带来的差异，近几年更是连法律常识都考得少了，因为在那几个题目里法学背景的考生占优势。我们一定要深刻理解这种大方向，不要埋头在补充知识量上苦苦耕耘，多在方法思路上动脑筋才是力气用对了地方。
+对于行测考试乃至整个公务员考试，做题量和成绩没有关系。
+公务员考试的备战应该是长期规划，以“考上”为目标，而不是“这次就要考上。</description>
+    </item>
+    
+    <item>
+      <title>rmarkdown生成带格式的word文档</title>
+      <link>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</guid>
+      <description> 起因 我的MS word如果包含wmf格式的图片就无限无响应，着实让我苦恼。rstudio可以将md或rmd文档利用pandoc生成word，因此非常方便。但有时候需要特殊的格式，还得去word里逐个修改，这不是rmarkdown的风格，我想应该可以有模板供使用的。果不其然，Google帮我搜到一个相关的博客Happy collaboration with Rmd to docx，介绍如何自定义文档格式模板，job done。
+实现方法  生成一个空白的文档
+ 修改格式成模板
+ 在新的md文档的yaml里添加一些信息就可以了
+  output: word_document: reference_docx: &amp;quot;../common/word-styles-reference-01.docx&amp;quot;  </description>
+    </item>
+    
+  </channel>
+</rss>

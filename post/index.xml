@@ -7,10 +7,117 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Dong</copyright>
-    <lastBuildDate>Fri, 29 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>生成一个空post的函数</title>
+      <link>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
+      <description>Jan 14更新
+ 题目中不能有空格等字符，否则报错，新版会提示修改。新版能在建文件后自动打开，但前提是题目中不能含中文，谨记。
+#&#39; generate new posts #&#39; #&#39; @param post_title #&#39; @param post_format #&#39; @param post_summary #&#39; @param post_tags #&#39; #&#39; @return #&#39; @export #&#39; #&#39; @examples #&#39; gen_post(&amp;quot;R-error-collects&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;skills&amp;quot;) #&#39; gen_post(&amp;quot;English-note&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;word&amp;quot;) gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.Rmd&amp;quot;, post_summary=post_title, post_tags=&amp;quot;stats&amp;quot;) { if (isTRUE(grepl(&amp;quot;\\s&amp;quot;, post_title))) stop( msg(cli::rule(center = crayon::bold(&amp;quot;RM the spetial char in your title!&amp;quot;)), startup = TRUE) ) require(magrittr) post_date &amp;lt;- Sys.time() %&amp;gt;% as.character %&amp;gt;% strsplit(&amp;quot; &amp;quot;) %&amp;gt;% unlist %&amp;gt;% .</description>
+    </item>
+    
+    <item>
+      <title>行测技巧——from知乎</title>
+      <link>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-04-%E8%A1%8C%E6%B5%8B%E6%8A%80%E5%B7%A7-from%E7%9F%A5%E4%B9%8E/</guid>
+      <description>在公务员考试中，如何提高行测成绩？ - 知乎
+不要用战术上的勤奋来掩盖战略上的懒惰。
+公考作为淘汰性考试，不是要考某个分数线，而是要考过别人，所以感觉好没用，这个部分有竞争力才是王道。
+资料分析就是该拿满分的
+我高中班主任对我说过一句话，对我多年的学习生涯产生了不可磨灭的影响：“你可以来问我学习方法，但是你别问我：化学该怎么学？我的化学成绩为什么不能提高？”因为如果你问这么宏观的问题，说明你对你自己的问题没有进行思考，没有进行细化。很多问题一旦细化，你不用请教别人就能找到解决办法。
+要真正让题海战术得到提高——尤其是语文逻辑和资料分析，全靠总结。
+行测技巧篇：逻辑填空
+逻辑填空题一定不能当成语文题来做！一定不能当成语文题来做！一定不能当成语文题来做！所以主页菌一定要强调名称的重要性，是“逻辑填空”，不是“选词填空”，做此类题目要靠逻辑思维，而不是靠语感。
+公务员的文字能力并非追求辞藻华丽，而是用词准确、恰当，归根到底还是逻辑思维。请记住这两个关键词。
+具体就逻辑填空题而言，出题的角度就是考察你在语言表达中用词能否做到准确和恰当。
+从五大误区谈如何备考
+行测考试的方向就是弱化不同知识背景带来的差异，近几年更是连法律常识都考得少了，因为在那几个题目里法学背景的考生占优势。我们一定要深刻理解这种大方向，不要埋头在补充知识量上苦苦耕耘，多在方法思路上动脑筋才是力气用对了地方。
+对于行测考试乃至整个公务员考试，做题量和成绩没有关系。
+公务员考试的备战应该是长期规划，以“考上”为目标，而不是“这次就要考上。</description>
+    </item>
+    
+    <item>
+      <title>rmarkdown生成带格式的word文档</title>
+      <link>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-03-rmarkdown%E7%94%9F%E6%88%90%E5%B8%A6%E6%A0%BC%E5%BC%8F%E7%9A%84word%E6%96%87%E6%A1%A3/</guid>
+      <description> 起因 我的MS word如果包含wmf格式的图片就无限无响应，着实让我苦恼。rstudio可以将md或rmd文档利用pandoc生成word，因此非常方便。但有时候需要特殊的格式，还得去word里逐个修改，这不是rmarkdown的风格，我想应该可以有模板供使用的。果不其然，Google帮我搜到一个相关的博客Happy collaboration with Rmd to docx，介绍如何自定义文档格式模板，job done。
+实现方法  生成一个空白的文档
+ 修改格式成模板
+ 在新的md文档的yaml里添加一些信息就可以了
+  output: word_document: reference_docx: &amp;quot;../common/word-styles-reference-01.docx&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>Feynman&#39;s words</title>
+      <link>/post/feynman-s-words/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/feynman-s-words/</guid>
+      <description>These words come from Feynman&amp;rsquo;s twitter.
+  If you&amp;rsquo;re doing an experiment, you should report everything that you think might make it invalid - not only what you think is right about it. It doesn&amp;rsquo;t matter how beautiful your theory is. If it disagrees with experiment, it&amp;rsquo;s wrong. In that simple statement is the key to science. We must be careful not to believe things simply because we want them to be true.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Academic主题中斜体不能正确显示</title>
+      <link>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</guid>
+      <description>Hugo Academic是一个很好的主题，但斜体（*）斜体不能正确显示，让我苦恼了一阵儿。在Google中检索原因，遇到这样一个问题：加粗不能正常显示。问题底下给出的原因是单词内加粗让人感觉怪怪的。而我们中文是不用空格来界定单词的，所以星号左右各加空格就可以了。</description>
+    </item>
+    
+    <item>
+      <title>正则表达式学习笔记</title>
+      <link>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-02-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>如果需要从文本文件中识别具有一定模式的字符串时，学一点正则表达式比一个个查找-复制粘贴效率要高得多。
+ 我常用的能够通过正则表达式进行检索的软件有：Notepad++和Filelocator。用Notepad的机会更多一些。转入正题： 比如我有一串字符：
+Aoli|XP_011119616.1,Aoli|XP_011122673.1,Aoli|XP_011128430.1,Bbas|XP_008594286.1,Bbas|XP_008594329.1,Bbas|XP_008595160.1, Bbas|XP_008596935.1,Bbas|XP_008597129.1,Bbas|XP_008597693.1,Bbas|XP_008598495.1,Bbas|XP_008600657.1,Bbas|XP_008600739.1, Bbas|XP_008601538.1,Bbas|XP_008603064.1,Bbas|XP_008603175.1,Bbas|XP_008603621.1,Chig|XP_018154735.1,Chig|XP_018155044.1, Chig|XP_018155047.1,Chig|XP_018153301.1,Chig|XP_018151759.1,Chig|XP_018164608.1,Chig|XP_018152642.1,Chig|XP_018152650.1, Chig|XP_018150745.1,Chig|XP_018151082.1,Chig|XP_018151207.1,Chig|XP_018151210.1,Chig|XP_018151211.1,Chig|XP_018151295.1, Chig|XP_018151323.1,Chig|XP_018151575.1,Chig|XP_018151609.1,Chig|XP_018151641.1,Chig|XP_018163482.1,Chig|XP_018150468.1  我需要把|连同之前的字符都去掉，如果手动删除或是用空值一组一组地替换是非常繁琐的，数据量非常大时成本很高。而如果采用正则表达式则是几秒钟的事：查找\w*\|，然后替换框里空着，全部替换就可以了（Fig 1），Amazing！
+匹配字符  .，句点代表除换行符外的所有字符。比如a..b能匹配类似a alb，A18|B，ATP-b。不区分大小写，当然也可以区分，下同。 [...]，代表字符集。a[rl_]b匹配arb，AlB，A_b。 \d， 代表数字。XP_\d匹配XP_0，XP_0，&amp;hellip;，XP_9。 \D， 代表非数字。 \s， 代表空白字符。a\sb匹配a b。 \S， 代表非空白字符。 \w， 代表字母和数字。[a-z0-9]。 \w， 代表非字母和数字。 \b， 代表边界，如\b love，不会匹配alove之类的单词。 \r\n，这是Notepad里替换换换行符的字符串，有时会用到，非常方便！比如(\r\n){2}能替换空行，类似Word里的^p^p。  匹配字符的次数  *，≥0次。 +，≥1次。 ?，匹配问号前一个字符前面的全部字符含有或不含问号前这个字符，比较难理解，试一下就知道了。kdheo?，问号前一个字符是o，o前面的全部字符是kdhe，kdheo?匹配kdheo（含o）或kdhe（不含o）。 {}，花括号里是匹配前一个字符的次数1-9，也可以是个范围{1,5}。  逻辑匹配 想要同时匹配多个字符串时用逻辑字符|，如blue|Blue，能忽略blue首字母的大小写。 以含有多个字符的字符串为单位进行处理时要用圆括号()括起来。
+一个例子 有这样一串字符：
+[1] &amp;quot;db&amp;quot; &amp;quot;G.clavigera&amp;quot; &amp;quot;F.graminearum&amp;quot; &amp;quot;M.oryzae&amp;quot; &amp;quot;Z.tritici&amp;quot; &amp;quot;C.higginsianum&amp;quot; [7] &amp;quot;V.dahliae&amp;quot; &amp;quot;C.militaris&amp;quot; &amp;quot;B.bassiana&amp;quot; &amp;quot;M.anisopliae&amp;quot; &amp;quot;M.robertsii&amp;quot; &amp;quot;M.libera&amp;quot; [13] &amp;quot;S.insectorum&amp;quot; &amp;quot;A.oligospora&amp;quot; &amp;quot;D.haptotyla&amp;quot; &amp;quot;E.vermicola&amp;quot; &amp;quot;H.minnesotensis&amp;quot; &amp;quot;D.</description>
+    </item>
+    
+    <item>
+      <title>如何计算效应值（例如育种值）的准确性（accuracy）？</title>
+      <link>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E6%95%88%E5%BA%94%E5%80%BC-%E4%BE%8B%E5%A6%82%E8%82%B2%E7%A7%8D%E5%80%BC-%E7%9A%84%E5%87%86%E7%A1%AE%E6%80%A7-accuracy/</guid>
+      <description>准确性指的是 预测效应值与真值之间的相关系数 。有时还会遇见一个概念——可靠性（reliability）。可靠性是准确性的平方，也就是说这二者度量的是一个事情。reliability其实就是遗传力，这句很重要！！！。遗传力主要用来计算选择响应（response to selection）。advisor说我的文章短句子太多，不连贯，确实是这样LOL。 准确性的计算公式为：
+$$r=\sqrt{1-\frac{PEV}{\hat{\sigma}_a^2}}$$
+PEV 是prediction error variances的缩写，意思是预测误差方差，预测误差是预测值与真值间的差，即：
+$$PEV=var(\hat g-g)=(1-r_{\hat g,g}^2)\sigma_a^2$$
+$\sigma a^2$是加性方差。
+预测差值的标准误（ SED ）是可以从Asreml中直接得到的，与 PEV 的关系是：
+$$SED=\sqrt{\hat Var(BLUP.differences)}=\sqrt{\hat Var(\hat Yi-\hat Y{i^\prime})}=\sqrt{2\hat Var(\hat Y)_i}=\sqrt{2PEV}$$
+我不知道上面这个公式怎么推导的。 所以有
+$$PEV=(SED)^{2}/2=\hat Var(BLUP.differences)/2$$
+在很长时间里我不知道（或者说模糊地知道）accuracy是怎么实现的。我知道公式，但在软件里分别和公式组分对应的部分是什么却不是很清楚，当然写这篇文字的时候是确定的。具体实现的途径有2： - 一是利用Asreml中的prediction直接得到 SED 后，再根据公式4得出PEV
+fm_pred &amp;lt;- predict(fm_asr, classify = &amp;quot;Fam&amp;quot;) #fm_asr是asreml()输出的对象， Fam是随机效应变量 SED &amp;lt;- fm_pred$predictions$avsed   二是逐步得到 PEV ，每个预测值都有一个 PEV ，是预测值 SE 平方的均值，所以从预测函数得到的对象中提取出 SE 平方后再平均即可  fm_pred &amp;lt;- predict(fm_asr, classify = &amp;quot;Fam&amp;quot;, present = &amp;quot;Plot&amp;quot;) #注意！这里预测的时候是要矫正掉其他的随机效应（如Plot） SE &amp;lt;- fm_pred$predictions$pvals$standard.</description>
+    </item>
+    
+    <item>
+      <title>2017-12-29-English notes</title>
+      <link>/post/english/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/english/</guid>
+      <description>2017-11-27  decimate 大批摧毁 destroy delineate breeding zones develop variety prompt new research operational seed orchard intensive vs extensive  2017-11-22  for the sake of 为了 butter up 讨好 hub 中心，集 摘要中提出了（propose）一个&amp;hellip;， 要用现在时 通过&amp;hellip;手段用via或through，后者用的多 superior genotypes是固定搭配 search for among是在..间的意思，可翻译成从&amp;hellip; a是一个的意思，一般翻译成一种 preserve是保存的意思，与conserve有什么区别？ remaining剩余，residual 建立处理establish，还有built和create application 后可跟to/in/for，不容易区分用哪个 新的用novel 需要need to/require，后边是动词时用need to 发现find/discover/uncover 将&amp;hellip;作为regard&amp;hellip;as/treat&amp;hellip;as 用很多时候是with而非use 解决solve it 根据accord to/depend on selection criterion be beneficial 点估计point estimate 进行假设时一般用would而非will circadian clock 生物钟 mediator中介 susceptibility compare with 由&amp;hellip;表示represented by 中等大小intermediate-size 长度&amp;gt;8kb， &amp;gt;8kb in length analysis，analyze，analyses是analysis的复数 we validated 112 of the structural variants, including several that are of biomedical relevance.</description>
+    </item>
     
     <item>
       <title>netlify搭建blog笔记</title>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Enterprising &amp; Concentrating</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on Enterprising &amp; Concentrating</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Dong</copyright>
+    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>生成一个空post的函数</title>
+      <link>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-07-%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E7%A9%BApost%E7%9A%84%E5%87%BD%E6%95%B0/</guid>
+      <description>Jan 14更新
+ 题目中不能有空格等字符，否则报错，新版会提示修改。新版能在建文件后自动打开，但前提是题目中不能含中文，谨记。
+#&#39; generate new posts #&#39; #&#39; @param post_title #&#39; @param post_format #&#39; @param post_summary #&#39; @param post_tags #&#39; #&#39; @return #&#39; @export #&#39; #&#39; @examples #&#39; gen_post(&amp;quot;R-error-collects&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;skills&amp;quot;) #&#39; gen_post(&amp;quot;English-note&amp;quot;, &amp;quot;.Rmd&amp;quot;, post_tags=&amp;quot;word&amp;quot;) gen_post &amp;lt;- function(post_title=NULL, post_format= &amp;quot;.Rmd&amp;quot;, post_summary=post_title, post_tags=&amp;quot;stats&amp;quot;) { if (isTRUE(grepl(&amp;quot;\\s&amp;quot;, post_title))) stop( msg(cli::rule(center = crayon::bold(&amp;quot;RM the spetial char in your title!&amp;quot;)), startup = TRUE) ) require(magrittr) post_date &amp;lt;- Sys.time() %&amp;gt;% as.character %&amp;gt;% strsplit(&amp;quot; &amp;quot;) %&amp;gt;% unlist %&amp;gt;% .</description>
+    </item>
+    
+  </channel>
+</rss>

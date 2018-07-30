@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Enterprising &amp; Concentrating</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in Hugo on Enterprising &amp; Concentrating</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Dong</copyright>
+    <lastBuildDate>Tue, 02 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Academic主题中斜体不能正确显示</title>
+      <link>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-02-hugo-academic%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%96%9C%E4%BD%93%E4%B8%8D%E8%83%BD%E6%AD%A3%E7%A1%AE%E6%98%BE%E7%A4%BA/</guid>
+      <description>Hugo Academic是一个很好的主题，但斜体（*）斜体不能正确显示，让我苦恼了一阵儿。在Google中检索原因，遇到这样一个问题：加粗不能正常显示。问题底下给出的原因是单词内加粗让人感觉怪怪的。而我们中文是不用空格来界定单词的，所以星号左右各加空格就可以了。</description>
+    </item>
+    
+  </channel>
+</rss>
