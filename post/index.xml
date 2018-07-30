@@ -7,615 +7,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Dong</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>2018-02-07-English-note</title>
-      <link>/post/2018-02-07-english-note/</link>
-      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      <title>不完全区组设计</title>
+      <link>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-02-07-english-note/</guid>
-      <description>&lt;p&gt;akin to emerge out of从……中出现&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-02-06-English-note</title>
-      <link>/post/2018-02-06-english-note/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-02-06-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;with a few exceptions&lt;/li&gt;
-&lt;li&gt;the proportion … has commonly been small&lt;/li&gt;
-&lt;li&gt;the financial resources required … were considerable&lt;/li&gt;
-&lt;li&gt;advances in … have led to&lt;/li&gt;
-&lt;li&gt;enhance response to selection&lt;/li&gt;
-&lt;li&gt;conventional selection&lt;/li&gt;
-&lt;li&gt;information is growing&lt;/li&gt;
-&lt;li&gt;has not &lt;strong&gt;lived up to&lt;/strong&gt; initial expectations满足&lt;/li&gt;
-&lt;li&gt;logistical requirement&lt;/li&gt;
-&lt;li&gt;attitude toward&lt;/li&gt;
-&lt;li&gt;made advances&lt;/li&gt;
-&lt;li&gt;traits of importance/interests&lt;/li&gt;
-&lt;li&gt;enable opportunities&lt;/li&gt;
-&lt;li&gt;set the stage for打好基础&lt;/li&gt;
-&lt;li&gt;technique … notably achieved by&lt;/li&gt;
-&lt;li&gt;embodied in体现在&lt;/li&gt;
-&lt;li&gt;aftermath后果&lt;/li&gt;
-&lt;li&gt;be underway处理之中&lt;/li&gt;
-&lt;li&gt;bring about带来，引起&lt;/li&gt;
-&lt;li&gt;assess &lt;strong&gt;the extend to which&lt;/strong&gt; information has been uesd in&lt;/li&gt;
-&lt;li&gt;by necessity必然的&lt;/li&gt;
-&lt;li&gt;In what follows下文中&lt;/li&gt;
-&lt;li&gt;insightful discussion&lt;/li&gt;
-&lt;li&gt;a general consensus&lt;/li&gt;
-&lt;li&gt;considering large numbers of&lt;/li&gt;
-&lt;li&gt;concurrently&lt;/li&gt;
-&lt;li&gt;ground-breaking&lt;/li&gt;
-&lt;li&gt;in an attempt to&lt;/li&gt;
-&lt;li&gt;reliant on&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-30-English-note</title>
-      <link>/post/2018-01-30-english-note/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-30-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;moderately high&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;in line with&lt;/strong&gt; trends in heritabilities&lt;/li&gt;
-&lt;li&gt;For both &lt;strong&gt;classes&lt;/strong&gt; of traits&lt;/li&gt;
-&lt;li&gt;sharply decreased&lt;/li&gt;
-&lt;li&gt;compensate for&lt;/li&gt;
-&lt;li&gt;broken up&lt;/li&gt;
-&lt;li&gt;striking显著&lt;/li&gt;
-&lt;li&gt;in the case of至于，在…的情况下&lt;/li&gt;
-&lt;li&gt;call into question对…表示怀疑&lt;/li&gt;
-&lt;li&gt;plus a penalty on complexity加上对复杂性的惩罚&lt;/li&gt;
-&lt;li&gt;well versed in精通&lt;/li&gt;
-&lt;li&gt;gradient descent梯度下降&lt;/li&gt;
-&lt;li&gt;be a matter of问题的关键是&lt;/li&gt;
-&lt;li&gt;It is worth noting值得注意的是&lt;/li&gt;
-&lt;li&gt;to a great extent在很大程度上&lt;/li&gt;
-&lt;li&gt;it is hardly surprising这并不奇怪&lt;/li&gt;
-&lt;li&gt;opt for选择&lt;/li&gt;
-&lt;li&gt;go against the grain背道而驰，违背别人的想法做事 a wide variety of run out of &lt;strong&gt;purportedly&lt;/strong&gt; aiming to据称 pros and cons正反两方面 in the light of根据&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Errors-in-site-building</title>
-      <link>/post/2018-01-30-errors-in-site-building/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-30-errors-in-site-building/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Started building sites … ERROR 2018/01/30 09:40:14 Error while rendering “page”: template: theme/_default/single.html:17:7: executing “theme/_default/single.html&amp;quot; at &lt;partial &#34;tags.html&#34; ...&gt;: error calling partial: template: theme/partials/tags.html:5:22: executing “theme/partials/tags.html” at &amp;lt;$.Params.tags&amp;gt;: range can’t iterate over stats&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;检查最近新建的post的yaml是不是有错&lt;/strong&gt;。原因：我建了一个rmd文件，并knit到word，yaml就被自动修改导致渲染错误。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Machine learning在遗传和基因组领域的应用</title>
-      <link>/post/2018-01-30-machine-learning/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-30-machine-learning/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;资料来源&lt;span class=&#34;citation&#34;&gt;(Libbrecht and Noble 2015; Xavier et al. 2016; González-Recio, Rosa, and Gianola 2014)&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;推论和模型可以是经验或实验设计。 经验方法最适用于可以分析找到解决方案的特征明显的现象，而从数据推断和 &lt;strong&gt;使用算法&lt;/strong&gt; 识别数据中的模式需要实验方法。 &lt;strong&gt;研究这些算法的科学被称为机器学习&lt;/strong&gt;。 &lt;strong&gt;机器学习致力于构建和研究能够从数据中学习的算法，努力寻找一种最小化给定损失的最佳解决方案。 这使得这些机器学习算法比逻辑算法更加灵活。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;机器学习&lt;/strong&gt;：一个与 &lt;strong&gt;计算机算法&lt;/strong&gt; 的发展和应用有关的领域，随着经验改进。 &lt;strong&gt;机器学习&lt;/strong&gt; 是预测和分类的另一种方法，能够灵活地处理维数问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;应用&lt;/strong&gt;：识别基因组序列中转录起始位点（TSS）的位置、鉴定剪接位点，启动子，增强子或定位的核小体。 一般来说，如果能够编译一个给定类型的序列元素的列表，那么机器学习方法可能被训练来识别这些元素。 此外，可以将识别个体类型的基因组元素的模型与（学习的）关于其相对位置的逻辑相组合，以构建能够注释基因（包括其非翻译区（UTR），内含子和 外显子 - 沿整个真核生物染色体。&lt;/p&gt;
-&lt;p&gt;机器学习的两个特定分支，即所谓的 &lt;strong&gt;有监督和无监督学习&lt;/strong&gt;。监督学习有助于解决 &lt;strong&gt;存在解释变量和响应变量&lt;/strong&gt; 的问题。 这通常适用于数量遗传学中的 &lt;strong&gt;预测，选择和分类&lt;/strong&gt;。 当没有反应变量存在时，使用无监督学习来解决诸如 &lt;strong&gt;基因型聚类和在群体中寻找混合物&lt;/strong&gt; 的问题。&lt;/p&gt;
-&lt;p&gt;由于大多数性状的数量性质，在植物和动物育种中 &lt;strong&gt;使用最广泛的监督学习算法是高斯过程（GP）&lt;/strong&gt;。 GP代表选择理论，育种价值和关联性研究的基础。 在监督学习过程中， &lt;strong&gt;预测对提高数量性状具有重要意义&lt;/strong&gt;， &lt;strong&gt;分类对于决策的制定和分类性状的遗传改良具有重要意义&lt;/strong&gt;。 育种计划开发特定的产品来满足各种市场的需求， &lt;strong&gt;分类模型决定了定义这些市场定位的品质的界限&lt;/strong&gt;。&lt;/p&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;高斯过程&lt;/h2&gt;
-&lt;p&gt;对于正态分布，随机变量&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;的期望是其均值&lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;，方差&lt;span class=&#34;math inline&#34;&gt;\(\sigma^2\)&lt;/span&gt;是和期望的离差（的平方和）。这两个参数一旦确定，概率密度函数（PDF，&lt;span class=&#34;math inline&#34;&gt;\(\phi\)&lt;/span&gt;）就可以用于推断任何观测事件的概率。计算一个区间的概率用积分，比如小于某个产量的概率，计算用累积密度函数（CDF，&lt;span class=&#34;math inline&#34;&gt;\(\Phi\)&lt;/span&gt;）。&lt;/p&gt;
-&lt;p&gt;在所有数据集中，每个观测值都包含一些关于未知参数的信息。 似然法搜索使观测数据的似然性（&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;）最大化的未知参数， &lt;strong&gt;使用PDF来定义数据和参数&lt;span class=&#34;math inline&#34;&gt;\(p(\mathbf{X},\mathbf{\theta})\)&lt;/span&gt;的联合概率&lt;/strong&gt;，其中&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X}\)&lt;/span&gt;表示观测数据，theta（&lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;）表示未知参数。贝叶斯是在似然的基础上给位置参数指定一个先验的概率分布。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;无限小模型和选择理论&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;选择强度&lt;/strong&gt; （&lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;）表示用作总体截断值的平均值的标准偏差数; 换句话说，选择个体作为祖先保留在繁殖种群中的截断点。&lt;/p&gt;
-&lt;p&gt;Hilbert spaces：无限维空间。 随着时间的推移， &lt;strong&gt;遗传增益的稳定性依赖于选择强度，突变率以及总（n）和有效（Ne）种群大小&lt;/strong&gt;。 根据Zeng和Hill（1986）的研究，当新的单体型与等位基因发生固定的频率相同时，就会出现最佳的选择强度，这样群体就不会消耗其多样性。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;parsimony&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;方差分解和parsimony&lt;/h2&gt;
-&lt;p&gt;在统计学上，遗传力被称为类内相关系数，它是指由于其中一个成分而引起的总变异量。 广义遗传力说明了“nature-versus-nurture”，区分遗传因素和环境因素造成的变异。 遗传方差组分的估计首先通过使用 &lt;strong&gt;核矩阵（又名亲缘关系矩阵）&lt;/strong&gt; 的定义个体之间的关系。&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Gonzalez-Recio2014&#34;&gt;
-&lt;p&gt;González-Recio, Oscar, Guilherme J M Rosa, and Daniel Gianola. 2014. “Machine learning methods and predictive ability metrics for genome-wide prediction of complex traits.” &lt;em&gt;Livestock Science&lt;/em&gt; 166 (1). Elsevier: 217–31. doi:&lt;a href=&#34;https://doi.org/10.1016/j.livsci.2014.05.036&#34;&gt;10.1016/j.livsci.2014.05.036&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-Libbrecht2015&#34;&gt;
-&lt;p&gt;Libbrecht, Maxwell W, and William Stafford Noble. 2015. “Machine learning applications in genetics and genomics.” &lt;em&gt;Nature Reviews Genetics&lt;/em&gt; 16 (6). Nature Publishing Group: 321–32. doi:&lt;a href=&#34;https://doi.org/10.1038/nrg3920&#34;&gt;10.1038/nrg3920&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-Xavier2016a&#34;&gt;
-&lt;p&gt;Xavier, Alencar, William M. Muir, Bruce Craig, and Katy Martin Rainey. 2016. “Walking through the statistical black boxes of plant breeding.” &lt;em&gt;Theoretical and Applied Genetics&lt;/em&gt; 129 (10). Springer Berlin Heidelberg: 1933–49. doi:&lt;a href=&#34;https://doi.org/10.1007/s00122-016-2750-y&#34;&gt;10.1007/s00122-016-2750-y&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>R碎碎念</title>
-      <link>/post/2018-01-30-r-skills/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-30-r-skills/</guid>
-      <description>&lt;div id=&#34;replace-all-0-values-to-na&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Replace all 0 values to NA&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;df[df == 0] &amp;lt;- NA&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>latex_math</title>
-      <link>/post/2018-01-29-latex_math/</link>
-      <pubDate>Mon, 29 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-29-latex_math/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;right&#34;&gt;符号&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;语法&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;符号&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;语法&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;符号&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;语法&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;符号&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;语法&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\leq\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;leq&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\geq\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;geq&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\neq\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;neq&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\approx\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;approx&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sim\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;sim&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\pm\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;pm&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\cdot\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;cdot&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\cdots\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;cdots&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\sum_{j=1}^{p}\)&lt;/span&gt;&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;sum_{j=1}^{p}&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>范数——来自知乎JI weiwei的回答</title>
-      <link>/post/2018-01-29-norm-zhihu-jiweiwei/</link>
-      <pubDate>Mon, 29 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-29-norm-zhihu-jiweiwei/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/people/ji-weiwei&#34;&gt;知乎JI weiwei的回答&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;你是问向量范数还是矩阵范数？ 要更好的理解范数，就 &lt;strong&gt;要从函数、几何与矩阵的角度去理解&lt;/strong&gt;，我尽量讲的通俗一些。 我们都知道， &lt;strong&gt;函数与几何图形往往是有对应的关系&lt;/strong&gt;，这个很好想象，特别是在三维以下的空间内， &lt;strong&gt;函数是几何图像的数学概括，而几何图像是函数的高度形象化&lt;/strong&gt;，比如一个函数对应几何空间上若干点组成的图形。 但 &lt;strong&gt;当函数与几何超出三维空间时，就难以获得较好的想象，于是就有了映射的概念，映射表达的就是一个集合通过某种关系转为另外一个集合。&lt;/strong&gt; 通常数学书是先说映射，然后再讨论函数，这是因为 &lt;strong&gt;函数是映射的一个特例&lt;/strong&gt;。 &lt;strong&gt;为了更好的在数学上表达这种映射关系，（这里特指线性关系）于是就引进了矩阵。&lt;/strong&gt; 这里的矩阵就是表征上述空间映射的线性关系。而 &lt;strong&gt;通过向量来表示上述映射中所说的这个集合，而我们通常所说的基，就是这个集合的最一般关系。&lt;/strong&gt; 于是，我们可以这样理解， &lt;strong&gt;一个集合（向量），通过一种映射关系（矩阵），得到另外一个几何（另外一个向量）&lt;/strong&gt;。 那么 &lt;strong&gt;向量的范数，就是表示这个原有集合的大小&lt;/strong&gt;。 &lt;strong&gt;而矩阵的范数，就是表示这个变化过程的大小的一个度量&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;那么说到具体几几范数，其不过是定义不同，一个矩阵范数往往由一个向量范数引出，我们称之为算子范数，其物理意义都如我上述所述。&lt;/p&gt;
-&lt;p&gt;以上符合知乎回答问题的方式。&lt;/p&gt;
-&lt;p&gt;接下来用百度回答方式：&lt;/p&gt;
-&lt;p&gt;0范数，向量中非零元素的个数。&lt;/p&gt;
-&lt;p&gt;1范数，为绝对值之和。&lt;/p&gt;
-&lt;p&gt;2范数，就是通常意义上的模。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-28-English-note</title>
-      <link>/post/2018-01-28-english-note/</link>
-      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-28-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;routine genotyping常规基因分型&lt;/li&gt;
-&lt;li&gt;a wealth of很多的&lt;/li&gt;
-&lt;li&gt;continues to drop&lt;/li&gt;
-&lt;li&gt;appear likely to be dominant methods for the &lt;strong&gt;foreseeable&lt;/strong&gt; future&lt;/li&gt;
-&lt;li&gt;emerge out of从……中出现&lt;/li&gt;
-&lt;li&gt;largely主要&lt;/li&gt;
-&lt;li&gt;seek to试图&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;termed&lt;/strong&gt; it simply BLUP只是称为&lt;/li&gt;
-&lt;li&gt;overwhelmingly used绝大多数使用&lt;/li&gt;
-&lt;li&gt;one another彼此&lt;/li&gt;
-&lt;li&gt;construed解释&lt;/li&gt;
-&lt;li&gt;is designed to目的是&lt;/li&gt;
-&lt;li&gt;approachable summary平易近人的总结&lt;/li&gt;
-&lt;li&gt;rationale基本原理&lt;/li&gt;
-&lt;li&gt;in this way&lt;/li&gt;
-&lt;li&gt;bogged down陷入困境&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>GS学习笔记</title>
-      <link>/post/2018-01-28-gs-models/</link>
-      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-28-gs-models/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;学习的参考文献是&lt;span class=&#34;citation&#34;&gt;(Lorenz et al. 2011; Campos et al. 2013)&lt;/span&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;假定标记之间的连锁相或标记单倍型块与因果多态性在家系间是一致的，因此全体标记效应的估计将是有意义的(Meuwissen2001)。 # large p，small n；预测子间相关或共线性&lt;/p&gt;
-&lt;p&gt;最小二乘法不能估计全部的效应值，因为自由度不够（ &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(X&amp;#39;X\)&lt;/span&gt;矩阵奇异&lt;/strong&gt; ）。即便自由度足够用，标记间共线性会 &lt;strong&gt;过拟合&lt;/strong&gt; 模型。过拟合模型能夸大小幅波动，导致预测能力差。或只能在训练群体中表现很好。&lt;/p&gt;
-&lt;p&gt;于是提出各种统计模型，大致可分为4类： &lt;strong&gt;收缩、变量选择、核和降维方法&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;3类：收缩、贝叶斯（变量选择）和半参或非参（支持向量、随机森林回归）。这些方法在遗传架构的假设方面不同。(Gamal El-Dien2015)&lt;/p&gt;
-&lt;p&gt;模型的基本形式一样： &lt;span class=&#34;math display&#34;&gt;\[
-y_i=g(\mathbf{x}_i)+e_i
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{x}_i)\)&lt;/span&gt;是基因型和表型的关联函数。模型都设法最小化一个特定的成本函数。最小二乘的成本函数是残差的平方和：&lt;span class=&#34;math inline&#34;&gt;\(\sum e_{i}^{2}\)&lt;/span&gt;。最小二乘的回归系数是： &lt;span class=&#34;math display&#34;&gt;\[
-\hat\beta=(\mathbf{X}^{\prime}\mathbf{X})^{-1}\mathbf{X}^{\prime}y
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;div id=&#34;blup&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;岭回归（又叫随机回归BLUP）&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;遗传值是&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;个标记效应值之和。 &lt;span class=&#34;math display&#34;&gt;\[
-\hat\beta=(\mathbf{X}^{\prime}\mathbf{X}+\lambda \mathbf{I})^{-1}\mathbf{X}^{\prime}y
-\]&lt;/span&gt; 与最小二乘的区别是多了一个&lt;span class=&#34;math inline&#34;&gt;\(\lambda \mathbf{I}\)&lt;/span&gt;项，引入的目的是 &lt;strong&gt;避免矩阵&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{X}^{\prime}\mathbf{X}\)&lt;/span&gt;奇异，并且降低预测子间的共线性&lt;/strong&gt;。 &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;选择的标准是最小化模型误差；还有一个方法是假定标记效应从一个均值为0的正态分布中随机抽取的，然后解混合线性模型方程，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;是残差方差与标记效应方差的比值var(&lt;em&gt;e&lt;/em&gt;)/var(&lt;em&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/em&gt;)。如果var(&lt;em&gt;&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;&lt;/em&gt;)比var(&lt;em&gt;e&lt;/em&gt;)小得多的话，会造成标记效应收缩到0，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;很大。 岭回归的成本函数是 &lt;span class=&#34;math display&#34;&gt;\[
-\frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\mathbf{b}^{\prime}\mathbf{b}
-\]&lt;/span&gt; 第二项称为约束（constraint）、惩罚（penalty）或正则化（regularizer）。&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;越大，大的&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;收缩得越厉害。假设是标记效应同分布，指的是同样收缩到0，不是所有效应都相等。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;岭回归和LMM的等价是有条件的，尤其是假设。一个LMM将随机效应视为一个样本，该样本是从一个具有色散参数的基础分布中得出的，而岭回归只是一个计算方法，当模型过饱和时就提供估计。只有在RR中选择的惩罚参数等于相应LMM中方差分量的比例时，它们在数学上才是相同的(shen2013)。&lt;/strong&gt; LMM和RR之间的差异可以在所使用的估算技术中找到，&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;不同。 ## LASSO Least absolute shrinkage and selection operator&lt;/p&gt;
-&lt;p&gt;LASSO的成本函数： &lt;span class=&#34;math display&#34;&gt;\[
-\frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\sum_k \left| \beta_k \right|
-\]&lt;/span&gt; 与岭回归的共同点是都惩罚大的标记效应，二者的一般形式是： &lt;span class=&#34;math display&#34;&gt;\[
-\frac{1}{2} \sum_i e_{i}^{2}+\frac{\lambda}{2}\sum_k \left| \beta_k \right|^q
-\]&lt;/span&gt; &lt;em&gt;q&lt;/em&gt;=1时是LASSO，&lt;em&gt;q&lt;/em&gt;=2时是RR-BLUP，&lt;span class=&#34;math inline&#34;&gt;\(1\leq q\leq 2\)&lt;/span&gt;时，称为弹性网回归（elastic net）。因为正则化矩阵公式不同， &lt;strong&gt;LASSO的系数收缩比RR-BLUP的要强，更有效，因为当&lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt;很小时，&lt;span class=&#34;math inline&#34;&gt;\(\left| \beta_k \right|\)&lt;/span&gt;比&lt;span class=&#34;math inline&#34;&gt;\(\beta^2\)&lt;/span&gt;要大得多&lt;span class=&#34;citation&#34;&gt;(Wu et al. 2009)&lt;/span&gt;&lt;/strong&gt;，而且一些系数收缩到0，产生一个稀疏模型，因此LASSO也能进行变量选择（所以有selection operator的意思）。LASSO的一个问题也是&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;的取值问题。 Park and Casella (2008)提出贝叶斯LASSO。&lt;/p&gt;
-&lt;div id=&#34;lasso&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Lasso的局限&lt;/h3&gt;
-&lt;p&gt;在非贝叶斯LASSO中，解决方案允许有n - 1个非零回归系数。 这是一个问题，因为在密集的标记数据的情况下，没有理由为什么训练集中的个体数量应该限制具有非零效应的标记的数量。 最多允许n个非零估计的回归系数。在复杂性状的WGR中，没有理由限制具有非零效应的标记的数量被n（观测的数量）限制。 当预测变量相关时，当LD跨越很长的区域时会出现某种情况，执行变量选择的方法如LASSO通常会被岭回归超过。&lt;/p&gt;
-&lt;p&gt;zou提出了综合RR和LASSO二者优点的方法（弹性网）：建议 &lt;strong&gt;将L1和L2范数的加权平均值用作惩罚&lt;/strong&gt; ，即，对于&lt;span class=&#34;math inline&#34;&gt;\(0\leq\alpha\leq1\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(J(\beta)=\alpha\sum_{j=1}^{p}||\beta_j||+(1-\alpha)\sum_{j=1}^{p}||\beta_j^2||\)&lt;/span&gt;。模型涉及2个正则参数(&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt;)和&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;reproducing-kernel-hilbert-spaces-rkhs-and-support-vector-machine-regression&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Reproducing kernel Hilbert spaces (RKHS) and support vector machine regression&lt;/h2&gt;
-&lt;p&gt;RKHS：经典加性遗传模型结合核函数。核函数将预测变量转换为观测值之间的一组距离，以产生一个&lt;span class=&#34;math inline&#34;&gt;\(n\times n\)&lt;/span&gt;正定矩阵，用于线性模型。 &lt;strong&gt;输入空间和特征空间&lt;/strong&gt; 是这个文献中经常遇到的术语。 在GS的情况下， &lt;strong&gt;输入数据是标记得分数据&lt;/strong&gt;，因此，输入空间是多维空间，其中每个个体的位置由其标记分数确定。 通过 &lt;strong&gt;对输入数据应用内核函数将输入空间转换为特征空间&lt;/strong&gt;。 RKHS可以用矩阵符号表示： &lt;span class=&#34;math display&#34;&gt;\[
-g(x)=\mathbf{K}_h\mathbf{\alpha}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{K}_h\)&lt;/span&gt;是核心条目的矩阵，量化个体彼此之间的距离，就像量化系谱关系的加性关系矩阵，即个体之间的遗传距离。这里的区别在于，核函数包括一个或多个平滑参数（ &lt;strong&gt;h&lt;/strong&gt;）以影响特征空间中的距离和输入空间中的距离之间的关系。&lt;span class=&#34;math inline&#34;&gt;\(n\times 1\)&lt;/span&gt;向量&lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;可以被解释为可以使用标准混合模型方程估计的特征空间内的单独效应。CV或bootstrap方法可以用来确定h的最优值，例如在群体和性状之间的模型中允许很大的灵活性。RKHS方法可以在标准的定量遗传模型框架内解释。 由于内核方法包含了很大的灵活性，而且没有线性假设，所以它们可以 &lt;strong&gt;同时捕获所有类型的非加性效应&lt;/strong&gt;。 &lt;strong&gt;支持向量机也是核方法。&lt;strong&gt;其成本函数可称为 &lt;/strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;-intensive&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-C \sum_i L_{\varepsilon}(e_{i})+\frac{1}{2}\mathbf{b}^{\prime}\mathbf{b}
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;是一个用来衡量误差对成本函数的贡献的常数；&lt;span class=&#34;math inline&#34;&gt;\(L_{\varepsilon}\)&lt;/span&gt;是 &lt;strong&gt;&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;-intensive损失函数&lt;/strong&gt;，意思是不惩罚误差，除非它们大于&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
-L_{\varepsilon}(e_{i}) =
- \begin{cases}
- 0, &amp;amp; \text{for} \left| e_{i} \right|&amp;lt;\varepsilon \\
- \left| e_{i} \right|-\varepsilon, &amp;amp; \text{otherwise}
- \end{cases}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;正常情况下，残差的总和不管是大还是小，都会对回归模型进行惩罚。在这里，只有最小化“大”（&amp;gt; &lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt;）残差的模型才是有利的，而所有其他残差是可以接受的。 &lt;strong&gt;这个步骤的目的是开发牺牲许多小错误为了排除大错误的模型。&lt;/strong&gt; 这个问题的解决方案涉及 &lt;strong&gt;拉格朗日（Lagrange）优化&lt;/strong&gt;，其产生一组系数，乘以训练样本与正在预测的观察之间的所有可能的内积的和。训练样本 &lt;strong&gt;i&lt;/strong&gt; 和 &lt;strong&gt;j&lt;/strong&gt; 的内积定义为&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}_i^{\prime}\mathbf{x}_j\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{x}\)&lt;/span&gt;是观测标记得分向量。为了允许非线性，内积项可以被核函数替换，有效地将SVR优化从输入空间传送到特征空间。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;partial-least-squares-regression-and-principle-component-regression&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Partial least squares regression and principle component regression降维&lt;/h2&gt;
-&lt;p&gt;从变量中提取 &lt;strong&gt;潜变量&lt;/strong&gt; 为预测变量的线性组合，并用于响应预测： &lt;span class=&#34;math display&#34;&gt;\[
-g(\mathbf{x}_i)=\sum_{l=1}^{w}t_{il}\beta_l
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(t_{il}\)&lt;/span&gt;是从原始&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;预测变量中提取的潜在变量，&lt;span class=&#34;math inline&#34;&gt;\(\beta_l\)&lt;/span&gt;是与该变量相关联的效应。即&lt;span class=&#34;math inline&#34;&gt;\(t_{il}=\mathbf{x}_i\mathbf{u}_l\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{u}_l\)&lt;/span&gt;是一个&lt;span class=&#34;math inline&#34;&gt;\(p\times1\)&lt;/span&gt;的向量，用于在线性组合中给潜变量&lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;加权。通常&lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt;是潜变量的个数，比&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;要小得多，&lt;span class=&#34;math inline&#34;&gt;\(t_{il}\)&lt;/span&gt;是正交的，目的是消除共线性的问题。这个程序涵盖了各种技术，取决于哪个变异来源被认为是最重要的。在PC回归中，选择潜在变量尽可能多地解释原始预测变量。这种方法产生的预测空间信息向量可能不会与响应的变化相关联。在PLS中，选择潜变量以使潜变量和响应之间的关系尽可能强。 &lt;strong&gt;为了避免由于太少或太多潜在变量而导致模型准确性降低（Solberg等人，2009），可以通过CV或相关技术来确定潜在变量的数量。&lt;/strong&gt; 在PCR和PLS中，&lt;span class=&#34;math inline&#34;&gt;\(g(\mathbf{x}_i)\)&lt;/span&gt;都可以重新写成预测变量的直接函数，不用潜变量： &lt;span class=&#34;math display&#34;&gt;\[
-\beta_k^*=\sum_{l=1}^{w}\beta_lu_{lk}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;贝叶斯&lt;/h2&gt;
-&lt;p&gt;贝叶斯方法也可用于估计的变量选择和收缩。 &lt;strong&gt;大多数惩罚估计等价于某些类型的贝叶斯模型的后验模式&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;RR-BLUP所做的遗传效应在基因组上均匀分布的假设并不令人满意，Meuwissen等 （2001）试图用贝叶斯分析来放松它。&lt;/p&gt;
-&lt;div id=&#34;bayesa&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;BayesA&lt;/h3&gt;
-&lt;p&gt;每个标记效应&lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;是从具有其自身方差的正态分布中抽取的：&lt;span class=&#34;math inline&#34;&gt;\(N(0,var(\beta_k))\)&lt;/span&gt;，这使得每个标记都可以向不同的程度缩小到零。反过来，方差参数从经过缩放的反向&lt;span class=&#34;math inline&#34;&gt;\(\chi^2\)&lt;/span&gt;分布中采样。这个模型也被称为贝叶斯收缩回归。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;bayesb&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;BayesB&lt;/h3&gt;
-&lt;p&gt;没有效应的标记也给了概率。 如果遗传变异存在于少数基因座而在许多基因座缺失，这个 &lt;strong&gt;模型将更好地反映潜在的遗传架构&lt;/strong&gt;。 &lt;span class=&#34;math display&#34;&gt;\[
-g(\mathbf{x}_i)=\sum_{k=1}^{p}x_{ik}\beta_k\gamma_k
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\gamma_k\)&lt;/span&gt;是指示预测模型中标记 _k_的存在的指示变量。&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\)&lt;/span&gt;服从均值为0、有限方差的正态分布。&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\)&lt;/span&gt;方差的先验分布服从一个混合分布： &lt;span class=&#34;math display&#34;&gt;\[
-\begin{align}
- var(\beta_k)=0,\quad &amp;amp;\text{with probability} \pi \\
- var(\beta_k)\sim \chi^{-2}(\mathbf{v},\mathbf{S}), \quad&amp;amp; \text{with probability} (1-\pi) \\
- \end{align}
-\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\pi=0\)&lt;/span&gt;时，BayesB和BayesA是一样的。然而，在处理真实的生物体和性状时，这个参数（&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;）的合理值是未知的。为了克服这个问题，一个称为 &lt;strong&gt;BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;&lt;/strong&gt; 的分析本身估计&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;，其中&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;的先验分布在0和1之间是均匀的。另外， &lt;strong&gt;BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;&lt;/strong&gt; 假设所有效应&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=1\)&lt;/span&gt;的标记的先验方差相等。即&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=0\)&lt;/span&gt;时&lt;span class=&#34;math inline&#34;&gt;\(\beta_k=0\)&lt;/span&gt;，&lt;span class=&#34;math inline&#34;&gt;\(\gamma_k=1\)&lt;/span&gt;时&lt;span class=&#34;math inline&#34;&gt;\(\beta_k\sim N(0,\hat{\sigma}_\beta^2)\)&lt;/span&gt;。反过来，该方法一起估计所有非零的&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}_\beta^2\)&lt;/span&gt;。在估计&lt;span class=&#34;math inline&#34;&gt;\(\hat{\sigma}_\beta^2\)&lt;/span&gt;时，以这样的方式对标记进行分组会对所有先验进行加权。 &lt;strong&gt;随机搜索变量选择（SSVS）&lt;/strong&gt;，早于Meuwissen的（2001）BayesB，但是与BayesB有大致相同的先验假设。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;所有这些贝叶斯模型共同的问题是参数估计不能以分析方式获得。&lt;/strong&gt; 然而，有可能开发所谓的马尔可夫链蒙特卡罗（MCMC）算法，其从后验分布中对参数值进行采样。 然后可以通过重复抽样和计算适当的汇总统计数据（例如分布的均值或中值）来近似这些分布。 不幸的是，这个解决方案在计算上非常昂贵。 因此， &lt;strong&gt;非MCMC方法&lt;/strong&gt; 已经被用于估计这些汇总统计。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;统计方法总结&lt;/h2&gt;
-&lt;p&gt;在RR-BLUP模型下，标记效应是来自具有固定方差的正态分布的样本。通过缩小所有的标记效应到相同的程度，并包括模型中的所有标记，RR-BLUP的使用意味着从业者相信这个性状被许多具有小影响的基因座所控制。相反，贝叶斯B假设大多数位点对性状没有影响，因此大多数标记都不在预测模型中。包含在模型中的标记具有从具有不同方差的分布中采样的效果。因此，贝叶斯B有效地假定，性状是由相对较少的效应大小不同的基因座控制的。在BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;的情况下，包含在模型中的标记的比例是根据数据估计的。包括在模型中的标记效应是从估计方差的相同分布从数据。这使得BayesC&lt;span class=&#34;math inline&#34;&gt;\(\pi\)&lt;/span&gt;更具灵活性来模拟寡源到多基因的性状。 我们强调这些模型的先验和它们的含义，强调这些模型假定不同的基因结构。因此，就遗传结构不同而言，所有性状和种群都没有单一的最佳模型。 &lt;strong&gt;如果遗传结构由多个小效应位点组成（Buckler et al。，2009），RR-BLUP和利用全球遗传关系信息的模型运作良好。如果大效QTL解释了很多遗传变异（Anderson等，2001; Munkvold等，2009），贝叶斯B等模型应该受到青睐。此外，这些示例模型假定可加性，并且如果非加性遗传效应是重要的，则可能不会很好地执行。一些人群中存在流行的非加性效应的证据（Dudley and Johnson，2009）; RKHS和SVR在这些情况下可能占有优势。&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;非参方法（机器学习）&lt;/h1&gt;
-&lt;div id=&#34;rkhs&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;RKHS&lt;/h2&gt;
-&lt;p&gt;与BLUP类似 在称为基因组BLUP（G-BLUP）的方法中使用的基因组关系矩阵 &lt;strong&gt;被更一般的核矩阵代替&lt;/strong&gt;，所述矩阵在个体之间产生相似性，即使遗传无关。 &lt;strong&gt;核是定义个体之间的协方差结构的任何平滑函数K&lt;/strong&gt;。 该方法假定可以使用测量希尔伯特空间中的objects（焦点）之间的距离的核矩阵来表示欧几里德空间中的距离。 希尔伯特空间中，更相似的基因型比那些具有较少的相似性更密切。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;section&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;&lt;/h1&gt;
+      <guid>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</guid>
+      <description>
+
+&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，$\lambda = r (k-1) / (v-1)$，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34; target=&#34;_blank&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;incomplete.block.design &amp;lt;- function(number.alternatives, number.blocks, alternatives.per.block, n.repeats = 1000){
+    # Check that the parameters are appropriate
+    # Sawtooth recommends that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block
+    if (number.blocks &amp;lt; 3 * number.alternatives / alternatives.per.block)
+        warning(&amp;quot;It is recomended that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block&amp;quot;);
+    library(AlgDesign)
+    best.result = NULL
+    best.D = -Inf
+    for (i in 1:n.repeats){
+        alg.results &amp;lt;- optBlock(~.,withinData=factor(1:number.alternatives),blocksizes=rep(alternatives.per.block,number.blocks), nRepeats=5000) #BIB
+        if (alg.results$D &amp;gt; best.D){
+            best.result = alg.results
+            best.D = alg.results$D
+        }
+    }
+    design &amp;lt;- matrix(NA,number.blocks,alternatives.per.block, dimnames= list(block = 1:number.blocks, Alternative = 1:alternatives.per.block))
+    binary.design &amp;lt;- matrix(0,number.blocks,number.alternatives, dimnames= list(block = 1:number.blocks, alternative = 1:number.alternatives))
+    counter &amp;lt;- 0
+    for (block in best.result$Blocks){
+        counter &amp;lt;- counter + 1
+        blck &amp;lt;- unlist(block)
+        design[counter,] &amp;lt;- blck
+        for (a in blck)
+            binary.design[counter,a] &amp;lt;- 1
+    }
+    n.appearances.per.alternative &amp;lt;- table(as.numeric(design))
+    combinations.of.alternatives &amp;lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
+    list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;套入White[-@White2007]384页的例子
+&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重复设定为100次后得到结果&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;与书中所使用的软件给出的结果不一致，但应该都能用于实践（现实情况是我们过去的测定林设计多少存在些问题（包括我自己之前的一个设计），或者设计问题不大但造林时没有严格按照设计进行，比较可惜）。&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;均方误差有非常好的几何意义，它对应了常用的欧几里得距离或简称“欧氏距离”（Euclidean distance）。基于均方误差最小化来进行模型求解的方法称为“最小二乘法”（least square method）。在线性回归中，最小二乘法就是试图找到一条直线，使所有样本到直线上的欧氏距离之和最小&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;林木周期长，测定很关键，设计要专业&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;估计量的准确度可以用估计的&lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;和参数&lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;的真实值之间的 &lt;strong&gt;平方欧几里得距离&lt;/strong&gt; 来测量。在标量的情况下，这只是平方的偏差：&lt;span class=&#34;math inline&#34;&gt;\(||\hat{\theta}(y)-\theta||^2=[\hat{\theta}(y)-\theta]^2\)&lt;/span&gt;。写成&lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}(y)\)&lt;/span&gt;的目的是强调预测子是抽样数据的函数。 均方误差（MSE）是平方欧几里得距离的期望值（超过数据的可能实现）：&lt;span class=&#34;math inline&#34;&gt;\(MSE(\hat{\theta})=E[\hat{\theta}(y)-\theta]^2\)&lt;/span&gt;。这能拆成2项：估计值的方差加上其偏差的平方，&lt;span class=&#34;math inline&#34;&gt;\(MSE(\hat{\theta})=Var(\hat{\theta})+Bias[\hat{\theta}]^2=E\{[\hat{\theta}-E(\hat{\theta})]^2\}+[E(\hat{\theta})-\theta]\)&lt;/span&gt;。 处罚和贝叶斯方法是两个最常用的收缩估计程序&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;支持向量机&lt;/h1&gt;
-&lt;p&gt;SVM回归的基本思想是通过非线性映射函数将样本从预测空间映射到高维特征空间，并在后一空间进行线性回归(Jannink2010)。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;kernel&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;kernel&lt;/h1&gt;
-&lt;p&gt;内核方法将预测变量转换为距离，实际上创建了一个类似于加性遗传关系矩阵的矩阵。 核矩阵量化个体之间的距离，但也加入平滑参数[3]。 这种方法是灵活的，可以包含标记之间的复杂关系，因此在怀疑无加性效应的情况下是有用的[40]。&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-DelosCampos2013a&#34;&gt;
-&lt;p&gt;Campos, Gustavo de los, John M Hickey, Ricardo Pong-Wong, Hans D Daetwyler, and Mario P L Calus. 2013. “Whole-Genome Regression and Prediction Methods Applied to Plant and Animal Breeding.” &lt;em&gt;Genetics&lt;/em&gt; 193 (2): 327–45. doi:&lt;a href=&#34;https://doi.org/10.1534/genetics.112.143313&#34;&gt;10.1534/genetics.112.143313&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-Lorenz2011&#34;&gt;
-&lt;p&gt;Lorenz, Aaron J., Shiaoman Chao, Franco G. Asoro, Elliot L. Heffner, Takeshi Hayashi, Hiroyoshi Iwata, Kevin P. Smith, Mark E. Sorrells, and Jean-Luc Jannink. 2011. “Genomic Selection in Plant Breeding.” In &lt;em&gt;Advances in Agronomy&lt;/em&gt;, 110:77–123. C. doi:&lt;a href=&#34;https://doi.org/10.1016/B978-0-12-385531-2.00002-5&#34;&gt;10.1016/B978-0-12-385531-2.00002-5&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-Wu2009b&#34;&gt;
-&lt;p&gt;Wu, Tong Tong, Yi Fang Chen, Trevor Hastie, Eric Sobel, and Kenneth Lange. 2009. “Genome-wide association analysis by lasso penalized logistic regression.” &lt;em&gt;Bioinformatics&lt;/em&gt; 25 (6): 714–21. doi:&lt;a href=&#34;https://doi.org/10.1093/bioinformatics/btp041&#34;&gt;10.1093/bioinformatics/btp041&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-26-English-note</title>
-      <link>/post/2018-01-26-english-note/</link>
-      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-26-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Join Fisher Scientific and various other &lt;strong&gt;vendors&lt;/strong&gt; 供应商 on Monday, January 29 from 9:30 am - 11:30 am &lt;strong&gt;in the 3rd-floor&lt;/strong&gt; lobby of Thomas Hall. Come check out all of the latest new products and &lt;strong&gt;promotions&lt;/strong&gt; 促销 available!&lt;/li&gt;
-&lt;li&gt;appalled震惊的&lt;/li&gt;
-&lt;li&gt;resume重新开始&lt;/li&gt;
-&lt;li&gt;excerpts节选&lt;/li&gt;
-&lt;li&gt;give rise to引起&lt;/li&gt;
-&lt;li&gt;detrimental to有害的，不利于&lt;/li&gt;
-&lt;li&gt;Testable hypotheses&lt;/li&gt;
-&lt;li&gt;have been reluctant to&lt;/li&gt;
-&lt;li&gt;owing to&lt;/li&gt;
-&lt;li&gt;nondestructive techniques&lt;/li&gt;
-&lt;li&gt;calibration models&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;can efficiently be&lt;/strong&gt; used for screening&lt;/li&gt;
-&lt;li&gt;surrogate替代的&lt;/li&gt;
-&lt;li&gt;save considerable resources&lt;/li&gt;
-&lt;li&gt;growth and yield&lt;/li&gt;
-&lt;li&gt;have been ongoing for over 50 years&lt;/li&gt;
-&lt;li&gt;exceed&lt;/li&gt;
-&lt;li&gt;intensive management集约化经营&lt;/li&gt;
-&lt;li&gt;it is recognized that……是公认的&lt;/li&gt;
-&lt;li&gt;undertaken&lt;/li&gt;
-&lt;li&gt;examining wood properties&lt;/li&gt;
-&lt;li&gt;quality-related properties&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Several options&lt;/strong&gt; now &lt;strong&gt;exist for&lt;/strong&gt; the nondestructive assessment&lt;/li&gt;
-&lt;li&gt;determined nondestructively&lt;/li&gt;
-&lt;li&gt;have yet to be尚未&lt;/li&gt;
-&lt;li&gt;a valuable tool&lt;/li&gt;
-&lt;li&gt;at an impasse陷入僵局&lt;/li&gt;
-&lt;li&gt;in any event无论如何&lt;/li&gt;
-&lt;li&gt;This practice &lt;strong&gt;nevertheless&lt;/strong&gt; retains the disadvantage of biased effect estimates&lt;/li&gt;
-&lt;li&gt;quandary困境&lt;/li&gt;
-&lt;li&gt;capitalizing on利用&lt;/li&gt;
-&lt;li&gt;on the strength of基于&lt;/li&gt;
-&lt;li&gt;in the same way同样地&lt;/li&gt;
-&lt;li&gt;be analogous to类似于&lt;/li&gt;
-&lt;li&gt;this condition does not hold这种情况不成立&lt;/li&gt;
-&lt;li&gt;fall short of达不到&lt;/li&gt;
-&lt;li&gt;outpace超过……的速度&lt;/li&gt;
-&lt;li&gt;be referred to as被称为&lt;/li&gt;
-&lt;li&gt;countless students无数&lt;/li&gt;
-&lt;li&gt;counter-intuitive反直觉的&lt;/li&gt;
-&lt;li&gt;to a first approximation大致上&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-26-Vergara2004-realized-gains</title>
-      <link>/post/2018-01-26-vergara2004-realized-gains/</link>
-      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-26-vergara2004-realized-gains/</guid>
-      <description>&lt;p&gt;摘要：利用美国东南部大型矩形地块种植的38个田间试验数据，估算了第一代湿地松湿地松（松材线虫湿地松）的选育成果。这些试验由佛罗里达大学合作森林遗传学研究计划（19项试验）和佐治亚大学植物管理研究合作社（19项试验）种植的材料选择用于量的增长。所有的试验都包含从不受污染或轻微流淌的第一代种子园采集的湿地松籽苗。方差分析显示，抗锈性（I50 = 43.1％）和场地指数（4.3％）平均上升幅度较小，单株树体积（7.7％）和林分产量（10.2％）均有显着增加。通过实现收益相互作用的营养处理和年龄从来没有显着，但种子和试验之间的显着相互作用表明实现的收益在所有地点都不一致。总体结果与预测的抗锈性育种值高度一致，但低于预期的体积。平均而言，第一代材料的实际增产率约为10％，或额外的树皮体积为25立方米。 （357英尺3英寸）25年。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;介绍&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;实现遗传增益是证明遗传改良投资合理化和量化木材生产和经济效益进步的最佳方法&lt;/strong&gt;（Zobel and Talbert 1984; Eldridge et al。1994）。事实上，在最近的森林遗传和树木育种史中，实现收益的提供一直是人们关注的主要问题之一（Kanowski，1993），即使知道大规模的树木育种计划，少量的遗传增益也足以证明投入的资源（Zobel和Talbert 1984）。 &lt;strong&gt;将不同类型的改良种子（例如开放授粉的家系，控制授粉的家系，混合家系，种子园混合）与设计用于代表未经改进的物质的对照进行比较，从而量化所实现的遗传增益&lt;/strong&gt;。研究人员通过使用小地块（单树地块和行地块）或大矩形地块来估计实现的收益。 &lt;strong&gt;小地块的优点是允许包含许多家系，而不会过度增加复制大小，从而提供更高的统计精度&lt;/strong&gt;。然而，对于生长性状， &lt;strong&gt;如果优势表型由于夸大的边缘效应而获得了较早的竞争优势，那么小地块就可以提供有偏差的估计值&lt;/strong&gt;，其中种子群体主要影响邻居的表现（Foster 1989; Lambeth et al。1994）。因此， &lt;strong&gt;利用高度或茎干等性状在小块土地上单独表现树木性能的估计遗传增益可能高估了最好的家庭，而低估了最差的家庭&lt;/strong&gt;（Rockwood 2000）。 大的矩形图可以避免不准确的估计，因为给定绘图中的所有树都来自同一个家系。这些地块允许每个种田使用作为种子之间的缓冲区的图中的外部树来表达其遗传潜力。这样， &lt;strong&gt;只有内在的树被分析，结果并没有受到家系竞争的偏见&lt;/strong&gt;（Zobel and Talbert 1984; Lowerts 1986; Williams and Matheson 1994）。 &lt;strong&gt;在树冠关闭之后，相邻地块之间光线的竞争将变得重要，使得大地块对于长期试验尤其有价值&lt;/strong&gt;（White，1987; Foster，1992; Williams和Matheson，1994）。事实上，大型矩形地块应该与现场部署密切相关。即使是相对较少的遗传条目，但是，大的矩形图需要大的复制大小，从而降低统计精度。因此，需要大量的试验场来确定统计学显着性差异，并精确估计遗传增益的大小（Dhakal等，1996）。总之， &lt;strong&gt;当目标是以单位面积为基础估计生长性状的实际遗传增益时，最好的选择是在许多地点种植大块土地&lt;/strong&gt;（Dhakal等1996; Zobel和Talbert 1984）。 很少有研究使用在矩形区域建立的试验（Dhakal 1995）从多个地点获得遗传增益，因为实施和维持这些试验的成本很高，以及可靠的结果需要很长的时间间隔。此外，获取信息时，适用于通常不在计划中的遗传物质，使得许多公司对这些研究不具吸引力。像佛罗里达大学的合作性森林遗传研究计划（CFGRP）这样的大型合作努力具有在多个地点使用大地块进行实现的遗传增益试验的结构。然而，用这种方法估计实现的收益在这项研究之前还没有在湿地松（Pinus elliottii Engelm。var。elliottii）中进行，因为现在只有足够的数据才能获得高的统计精度。 在文献中可以找到 &lt;strong&gt;许多使用行小区的实现增益研究&lt;/strong&gt;。这些包括火炬松（Pinus taeda L.）（La Farge 1993; Lambeth 2000; Li等2000），阿勒颇松（Pinus halepensis Mill。）（Matziris 2000），短叶松（Pinus echinata Mill。），白松（Pinus strobus L.）（La Farge 1993）和斜松（Dhakal等，1996）。然而， &lt;strong&gt;很少有研究可用于大型矩形地块&lt;/strong&gt;。黑松（Picea mariana（Mill。）BSP）和千斤顶松（Jack pine（Pillsa mariana（Mill。）BSP）获得的最广泛的信息是辐射松（Pinus radiata D.Don）（Eldridge 1982; Carson等1999a，1999b） Pinus banksiana Lamb。）（Simpson和Kathleen 1997）。 目前的研究是第一次尝试评估实际遗传增益的斜线松，使用许多试验，每个组成的大型矩形地块。具体目标是（i）准确估计增长，抗锈性和林分产量的实际收益; （ii）估计这些性状在几个年龄段实现的遗传获益; （3）评估营林，生锈危害和现场指标对实现收益的影响。&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-24-English-note</title>
-      <link>/post/2018-01-24-english-note/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-24-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;urged to consult&lt;/li&gt;
-&lt;li&gt;poorly adapted to适应性差&lt;/li&gt;
-&lt;li&gt;are urged to consult鼓励&lt;/li&gt;
-&lt;li&gt;In &lt;strong&gt;dichotomous&lt;/strong&gt; traits, logistic regression has been used to conduct association tests for GWAS&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;proneness&lt;/strong&gt; to overfitting&lt;/li&gt;
-&lt;li&gt;these &lt;strong&gt;defects&lt;/strong&gt; can be addressed&lt;/li&gt;
-&lt;li&gt;offers many avenues to&lt;/li&gt;
-&lt;li&gt;In principle大体上&lt;/li&gt;
-&lt;li&gt;serve to用来&lt;/li&gt;
-&lt;li&gt;vegetative propagules营养繁殖体&lt;/li&gt;
-&lt;li&gt;tissue culture plantlets组培苗&lt;/li&gt;
-&lt;li&gt;for the purposes of为了…目的&lt;/li&gt;
-&lt;li&gt;where appropriate在适当的时候&lt;/li&gt;
-&lt;li&gt;weigh in参与&lt;/li&gt;
-&lt;li&gt;consult with咨询&lt;/li&gt;
-&lt;li&gt;Other effects &lt;strong&gt;fitted to&lt;/strong&gt; the design model&lt;/li&gt;
-&lt;li&gt;some of the &lt;strong&gt;characteristic&lt;/strong&gt; design and analysis problems&lt;/li&gt;
-&lt;li&gt;in either case不论发生何种情况&lt;/li&gt;
-&lt;li&gt;explicitly defined&lt;/li&gt;
-&lt;li&gt;alternative route备选路线&lt;/li&gt;
-&lt;li&gt;or else否则&lt;/li&gt;
-&lt;li&gt;an integrated system集成系统&lt;/li&gt;
-&lt;li&gt;widely accepted普遍认可&lt;/li&gt;
-&lt;li&gt;satisfy……needs&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;mobilize resources&lt;/strong&gt; to support implementation of动员资源以支持&lt;/li&gt;
-&lt;li&gt;comprised&lt;/li&gt;
-&lt;li&gt;incorporate&lt;/li&gt;
-&lt;li&gt;is advantageous over&lt;/li&gt;
-&lt;li&gt;stuck with无法摆脱&lt;/li&gt;
-&lt;li&gt;In this regard,就这一点而言&lt;/li&gt;
-&lt;li&gt;interrelationships&lt;/li&gt;
-&lt;li&gt;be very efficient at非常有效&lt;/li&gt;
-&lt;li&gt;care must be taken to必须小心&lt;/li&gt;
-&lt;li&gt;be analogous to类似于&lt;/li&gt;
-&lt;li&gt;pass on to传给&lt;/li&gt;
-&lt;li&gt;in practice&lt;/li&gt;
-&lt;li&gt;by virtue of由于，凭借&lt;/li&gt;
-&lt;li&gt;eligible合格的&lt;/li&gt;
-&lt;li&gt;on a &lt;strong&gt;staggering&lt;/strong&gt; number of&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Individual perceptions&lt;/strong&gt; of what &lt;strong&gt;is constituted by&lt;/strong&gt; bioinformatics __vary widely__个人看法&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cantor2010 GWAS中的统计方法</title>
-      <link>/post/2018-01-24-cantor2010/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-24-cantor2010/</guid>
-      <description>&lt;div class=&#34;section level1&#34;&gt;
-&lt;h1&gt;统计方法&lt;/h1&gt;
-&lt;p&gt;交互建模在统计学方面有着悠久的历史，在这篇综述中不可能公正地讨论这个话题。要求更广泛的报道的读者可以参考两篇极好的综合评论文章[55,56]。这里我们强调数据挖掘方面的一些最新进展，可以用来优先考虑GWAS结果。在二分性状中，逻辑回归已经被用来进行GWAS的关联测试;比例相等或费舍尔精确测试的替代测试缺乏处理多个预测因子的灵活性。对于连续性状，GWAS使用线性回归。 &lt;strong&gt;回归的一个主要力量是它很容易提供一个包含交互的机会&lt;/strong&gt;。回归分析的其他优点包括（1）明确的参数模型; （2）参数估计的稳定算法; （3）主效应和相互作用效应的似然比和F检验的可用性; （4）容易并入诸如年龄，性别和族裔的协变量;和（5）可靠和有据可查的软件的广泛可用性。&lt;/p&gt;
-&lt;p&gt;大部分的缺点与当前数据集的规模和预测者超过观测值有关。其缺点是：（1）数量性状的正态性假设失败;（2）p值背后大样本近似的细分;（3）欠定问题中的搜索算法失败;（4）倾向于过拟合;（5）提供备用解决方案，以及（6）在检测交互之前需要检测主效应的模型选择的分层性质。在解释如何处理这些缺陷之前，简要总结一些检测上位性的替代方法是有用的。&lt;/p&gt;
-&lt;p&gt;数据挖掘的新兴领域57为理解交互提供了许多途径。当然， &lt;strong&gt;逻辑回归和判别分析是密切相关的&lt;/strong&gt;。原则上，任何判别分析方法都可以将案件与控制分开。 __CART（分类和回归树）和随机森林__等判别分析方法与交互建模显然是相关的。其他更有针对性的竞争者包括多 &lt;strong&gt;因子降维方法，组合分割方法62和限制分割方法&lt;/strong&gt;。尽管这些工具在探索性数据分析中有所帮助，而且在区分病例和控制方面也很出色，但是 &lt;strong&gt;它们受到了一些限制。例如，纯组合方法不产生效应量或p值，也不能处理协变量。根据所采用的算法，它们很容易被大量的预测因子和交叉验证和置换测试的要求所淹没&lt;/strong&gt;。针对这些批评，一些方法正在重新设计。例如，Lou等[52]修改了多因素降维方法64，以便进行协变量调整，连续和二元特征分析以及系谱数据。他们的新公式重视FBAT（家庭联想测试）方法的智力负担[65,66]。其他创新包括引入交互的熵和条件熵度量67,68;利用个人之间的邻近措施69？1;神经网络的应用，72遗传规划，73逻辑回归，74模式挖掘，64,75和贝叶斯分区76。&lt;/p&gt;
-&lt;p&gt;客观评估这一令人眼花缭乱的方法的需求是显而易见的。 Cordell55强调处理大量SNP数据集时计算速度的重要性。实际上，统计方法和软件是密不可分的。在计算速度的基础上，Cordell更喜欢使用标准回归，随机森林和贝叶斯分区的 &lt;strong&gt;PLINK&lt;/strong&gt;，77 Random Jungle，78和BEAM等程序。 Musani及其同事[56]在他们的建议中不太具体，并且认为综合的方法可以为消费者提供最好的服务。在我们自己的研究中，我们主要 &lt;strong&gt;使用PLINK77进行经典回归，Mendel79进行套索惩罚回归&lt;/strong&gt;。80？2 PLINK是用户友好的，具有内置的数据管理和质量控制例程。孟德尔诊断较少，但 &lt;strong&gt;在SNP数量远远超过个体数量时，在模型选择上更胜一筹&lt;/strong&gt;。在描述对传统参数模型的改进之前，让我们简单地提一些研究设计问题。在仅有情况的设计中，我们寻找标记基因型的不依赖性。在偏离独立性的可能测试中，值得挑出 &lt;strong&gt;卡方检验，熵和最大Z分数&lt;/strong&gt;。这些测试具有相当大的力量，但应该记住它们的局限性。 因为 &lt;strong&gt;他们不允许协变量，他们容易受到人口分层和连锁不平衡的影响&lt;/strong&gt;。 __潜在的应急表可能是稀疏的，所以p值的置换评估是一个好主__意。 不幸的是， &lt;strong&gt;排列测试的代价是更重的计算&lt;/strong&gt;。 另一方面， &lt;strong&gt;谱系数据也带来了真正的挑战。 除非完全由连锁不平衡驱动，否则连锁分析需要系谱。&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2018-01-23-English-note</title>
-      <link>/post/2018-01-23-english-note/</link>
-      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-23-english-note/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;be central to&lt;/li&gt;
-&lt;li&gt;be cast as&lt;/li&gt;
-&lt;li&gt;convex凸面&lt;/li&gt;
-&lt;li&gt;psyched激动的兴奋的&lt;/li&gt;
-&lt;li&gt;main grant主要资助&lt;/li&gt;
-&lt;li&gt;under-used较少使用&lt;/li&gt;
-&lt;li&gt;vehemently opposed强烈反对&lt;/li&gt;
-&lt;li&gt;Gauging测量&lt;/li&gt;
-&lt;li&gt;Raisin葡萄干&lt;/li&gt;
-&lt;li&gt;neural network神经网络&lt;/li&gt;
-&lt;li&gt;This study is a sequel to the reports of是某研究的后续&lt;/li&gt;
-&lt;li&gt;competing model如果同时有多个模型候选，那么彼此是竞争模型&lt;/li&gt;
-&lt;li&gt;is appropriate for；is also capable of适于&lt;/li&gt;
-&lt;li&gt;expensive and tme-consuming to collect 收集起来耗时费力&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;highly limited&lt;/strong&gt; in availability 非常有限&lt;/li&gt;
-&lt;li&gt;are essental for 重要的&lt;/li&gt;
-&lt;li&gt;epidemiology&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Producing models&lt;/strong&gt; that can predict abundance &lt;strong&gt;well&lt;/strong&gt;, with good resolution over large areas, has &lt;strong&gt;therefore&lt;/strong&gt; been &lt;strong&gt;an important aim&lt;/strong&gt; in ecology, but &lt;strong&gt;poses&lt;/strong&gt; considerable challenges. 带来极大的挑战&lt;/li&gt;
-&lt;li&gt;have driven an explosion in the use of these techniques&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;none of these has produced consistently satisfactory results and each has signifcant theoretcal or practcal limitatons&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;with very low precision in predictons&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;none have yet performed well enough to be of use for&lt;/strong&gt; many real-world applicatons&lt;/li&gt;
-&lt;li&gt;envisage设想&lt;/li&gt;
-&lt;li&gt;are a signifcant improvement on previously widely available distributon data&lt;/li&gt;
-&lt;li&gt;custom-writen定制编写&lt;/li&gt;
-&lt;li&gt;burgeoning adj. 增长迅速的；生机勃勃的&lt;/li&gt;
-&lt;li&gt;a standard method&lt;/li&gt;
-&lt;li&gt;A &lt;strong&gt;substantial&lt;/strong&gt; number of&lt;/li&gt;
-&lt;li&gt;in aggregate with联合&lt;/li&gt;
-&lt;li&gt;A controversy &lt;strong&gt;ensued&lt;/strong&gt; as to whether much of this risk could be explained随之而来的&lt;/li&gt;
-&lt;li&gt;be likely to&lt;/li&gt;
-&lt;li&gt;persecution迫害&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Approximately&lt;/strong&gt; half of the book is written, and all completed chapters are now available as online preview.&lt;/li&gt;
-&lt;li&gt;the same issues &lt;strong&gt;arise&lt;/strong&gt; over and over&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;I have attempted to&lt;/strong&gt; collect &lt;strong&gt;my accumulated knowledge&lt;/strong&gt; from these &lt;strong&gt;interactions&lt;/strong&gt; &lt;strong&gt;in the form of&lt;/strong&gt; this book.&lt;/li&gt;
-&lt;li&gt;As of this writing截至撰写本文&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;please also feel free to&lt;/strong&gt; record these suggestions as issues on github&lt;/li&gt;
-&lt;li&gt;with no &lt;strong&gt;manual&lt;/strong&gt; post-processing手动&lt;/li&gt;
-&lt;li&gt;brush up擦亮，提高&lt;/li&gt;
-&lt;li&gt;We are also grateful to&lt;/li&gt;
-&lt;li&gt;prime minister&lt;/li&gt;
-&lt;li&gt;humiliating defeat丧权辱国&lt;/li&gt;
-&lt;li&gt;take the plunge冒险尝试；采取决定性步骤&lt;/li&gt;
-&lt;li&gt;is contingent upon视…而定&lt;/li&gt;
-&lt;li&gt;predisposing variants = causal variants&lt;/li&gt;
-&lt;li&gt;substantive information实质性信息&lt;/li&gt;
-&lt;li&gt;the specific accomplishments特定的成就&lt;/li&gt;
-&lt;li&gt;productive collaboration高效的协作&lt;/li&gt;
-&lt;li&gt;In many cases&lt;/li&gt;
-&lt;li&gt;discrete&lt;/li&gt;
-&lt;li&gt;detectable&lt;/li&gt;
-&lt;li&gt;significantly associated SNPs&lt;/li&gt;
-&lt;li&gt;raise the risk by&lt;/li&gt;
-&lt;li&gt;be effective in elucidating&lt;/li&gt;
-&lt;li&gt;placed in&lt;/li&gt;
-&lt;li&gt;easily accessible databases&lt;/li&gt;
-&lt;li&gt;increasingly affordable costs&lt;/li&gt;
-&lt;li&gt;in the context of&lt;/li&gt;
-&lt;li&gt;analytic challenges&lt;/li&gt;
-&lt;li&gt;most critical&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;thorny&lt;/strong&gt; problem&lt;/li&gt;
-&lt;li&gt;Although this was problematic&lt;/li&gt;
-&lt;li&gt;viewed it as a potential strength&lt;/li&gt;
-&lt;li&gt;sparked&lt;/li&gt;
-&lt;li&gt;the creation of appropriate software&lt;/li&gt;
-&lt;li&gt;it was anticipated&lt;/li&gt;
-&lt;li&gt;follow-up studies随访研究&lt;/li&gt;
-&lt;li&gt;Saccone &lt;strong&gt;and colleagues&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;evidence supporting the &lt;strong&gt;biological relevance&lt;/strong&gt; of each associated SNP&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;implicated&lt;/strong&gt; pathway&lt;/li&gt;
-&lt;li&gt;even if they are &lt;strong&gt;considered in aggregate&lt;/strong&gt; 即使它们被 &lt;strong&gt;综合考虑&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;effect sizes&lt;/li&gt;
-&lt;li&gt;appear in&lt;/li&gt;
-&lt;li&gt;once __prohibitively expensive__一度非常昂贵&lt;/li&gt;
-&lt;li&gt;genetic etiology病理学&lt;/li&gt;
-&lt;li&gt;a small fraction of&lt;/li&gt;
-&lt;li&gt;remains to be investigated&lt;/li&gt;
-&lt;li&gt;go overlooked&lt;/li&gt;
-&lt;li&gt;focused primarily on&lt;/li&gt;
-&lt;li&gt;met their expectations&lt;/li&gt;
-&lt;li&gt;these &lt;strong&gt;salient&lt;/strong&gt; 突出的 publications &lt;strong&gt;each&lt;/strong&gt; provide some support for the position that GWAS are only the first step in the gene identification process&lt;/li&gt;
-&lt;li&gt;More specifically更具体地说&lt;/li&gt;
-&lt;li&gt;is comparable to可相提并论&lt;/li&gt;
-&lt;li&gt;put the edges and corners in place&lt;/li&gt;
-&lt;li&gt;advocate&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;providing support for&lt;/strong&gt; applying the second method&lt;/li&gt;
-&lt;li&gt;make progress in在…方面取得进步，取得进展&lt;/li&gt;
-&lt;li&gt;impractical不起实际的&lt;/li&gt;
-&lt;li&gt;explained in greater detail更详细地解释&lt;/li&gt;
-&lt;li&gt;draw from从……提取&lt;/li&gt;
-&lt;li&gt;we &lt;strong&gt;enumerate&lt;/strong&gt; guidelines枚举&lt;/li&gt;
-&lt;li&gt;Rather than&lt;/li&gt;
-&lt;li&gt;computationally cumbersome计算繁琐&lt;/li&gt;
-&lt;li&gt;used extensively&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;excellent and comprehensive&lt;/strong&gt; review articles&lt;/li&gt;
-&lt;/ul&gt;
+
+&lt;h1 id=&#34;参考文献&#34;&gt;参考文献&lt;/h1&gt;
 </description>
     </item>
     
