@@ -21,67 +21,6 @@
     </item>
     
     <item>
-      <title>不完全区组设计</title>
-      <link>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</link>
-      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-01-02-%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1/</guid>
-      <description>
-
-&lt;p&gt;林木子代测定林田间试验较常采用随机完全区组设计（RCB）和不完全区组设计（IB）。在&lt;code&gt;R&lt;/code&gt;中利用&lt;code&gt;agricolae&lt;/code&gt;包能够实现RCB设计，对于后者则只能进行平衡不完全区组设计（BIB）。BIB要求 &lt;em&gt;bkvrλ&lt;/em&gt; 全为整数， &lt;em&gt;b&lt;/em&gt; 是区组数、 &lt;em&gt;k&lt;/em&gt; 是区组大小即小区数、 &lt;em&gt;v&lt;/em&gt; 是处理数比如家系个数、 &lt;em&gt;r&lt;/em&gt; 是重复次数，$\lambda = r (k-1) / (v-1)$，对于测定处理较多的材料不能满足λ为整数这个限制。&lt;code&gt;ibd&lt;/code&gt;这个包开发者说能够实现不平衡IB设计，但同样在处理较多时给不出设计结果。最终在&lt;a href=&#34;http://surveyanalysis.org/wiki/Creating_an_Incomplete_Block_Design_in_R&#34; target=&#34;_blank&#34;&gt;网页&lt;/a&gt;找到方法，函数的代码如下&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;incomplete.block.design &amp;lt;- function(number.alternatives, number.blocks, alternatives.per.block, n.repeats = 1000){
-    # Check that the parameters are appropriate
-    # Sawtooth recommends that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block
-    if (number.blocks &amp;lt; 3 * number.alternatives / alternatives.per.block)
-        warning(&amp;quot;It is recomended that number.blocks &amp;gt;= 3 * number.alternatives / alternatives.per.block&amp;quot;);
-    library(AlgDesign)
-    best.result = NULL
-    best.D = -Inf
-    for (i in 1:n.repeats){
-        alg.results &amp;lt;- optBlock(~.,withinData=factor(1:number.alternatives),blocksizes=rep(alternatives.per.block,number.blocks), nRepeats=5000) #BIB
-        if (alg.results$D &amp;gt; best.D){
-            best.result = alg.results
-            best.D = alg.results$D
-        }
-    }
-    design &amp;lt;- matrix(NA,number.blocks,alternatives.per.block, dimnames= list(block = 1:number.blocks, Alternative = 1:alternatives.per.block))
-    binary.design &amp;lt;- matrix(0,number.blocks,number.alternatives, dimnames= list(block = 1:number.blocks, alternative = 1:number.alternatives))
-    counter &amp;lt;- 0
-    for (block in best.result$Blocks){
-        counter &amp;lt;- counter + 1
-        blck &amp;lt;- unlist(block)
-        design[counter,] &amp;lt;- blck
-        for (a in blck)
-            binary.design[counter,a] &amp;lt;- 1
-    }
-    n.appearances.per.alternative &amp;lt;- table(as.numeric(design))
-    combinations.of.alternatives &amp;lt;- crossprod(table(c(rep(1:number.blocks, rep(alternatives.per.block,number.blocks))), best.result$design[,1]))
-    list(binary.design = t(binary.design), design = t(design), frequencies = n.appearances.per.alternative, pairwise.frequencies=combinations.of.alternatives, binary.correlations = round(cor(binary.design),2))
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;套入White[-@White2007]384页的例子
-&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-7470576f99260605.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;incomplete.block.design(number.alternatives = 24, number.blocks = 18, alternatives.per.block = 4, n.repeats = 100)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;重复设定为100次后得到结果&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/3289684-9ca916946f0d25b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;与书中所使用的软件给出的结果不一致，但应该都能用于实践（现实情况是我们过去的测定林设计多少存在些问题（包括我自己之前的一个设计），或者设计问题不大但造林时没有严格按照设计进行，比较可惜）。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;林木周期长，测定很关键，设计要专业&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;参考文献&#34;&gt;参考文献&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
       <title>统计&amp;编程</title>
       <link>/project/stats_r/</link>
       <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
